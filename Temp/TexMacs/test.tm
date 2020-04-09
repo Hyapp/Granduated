@@ -1,6 +1,6 @@
-<TeXmacs|1.99.11>
+<TeXmacs|1.99.12>
 
-<style|<tuple|generic|chinese>>
+<style|<tuple|generic|chinese|old-dots>>
 
 <\body>
   <doc-data|<doc-title|\<#8FD9\>\<#662F\>\<#4E00\>\<#4E2A\>\<#6D4B\>\<#8BD5\>\<#6587\>\<#6863\>>>
@@ -109,6 +109,8 @@
   <section|>
 
   <section|>
+
+  \;
 </body>
 
 <initial|<\collection>
@@ -116,20 +118,21 @@
 
 <\references>
   <\collection>
-    <associate|auto-1|<tuple|1|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-10|<tuple|3|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-11|<tuple|3.0.3|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-12|<tuple|3.0.4|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-13|<tuple|4|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-14|<tuple|5|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-2|<tuple|1.1|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-3|<tuple|1.2|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-4|<tuple|1.3|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-5|<tuple|1.4|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-6|<tuple|1.5|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-7|<tuple|2|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-8|<tuple|2.0.1|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
-    <associate|auto-9|<tuple|2.0.2|?|C:\\Users\\dell\\AppData\\Roaming\\TeXmacs\\texts\\scratch\\no_name_4.tm>>
+    <associate|auto-1|<tuple|1|?>>
+    <associate|auto-10|<tuple|3|?>>
+    <associate|auto-11|<tuple|3.0.3|?>>
+    <associate|auto-12|<tuple|3.0.4|?>>
+    <associate|auto-13|<tuple|4|?>>
+    <associate|auto-14|<tuple|5|?>>
+    <associate|auto-15|<tuple|6|?>>
+    <associate|auto-2|<tuple|1.1|?>>
+    <associate|auto-3|<tuple|1.2|?>>
+    <associate|auto-4|<tuple|1.3|?>>
+    <associate|auto-5|<tuple|1.4|?>>
+    <associate|auto-6|<tuple|1.5|?>>
+    <associate|auto-7|<tuple|2|?>>
+    <associate|auto-8|<tuple|2.0.1|?>>
+    <associate|auto-9|<tuple|2.0.2|?>>
   </collection>
 </references>
 
