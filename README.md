@@ -1,6 +1,6 @@
 # 珍惜年华
 
-## This is my granduated mathematics nots.
+## This is my granduated mathematics notes.
 
 Include two parts : analysis and algebra
 
