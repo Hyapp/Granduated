@@ -12,7 +12,7 @@ Include two parts : analysis and algebra
     
 ### Algebra
 
-    Linear Algebra down right. Sheldon Axler.
+    Linear Algebra right. Sheldon Axler.
     
     
 # 珍惜年华
