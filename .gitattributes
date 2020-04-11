@@ -1,2 +1,4 @@
 *.tm linguist-language=tex
 *.pdf linguist-language=tex
+
+*.tm eol=lf
