@@ -37,7 +37,7 @@
   <section|\<#6709\>\<#5E8F\>\<#96C6\>>
 
   <\definition>
-    \<#5E8F\>
+    \<#5E8F\><label|def order>
   </definition>
 
   <\eqnarray*>
@@ -75,7 +75,8 @@
   \<#63A8\>\<#8BBA\>\<#FF1A\><math|Q>\<#7684\>\<#5B50\>\<#96C6\>\<#4E0D\>\<#4E00\>\<#5B9A\>\<#6709\>\<#4E0A\>\<#786E\>\<#754C\>\<#3002\><math|<around*|{|x\<in\>Q\<wedge\>x<rsup|2>\<less\>2|}>>
 
   <\definition>
-    \<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\>
+    \<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\><label|def minest bound
+    prop>
   </definition>
 
   <\eqnarray*>
@@ -207,9 +208,122 @@
 
   \;
 
-  \;
+  <\definition>
+    \<#6709\>\<#5E8F\>\<#57DF\>
+  </definition>
 
-  \;
+  \<#96C6\>\<#5408\><math|F>\<#4E0A\>\<#6709\>\<#57DF\>\<#7ED3\>\<#6784\>\<#548C\>\<#6709\>\<#5E8F\>\<#6027\>
+
+  <\eqnarray*>
+    <tformat|<table|<row|<cell|F\<wedge\>>|<cell|>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x,y,z\<in\>F\<wedge\>y\<less\>z\<rightarrow\>x+y\<less\>x+z>|<cell|>>|<row|<cell|2.>|<cell|\<forall\>x,y\<in\>F\<wedge\>x\<gtr\>0\<wedge\>y\<gtr\>0\<rightarrow\>x
+    y\<gtr\>0>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|F\<#4E3A\>\<#6709\>\<#5E8F\>\<#57DF\>>>>>
+  </eqnarray*>
+
+  <\enumerate>
+    <item><math|Q>\<#662F\>\<#6709\>\<#5E8F\>\<#57DF\>
+  </enumerate>
+
+  \<#6709\>\<#5E8F\>\<#57DF\>\<#7684\>\<#6027\>\<#8D28\>\<#FF1A\>
+
+  <\enumerate>
+    <item><math|\<forall\>x\<gtr\>0\<leftrightarrow\>-x\<less\>0>
+
+    <math|x\<gtr\>0\<rightarrow\>0=-x+x\<gtr\>-x+0=-x\<rightarrow\>0\<gtr\>-x>
+
+    <item><math|\<forall\>x\<gtr\>0\<wedge\>y\<less\>z\<rightarrow\>x
+    y\<less\>x z>
+
+    <math|z\<gtr\>y\<rightarrow\>z-y\<gtr\>y-y=0\<rightarrow\>x<around*|(|z-y|)>\<gtr\>0\<rightarrow\>>
+
+    <math|x z=x<around*|(|z-y|)>+x y\<gtr\>0+x y=x y>
+
+    <item><math|\<forall\>x\<less\>0\<wedge\>y\<less\>z\<rightarrow\>x
+    y\<gtr\>x z>
+
+    <math|-<around*|[|x<around*|(|z-y|)>|]>=<around*|(|-x|)><around*|(|z-y|)>\<gtr\>0<rsub|>\<rightarrow\>><space|20em>AMD3
+
+    <math|x<around*|(|z-y|)>\<less\>0\<rightarrow\>x z\<less\>x
+    y><space|24em>1,2
+
+    <item><math|\<forall\>x\<neq\>0\<rightarrow\>x<rsup|2>\<gtr\>0.>
+
+    <math|x\<neq\>0\<rightarrow\>x\<gtr\>0\<vee\>x\<less\>0>
+
+    <math|x\<gtr\>0\<rightarrow\>x x\<gtr\>0><space|28em>\<#5B9A\>\<#4E49\>2
+
+    <math|x\<less\>0\<rightarrow\>x<rsup|2>=<around*|(|-x|)><rsup|2>\<gtr\>0><space|25em>AMD4
+
+    \<#7279\>\<#522B\>\<#7684\> <math|1=1<rsup|2>\<rightarrow\>1\<gtr\>0>
+
+    <item><math|\<forall\>0\<less\>x\<less\>y\<rightarrow\>0\<less\><frac|1|y>\<less\><frac|1|x>>
+
+    <math|\<forall\>x\<gtr\>0\<rightarrow\>x
+    <frac|1|x>=1\<gtr\>0\<rightarrow\>\<#53CD\>\<#8BC1\>\<forall\>a\<leqslant\>0\<rightarrow\>x
+    a\<leqslant\>0\<rightarrow\><frac|1|x>\<gtr\>0>
+
+    <math|<frac|1|x>\<gtr\>0\<wedge\><frac|1|y>\<gtr\>0\<rightarrow\><frac|1|x
+    y>\<gtr\>0>
+
+    <math|<around*|(|<frac|1|x y>|)>x\<less\><around*|(|<frac|1|x
+    y>|)>y\<Leftrightarrow\><frac|1|y>\<less\><frac|1|x>>
+  </enumerate>
+
+  <section|\<#5B9E\>\<#6570\>\<#57DF\>>
+
+  <subsection|\<#5B58\>\<#5728\>\<#6027\>>
+
+  <\theorem>
+    \<#5177\>\<#6709\>\<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\>\<#7684\>\<#6709\>\<#5E8F\>\<#57DF\><math|R>\<#5B58\>\<#5728\>
+  </theorem>
+
+  <\proof>
+    \;
+
+    <\enumerate>
+      <item><math|R>\<#7684\>\<#5143\>\<#7D20\>\<#662F\><math|Q>\<#7684\>\<#5B50\>\<#96C6\>\<#FF0C\>\<#79F0\>\<#4E3A\>\<#5206\>\<#5212\>\<#3002\>\<#96C6\>\<#5408\><math|\<alpha\>>\<#6EE1\>\<#8DB3\>\<#6027\>\<#8D28\>:<math|<label|def
+      set classify>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|1. >|<cell|\<alpha\>\<neq\>\<varnothing\>>|<cell|>>|<row|<cell|2.
+        >|<cell|\<forall\>p\<in\>\<alpha\>\<wedge\>q\<less\>p\<rightarrow\>q\<in\>\<alpha\>>|<cell|\<rightarrow\>\<forall\>p\<in\>\<alpha\>\<wedge\>q\<nin\>\<alpha\>\<rightarrow\>p\<less\>q>>|<row|<cell|>|<cell|>|<cell|\<rightarrow\>\<forall\>r\<nin\>\<alpha\>\<wedge\>r\<less\>s\<rightarrow\>s\<nin\>\<alpha\>>>|<row|<cell|3.
+        >|<cell|\<forall\>p\<in\>\<alpha\>\<rightarrow\><around*|(|\<exists\>r\<in\>\<alpha\>\<rightarrow\>p\<less\>r|)>>|<cell|<around*|(|\<alpha\>\<#6CA1\>\<#6709\>\<#6700\>\<#5927\>\<#5143\>|)>>>>>
+      </eqnarray*>
+
+      <math|p,q,r,s\<in\>Q>
+
+      <item><math|R>\<#4E0A\>\<#6709\>\<#5173\>\<#7CFB\><math|\<less\>>\<#FF0C\><math|\<less\>>\<#4E3A\>\<#771F\>\<#5305\>\<#542B\>\<#5173\>\<#7CFB\><math|\<subseteq\>>:
+
+      \<#9A8C\>\<#8BC1\>\<#5E8F\>\<#5173\>\<#7CFB\><reference|def order>:
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<forall\>a\<less\>b\<wedge\>b\<less\>r\<rightarrow\>a\<less\>r>|<cell|>|<cell|>>|<row|<cell|a\<less\>b\<vee\>a=b\<vee\>a\<gtr\>b>|<cell|>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>\<#81F3\>\<#5C11\>\<#6709\>\<#4E00\>\<#4E2A\>\<#6210\>\<#7ACB\>>|<cell|>>|<row|<cell|>|<cell|\<#53CD\>\<#8BC1\>\<#FF1A\>a\<nless\>b\<wedge\>a\<neq\>b\<rightarrow\>>|<cell|>>|<row|<cell|>|<cell|\<exists\><around*|(|x\<in\>a\<wedge\>x\<nin\>b|)>\<rightarrow\>b\<less\>a>|<cell|>>>>
+      </eqnarray*>
+
+      <math|R>\<#4E3A\>\<#6709\>\<#5E8F\>\<#96C6\>
+
+      <item><math|R>\<#6709\>\<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\>:
+
+      <\equation*>
+        A\<subset\>R\<wedge\>A\<neq\>\<varnothing\>\<wedge\>A\<#4E0A\>\<#6709\>\<#754C\>\<beta\>\<wedge\><tabular|<tformat|<table|<row|<cell|r=<big|cap><around*|{|a<around*|\||a\<less\>A|\<nobracket\>>|}>>|<cell|>>>>>
+      </equation*>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<reference|def set
+        classify>.1.>|<cell|A\<neq\>\<varnothing\>\<rightarrow\>\<exists\>a<rsub|0>\<in\>A\<rightarrow\>a\<neq\>\<varnothing\>\<rightarrow\>>|<cell|r\<neq\>\<varnothing\>>>|<row|<cell|>|<cell|\<forall\>a\<in\>A\<rightarrow\>a\<subset\>\<beta\>\<rightarrow\>r\<subset\>\<beta\>\<rightarrow\>>|<cell|r\<neq\>Q>>|<row|<cell|2.>|<cell|\<forall\>p\<in\>r\<rightarrow\><around*|(|\<exists\>a<rsub|1>\<in\>A\<rightarrow\>p\<in\>a<rsub|1>|)>\<wedge\>>|<cell|>>|<row||<cell|q\<less\>p\<rightarrow\>q\<in\>a<rsub|1>\<rightarrow\>>|<cell|q\<in\>r>>|<row|<cell|3.>|<cell|\<forall\><around*|(|x\<in\>a<rsub|1>\<wedge\>x\<gtr\>p|)>\<rightarrow\>x\<in\>r>|<cell|\<forall\>a\<in\>r<around*|(|\<exists\>x\<in\>r\<rightarrow\>x\<gtr\>a|)>>>>>
+      </eqnarray*>
+
+      <math|r\<in\>R>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|<reference|def minest bound
+        prop>.1.>|<cell|\<forall\>a\<in\>A\<rightarrow\>a\<subset\>r\<Leftrightarrow\>a\<leqslant\>r>|<cell|r\<#662F\>A\<#7684\>\<#4E0A\>\<#754C\>>>|<row|<cell|2.>|<cell|\<#53CD\>\<#8BC1\>\<#FF1A\>\<exists\>x\<less\>r\<rightarrow\>y\<in\>r\<wedge\>y\<nin\>x>|<cell|>>|<row|<cell|>|<cell|y\<in\>r\<rightarrow\>\<exists\>z\<in\>A\<rightarrow\>y\<in\>z\<rightarrow\>x\<less\>z\<rightarrow\>>|<cell|x\<#4E0D\>\<#662F\>A\<#7684\>\<#4E0A\>\<#754C\>>>>>
+      </eqnarray*>
+
+      <math|r=sup<around*|(|A|)>>
+
+      <item><math|R>\<#4E2D\>\<#7684\>\<#52A0\>\<#6CD5\>
+    </enumerate>
+  </proof>
 
   \;
 
@@ -243,7 +357,12 @@
     <associate|auto-1|<tuple|1|?>>
     <associate|auto-2|<tuple|2|?>>
     <associate|auto-3|<tuple|3|?>>
-    <associate|auto-4|<tuple|1|?>>
+    <associate|auto-4|<tuple|4|?>>
+    <associate|auto-5|<tuple|4.1|?>>
+    <associate|auto-6|<tuple|5|?>>
+    <associate|def minest bound prop|<tuple|2.5|?>>
+    <associate|def order|<tuple|2.1|?>>
+    <associate|def set classify|<tuple|1|?>>
   </collection>
 </references>
 
@@ -257,6 +376,10 @@
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>\<#6709\>\<#5E8F\>\<#96C6\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>\<#57DF\>>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
