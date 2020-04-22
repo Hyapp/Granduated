@@ -115,19 +115,19 @@
 
   \<#96C6\>\<#5408\><math|F>\<#4E0A\>\<#5B9A\>\<#4E49\>\<#4E24\>\<#79CD\>\<#8FD0\>\<#7B97\>\<#FF1A\>\<#52A0\>\<#6CD5\><math|+>\<#548C\>\<#4E58\>\<#6CD5\><math|\<times\>>\<#6EE1\>\<#8DB3\>AMD\<#516C\>\<#7406\>\<#FF1A\>
 
-  A:<label|def AMD A>
+  A:<label|axiom field A>
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|\<forall\>x,y\<in\>F>|<cell|\<rightarrow\>>|<cell|x+y\<in\>F>>|<row|<cell|\<forall\>x,y\<in\>F>|<cell|\<rightarrow\>>|<cell|x+y=y+x>>|<row|<cell|\<forall\>x,y,z\<in\>F>|<cell|\<rightarrow\>>|<cell|<around*|(|x+y|)>+z=x+<around*|(|y+z|)>>>|<row|<cell|\<exists\>0\<in\>F>|<cell|\<rightarrow\>>|<cell|\<forall\>x\<in\>F\<rightarrow\>0+x=x>>|<row|<cell|\<forall\>x\<in\>F>|<cell|\<rightarrow\>>|<cell|\<exists\>-x\<in\>F\<rightarrow\>x+<around*|(|-x|)>=0>>>>
   </eqnarray*>
 
-  <space|2em>M:
+  <space|2em>M:<label|axiom field M>
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|\<forall\>x,y\<in\>F>|<cell|\<rightarrow\>>|<cell|x\<times\>y\<in\>F>>|<row|<cell|\<forall\>x,y\<in\>F>|<cell|\<rightarrow\>>|<cell|x\<times\>y=y\<times\>x>>|<row|<cell|\<forall\>x,y,z\<in\>F>|<cell|\<rightarrow\>>|<cell|<around*|(|x\<times\>y|)>\<times\>z=x\<times\><around*|(|y\<times\>z|)>>>|<row|<cell|\<exists\>1\<wedge\><around*|(|1\<neq\>0|)>\<in\>F>|<cell|\<rightarrow\>>|<cell|\<forall\>x\<in\>F\<rightarrow\>1\<times\>x=x>>|<row|<cell|\<forall\>x\<in\>F\<wedge\>x\<neq\>0>|<cell|\<rightarrow\>>|<cell|\<exists\><frac|1|x>\<in\>F\<rightarrow\>x\<times\><frac|1|x>=1>>>>
   </eqnarray*>
 
-  <space|2em>D:
+  <space|2em>D:<label|axiom field D>
 
   <\eqnarray*>
     <tformat|<table|<row|<cell|\<forall\>x,y,z\<in\>F>|<cell|\<rightarrow\>>|<cell|x\<times\><around*|(|y+z|)>=x\<times\>y+x\<times\>z>>>>
@@ -137,7 +137,7 @@
     <item><math|Q>\<#662F\>\<#57DF\>
   </enumerate>
 
-  \<#6839\>\<#636E\>A\<#6709\>\<#6027\>\<#8D28\>\<#FF1A\>
+  \<#6839\>\<#636E\>A\<#6709\>\<#6027\>\<#8D28\>\<#FF1A\><label|prop field A>
 
   <\enumerate>
     <item><math|x+y=x+z\<rightarrow\>y=z>
@@ -159,7 +159,7 @@
     <math|x+<around*|(|-x|)>=0\<rightarrow\>x=-<around*|(|-x|)>><space|24em>(3)
   </enumerate>
 
-  \<#6839\>\<#636E\>M\<#6709\>\<#6027\>\<#8D28\>\<#FF1A\>
+  \<#6839\>\<#636E\>M\<#6709\>\<#6027\>\<#8D28\>\<#FF1A\><label|prop field M>
 
   <\enumerate>
     <item><math|x\<neq\>0\<wedge\>x y=x z\<rightarrow\>y=z>
@@ -180,7 +180,8 @@
     <math|*x<frac|1|x>=1\<rightarrow\>x\<rightarrow\><frac|1|<frac|1|x>>><space|29em>(3)
   </enumerate>
 
-  \<#5BF9\>\<#4E8E\><math|\<forall\>x,y,z\<in\>F>\<#FF0C\>AMD\<#5305\>\<#542B\>\<#4E86\>\<#6027\>\<#8D28\>\<#FF1A\>
+  \<#5BF9\>\<#4E8E\><math|\<forall\>x,y,z\<in\>F>\<#FF0C\>AMD\<#5305\>\<#542B\>\<#4E86\>\<#6027\>\<#8D28\>\<#FF1A\><label|prop
+  field AMD>
 
   <\enumerate>
     <item><math|0 x=0>
@@ -215,7 +216,8 @@
   \<#96C6\>\<#5408\><math|F>\<#4E0A\>\<#6709\>\<#57DF\>\<#7ED3\>\<#6784\>\<#548C\>\<#6709\>\<#5E8F\>\<#6027\>
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|F\<wedge\>>|<cell|>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x,y,z\<in\>F\<wedge\>y\<less\>z\<rightarrow\>x+y\<less\>x+z>|<cell|>>|<row|<cell|2.>|<cell|\<forall\>x,y\<in\>F\<wedge\>x\<gtr\>0\<wedge\>y\<gtr\>0\<rightarrow\>x
+    <tformat|<table|<row|<cell|F\<wedge\>>|<cell|>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x,y,z\<in\>F\<wedge\>y\<less\>z\<rightarrow\>x+y\<less\>x+z>|<cell|<inactive|<label|prop
+    ordered set>>>>|<row|<cell|2.>|<cell|\<forall\>x,y\<in\>F\<wedge\>x\<gtr\>0\<wedge\>y\<gtr\>0\<rightarrow\>x
     y\<gtr\>0>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|F\<#4E3A\>\<#6709\>\<#5E8F\>\<#57DF\>>>>>
   </eqnarray*>
 
@@ -223,7 +225,8 @@
     <item><math|Q>\<#662F\>\<#6709\>\<#5E8F\>\<#57DF\>
   </enumerate>
 
-  \<#6709\>\<#5E8F\>\<#57DF\>\<#7684\>\<#6027\>\<#8D28\>\<#FF1A\>
+  \<#6709\>\<#5E8F\>\<#57DF\>\<#7684\>\<#6027\>\<#8D28\>\<#FF1A\><label|prop
+  ordered set>
 
   <\enumerate>
     <item><math|\<forall\>x\<gtr\>0\<leftrightarrow\>-x\<less\>0>
@@ -321,7 +324,7 @@
 
       <math|r=sup<around*|(|A|)>>
 
-      <item><math|R>\<#4E2D\>\<#7684\>\<#52A0\>\<#6CD5\>\<#FF1A\>
+      <item><math|R>\<#4E2D\>\<#7684\>\<#52A0\>\<#6CD5\>\<#7B26\>\<#5408\>\<#516C\>\<#7406\>A\<#FF1A\>
 
       <math|\<forall\>x,y\<in\>R>\<#5B9A\>\<#4E49\>\<#52A0\>\<#6CD5\><math|+>\<#4E3A\>\<#FF1A\><math|x+y=<around*|{|a<around*|\||\<forall\>x<rsub|0>\<in\>x\<wedge\>\<forall\>y<rsub|0>\<in\>y,a=x<rsub|0>+y<rsub|0>|\<nobracket\>>|}>>
 
@@ -333,10 +336,54 @@
         <tformat|<table|<row|<cell|<reference|def set classify>,
         <reference|def AMD A>,1.>|<cell|x\<neq\>\<varnothing\>\<wedge\>y\<neq\>\<varnothing\>\<rightarrow\><around*|{|x<rsub|0>+y<rsub|0>|}>>|<cell|\<neq\>\<varnothing\>>>|<row|<cell|>|<cell|x\<in\>R\<rightarrow\>\<exists\>x<rsub|0>\<in\>Q\<wedge\>x<rsub|0>\<nin\>x\<rightarrow\>x<rsub|0>>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>\<exists\>x<rsub|0>+y<rsub|0>\<gtr\>a\<rightarrow\>a>|<cell|\<neq\>Q>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|x+y\<in\>R>>|<row|<cell|2.>|<cell|\<forall\>a<rsub|0>\<in\>a\<rightarrow\>\<exists\>x<rsub|0>+y<rsub|0>=a<rsub|0>>|<cell|>>|<row|<cell|>|<cell|\<forall\>b\<less\>a\<rightarrow\>\<exists\>y<rsub|1>\<less\>y<rsub|0>\<rightarrow\>x<rsub|0>+y<rsub|1>=b<rsub|0>>|<cell|>>|<row|<cell|>|<cell|y<rsub|1>\<less\>y<rsub|0>\<rightarrow\>y<rsub|1>\<in\>y\<rightarrow\>>|<cell|b<rsub|0>\<in\>x>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|a\<in\>R>>|<row|<cell|2.>|<cell|x<rsub|0>+y<rsub|0>=y<rsub|0>+x<rsub|0>\<rightarrow\>>|<cell|>>|<row|<cell|>|<cell|x+y=y+x>|<cell|>>|<row|<cell|3.>|<cell|<around*|(|x<rsub|0>+y<rsub|0>|)>+z<rsub|0>=x<rsub|0>+<around*|(|y<rsub|0>+z<rsub|0>|)>\<rightarrow\>>|<cell|>>|<row|<cell|>|<cell|<around*|(|x+y<rsub|>|)>+z=x+<around*|(|y+z|)>>|<cell|>>|<row|<cell|4.>|<cell|\<forall\>x\<in\>R<around*|(|\<forall\>x<rsub|0>\<in\>x\<wedge\>\<forall\>0<rsub|0>\<in\>0|)>\<rightarrow\>x<rsub|0>+0<rsub|0>\<less\>x<rsub|0>\<rightarrow\>>|<cell|x+0\<subset\>x>>|<row|<cell|>|<cell|\<forall\>x<rsub|0>,x<rsub|1>\<in\>x\<wedge\>x<rsub|0>\<less\>x<rsub|1>\<rightarrow\>x<rsub|0>-x<rsub|1>\<in\>0\<wedge\>>|<cell|>>|<row|<cell|>|<cell|x<rsub|0>=x<rsub|1>+<around*|(|x<rsub|0>-x<rsub|1>|)>\<in\>x+0<rsub|0>\<rightarrow\>>|<cell|x\<subset\>0+x>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|x+0=x>>|<row|<cell|5.>|<cell|\<#5148\>\<#6784\>\<#9020\>\<#51FA\>-x\<#FF0C\>\<#8BC1\>\<#660E\>\<#5B83\>\<#6210\>\<#7ACB\>>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x\<in\>R,let
         y=<big|cup><around*|{|y<rsub|0><around*|\||\<exists\>z<rsub|0>\<gtr\>0\<rightarrow\>-y<rsub|0>-z<rsub|0>|\<nobracket\>>\<nin\>x|}>>|<cell|>>|<row|<cell|>|<cell|\<forall\>x<rsub|0>\<nin\>x\<wedge\>y<rsub|0>=-x<rsub|0>-1\<rightarrow\>-y<rsub|0>-1=x<rsub|0>\<nin\>x\<rightarrow\>>|<cell|y\<neq\>\<varnothing\>>>|<row|<cell|>|<cell|\<forall\>x<rsub|0>\<in\>x\<rightarrow\>-x<rsub|0>\<nin\>y\<rightarrow\>>|<cell|y\<neq\>Q>>|<row|<cell|2.>|<cell|\<forall\>y<rsub|0>,y<rsub|1>\<in\>y\<wedge\>y<rsub|0>\<less\>y<rsub|1>\<rightarrow\>\<exists\>z<rsub|1>\<gtr\>0\<wedge\>-y<rsub|1>-z<rsub|1>\<nin\>x>|<cell|>>|<row|<cell|>|<cell|y<rsub|0>\<less\>y<rsub|1>\<rightarrow\>-y<rsub|0>\<gtr\>y<rsub|1>\<rightarrow\>-y<rsub|0>-z<rsub|1>\<nin\>x\<rightarrow\>>|<cell|y<rsub|0>\<in\>y>>|<row|<cell|3.>|<cell|\<forall\>y<rsub|0>\<in\>y,\<forall\>t<rsub|0>\<gtr\>0,let
-        y<rsub|1>=y<rsub|0>+<frac|t<rsub|0>|2>\<rightarrow\>y<rsub|1>\<gtr\>y<rsub|0>\<wedge\>>|<cell|>>|<row|<cell|>|<cell|-y<rsub|1>-<frac|t<rsub|0>|2>=-y<rsub|0>-t<rsub|0>\<nin\>x\<rightarrow\>>|<cell|y<rsub|1>\<in\>y>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|y\<in\>R>>|<row|<cell|>|<cell|\<forall\>x<rsub|0>\<in\>x,y<rsub|0>\<in\>y\<rightarrow\>\<exists\>-y<rsub|0>\<nin\>x\<rightarrow\>x<rsub|0>\<less\>-y<rsub|0>>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>x<rsub|0>+y<rsub|0>\<less\>0\<rightarrow\>x<rsub|0>+y<rsub|0>\<in\>0\<rightarrow\>>|<cell|x+y\<subset\>x>>>>
+        y<rsub|1>=y<rsub|0>+<frac|t<rsub|0>|2>\<rightarrow\>y<rsub|1>\<gtr\>y<rsub|0>\<wedge\>>|<cell|>>|<row|<cell|>|<cell|-y<rsub|1>-<frac|t<rsub|0>|2>=-y<rsub|0>-t<rsub|0>\<nin\>x\<rightarrow\>>|<cell|y<rsub|1>\<in\>y>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|y\<in\>R>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|>|<cell|\<forall\>x<rsub|0>\<in\>x,y<rsub|0>\<in\>y\<rightarrow\>\<exists\>-y<rsub|0>\<nin\>x\<rightarrow\>x<rsub|0>\<less\>-y<rsub|0>>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>x<rsub|0>+y<rsub|0>\<less\>0\<rightarrow\>x<rsub|0>+y<rsub|0>\<in\>0\<rightarrow\>>|<cell|x+y\<subset\>0>>|<row|<cell|>|<cell|\<forall\>x<rsub|0>\<in\>0,let
+        y<rsub|0>=-<frac|x<rsub|0>|2>\<rightarrow\>y<rsub|0>\<gtr\>0<rsub|0><rsub|>>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>\<exists\>n\<in\>Z<rsup|+>\<rightarrow\>n
+        y<rsub|0>\<in\>x\<wedge\><around*|(|n+1|)>y<rsub|0>\<nin\>x>|<cell|<around*|(|Q\<#6709\>\<#963F\>\<#57FA\>\<#7C73\>\<#5FB7\>\<#6027\>|)>>>|<row|<cell|>|<cell|let
+        p<rsub|0>=-<around*|(|n+2|)>y<rsub|0>\<rightarrow\>-p<rsub|0>-y<rsub|0>\<nin\>x>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>p<rsub|0>\<in\>y\<rightarrow\>x<rsub|0>=n
+        y<rsub|0>+p<rsub|0>\<in\>x+y<rsub|>\<rightarrow\>>|<cell|0\<in\>x+y>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|A<reference|axiom
+        field A>\<#6210\>\<#7ACB\>>>>>
       </eqnarray*>
 
-      <item>
+      <item>\<#6709\>\<#5E8F\>\<#57DF\>\<#6027\>\<#8D28\>1,<reference|prop
+      ordered set>
+
+      \<#6839\>\<#636E\>R\<#7684\>\<#52A0\>\<#6CD5\>\<#5B9A\>\<#4E49\>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|x+y\<subset\>x+z>|<cell|\<rightarrow\>>|<cell|x+y\<less\>x+z>>|<row|<cell|x<rsub|0>+y<rsub|0>=x<rsub|0>+z<rsub|0>>|<cell|\<rightarrow\>>|<cell|y=z>>|<row|<cell|\<forall\>x\<gtr\>0>|<cell|\<leftrightarrow\>>|<cell|-x\<less\>0>>>>
+      </eqnarray*>
+
+      <item><math|R<rsup|+>>\<#4E2D\>\<#7684\>\<#4E58\>\<#6CD5\>
+
+      <math|\<forall\>x,y\<in\>R<rsup|+>,let x
+      y=<around*|{|p<around*|\||\<forall\>x<rsub|0>,y<rsub|0>\<in\>x,y\<wedge\>x<rsub|0>,y<rsub|0>\<gtr\>0<rsub|0>\<wedge\>p\<leqslant\>x<rsub|0>
+      y<rsub|0>|\<nobracket\>>|}>>
+
+      \<#5B9A\>\<#4E49\><math|1=<around*|{|x<rsub|0><around*|\||x<rsub|0>\<less\>1<rsub|0>|\<nobracket\>>|}>>
+
+      \<#7C7B\>\<#4F3C\>4\<#8BC1\>\<#660E\>\<#3002\>\<#3002\>\<#3002\>TODO
+
+      <item>\<#4E58\>\<#6CD5\>\<#5B9A\>\<#4E49\>
+
+      <\math>
+        let x 0=0 x=0\<wedge\>
+      </math>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|>|<cell|>|<cell|<around*|(|-x|)><around*|(|-y|)>,if
+        x\<less\>0\<wedge\>y\<less\>0>>|<row|<cell|x
+        y>|<cell|=>|<cell|-<around*|(|-x|)>y,if
+        x\<less\>0\<wedge\>y\<gtr\>0>>|<row|<cell|>|<cell|>|<cell|-x<around*|(|-y|)>,if
+        x\<gtr\>0\<wedge\>y\<less\>0>>|<row|<cell|>|<cell|>|<cell|x y,if
+        x\<gtr\>0\<wedge\>y\<gtr\>0>>>>
+      </eqnarray*>
+
+      \<#4EE5\>\<#4E0A\>\<#5B9A\>\<#4E49\>\<#4E3A\>\<#5747\>\<#5C5E\>\<#4E8E\>\<#6027\>\<#8D28\>{<reference|prop
+      field A>}
+
+      \<#6839\>\<#636E\>1-7\<#FF0C\>\<#5177\>\<#6709\>\<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\>\<#7684\>\<#6709\>\<#5E8F\>\<#57DF\><math|R>\<#5B58\>\<#5728\>\<#3002\>
+
+      \;
     </enumerate>
 
     \;
@@ -376,10 +423,19 @@
     <associate|auto-3|<tuple|3|?>>
     <associate|auto-4|<tuple|4|?>>
     <associate|auto-5|<tuple|4.1|?>>
+    <associate|auto-6|<tuple|1|?>>
+    <associate|axiom AMD A|<tuple|3.1|?>>
+    <associate|axiom field A|<tuple|3.1|?>>
+    <associate|axiom field D|<tuple|3.1|?>>
+    <associate|axiom field M|<tuple|3.1|?>>
     <associate|def AMD A|<tuple|3.1|?>>
     <associate|def minest bound prop|<tuple|2.5|?>>
     <associate|def order|<tuple|2.1|?>>
     <associate|def set classify|<tuple|1|?>>
+    <associate|prop field A|<tuple|1|?>>
+    <associate|prop field AMD|<tuple|4|?>>
+    <associate|prop field M|<tuple|4|?>>
+    <associate|prop ordered set|<tuple|1|?>>
   </collection>
 </references>
 
