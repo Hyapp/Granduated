@@ -216,14 +216,16 @@
   \<#96C6\>\<#5408\><math|F>\<#4E0A\>\<#6709\>\<#57DF\>\<#7ED3\>\<#6784\>\<#548C\>\<#6709\>\<#5E8F\>\<#6027\>
 
   <\eqnarray*>
-    <tformat|<table|<row|<cell|F\<wedge\>>|<cell|>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x,y,z\<in\>F\<wedge\>y\<less\>z\<rightarrow\>x+y\<less\>x+z>|<cell|<inactive|<label|prop
-    ordered set>>>>|<row|<cell|2.>|<cell|\<forall\>x,y\<in\>F\<wedge\>x\<gtr\>0\<wedge\>y\<gtr\>0\<rightarrow\>x
+    <tformat|<table|<row|<cell|F\<wedge\>>|<cell|>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x,y,z\<in\>F\<wedge\>y\<less\>z\<rightarrow\>x+y\<less\>x+z>|<cell|<label|prop
+    ordered set>>>|<row|<cell|2.>|<cell|\<forall\>x,y\<in\>F\<wedge\>x\<gtr\>0\<wedge\>y\<gtr\>0\<rightarrow\>x
     y\<gtr\>0>|<cell|>>|<row|<cell|>|<cell|\<rightarrow\>>|<cell|F\<#4E3A\>\<#6709\>\<#5E8F\>\<#57DF\>>>>>
   </eqnarray*>
 
   <\enumerate>
     <item><math|Q>\<#662F\>\<#6709\>\<#5E8F\>\<#57DF\>
   </enumerate>
+
+  <strong|>
 
   \<#6709\>\<#5E8F\>\<#57DF\>\<#7684\>\<#6027\>\<#8D28\>\<#FF1A\><label|prop
   ordered set>
@@ -280,7 +282,7 @@
   </theorem>
 
   <\proof>
-    \;
+    <label|prop exist ordered field><label|prop exist R Dedekind>
 
     <\enumerate>
       <item><math|R>\<#7684\>\<#5143\>\<#7D20\>\<#662F\><math|Q>\<#7684\>\<#5B50\>\<#96C6\>\<#FF0C\>\<#79F0\>\<#4E3A\>\<#5206\>\<#5212\>\<#3002\>\<#96C6\>\<#5408\><math|\<alpha\>>\<#6EE1\>\<#8DB3\>\<#6027\>\<#8D28\>:<math|<label|def
@@ -383,13 +385,67 @@
 
       \<#6839\>\<#636E\>1-7\<#FF0C\>\<#5177\>\<#6709\>\<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\>\<#7684\>\<#6709\>\<#5E8F\>\<#57DF\><math|R>\<#5B58\>\<#5728\>\<#3002\>
 
-      \;
-    </enumerate>
+      <item>\<#4E0E\><math|Q>\<#7684\>\<#517C\>\<#5BB9\>\<#6027\>
 
-    \;
+      \<#5B9A\>\<#4E49\><math|\<forall\>x<rsub|0>\<in\>Q,let
+      x=<around*|{|x<rsub|1><around*|\||x<rsub|1>\<in\>Q\<wedge\>x<rsub|1>\<less\>x<rsub|0>|\<nobracket\>>|}>>,<math|x>\<#4E3A\><math|x<rsub|0>>\<#5728\>R\<#4E2D\>\<#5BF9\>\<#5E94\>\<#7684\>\<#5143\>\<#7D20\>\<#3002\>
+
+      <math|x>\<#662F\>\<#5206\>\<#5212\>\<#3002\>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|x<rsub|0><rsup|\<ast\>>+y<rsub|0><rsup|\<ast\>>>|<cell|=>|<cell|<around*|(|x+y|)><rsup|\<ast\>>>>|<row|<cell|x<rsub|0><rsup|\<ast\>>
+        y<rsub|0><rsup|\<ast\>>>|<cell|=>|<cell|<around*|(|x<rsub|0>
+        y<rsub|0>|)><rsup|\<ast\>>>>|<row|<cell|x<rsub|0><rsup|\<ast\>>\<less\>y<rsub|0><rsup|\<ast\>>>|<cell|\<Leftrightarrow\>>|<cell|x<rsub|0>\<less\>y<rsub|0><rsub|>>>>>
+      </eqnarray*>
+
+      \<#4EE5\>\<#4E0A\>\<#6613\>\<#8BC1\>
+
+      <item><math|Q\<cong\>Q<rsup|\<ast\>>>
+
+      PS: <math|Q\<neq\>Q<rsup|\<ast\>>>\<#4F46\>\<#662F\>\<#5728\>\<#5404\>\<#81EA\>\<#7684\>\<#8FD0\>\<#7B97\>\<#4E0B\>\<#6027\>\<#8D28\>\<#76F8\>\<#540C\>\<#FF08\>\<#6839\>\<#636E\>8\<#FF09\>\<#FF0C\>\<#6545\>\<#540C\>\<#6784\>\<#3002\>
+    </enumerate>
   </proof>
 
-  \;
+  <\theorem>
+    \<#4EFB\>\<#610F\>\<#4E24\>\<#4E2A\>\<#5177\>\<#6709\>\<#6700\>\<#5C0F\>\<#4E0A\>\<#754C\>\<#6027\>\<#7684\>\<#6709\>\<#5E8F\>\<#57DF\>\<#540C\>\<#6784\>
+  </theorem>
+
+  TODO
+
+  <subsection|R\<#7684\>\<#6027\>\<#8D28\>>
+
+  <\enumerate>
+    <item>\<#963F\>\<#57FA\>\<#7C73\>\<#5FB7\><space|1em><math|\<forall\>x,y\<in\>R\<wedge\>x\<gtr\>0\<rightarrow\><around*|(|\<exists\>n\<in\>Z<rsup|+>\<rightarrow\>n
+    x\<gtr\>y|)>>
+
+    <\proof>
+      \;
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|\<#53CD\>\<#8BC1\>\<#FF1A\>let
+        \<neg\>this=true>|<cell|>|<cell|>>|<row|<cell|let
+        A=<around*|{|nx|}>\<rightarrow\>>|<cell|>|<cell|>>|<row|<cell|y\<geqslant\>sup<around*|(|A|)>=a>|<cell|>|<cell|>>|<row|<cell|x\<gtr\>0\<rightarrow\>a-x\<less\>a\<rightarrow\><around*|(|\<exists\>m\<in\>Z<rsup|+>\<rightarrow\>a-x\<less\>m
+        x|)>>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>>|<cell|sup<around*|(|A|)>=a\<less\><around*|(|m+1|)>x\<in\>A>|<cell|false>>>>
+      </eqnarray*>
+
+      \;
+    </proof>
+
+    <item><math|\<forall\>x,y\<in\>R\<wedge\>x\<less\>y\<rightarrow\><around*|(|\<exists\>p\<in\>Q\<wedge\>x\<less\>p\<less\>y|)>>
+
+    <\proof>
+      \ 
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|x\<less\>y\<rightarrow\>y-x\<gtr\>0\<rightarrow\><around*|(|\<exists\>n\<wedge\>n<around*|(|y-x|)>\<gtr\>1|)>>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>\<exists\>m<rsub|1>,m<rsub|2>\<wedge\>m<rsub|1>\<gtr\>n
+        x\<wedge\>m<rsub|2>\<gtr\>-n x>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>-m<rsub|2>\<less\>x\<less\>m<rsub|1>>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>\<exists\>m\<wedge\>m-1\<less\>x\<less\>m>|<cell|>|<cell|?TODO>>|<row|<cell|\<rightarrow\>n
+        x\<less\>m\<leqslant\>1+n x\<less\>n
+        y>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>>|<cell|x\<less\><frac|m|n>\<less\>y>|<cell|>>>>
+      </eqnarray*>
+
+      \;
+    </proof>
+  </enumerate>
 
   \;
 
@@ -423,15 +479,15 @@
     <associate|auto-3|<tuple|3|?>>
     <associate|auto-4|<tuple|4|?>>
     <associate|auto-5|<tuple|4.1|?>>
-    <associate|auto-6|<tuple|1|?>>
-    <associate|axiom AMD A|<tuple|3.1|?>>
+    <associate|auto-6|<tuple|4.2|?>>
     <associate|axiom field A|<tuple|3.1|?>>
     <associate|axiom field D|<tuple|3.1|?>>
     <associate|axiom field M|<tuple|3.1|?>>
-    <associate|def AMD A|<tuple|3.1|?>>
     <associate|def minest bound prop|<tuple|2.5|?>>
     <associate|def order|<tuple|2.1|?>>
     <associate|def set classify|<tuple|1|?>>
+    <associate|prop exist R Dedekind|<tuple|4.1|?>>
+    <associate|prop exist ordered field|<tuple|4.1|?>>
     <associate|prop field A|<tuple|1|?>>
     <associate|prop field AMD|<tuple|4|?>>
     <associate|prop field M|<tuple|4|?>>
