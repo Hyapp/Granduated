@@ -1,6 +1,6 @@
-# 珍惜年华
+# 666
 
-## This is my granduated mathematics notes.
+## This is my granduated mathematics' notes.
 
 Include two parts : analysis and algebra
 
@@ -15,4 +15,4 @@ Include two parts : analysis and algebra
     Linear Algebra done right. Sheldon Axler.
     
     
-# 珍惜年华
+# 666
