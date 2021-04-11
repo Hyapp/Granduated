@@ -1,6 +1,6 @@
-<TeXmacs|1.99.12>
+<TeXmacs|1.99.19>
 
-<style|<tuple|generic|chinese|number-long-article|number-europe>>
+<style|<tuple|generic|chinese|number-long-article|number-europe|old-lengths>>
 
 <\body>
   <doc-data|<doc-title|Chapter 1 \<#5B9E\>\<#6570\>\<#7CFB\>\<#4E0E\>\<#590D\>\<#6570\>\<#7CFB\>>>
@@ -458,12 +458,6 @@
   \;
 
   \;
-
-  \;
-
-  \;
-
-  \;
 </body>
 
 <\initial>
@@ -517,6 +511,10 @@
       <with|par-left|<quote|1tab>|4.1<space|2spc>\<#5B58\>\<#5728\>\<#6027\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-5>>
+
+      <with|par-left|<quote|1tab>|4.2<space|2spc>R\<#7684\>\<#6027\>\<#8D28\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6>>
     </associate>
   </collection>
 </auxiliary>
