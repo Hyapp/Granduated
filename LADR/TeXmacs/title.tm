@@ -35,7 +35,8 @@
   </definition>
 
   <\remark>
-    <math|C\<bbb-R\>=<around*|{|a+b i<around*|\||a\<in\>\<bbb-R\>,b=0|\<nobracket\>>|}>>\<#4E0E\><math|\<bbb-R\>>\<#540C\>\<#6784\>\<#FF0C\>\<#5E76\>\<#4E14\>\<#8FD0\>\<#7B97\>\<#4E5F\>\<#4FDD\>\<#6301\>\<#4E86\>\<#9664\>\<#5E8F\>\<#5173\>\<#7CFB\>\<#5916\>\<#7684\>\<#76F8\>\<#5BB9\>\<#6027\>\<#FF0C\>\<#6545\>\<#5728\>\<#653E\>\<#5F03\>\<#5E8F\>\<#5173\>\<#7CFB\>\<#7684\>\<#6761\>\<#4EF6\>\<#4E0B\>\<#8BA4\>\<#4E3A\><math|\<bbb-R\>\<subset\>\<bbb-C\>>
+    <math|\<bbb-C\><rsub|\<bbb-R\>>=<around*|{|a+b
+    i<around*|\||a\<in\>\<bbb-R\>,b=0|\<nobracket\>>|}>>\<#4E0E\><math|\<bbb-R\>>\<#540C\>\<#6784\>\<#FF0C\>\<#5E76\>\<#4E14\>\<#8FD0\>\<#7B97\>\<#4E5F\>\<#4FDD\>\<#6301\>\<#4E86\>\<#9664\>\<#5E8F\>\<#5173\>\<#7CFB\>\<#5916\>\<#7684\>\<#76F8\>\<#5BB9\>\<#6027\>\<#FF0C\>\<#6545\>\<#5728\>\<#653E\>\<#5F03\>\<#5E8F\>\<#5173\>\<#7CFB\>\<#7684\>\<#6761\>\<#4EF6\>\<#4E0B\>\<#8BA4\>\<#4E3A\><math|\<bbb-R\>\<subset\>\<bbb-C\>>
   </remark>
 
   \<#590D\>\<#6570\>\<#6027\>\<#8D28\>(\<#9A8C\>\<#8BC1\>AMD\<#6210\>\<#7ACB\>)\<#FF1A\>
@@ -233,7 +234,7 @@
   </definition>
 
   <\definition>
-    \<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\><math|\<bbb-V\>>(vector
+    <label|V define>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\><math|\<bbb-V\>>(vector
     space)\<#FF1A\>\<#96C6\>\<#5408\><math|\<bbb-F\><rsup|n>>\<#53CA\>\<#4E0A\>\<#7684\>\<#52A0\>\<#6CD5\>\<#548C\>\<#6807\>\<#91CF\>\<#4E58\>\<#6CD5\>\<#FF0C\>\<#6EE1\>\<#8DB3\>\<#FF1A\>
 
     <\with|par-mode|center>
@@ -294,7 +295,7 @@
 
   Remark:<math|\<bbb-F\><rsup|n>,\<bbb-F\><rsup|\<infty\>>\<subset\>\<bbb-F\><rsup|S>>\<#FF0C\>\<#53EF\>\<#4EE5\>\<#5C06\>\<#51FD\>\<#6570\><math|f>\<#770B\>\<#6210\>\<#662F\><math|<around*|(|\<ldots\>|)>\<rightarrow\>F>\<#7684\>\<#51FD\>\<#6570\>\<#3002\><math|\<bbb-F\><rsup|\<infty\>>\<rightarrow\>S=\<bbb-N\>>
 
-  Q<label|Q2>:<math|\<bbb-F\><rsup|\<infty\>>>\<#4E2D\>\<#7684\>\<#628A\>\<#96C6\>\<#5408\><math|S=\<bbb-N\>>\<#FF0C\>\<#53EF\>\<#662F\><math|\<bbb-F\><rsup|S>>\<#5728\>\<#6BCF\>\<#4E2A\>\<#5411\>\<#91CF\>\<#4E0A\>\<#6709\>\<#65E0\>\<#7A77\>\<#4E2A\>\<#51FD\>\<#6570\>\<ldots\>\<#5982\>\<#679C\>\<#76F4\>\<#63A5\>\<#8FD9\>\<#6837\>\<#5212\>\<#5B9A\>\<#4E00\>\<#4E2A\>\<#7B49\>\<#4EF7\>\<#5173\>\<#7CFB\>\<ldots\>\<#FF0C\>\<#8C8C\>\<#4F3C\>\<#6709\>\<#70B9\>\<#5E0C\>\<#671B\>\<#FF1F\>
+  Q<label|Q2>:<math|\<bbb-F\><rsup|\<infty\>>>\<#4E2D\>\<#7684\>\<#628A\>\<#96C6\>\<#5408\><math|S=\<bbb-N\>>\<#FF0C\>\<#53EF\>\<#662F\><math|\<bbb-F\><rsup|S>>\<#5728\>\<#6BCF\>\<#4E2A\>\<#5411\>\<#91CF\>\<#4E0A\>\<#6709\>\<#65E0\>\<#7A77\>\<#4E2A\>\<#51FD\>\<#6570\>\<ldots\>\<#5982\>\<#679C\>\<#76F4\>\<#63A5\>\<#8FD9\>\<#6837\>\<#5212\>\<#5B9A\>\<#4E00\>\<#4E2A\>\<#7B49\>\<#4EF7\>\<#5173\>\<#7CFB\>\<ldots\>\<#FF0C\>\<#8C8C\>\<#4F3C\>\<#6709\>\<#70B9\>\<#5E0C\>\<#671B\>
 
   <\corollary>
     <math|\<bbb-V\>>\<#4E2D\>\<#7684\>\<#52A0\>\<#6CD5\>\<#5355\>\<#4F4D\>\<#5143\>\<#552F\>\<#4E00\>
@@ -359,23 +360,128 @@
   <doc-data|<doc-title|\<#4E60\>\<#9898\>1.B>>
 
   <\enumerate>
-    <item>
+    <item>\<#8BC1\>\<#660E\>\<#FF1A\><math|\<forall\>x\<in\>\<bbb-V\>\<rightarrow\>-<around*|(|-x|)>=x>
 
     <\equation*>
       -<around*|(|-v|)>=-1<around*|(|-1<around*|(|v|)>|)>=<around*|(|-1*-1|)>v=1v=v
     </equation*>
 
-    <item>\<#8BC1\>\<#9006\>\<#5426\>\<#547D\>\<#9898\><math|a\<neq\>0\<wedge\>\<b-v\>\<neq\>\<b-0\>\<rightarrow\>a
-    \<b-v\>\<neq\>\<b-0\>>\<#FF1A\>
+    <item>\<#8BC1\>\<#660E\>\<#FF1A\><math|\<forall\>a\<in\>\<bbb-F\>,\<forall\>\<b-x\>\<in\>\<bbb-V\>,a\<b-x\>=\<b-0\>\<rightarrow\>a=0\<vee\>\<b-x\>=\<b-0\>>
 
-    \<#53CD\>\<#8BC1\>\<#FF1A\><math|a\<neq\>0\<wedge\>\<b-v\>\<neq\>\<b-0\>,a\<b-v\>=\<b-0\>>
+    \<#9006\>\<#5426\>\<#547D\>\<#9898\>\<#FF1A\><math|\<forall\>a\<in\>\<bbb-F\>,\<forall\>\<b-x\>\<in\>\<bbb-V\>,a\<neq\>0\<wedge\>\<b-x\>\<neq\>\<b-0\>\<rightarrow\>a
+    \<b-x\>\<neq\>\<b-0\>>
 
-    \<#8FDE\>\<#8FD9\>\<#90FD\>\<#4E0D\>\<#4F1A\>\<#4E86\>\<ldots\>\<#770B\>\<#6765\>\<#6C34\>\<#5E73\>\<#4E0B\>\<#964D\>\<#5F88\>\<#4E25\>\<#91CD\>\<#554A\>\<ldots\>
+    \<#53CD\>\<#8BC1\>\<#FF1A\><math|a \<b-x\>=\<b-0\>>
+
+    <math|<around*|(|1=0|)>\<rightarrow\><around*|(|\<forall\>a\<in\>\<bbb-F\>\<rightarrow\>a=1a=0a=0|)>>\<#4E0E\>\<#5B9A\>\<#4E49\>\<#4E2D\><math|\<bbb-F\>>\<#81F3\>\<#5C11\>\<#4E3A\><math|<around*|{|0,1|}>>\<#77DB\>\<#76FE\>\<#3002\>
+
+    <\equation*>
+      1=<frac|1|y><frac|1|x>x y=<frac|1|y><frac|1|x>0=0
+    </equation*>
+
+    \<#53C2\>\<#8003\>\<#FF1A\>Rudin P6\<#547D\>\<#9898\>1.16\<#4E2D\>\<#7684\>\<#505A\>\<#6CD5\>\<#3002\>\<#57DF\>\<#7684\>\<#516C\>\<#7406\>M4\<#4E2D\>\<#4E86\><math|1\<neq\>0\<Leftrightarrow\>\<bbb-F\><rsub|min>=<around*|{|0,1|}>>\<#3002\>\<#8FD9\>\<#6837\>\<#5982\>\<#679C\>\<#4E0A\>\<#5F0F\>\<#6210\>\<#7ACB\>\<#53EF\>\<#4EE5\>\<#63A8\>\<#51FA\><math|1=0>\<#5BFC\>\<#81F4\>\<#77DB\>\<#76FE\>\<#3002\>\<#6240\>\<#4EE5\>\<#5173\>\<#952E\>\<#5728\>\<#4E8E\>\<#4ECE\><math|\<bbb-F\>>\<#7684\>\<#5B9A\>\<#4E49\>\<#4E2D\>\<#8BC1\>\<#660E\><math|1\<neq\>0>\<#3002\>
+
+    <item>\<#8BBE\><math|\<forall\>x,y\<in\>\<bbb-V\>>\<#FF0C\>\<#8BC1\>\<#660E\><math|\<exists\><rsub|1>a\<in\>\<bbb-V\>\<rightarrow\>x+3a=y>
+
+    <math|x+3a=y\<rightarrow\><frac|y-x|3>=a\<in\>\<bbb-V\>>
+    \ \ \<#6839\>\<#636E\><math|\<bbb-F\>>\<#5C01\>\<#95ED\>\<#548C\><math|\<bbb-V\>>\<#7684\>\<#5B9A\>\<#4E49\>\<#548C\>\<#9006\>\<#5143\>\<#552F\>\<#4E00\>\<#6027\>\<#3002\>
+
+    <item>\<#7A7A\>\<#96C6\>\<#4E0D\>\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#3002\>\<#7A7A\>\<#96C6\>\<#4E0D\>\<#6EE1\>\<#8DB3\>\<#5B9A\>\<#4E49\>\<#FF1F\>
+
+    \<#52A0\>\<#6CD5\>\<#5355\>\<#4F4D\>\<#5143\><strong|0>\<#4E0D\>\<#5B58\>\<#5728\>\<#3002\>\<#6240\>\<#4EE5\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#4E0D\>\<#8981\>\<#6C42\>\<#4E58\>\<#6CD5\>\<#9006\>\<#5143\>\<#7684\>\<#5B58\>\<#5728\>\<#6027\>\<#FF1F\><label|Q3>
+
+    <item>\<#8BC1\>\<#660E\>\<#FF1A\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#5B9A\>\<#4E49\><reference|V
+    define>\<#4E2D\>\<#7684\>\<#5B58\>\<#5728\>\<#52A0\>\<#6CD5\>\<#9006\>\<#5143\>\<#6761\>\<#4EF6\>\<#53EF\>\<#4EE5\>\<#66FF\>\<#6362\>\<#4E3A\><math|\<forall\>x\<in\>\<bbb-V\>\<rightarrow\>0x=\<b-0\>>
+
+    <\equation*>
+      <around*|(|\<forall\>x\<in\>\<bbb-V\>,\<exists\>y\<in\>\<bbb-V\>\<rightarrow\>x+y=\<b-0\>|)>\<rightarrow\>x+y=0x=\<b-0\>
+      \<#5206\>\<#914D\>\<#5F8B\>???<label|Q4>
+    </equation*>
+
+    <\equation*>
+      <around*|(|\<forall\>x\<in\>\<bbb-V\>\<rightarrow\>0x=\<b-0\>|)>\<rightarrow\>\<forall\>x\<in\>\<bbb-V\>,x+-x=0x=\<b-0\>,-x\<in\>\<bbb-V\>,\<#5C01\>\<#95ED\>\<#6027\>
+    </equation*>
+
+    <item>\<#5728\>\<#96C6\>\<#5408\><math|\<bbb-R\>\<cup\><around*|{|-\<infty\>,+\<infty\>|}>>\<#4E0A\>\<#FF0C\>\<#5E76\>\<#4F7F\>\<#7528\>\<#901A\>\<#5E38\>\<#60C5\>\<#51B5\>\<#4E0B\>\<#7684\>\<#8FD0\>\<#7B97\>\<#FF0C\>\<#5BF9\>\<#4E8E\>\<#6D89\>\<#53CA\>\<#65E0\>\<#7A77\>\<#7684\>\<#8FD0\>\<#7B97\>\<#3002\>\<#5B9A\>\<#4E49\>\<#FF1A\><math|\<forall\>x\<in\>\<bbb-R\>>
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|x+\<infty\>>|<cell|=>|<cell|\<infty\>>>|<row|<cell|x-\<infty\>>|<cell|=>|<cell|-\<infty\>>>|<row|<cell|x\<gtr\>0>|<cell|\<rightarrow\>>|<cell|x
+      \<infty\>=\<infty\>,x -\<infty\>=-\<infty\>>>|<row|<cell|x=0>|<cell|\<rightarrow\>>|<cell|x
+      \<infty\>=0,x\<infty\>=0>>|<row|<cell|x\<less\>0>|<cell|\<rightarrow\>>|<cell|x
+      \<infty\>=-\<infty\>,x -\<infty\>=\<infty\>>>|<row|<cell|\<infty\>+\<infty\>>|<cell|=>|<cell|\<infty\>>>|<row|<cell|\<infty\>-\<infty\>>|<cell|=>|<cell|0>>|<row|<cell|-\<infty\>-\<infty\>>|<cell|=>|<cell|-\<infty\>>>>>
+    </eqnarray*>
+
+    \<#9A8C\>\<#8BC1\><math|\<bbb-R\>\<cup\><around*|{|-\<infty\>,+\<infty\>|}>>\<#662F\>\<#5426\>\<#4E3A\><math|\<bbb-R\>>\<#4E0A\>\<#7684\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>
+
+    <\proof>
+      \<#8BB0\><math|R<rsup|\<ast\>>=R\<cup\><around*|{|-\<infty\>,+\<infty\>|}>>
+
+      <\eqnarray*>
+        <tformat|<table|<row|<cell|x+y=y+x>|<cell|x\<in\>\<bbb-R\>,y\<nin\>R\<rightarrow\>>|<cell|<around*|{|<tabular|<tformat|<table|<row|<cell|x+\<infty\>=\<infty\>+x=\<infty\>>>|<row|<cell|x+-\<infty\>=-\<infty\>+x=-\<infty\>>>>>>|\<nobracket\>>>>|<row|<cell|>|<cell|x\<nin\>\<bbb-R\>,y\<nin\>\<bbb-R\>\<rightarrow\>>|<cell|<around*|{|<tabular|<tformat|<table|<row|<cell|\<infty\>+\<infty\>=\<infty\>>>|<row|<cell|\<infty\>-\<infty\>=0>>>>>|\<nobracket\>>>>|<row|<cell|<around*|(|x+y|)>+z=x+<around*|(|y+z|)>>|<cell|x\<in\>\<bbb-R\>,y\<in\>\<bbb-R\>,z\<nin\>\<bbb-R\>>|<cell|<around*|{|<tabular|<tformat|<table|<row|<cell|x+y+\<infty\>=\<infty\>=x+\<infty\>>>|<row|<cell|x+y-\<infty\>=-\<infty\>=x-\<infty\>>>>>>|\<nobracket\>>>>|<row|<cell|>|<cell|x\<in\>R,y\<nin\>R,z\<nin\>R>|<cell|<around*|{|<tabular|<tformat|<table|<row|<cell|x+\<infty\>+\<infty\>=\<infty\>=x+\<infty\>>>|<row|<cell|<around*|(|x+\<infty\>|)>-\<infty\>=0\<neq\>x+0=x>>>>>|\<nobracket\>>>>>>
+      </eqnarray*>
+
+      \<#6240\>\<#4EE5\>\<#4E0D\>\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>
+    </proof>
   </enumerate>
 
   <section|\<#5B50\>\<#7A7A\>\<#95F4\>>
 
-  \;
+  <\definition>
+    \<#5B50\>\<#7A7A\>\<#95F4\>(subspace)\<#FF1A\><math|\<bbb-U\>\<subset\>\<bbb-V\>>\<#5E76\>\<#4E14\>\<#5728\><math|\<bbb-V\>>\<#7684\>\<#52A0\>\<#6CD5\>\<#548C\>\<#6807\>\<#91CF\>\<#4E58\>\<#6CD5\>\<#4E0B\><math|\<bbb-U\>>\<#4E5F\>\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#FF0C\>\<#79F0\><math|\<bbb-U\>>\<#662F\><math|\<bbb-V\>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#3002\>\<#4E5F\>\<#79F0\>\<#7EBF\>\<#6027\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#3002\>
+  </definition>
+
+  <\theorem>
+    \<#5224\>\<#65AD\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#7684\>\<#6761\>\<#4EF6\>\<#FF1A\>
+
+    <\enumerate>
+      <item>\<#52A0\>\<#6CD5\>\<#5355\>\<#4F4D\>\<#5143\>\<#FF1A\><math|0\<in\>\<bbb-U\>\<Leftrightarrow\>\<bbb-U\>\<neq\>\<varnothing\>>
+
+      <item>\<#52A0\>\<#6CD5\>\<#5C01\>\<#95ED\>\<#6027\>\<#FF1A\><math|\<forall\>x,y\<in\>\<bbb-U\>\<rightarrow\>x+y\<in\>\<bbb-U\>>
+
+      <item>\<#6807\>\<#91CF\>\<#4E58\>\<#6CD5\>\<#5C01\>\<#95ED\>\<#6027\>\<#FF1A\><math|\<forall\>a\<in\>\<bbb-F\>,\<forall\>x\<in\>\<bbb-U\>\<rightarrow\>a
+      x\<in\>\<bbb-U\>>
+    </enumerate>
+
+    <\proof>
+      \<#82E5\><math|\<bbb-U\>>\<#662F\><math|\<bbb-V\>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#FF0C\>\<#5219\>\<#6EE1\>\<#8DB3\>1\<#FF0C\>2\<#FF0C\>3\<#3002\>
+
+      <math|\<bbb-U\>>\<#6EE1\>\<#8DB3\>1\<#FF0C\>2\<#FF0C\>3<math|\<rightarrow\>>
+
+      <\enumerate>
+        <item>\<#4EA4\>\<#6362\>\<#5F8B\>\<#FF1A\><math|x+y=y+x\<in\>\<bbb-U\>>
+
+        <item>\<#7ED3\>\<#5408\>\<#5F8B\>\<#FF1A\><math|<around*|(|x+y|)>+z=x+<around*|(|y+z|)>>
+
+        <item><math|0\<in\>\<bbb-U\>,\<bbb-U\>\<neq\>\<varnothing\>>
+
+        <item><math|\<forall\>x\<in\>\<bbb-U\>,-1x\<in\>\<bbb-U\>\<rightarrow\>x+-1x=0>
+
+        <item><math|1\<in\>\<bbb-F\>,\<forall\>x\<in\>\<bbb-U\>\<rightarrow\>1x\<in\>\<bbb-U\>>
+
+        <item><math|a <around*|(|\<b-x\>+\<b-y\>|)>=a\<b-x\>+a\<b-y\>\<in\>\<bbb-U\>>
+
+        <math|<around*|(|a+b|)>\<b-x\>=a\<b-x\>+b\<b-x\>\<in\>\<bbb-U\>>
+      </enumerate>
+    </proof>
+  </theorem>
+
+  <\example>
+    \<#4E00\>\<#4E9B\>\<#5B50\>\<#7A7A\>\<#95F4\>
+
+    <\enumerate>
+      <item><math|<around*|{|<around*|(|x<rsub|1>,x<rsub|2>,0|)>:x<rsub|1>,x<rsub|2>\<in\>\<bbb-F\>|}>>\<#662F\><math|\<bbb-F\><rsup|3>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>
+
+      <item><math|b\<in\>\<bbb-F\>,<around*|{|<around*|(|x<rsub|1>,x<rsub|2>,x<rsub|3>,x<rsub|4>|)>\<in\>\<bbb-F\><rsup|4>:x<rsub|3>=5x<rsub|4>+b|}>>\<#662F\><math|\<bbb-F\><rsup|4>>\<#5B50\>\<#7A7A\>\<#95F4\><math|\<Leftrightarrow\>b=0>
+
+      <item><math|C<rsup|<around*|[|0,1|]>>>\<#662F\><math|\<bbb-R\><rsup|<around*|[|0,1|]>>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>
+
+      <item><math|\<bbb-R\>>\<#4E0A\>\<#5168\>\<#4F53\>\<#53EF\>\<#5FAE\>\<#51FD\>\<#6570\>\<#7684\>\<#96C6\>\<#5408\>\<#662F\><math|\<bbb-R\><rsup|\<bbb-R\>>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>
+
+      <item>\<#533A\>\<#95F4\>(0,3)\<#4E0A\>\<#6EE1\>\<#8DB3\><math|f<rprime|'><around*|(|2|)>=b>\<#7684\>\<#5B9E\>\<#53EF\>\<#5FAE\>\<#51FD\>\<#6570\>\<#7684\>\<#96C6\>\<#5408\>\<#662F\><math|\<bbb-R\><rsup|<around*|(|0,3|)>>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\><math|\<Leftrightarrow\>b=0>
+
+      <item><math|<around*|{|c<rsub|n>:<with|math-display|true|lim<rsub|n\<rightarrow\>\<infty\>>>c<rsub|n>=0|}>>\<#662F\><math|\<bbb-C\><rsup|\<infty\>>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>
+    </enumerate>
+  </example>
 
   \;
 
@@ -405,12 +511,16 @@
 
 <\references>
   <\collection>
-    <associate|Q|<tuple|<with|mode|<quote|math>|\<bullet\>>|?>>
-    <associate|Q1|<tuple|2.5|?>>
-    <associate|Q2|<tuple|2.5|?>>
-    <associate|auto-1|<tuple|1|?>>
-    <associate|auto-2|<tuple|2|?>>
-    <associate|auto-3|<tuple|3|?>>
+    <associate|Q|<tuple|<with|mode|<quote|math>|\<bullet\>>|5>>
+    <associate|Q1|<tuple|2.5|6>>
+    <associate|Q2|<tuple|2.5|6>>
+    <associate|Q3|<tuple|4|7>>
+    <associate|Q4|<tuple|5|7>>
+    <associate|V define|<tuple|2.2|5>>
+    <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|2|4>>
+    <associate|auto-3|<tuple|3|8>>
+    <associate|auto-4|<tuple|3|?>>
   </collection>
 </references>
 
