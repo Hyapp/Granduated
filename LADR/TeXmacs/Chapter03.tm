@@ -1417,90 +1417,536 @@
     V\<geqslant\>dim W>>|<row|<cell|>|<cell|span<around*|(|\<b-v\>,\<b-s\>|)>=V\<rightarrow\>length
     \<b-v\>=dim W>>|<row|<cell|>|<cell|\<rightarrow\>dim
     span<around*|(|\<b-v\>|)>=dim W>>|<row|<cell|>|<cell|\<rightarrow\>\<exists\>\<#540C\>\<#6784\>S.
-    T=R S.>>>>>
+    \ \ T=R S.>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|9.Pf>|<cell|\<#6709\>\<#9650\>\<#7EF4\>V.
     S,T\<in\>\<cal-L\><around*|(|V|)>. Proof: S
-    T\<#53EF\>\<#9006\>\<Leftrightarrow\>S\<#53EF\>\<#9006\>\<wedge\>T\<#53EF\>\<#9006\>>>>>>
+    T\<#53EF\>\<#9006\>\<Leftrightarrow\>S\<#53EF\>\<#9006\>\<wedge\>T\<#53EF\>\<#9006\>>>|<row|<cell|>|<cell|S
+    T\<#53EF\>\<#9006\>\<rightarrow\>S T\<#5355\>>>|<row|<cell|>|<cell|\<forall\>x\<neq\>y\<in\>V.
+    S T<around*|(|x|)>\<neq\>S T<around*|(|y|)>>>|<row|<cell|>|<cell|\<#8BBE\>T\<#4E0D\>\<#5355\>\<rightarrow\>\<exists\>x\<neq\>y\<in\>V.T<around*|(|x|)>=T<around*|(|y|)>\<rightarrow\>S
+    T<around*|(|x|)>=S T<around*|(|y|)>>>|<row|<cell|>|<cell|\<#4E0E\>S
+    T\<#7684\>\<#5355\>\<#6027\>\<#77DB\>\<#76FE\>>>|<row|<cell|>|<cell|\<#540C\>\<#7406\>S\<#5355\>>>|<row|<cell|>|<cell|\<rightarrow\>S,T\<#90FD\>\<#6EE1\>>>|<row|<cell|>|<cell|\<rightarrow\>S,T\<#53EF\>\<#9006\>>>|<row|<cell|>|<cell|>>|<row|<cell|Pf2>|<cell|dim
+    V=dim null S T+dim range S T>>|<row|<cell|>|<cell|dim V=dim range S
+    T>>|<row|<cell|>|<cell|dim V= dim null S+dim range
+    S>>|<row|<cell|>|<cell|dim V= dim null T+dim range
+    T>>|<row|<cell|>|<cell|dim range X\<leqslant\>dim range X
+    Y>>|<row|<cell|>|<cell|\<rightarrow\>dim V=dim range S T=dim range S=dim
+    range T>>|<row|<cell|>|<cell|\<rightarrow\>S
+    \<#53EF\>\<#9006\>\<#FF0C\>T\<#53EF\>\<#9006\>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|S,T\<#53EF\>\<#9006\>\<rightarrow\>S
+    T\<#53EF\>\<#9006\>>>|<row|<cell|>|<cell|\<forall\>x\<in\>V>>|<row|<cell|>|<cell|\<rightarrow\>
+    <around*|(|T<rsup|-1>S<rsup|-1>|)> <around*|(|S
+    T|)><around*|(|x|)>=T<rsup|-1><around*|(|S<rsup|-1>S|)>T<around*|(|x|)>>>|<row|<cell|>|<cell|=T<rsup|-1>I<rsub|V>T<around*|(|x|)>=<around*|(|T<rsup|-1>T|)><around*|(|x|)>=I<rsub|V><around*|(|x|)>=x>>|<row|<cell|>|<cell|\<rightarrow\><around*|(|S
+    T|)><around*|(|T<rsup|-1>S<rsup|-1>|)><around*|(|x|)>=S<around*|(|T
+    T<rsup|-1>|)>S<rsup|-1><around*|(|x|)>>>|<row|<cell|>|<cell|=S
+    I<rsub|V>S<rsup|-1><around*|(|x|)>=<around*|(|S
+    S<rsup|-1>|)><around*|(|x|)>=x>>|<row|<cell|>|<cell|\<rightarrow\>T<rsup|-1>S<rsup|-1>\<#662F\>S
+    T\<#7684\>\<#9006\>>>|<row|<cell|>|<cell|\<rightarrow\>S
+    T\<#53EF\>\<#9006\>>>>>>
   </equation*>
+
+  \;
+
+  \;
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|10.Pf>|<cell|\<#6709\>\<#9650\>\<#7EF4\>V.S,T\<in\>\<cal-L\><around*|(|V|)>.Proof:
-    S T=I<rsub|V>\<Leftrightarrow\>T S=I<rsub|V>>>>>>
+    S T=I<rsub|V>\<Leftrightarrow\>T S=I<rsub|V>>>|<row|<cell|>|<cell|I<rsub|V>\<#53EF\>\<#9006\>\<rightarrow\>S,
+    T\<#53EF\>\<#9006\>\<rightarrow\>T S\<#53EF\>\<#9006\>>>|<row|<cell|>|<cell|I<rsub|V>=<around*|(|T<rsup|-1>S<rsup|-1>|)><around*|(|S
+    T|)>\<rightarrow\>I<rsub|V>=T<rsup|-1>S<rsup|-1>>>|<row|<cell|>|<cell|I<rsub|V>=S
+    T S T\<rightarrow\>T S=S<rsup|-1>T<rsup|-1>=<around*|(|T
+    S|)><rsup|-1>>>|<row|<cell|>|<cell|I<rsub|V>=T S<around*|(|T
+    S|)><rsup|-1>=T S T S=T S>>>>>
   </equation*>
+
+  \;
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|11.Pf>|<cell|\<#6709\>\<#9650\>\<#7EF4\>V.
-    S,T,U\<in\>\<cal-L\><around*|(|V|)>. S T U=I. Proof:
-    T\<#53EF\>\<#9006\>\<wedge\>T<rsup|-1>=U S>>>>>
+    S,T,U\<in\>\<cal-L\><around*|(|V|)>. S T U=I<rsub|V>. Proof:
+    T\<#53EF\>\<#9006\>\<wedge\>T<rsup|-1>=U S>>|<row|<cell|>|<cell|S T
+    U=I<rsub|V>\<rightarrow\><around*|(|S
+    T|)>U=I<rsub|V>\<rightarrow\>U<around*|(|S
+    T|)>=I<rsub|V>>>|<row|<cell|>|<cell|<around*|(|U S
+    |)>T=I<rsub|V>>>|<row|<cell|>|<cell|I<rsub|V>\<#53EF\>\<#9006\>\<rightarrow\>U
+    S\<#53EF\>\<#9006\>\<wedge\>T\<#53EF\>\<#9006\>>>|<row|<cell|>|<cell|<around*|(|U
+    S|)>T=I<rsub|V>\<rightarrow\>T<around*|(|U
+    S|)>=I<rsub|V>>>|<row|<cell|Df>|<cell|\<rightarrow\>T<rsup|-1>=U S>>>>>
   </equation*>
 
   <\equation*>
-    <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|12.Eg>|<cell|\<#65E0\>\<#9650\>\<#7EF4\>V.\<#4E0A\>\<#8FF0\>\<#7ED3\>\<#8BBA\>\<#4E0D\>\<#6210\>\<#7ACB\>>>>>>
+    <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|12.Eg>|<cell|\<#65E0\>\<#9650\>\<#7EF4\>V.\<#4E0A\>\<#8FF0\>\<#7ED3\>\<#8BBA\>\<#4E0D\>\<#6210\>\<#7ACB\>>>|<row|<cell|>|<cell|I<rsub|V>\<#53EF\>\<#9006\>f<around*|(|x|)>=x.
+    \<sigma\><around*|(|p<around*|(|x|)>|)>=p<rprime|'><around*|(|x|)>.\<varphi\><around*|(|p<around*|(|x|)>|)>=<big|int>p<around*|(|x|)>>>|<row|<cell|>|<cell|\<sigma\>\<varphi\><around*|(|p|)>=I<rsub|P><around*|(|p|)>=p>>|<row|<cell|>|<cell|\<sigma\>I<rsub|P>\<varphi\><around*|(|p|)>=p>>|<row|<cell|>|<cell|\<varphi\>
+    I<rsub|P> \<sigma\><around*|(|p|)>=<around*|{|p+c\<times\>1:p|}>>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|13.Pf>|<cell|\<#6709\>\<#9650\>\<#7EF4\>V.
     R,S,T\<in\>\<cal-L\><around*|(|V|)>, R S T \<#6EE1\>. Proof:
-    S\<#5355\>>>>>>
+    S\<#5355\>>>|<row|<cell|>|<cell|\<#6709\>\<#9650\>\<rightarrow\>R S
+    T\<#6EE1\>\<rightarrow\>R S T\<#5355\>>>|<row|<cell|>|<cell|\<rightarrow\><around*|(|R
+    S T|)><rsup|-1>\<#5B58\>\<#5728\>>>|<row|<cell|>|<cell|\<rightarrow\>R<rsup|-1>,S<rsup|-1>,T<rsup|-1>\<#5B58\>\<#5728\>>>|<row|<cell|>|<cell|\<rightarrow\>R,S,T\<#5373\>\<#5355\>\<#53C8\>\<#6EE1\>>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|14.Pf>|<cell|\<b-v\>\<#662F\>V\<#7684\>\<#57FA\>.T:V\<rightarrow\>F<rsup|n,1>,T
-    v=\<cal-M\><around*|(|v|)>. Proof: T\<#662F\>V,F<rsup|n,1>\<#7684\>\<#540C\>\<#6784\>>>>>>
+    v=\<cal-M\><around*|(|v|)>. Proof: T\<#662F\>V,F<rsup|n,1>\<#7684\>\<#540C\>\<#6784\>>>|<row|<cell|>|<cell|\<forall\>T
+    <around*|(|x|)>\<neq\>T<around*|(|y|)>.x\<neq\>y\<rightarrow\>x=\<b-a\>\<b-v\>,y=\<b-b\>\<b-v\>\<wedge\>\<b-a\>\<neq\>\<b-b\>>>|<row|<cell|>|<cell|\<rightarrow\>\<cal-M\><around*|(|x|)>=\<b-a\><rprime|'>\<neq\>\<b-b\><rprime|'>=\<cal-M\><around*|(|y|)>>>|<row|<cell|>|<cell|\<rightarrow\>T\<#662F\>\<#5355\>\<#7684\>>>|<row|<cell|>|<cell|V\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>\<wedge\>F<rsup|n,1>\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>\<rightarrow\>T\<#662F\>\<#6EE1\>\<#7684\>>>|<row|<cell|>|<cell|\<rightarrow\>T\<#662F\>\<#540C\>\<#6784\>>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|15.Pf>|<cell|T\<in\>\<cal-L\><around*|(|F<rsup|n,1>,F<rsup|m,1>|)>,\<exists\>m,n\<#77E9\>\<#9635\>A\<rightarrow\>\<forall\>x\<in\>F<rsup|n,1>,T
-    x=A x>>>>>
+    x=A x>>|<row|<cell|>|<cell|\<forall\>\<b-x\>\<in\>F<rsup|n,1>,\<b-x\>=\<b-a\>\<b-v\>.>>|<row|<cell|>|<cell|T<around*|(|\<b-x\>|)>=\<b-T\><around*|(|\<b-a\>\<b-v\>|)>=\<b-a\>T<around*|(|\<b-v\>|)>>>|<row|<cell|>|<cell|\<cal-M\><around*|(|T|)>=<matrix|<tformat|<table|<row|<cell|T<around*|(|v<rsub|1>|)>>|<cell|\<cdots\>>|<cell|T<around*|(|v<rsub|n>|)>>>|<row|<cell|\<vdots\>>|<cell|\<ddots\>>|<cell|\<vdots\>>>|<row|<cell|T<around*|(|v<rsub|1>|)>>|<cell|\<cdots\>>|<cell|T<around*|(|v<rsub|n>|)>>>>>>>>|<row|<cell|>|<cell|\<cal-M\><around*|(|T|)>
+    \<b-x\>=<matrix|<tformat|<table|<row|<cell|T<around*|(|v<rsub|1>|)>>|<cell|\<ldots\>>|<cell|T<around*|(|v<rsub|n>|)>>>>>><matrix|<tformat|<table|<row|<cell|a<rsub|1,1>>|<cell|\<cdots\>>|<cell|a<rsub|1,n>>>|<row|<cell|\<vdots\>>|<cell|\<ddots\>>|<cell|\<vdots\>>>|<row|<cell|a<rsub|n,1>>|<cell|\<cdots\>>|<cell|a<rsub|n,n>>>>>><matrix|<tformat|<table|<row|<cell|x<rsub|1>>>|<row|<cell|\<vdots\>>>|<row|<cell|x<rsub|n>>>>>>=\<b-a\>T<around*|(|\<b-v\>|)>>>|<row|<cell|>|<cell|???>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|16.Pf>|<cell|\<#6709\>\<#9650\>\<#7EF4\>V.
     T\<in\>\<cal-L\><around*|(|V|)>. Proof: T
     x=<around*|(|\<lambda\>I<rsub|V> |)>x\<Leftrightarrow\>\<forall\>S\<in\>\<cal-L\><around*|(|V|)>,S
-    T=T S>>>>>
+    T=T S>>|<row|<cell|>|<cell|T x=\<lambda\>I<rsub|V><around*|(|x|)>.
+    \<forall\>S\<in\>\<cal-L\><around*|(|V|)>. S
+    T=S<around*|(|\<lambda\>I<rsub|V><around*|(|x|)>|)>=S<around*|(|\<lambda\>x|)>=\<lambda\>S<around*|(|x|)>=\<lambda\>I<rsub|V><around*|(|S|)>=T
+    S>>|<row|<cell|>|<cell|\<forall\>S\<in\>\<cal-L\><around*|(|V|)>,S T=T S
+    \ >>|<row|<cell|>|<cell|\<rightarrow\>S T S T=<around*|(|S
+    T|)><around*|(|S T|)>=<around*|(|T S|)><around*|(|T
+    S|)>=S<rsup|2>T<rsup|2>=T<rsup|2>S<rsup|2>>>|<row|<cell|>|<cell|???>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|17.Pf>|<cell|\<#6709\>\<#9650\>\<#7EF4\>V.
-    \<cal-E\>\<#662F\>\<cal-L\><around*|(|V|)>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>,\<forall\>S\<in\>\<cal-L\><around*|(|V|)>,\<forall\>T\<in\>\<cal-E\>,S
+    \<cal-E\>\<#662F\>\<cal-L\><around*|(|V|)>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+    \<forall\>S\<in\>\<cal-L\><around*|(|V|)>,\<forall\>T\<in\>\<cal-E\>,S
     T\<in\>\<cal-E\>\<wedge\>T S\<in\>\<cal-E\>.Proof:
-    \<cal-E\>=<around*|{|0|}>\<vee\>\<cal-E\>=\<cal-L\><around*|(|V|)>>>>>>
+    \<cal-E\>=<around*|{|0|}>\<vee\>\<cal-E\>=\<cal-L\><around*|(|V|)>>>|<row|<cell|>|<cell|\<cal-E\>=<around*|{|0|}>\<rightarrow\>
+    \<forall\>S\<in\>\<cal-L\><around*|(|V|)>.S T=S
+    \<b-0\>=\<b-0\>S=\<b-0\>\<in\>\<cal-E\>\<rightarrow\>\<cal-E\>=<around*|{|0|}>\<#65F6\>\<#4E0A\>\<#8FF0\>\<#7ED3\>\<#8BBA\>\<#6210\>\<#7ACB\>>>|<row|<cell|\<#8F6E\>\<#6362\>>|<cell|\<#8BBE\>\<cal-E\>\<neq\><around*|{|0|}>\<wedge\>\<cal-E\>\<neq\>\<cal-L\><around*|(|V|)>>>|<row|<cell|>|<cell|\<forall\>U\<subseteq\>V.
+    \ \<cal-E\>=\<cal-L\><around*|(|U|)>.>>|<row|<cell|>|<cell|T
+    S\<in\>\<cal-E\>\<rightarrow\>\<#4EFB\>\<#610F\>\<#8F6E\>\<#6362\>\<#7EBF\>\<#6027\>\<#53D8\>\<#6362\>S<around*|(|x<rsub|1>,\<ldots\>,x<rsub|n>|)>=<around*|(|x<rsub|2>,x<rsub|3>,\<ldots\>,x<rsub|n>,x<rsub|1>|)>>>|<row|<cell|>|<cell|S<rsup|2>\<ldots\>S<rsup|n>\<in\>\<cal-L\><around*|(|V|)>.>>|<row|<cell|>|<cell|\<forall\>S
+    T\<in\>\<cal-E\>,\<#8FD9\>\<#6837\>\<#6BCF\>\<#4E2A\>\<#88AB\>T\<#53D8\>\<#6362\>\<#6389\>\<#7684\>\<#53D8\>\<#91CF\>\<#4F1A\>\<#91CD\>\<#65B0\>\<#51FA\>\<#73B0\>>>|<row|<cell|>|<cell|\<rightarrow\>S
+    T\<subset\>\<cal-L\><around*|(|U|)>.T
+    S\<in\>\<cal-L\><around*|(|V|)>>>|<row|<cell|>|<cell|\<rightarrow\>\<cal-E\>=\<cal-L\><around*|(|V|)>>>>>>
+  </equation*>
+
+  \;
+
+  <\equation*>
+    <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|18.Pf>|<cell|V\<#548C\>\<cal-L\><around*|(|F,V|)>\<#662F\>\<#540C\>\<#6784\>\<#7684\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>>>|<row|<cell|>|<cell|\<forall\>\<b-t\>\<in\>V.
+    T<around*|(|\<b-t\>|)>=\<Phi\><around*|(|\<b-t\>,\<b-x\>|)>>>|<row|<cell|>|<cell|\<Phi\><around*|(|\<b-t\>,\<b-x\>|)>=\<b-t\>\<cdot\>\<b-x\>>>|<row|<cell|>|<cell|\<Phi\><around*|(|\<b-t\>,\<b-x\>+\<b-y\>|)>=\<b-t\>\<cdot\><around*|(|\<b-x\>+\<b-y\>|)>>>|<row|<cell|>|<cell|=\<b-t\>\<cdot\>\<b-x\>+\<b-t\>\<cdot\>\<b-y\>>>|<row|<cell|>|<cell|=\<Phi\><around*|(|\<b-t\>,\<b-x\>|)>+\<Phi\><around*|(|\<b-t\>,\<b-y\>|)>>>|<row|<cell|>|<cell|\<Phi\><around*|(|\<b-t\>,\<lambda\>\<b-x\>|)>=\<b-t\>\<cdot\>\<lambda\>\<b-x\>>>|<row|<cell|>|<cell|=\<lambda\><around*|(|\<b-t\>\<cdot\>\<b-x\>|)>>>|<row|<cell|>|<cell|=\<lambda\>\<Phi\><around*|(|\<b-t\>\<cdot\>\<b-x\>|)>>>|<row|<cell|>|<cell|\<rightarrow\>\<Phi\><around*|(|\<b-t\>,\<b-x\>|)>\<in\>\<cal-L\><around*|(|V,F|)>>>|<row|<cell|>|<cell|\<rightarrow\>T\<#662F\>V\<#548C\>\<cal-L\><around*|(|F,V|)>\<#7684\>\<#540C\>\<#6784\>>>|<row|<cell|>|<cell|\<cal-L\><around*|(|F,V|)>\<cong\>\<cal-L\><around*|(|V,F|)>>>|<row|<cell|>|<cell|\<rightarrow\>V\<#548C\>\<cal-L\><around*|(|F,V|)>\<#5B58\>\<#5728\>\<#540C\>\<#6784\>>>>>>
   </equation*>
 
   <\equation*>
-    <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<table|<row|<cell|18.Pf>|<cell|V\<#548C\>\<cal-L\><around*|(|F,V|)>\<#662F\>\<#540C\>\<#6784\>\<#7684\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>>>>>>
-  </equation*>
-
-  <\equation*>
-    <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<cwith|2|3|2|2|cell-halign|l>|<cwith|2|3|1|1|cell-halign|r>|<table|<row|<cell|19.>|<cell|T\<in\>\<cal-L\><around*|(|\<cal-P\><around*|(|R|)>|)>\<#5355\>.
+    <tabular*|<tformat|<cwith|1|1|2|2|cell-halign|l>|<cwith|1|1|1|1|cell-halign|r>|<cwith|2|10|2|2|cell-halign|l>|<cwith|2|10|1|1|cell-halign|r>|<table|<row|<cell|19.>|<cell|T\<in\>\<cal-L\><around*|(|\<cal-P\><around*|(|R|)>|)>\<#5355\>.
     \<forall\>p\<in\>\<cal-P\><around*|(|R|)>\<wedge\>p\<neq\>0. deg T
-    p\<leqslant\>deg p.>>|<row|<cell|Pf>|<cell|T\<#6EE1\>>>|<row|<cell|Pf>|<cell|\<forall\>p\<in\>\<cal-P\><around*|(|R|)>\<wedge\>p\<neq\>0.
+    p\<leqslant\>deg p.>>|<row|<cell|Pf>|<cell|T\<#6EE1\>>>|<row|<cell|>|<cell|deg
+    p=0\<rightarrow\> deg T<around*|(|p|)>\<leqslant\>0\<rightarrow\>T
+    p=c>>|<row|<cell|>|<cell|deg p=1\<rightarrow\>deg
+    T<around*|(|p|)>\<leqslant\>1\<rightarrow\>T p=a
+    x+b>>|<row|<cell|>|<cell|\<cdots\>>>|<row|<cell|>|<cell|\<rightarrow\>deg
+    p=n\<rightarrow\>deg T<around*|(|p|)>\<leqslant\>n\<rightarrow\>deg T
+    p=n>>|<row|<cell|>|<cell|\<rightarrow\>span
+    <around*|(|x<rsup|0>,x<rsup|1>,\<ldots\>,x<rsup|n>,\<ldots\>|)>=\<cal-P\><around*|(|R|)>>>|<row|<cell|>|<cell|\<rightarrow\>T\<#6EE1\>>>|<row|<cell|>|<cell|>>|<row|<cell|Pf>|<cell|\<forall\>p\<in\>\<cal-P\><around*|(|R|)>\<wedge\>p\<neq\>0.
     deg T p=deg p>>>>>
   </equation*>
 
   <\equation*>
     <tabular*|<tformat|<cwith|1|-1|2|2|cell-halign|l>|<cwith|1|-1|1|1|cell-halign|r>|<table|<row|<cell|20.Pf>|<cell|A\<#662F\>\<#65B9\>\<#9635\>.
     \ \<#4E0B\>\<#9762\>\<#4E24\>\<#547D\>\<#9898\>\<#7B49\>\<#4EF7\>>>|<row|<cell|1.>|<cell|A
-    \<b-x\>=\<b-0\>\<#7684\>\<#552F\>\<#4E00\>\<#89E3\>\<b-0\>>>|<row|<cell|2.>|<cell|\<forall\>\<b-b\>,A\<b-x\>=\<b-b\>\<#6709\>\<#89E3\>>>>>>
+    \<b-x\>=\<b-0\>\<#7684\>\<#552F\>\<#4E00\>\<#89E3\>\<b-0\>>>|<row|<cell|2.>|<cell|\<forall\>\<b-b\>,A\<b-x\>=\<b-b\>\<#6709\>\<#89E3\>>>|<row|<cell|>|<cell|>>|<row|<cell|1\<rightarrow\>2>|<cell|A
+    \<b-x\>=0\<rightarrow\>\<b-x\>=0\<rightarrow\>null
+    A=0>>|<row|<cell|>|<cell|\<rightarrow\>dim range A=dim
+    V>>|<row|<cell|>|<cell|\<rightarrow\>\<forall\>\<b-b\>\<in\>V. A
+    \<b-x\>=\<b-b\>\<#6709\>\<#89E3\>>>|<row|<cell|>|<cell|>>|<row|<cell|2\<rightarrow\>1>|<cell|\<forall\>\<b-b\>\<in\>V,A\<b-x\>=\<b-b\>\<#6709\>\<#89E3\>>>|<row|<cell|>|<cell|\<rightarrow\>dim
+    range A=dim V>>|<row|<cell|>|<cell|\<rightarrow\>dim null
+    A=<around*|{|0|}>>>|<row|<cell|>|<cell|\<rightarrow\>A
+    x=0\<rightarrow\>\<b-x\>=0>>>>>
   </equation*>
-
-  \;
-
-  \;
 
   <section|\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#79EF\>\<#4E0E\>\<#5546\>>
 
+  \<#901A\>\<#5E38\>\<#5904\>\<#7406\>\<#591A\>\<#4E2A\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#65F6\>\<#FF0C\>\<#8FD9\>\<#4E9B\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#90FD\>\<#5E94\>\<#8BE5\>\<#5B9A\>\<#4E49\>\<#5728\>\<#540C\>\<#4E00\>\<#4E2A\>\<#57DF\>\<#4E0A\>\<#3002\>
+
+  <subsection|\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#79EF\>>
+
+  <\definition>
+    \<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#6709\>\<#9650\>\<#79EF\>(product
+    of vector space)
+
+    <\eqnarray*>
+      <tformat|<table|<row|<cell|V<rsub|1>,\<ldots\>,V<rsub|n>\<#662F\>F\<#4E0A\>\<#7684\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>>|<cell|>|<cell|>>|<row|<cell|V<rsub|1>\<times\>V<rsub|1>\<times\>\<cdots\>\<times\>V<rsub|n>=<around*|{|<around*|(|v<rsub|1>,\<ldots\>,v<rsub|n>|)>:v<rsub|1>\<in\>V<rsub|1>,\<ldots\>,v<rsub|n>\<in\>V<rsub|n>|}>>|<cell|>|<cell|>>|<row|<cell|\<forall\>x,y\<in\><big|prod>V<rsub|i>.
+      x+y=<around*|(|x<rsub|1>+y<rsub|1>,\<ldots\>,x<rsub|n>+y<rsub|n>|)>>|<cell|\<#52A0\>\<#6CD5\>>|<cell|>>|<row|<cell|\<forall\>x\<in\><big|prod>V<rsub|i>.
+      \<forall\>\<lambda\>\<in\>F. \<lambda\>x=<around*|(|\<lambda\>x<rsub|1>,\<ldots\>,\<lambda\>x<rsub|n>|)>>|<cell|\<#6807\>\<#4E58\>>|<cell|>>>>
+    </eqnarray*>
+  </definition>
+
+  <\example>
+    <math|A=\<cal-P\><rsub|2><around*|(|R|)>\<times\>R<rsup|3>.
+    \<forall\>x\<in\>A.length x=2. <around*|(|x<rsup|2>+x+1,<around*|(|1,1,1|)>|)>\<in\>A
+    >
+  </example>
+
+  <\theorem>
+    \<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#6709\>\<#9650\>\<#79EF\>\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|1.>|<cell|\<forall\>x,y\<in\>S.
+    x+y=y+x>>|<row|<cell|2.>|<cell|\<forall\>x,y,z\<in\>S.
+    <around*|(|x+y|)>+z=x+*<around*|(|y+z|)>>>|<row|<cell|3.>|<cell|\<exists\>0\<in\>S.
+    0=<around*|(|0,\<ldots\>,0|)>. \<forall\>x\<in\>S.
+    x+0=x>>|<row|<cell|4.>|<cell|\<forall\>x\<in\>S.
+    \<exists\>-x=<around*|(|-x<rsub|1>,\<ldots\>,-x<rsub|n>|)>.
+    x+-x=0>>|<row|<cell|5.>|<cell|1\<in\>F. \<forall\>x\<in\>S.
+    1\<cdot\>x=x>>|<row|<cell|6.>|<cell|\<forall\>\<lambda\>\<in\>F,\<forall\>x,y\<in\>S.
+    \<lambda\><around*|(|x+y|)>=\<lambda\>x+\<lambda\>y.>>|<row|<cell|>|<cell|\<forall\>a,b\<in\>F,\<forall\>x\<in\>S.
+    *<around*|(|a+b|)>x=a x+b x.>>|<row|<cell|>|<cell|\<rightarrow\>\<#4EFB\>\<#610F\>\<#6709\>\<#9650\>\<#4E2A\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#79EF\>\<#7A7A\>\<#95F4\>S\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>>>>>>>
+  </theorem>
+
+  <\theorem>
+    \<#6709\>\<#9650\>\<#7EF4\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#6709\>\<#9650\>\<#79EF\>\<#3002\>\<#79EF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#7EF4\>\<#6570\>\<#7B49\>\<#4E8E\>\<#5404\>\<#4E2A\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7EF4\>\<#6570\>\<#7684\>\<#548C\>
+
+    <\equation*>
+      dim V<rsub|1>\<times\>V<rsub|2>=dim V<rsub|1>+V<rsub|2>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|V<rsub|1>=span
+      <around*|(|\<b-v\><rsub|1>|)>.V<rsub|2>=span<around*|(|\<b-v\><rsub|2>|)>>>|<row|<cell|\<rightarrow\>V<rsub|1>\<times\>V<rsub|2>=<around*|(|\<b-a\>\<b-v\><rsub|1>,\<b-b\>\<b-v\><rsub|2>|)>=span<around*|(|\<b-v\><rsub|1>,\<b-v\><rsub|2>|)>>>|<row|<cell|\<rightarrow\>dim
+      V<rsub|1>\<times\>V<rsub|2>=dim V<rsub|1>+dim V<rsub|2>>>>>>>
+    </proof>
+  </theorem>
+
+  <\theorem>
+    \<#79EF\>\<#4E0E\>\<#76F4\>\<#548C\>\<#7684\>\<#5173\>\<#7CFB\>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|U<rsub|1>,\<ldots\>,U<rsub|m>\<#4E3A\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+    \<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>\<Gamma\>:
+    U<rsub|1>\<times\>\<cdots\>\<times\>U<rsub|m>\<rightarrow\>U<rsub|1>+\<cdots\>+U<rsub|m>>>|<row|<cell|\<Gamma\><around*|(|u<rsub|1>,\<ldots\>,u<rsub|m>|)>=u<rsub|1>+\<cdots\>+u<rsub|m>.
+    >>|<row|<cell|U<rsub|1>+\<cdots\>+U<rsub|m>\<#662F\>\<#76F4\>\<#548C\>\<Leftrightarrow\>\<Gamma\>\<#662F\>\<#5355\>\<#7684\>>>>>>>
+
+    Remark\<#FF1A\>\<#6709\>\<#9650\>\<#7EF4\>\<#7A7A\>\<#95F4\>\<#4E2D\>.<math|U<rsub|i>\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>\<rightarrow\>\<Gamma\>\<#662F\>\<#6EE1\>\<#7684\>>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<Gamma\>\<#5355\>\<Leftrightarrow\>null
+      \<Gamma\>=<around*|{|0|}>>>|<row|<cell|\<rightarrow\>\<Gamma\><around*|(|x|)>=0=u<rsub|1>+\<cdots\>+u<rsub|m>\<Leftrightarrow\>u<rsub|1>=u<rsub|2>=\<cdots\>=u<rsub|m>=0<rsub|>>>>>>>
+    </proof>
+  </theorem>
+
+  <\theorem>
+    \<#7EBF\>\<#6027\>\<#7A7A\>\<#95F4\>\<#7684\>\<#548C\>\<#4E3A\>\<#76F4\>\<#548C\><math|\<Leftrightarrow\>>\<#548C\>\<#7A7A\>\<#95F4\>\<#7EF4\>\<#6570\>\<#4E3A\>\<#4E2A\>\<#7A7A\>\<#95F4\>\<#7EF4\>\<#6570\>\<#4E4B\>\<#548C\>
+
+    <\equation*>
+      V\<#6709\>\<#9650\>\<#7EF4\>. U<rsub|1>,\<ldots\>,U<rsub|m>\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+      U<rsub|1>+\<cdots\>+U<rsub|m>\<#662F\>\<#76F4\>\<#548C\>\<Leftrightarrow\>dim<around*|(|U<rsub|1>+\<cdots\>+U<rsub|m>|)>=dim
+      U<rsub|1>+\<cdots\>+dim U<rsub|m>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<Gamma\>:U<rsub|1>\<times\>\<cdots\>\<times\>U<rsub|m>\<rightarrow\>U<rsub|1>+\<cdots\>+U<rsub|m>.
+      >>|<row|<cell|dim<around*|(|U<rsub|1>+\<cdots\>+U<rsub|m>|)>=dim<around*|(|U<rsub|1>\<times\>\<cdots\>\<times\>U<rsub|m>|)>>>|<row|<cell|dim
+      <around*|(|U<rsub|1>\<times\>\<cdots\>\<times\>U<rsub|m>|)>=dim<around*|(|U<rsub|1>+\<cdots\>+U<rsub|m>|)>\<Leftrightarrow\>\<Gamma\>\<#5355\>>>|<row|<cell|\<Gamma\>\<#5355\>\<Leftrightarrow\>U<rsub|1>\<oplus\>\<cdots\>\<oplus\>U<rsub|m>>>>>>>
+    </proof>
+  </theorem>
+
+  <subsection|\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#5546\>>
+
+  <\definition>
+    \<#5411\>\<#91CF\>\<#4E0E\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#7684\>\<#548C\>
+
+    <\equation*>
+      v\<in\>V. U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+      v+U\<subset\>V. v+U=<around*|{|v+u: u\<in\>U|}>
+    </equation*>
+  </definition>
+
+  <\definition>
+    \<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>(affine
+    subset).\<#5E73\>\<#884C\>(parallel)
+
+    <math|<tabular*|<tformat|<table|<row|<cell|\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>>|<cell|\<forall\>v\<in\>V.
+    U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+    v+U>>|<row|<cell|\<#5E73\>\<#884C\>>|<cell|\<forall\>v\<in\>V.
+    U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+    \<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>v+U\<#5E73\>\<#884C\>\<#4E8E\>U>>>>>>
+
+    Remark: \<#8FD9\>\<#91CC\>\<#5E73\>\<#884C\>\<#7684\>\<#6982\>\<#5FF5\>\<#4E0E\>\<#51E0\>\<#4F55\>\<#4E0A\>\<#7684\>\<#5E73\>\<#884C\>\<#4E0D\>\<#540C\>\<#3002\><math|R<rsup|3>\<#7684\>\<#76F4\>\<#7EBF\>\<#4E0D\>\<#5E73\>\<#884C\>\<#4E0E\>R<rsup|3>\<#4E2D\>\<#7684\>\<#5E73\>\<#9762\>>
+  </definition>
+
+  <\definition>
+    \<#5546\>\<#7A7A\>\<#95F4\>(quotient space), V/U
+
+    <math|<tabular*|<tformat|<table|<row|<cell|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+    \<#5546\>\<#7A7A\>\<#95F4\>V/U\<#6307\>\<#6240\>\<#6709\>\<#5E73\>\<#884C\>\<#4E0E\>U\<#7684\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>\<#7684\>\<#96C6\>\<#5408\>>>|<row|<cell|V/U=<around*|{|v+U:v\<in\>V|}>>>>>>>
+  </definition>
+
+  <\example>
+    \<#5546\>\<#7A7A\>\<#95F4\>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|1.>|<cell|U=<around*|{|x,2x|}>\<in\>R<rsup|2>.
+    R<rsup|2>/U\<#662F\>R<rsup| 2>\<#4E2D\>\<#6240\>\<#6709\>\<#659C\>\<#7387\>\<#4E3A\>2\<#7684\>\<#76F4\>\<#7EBF\>\<#7684\>\<#96C6\>\<#5408\>>>|<row|<cell|2.>|<cell|U=<around*|{|<around*|(|x,y,z|)>:A<rsub|1>x+B<rsub|1>
+    y+C<rsub|1> z=0;A<rsub|2>x+B<rsub|2>y+C<rsub|2>z=0|}>.>>|<row|<cell|>|<cell|
+    R<rsup|3>/U=<around*|{|<around*|(|x,y,z|)>:A<rsub|1>x+B<rsub|1>y+C<rsub|1>z+D<rsub|1>=0;
+    A<rsub|2>x+B<rsub|2>y+C<rsub|2>z+D<rsub|2>=0.
+    D<rsub|1>,D<rsub|2>\<#662F\>\<#968F\>\<#673A\>\<#7684\>|}>>>|<row|<cell|3.>|<cell|U=<around*|{|<around*|(|x,y,z|)>:
+    A x+B y+C z=0|}>. R/U=<around*|{|<around*|(|x,y,z|)>: A x+B y+C z+D=0.
+    D\<#662F\>\<#968F\>\<#673A\>\<#7684\>|}>>>>>>>
+  </example>
+
+  <\theorem>
+    \<#5E73\>\<#884C\>\<#4E8E\>U\<#7684\>\<#4E24\>\<#4E2A\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>\<#76F8\>\<#7B49\>\<#6216\>\<#4E0D\>\<#76F8\>\<#4EA4\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+      v,w\<in\>V. \<#4EE5\>\<#4E0B\>\<#547D\>\<#9898\>\<#7B49\>\<#4EF7\>>>|<row|<cell|1.>|<cell|v-w\<in\>U>>|<row|<cell|2.>|<cell|v+U=w+U>>|<row|<cell|3.>|<cell|<around*|(|v+U|)>\<cap\><around*|(|w+U|)>\<neq\>\<varnothing\>>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|1\<rightarrow\>2>|<cell|v-w\<in\>U.
+      \<forall\>u\<in\>U.v+u=w+<around*|(|<around*|(|v-w|)>+u|)>\<in\>w+U>>|<row|<cell|>|<cell|\<rightarrow\>u+U\<in\>w+U>>|<row|<cell|>|<cell|w+u=v-<around*|(|v-w|)>+u\<in\>v+U>>|<row|<cell|>|<cell|\<rightarrow\>w+U\<in\>v+U>>|<row|<cell|>|<cell|\<rightarrow\>v+U=w+U>>|<row|<cell|>|<cell|>>|<row|<cell|2\<rightarrow\>3>|<cell|v+U=w+U\<rightarrow\>v+U\<cap\>w+U=v+U=w+U\<neq\>\<varnothing\>>>|<row|<cell|>|<cell|>>|<row|<cell|3\<rightarrow\>1>|<cell|<around*|(|v+U|)>\<cap\><around*|(|w+U|)>\<neq\>\<varnothing\>>>|<row|<cell|>|<cell|\<rightarrow\>\<exists\>u<rsub|1>,u<rsub|2>\<in\>U\<rightarrow\>v+u<rsub|1>=w+u<rsub|2>>>|<row|<cell|>|<cell|v-w=u<rsub|2>-u<rsub|1>\<in\>U>>>>>>
+    </proof>
+  </theorem>
+
+  <\definition>
+    \<#5546\>\<#7A7A\>\<#95F4\>\<#5546\>\<#7684\>\<#52A0\>\<#6CD5\>\<#548C\>\<#6807\>\<#91CF\>\<#4E58\>\<#6CD5\>(addition
+    and scalar multiplication on V/U)
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+      V/U\<#4E0A\>\<#5B9A\>\<#4E49\>\<#8FD0\>\<#7B97\>>>|<row|<cell|\<#52A0\>\<#6CD5\>>|<cell|<around*|(|v+U|)>+<around*|(|w+U|)>=<around*|(|v+w|)>+U>>|<row|<cell|\<#6807\>\<#4E58\>>|<cell|\<lambda\><around*|(|v+U|)>=\<lambda\>v+U>>>>>
+    </equation*>
+  </definition>
+
+  <\theorem>
+    \<#5546\>\<#7A7A\>\<#95F4\>\<#4E0A\>\<#5B9A\>\<#4E49\>\<#7684\>\<#52A0\>\<#6CD5\>\<#548C\>\<#6807\>\<#4E58\>\<#4F7F\>\<#5F97\>\<#5546\>\<#7A7A\>\<#95F4\>\<#6784\>\<#6210\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|>|<cell|v,w\<in\>V.
+      <wide|v|^>,<wide|w|^>\<in\>V\<rightarrow\>v+U=<wide|v|^>+U.
+      w+U=<wide|w|^>+U>>|<row|<cell|>|<cell|v+U=<wide|v|^>+U\<rightarrow\>v-<wide|v|^>\<in\>U,w-<wide|w|^>\<in\>U>>|<row|<cell|>|<cell|\<rightarrow\><around*|(|v-<wide|v|^>|)>-<around*|(|w-<wide|w|^>|)>\<in\>U>>|<row|<cell|>|<cell|\<rightarrow\><around*|(|v+w|)>-<around*|(|<wide|v|^>+<wide|w|^>|)>\<in\>U>>|<row|<cell|>|<cell|\<rightarrow\><around*|(|v+w|)>+U=<around*|(|<wide|v|^>+<wide|w|^>|)>\<in\>U>>|<row|<cell|>|<cell|\<#8868\>\<#793A\>\<#4E0D\>\<#540C\>\<#7684\>\<#76F8\>\<#540C\>\<#5143\>\<#7D20\>\<#7684\>\<#52A0\>\<#6CD5\>\<#7ED3\>\<#679C\>\<#662F\>\<#540C\>\<#4E00\>\<#548C\>>>|<row|<cell|>|<cell|\<rightarrow\>\<#52A0\>\<#6CD5\>\<#6620\>\<#5C04\>\<#662F\>\<#5408\>\<#7406\>\<#7684\>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|v+U=<wide|v|^>+U\<rightarrow\>v-<wide|v|^>\<in\>U>>|<row|<cell|>|<cell|\<rightarrow\>\<lambda\><around*|(|v-<wide|v|^>|)>\<in\>U>>|<row|<cell|>|<cell|\<rightarrow\>\<lambda\>v-\<lambda\><wide|v|^>\<in\>U>>|<row|<cell|>|<cell|\<rightarrow\>\<lambda\>v+U=\<lambda\><wide|v|^>+U>>|<row|<cell|>|<cell|\<rightarrow\>\<#76F8\>\<#540C\>\<#5143\>\<#7D20\>\<#7684\>\<#6807\>\<#91CF\>\<#4E58\>\<#6CD5\>\<#8868\>\<#793A\>\<#7684\>\<#662F\>\<#540C\>\<#4E00\>\<#4E2A\>\<#5143\>\<#7D20\>>>|<row|<cell|>|<cell|\<rightarrow\>\<#6807\>\<#4E58\>\<#6620\>\<#5C04\>\<#662F\>\<#5408\>\<#7406\>\<#7684\>>>|<row|<cell|>|<cell|>>|<row|<cell|1.>|<cell|\<forall\>x,y\<in\>V.
+      <around*|(|x+U|)>+<around*|(|y+U|)>=<around*|(|x+y|)>+U=<around*|(|y+x|)>+U=<around*|(|y+U|)>+<around*|(|x+U|)>>>|<row|<cell|2.>|<cell|\<forall\>x,y,z\<in\>V.<around*|(|x+y|)>+U+<around*|(|z+U|)>=<around*|(|x+y+z|)>+U=x+U+<around*|(|y+z|)>+U>>|<row|<cell|3.>|<cell|0\<in\>V.
+      \<forall\>x\<in\>V. <around*|(|x+U|)>+<around*|(|0+U|)>=<around*|(|x+0|)>+U=x+U>>|<row|<cell|4.>|<cell|\<forall\>x\<in\>V.-x\<in\>V.
+      <around*|(|x+U|)>+<around*|(|-x+U|)>=<around*|(|x+-x|)>+U=0+U>>|<row|<cell|5.>|<cell|1\<in\>F.
+      \<forall\>x\<in\>V. 1<around*|(|x+U|)>=<around*|(|1
+      x|)>+U=x+U>>|<row|<cell|6.>|<cell|\<lambda\><around*|(|<around*|(|x+U|)>+<around*|(|y+U|)>|)>=<around*|(|\<lambda\>x+\<lambda\>y|)>+U>>|<row|<cell|>|<cell|=<around*|(|\<lambda\>x+U|)>+<around*|(|\<lambda\>y+U|)>>>|<row|<cell|>|<cell|=\<lambda\><around*|(|x+U|)>+\<lambda\><around*|(|y+U|)>>>|<row|<cell|>|<cell|<around*|(|a+b|)><around*|(|x+U|)>=<around*|(|<around*|(|a+b|)>x|)>+U>>|<row|<cell|>|<cell|=<around*|(|a
+      x+b x|)>+U>>|<row|<cell|>|<cell|=<around*|(|a x+U|)>+<around*|(|b
+      x+U|)>>>|<row|<cell|>|<cell|=a <around*|(|x+U|)>+b<around*|(|x+U|)>>>|<row|<cell|>|<cell|\<rightarrow\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#5BF9\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#7684\>\<#5546\>\<#7A7A\>\<#95F4\>\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>>>>>>>
+    </proof>
+  </theorem>
+
+  <\definition>
+    \<#5546\>\<#6620\>\<#5C04\>(quotient map)
+
+    <math|<tabular*|<tformat|<table|<row|<cell|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.
+    \<#5546\>\<#6620\>\<#5C04\>\<pi\>\<#662F\>\<#6620\>\<#5C04\>\<pi\>:V\<rightarrow\>V/U>>|<row|<cell|\<pi\><around*|(|v|)>=v+U>>>>>>
+  </definition>
+
+  <\theorem>
+    \<#5546\>\<#6620\>\<#5C04\>\<#5BF9\>\<#53D8\>\<#91CF\>v\<#662F\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>x,y\<in\>V.
+      \<pi\><around*|(|x+y|)>=<around*|(|x+y|)>+U>>|<row|<cell|=<around*|(|x+U|)>+<around*|(|y+U|)>>>|<row|<cell|=\<pi\><around*|(|x|)>+\<pi\><around*|(|y|)>>>|<row|<cell|\<forall\>x\<in\>V,\<forall\>\<lambda\>\<in\>F.
+      \<pi\><around*|(|\<lambda\>x|)>=<around*|(|\<lambda\>x|)>+U>>|<row|<cell|=\<lambda\>*<around*|(|x+U|)>>>|<row|<cell|=\<lambda\>
+      \<pi\><around*|(|x|)>>>>>>>
+    </proof>
+  </theorem>
+
+  <\theorem>
+    \<#5546\>\<#7A7A\>\<#95F4\>\<#7684\>\<#7EF4\>\<#6570\>
+
+    <\equation*>
+      V\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>.
+      U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>. dim V/U=dim V-dim U
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<pi\>:V\<rightarrow\>V/U.>>|<row|<cell|null
+      \<pi\>=U. range \<pi\>=V/U>>|<row|<cell|\<rightarrow\>dim V=dim null
+      \<pi\>+dim range \<pi\>>>|<row|<cell|=dim U+dim
+      V/U>>|<row|<cell|\<rightarrow\>dim V/U=dim V-dim U>>>>>>
+    </proof>
+  </theorem>
+
+  <\definition>
+    \<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>\<#8BF1\>\<#5BFC\>\<#7684\>\<#5546\>\<#7A7A\>\<#95F4\>\<#6620\>\<#5C04\>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|T\<in\>\<cal-L\><around*|(|V,W|)>.
+    <wide|T|~>:V/<around*|(|null T|)>\<rightarrow\>W>>|<row|<cell|<wide|T|~><around*|(|v+null
+    T|)>=T<around*|(|v|)>>>|<row|<cell|>>|<row|<cell|\<#9A8C\>\<#8BC1\>\<#5B83\>\<#662F\>\<#4E2A\>\<#6620\>\<#5C04\>\<rightarrow\>\<forall\>u,v\<in\>V\<rightarrow\>u+null
+    T=v+null T>>|<row|<cell|\<rightarrow\>u-v\<in\>null
+    T>>|<row|<cell|T<around*|(|u-v|)>=T<around*|(|u|)>-T<around*|(|v|)>=0\<rightarrow\>T<around*|(|u|)>=T<around*|(|v|)>>>|<row|<cell|\<rightarrow\>\<#82E5\>u\<#FF0C\>v\<#8BF1\>\<#5BFC\>\<#51FA\>\<#540C\>\<#4E00\>\<#4E2A\>\<#5546\>\<#7A7A\>\<#95F4\>\<#5219\>\<#5B83\>\<#4EEC\>\<#7684\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>\<#76F8\>\<#540C\>>>>>>>
+  </definition>
+
+  <\theorem>
+    <math|<wide|T|~>\<#7684\>\<#96F6\>\<#7A7A\>\<#95F4\>\<#4E0E\>\<#503C\>\<#57DF\>>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|>|<cell|T\<in\>\<cal-L\><around*|(|V,W|)>>>|<row|<cell|1.>|<cell|<wide|T|~>\<#662F\>V/null
+    T\<rightarrow\>W\<#7684\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>>>|<row|<cell|2.>|<cell|<wide|T|~>\<#5355\>>>|<row|<cell|3.>|<cell|range
+    <wide|T|~>=range T>>|<row|<cell|4.>|<cell|V/null T\<#4E0E\>range
+    T\<#540C\>\<#6784\>>>>>>>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|1.>|<cell|\<forall\>x,y\<in\>V/null
+      T. <wide|T|~><around*|(|x+y|)>=T<around*|(|<around*|(|x+y|)>+null
+      T|)>=T<around*|(|x+y|)>>>|<row|<cell|>|<cell|=T<around*|(|x|)>+T<around*|(|y|)>=<wide|T|~><around*|(|x+null
+      T|)>+<wide|T|~><around*|(|y+null T|)>>>|<row|<cell|>|<cell|\<forall\>x\<in\>V/null
+      T, \<lambda\>\<in\>F. <wide|T|~><around*|(|\<lambda\>x|)>=<wide|T*|~><around*|(|\<lambda\>x+null
+      T|)>>>|<row|<cell|>|<cell|=T<around*|(|\<lambda\>
+      x|)>=\<lambda\>T*<around*|(|x|)>=\<lambda\><around*|(|<wide|T|~><around*|(|x+null
+      T|)>|)>>>|<row|<cell|>|<cell|\<rightarrow\><wide|T|~>\<in\>\<cal-L\><around*|(|V/null
+      T, W|)>>>|<row|<cell|>|<cell|>>|<row|<cell|2.>|<cell|\<forall\>v\<in\>V,
+      <wide|T|~><around*|(|v+null T|)>=T*<around*|(|v|)>=0\<rightarrow\>v\<in\>null
+      T.>>|<row|<cell|>|<cell|\<rightarrow\>v+null T=0+null
+      T>>|<row|<cell|>|<cell|\<rightarrow\>null
+      <wide|T|~>=<around*|{|0|}>>>|<row|<cell|>|<cell|\<rightarrow\><wide|T|~>\<#5355\>>>|<row|<cell|>|<cell|>>|<row|<cell|3.>|<cell|\<forall\>v\<in\>V.
+      <wide|T|~><around*|(|v+null T|)>=T<around*|(|v|)>>>|<row|<cell|>|<cell|\<rightarrow\>range
+      <wide|T|~><around*|(|v+null T|)>=range
+      T<around*|(|v|)>>>|<row|<cell|>|<cell|>>|<row|<cell|4.>|<cell|<wide|T|~>\<#5373\>\<#5355\>\<#53C8\>\<#6EE1\>\<rightarrow\><wide|T|~>\<#53EF\>\<#9006\>\<rightarrow\><wide|T|~>\<#662F\>V/null
+      T \<#548C\>range T\<#7684\>\<#540C\>\<#6784\>>>>>>>
+    </proof>
+  </theorem>
+
   <doc-data|<doc-title|\<#4E60\>\<#9898\>3.E>>
+
+  <\enumerate>
+    <item>Proof: <math|T:V\<rightarrow\>W.
+    T\<#7684\>\<#56FE\>\<#662F\>V\<times\>W\<#7684\>\<#7684\>\<#5B50\>\<#96C6\>
+    T\<#7684\>\<#56FE\>=<around*|{|<around*|(|v,T
+    v|)>\<in\>V\<times\>W:v\<in\>V|}>>.
+
+    Proof: <math|T\<#662F\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>\<Leftrightarrow\>T\<#7684\>\<#56FE\>\<#662F\>V\<times\>W\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|T\<#662F\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>\<rightarrow\>T\<#7684\>\<#56FE\>\<#662F\>V\<times\>W\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>>>|<row|<cell|0\<in\>V,
+    T<around*|(|0|)>=0\<in\>W\<rightarrow\><around*|(|0,T<around*|(|0|)>|)>\<in\>G<around*|(|T|)>>>|<row|<cell|\<forall\>x,y\<in\>G<around*|(|T|)>.
+    x+y=<around*|(|x,T<around*|(|x|)>|)>+<around*|(|y,T<around*|(|y|)>|)>>>|<row|<cell|=<around*|(|x+y,T<around*|(|x|)>+T<around*|(|y|)>|)>>>|<row|<cell|=<around*|(|x+y,T<around*|(|x+y|)>|)>>>|<row|<cell|x,y\<in\>V\<rightarrow\>T<around*|(|x+y|)>\<in\>range
+    T>>|<row|<cell|\<rightarrow\>x+y\<in\>G<around*|(|T|)>>>|<row|<cell|>>|<row|<cell|\<forall\>x\<in\>G<around*|(|T|)>.
+    \<lambda\>\<in\>F. \<lambda\>x=<around*|(|\<lambda\>x,\<lambda\>T<around*|(|x|)>|)>>>|<row|<cell|=<around*|(|\<lambda\>x,T*<around*|(|\<lambda\>x|)>|)>>>|<row|<cell|\<lambda\>x\<in\>V\<rightarrow\>T<around*|(|\<lambda\>x|)>\<in\>range
+    T>>|<row|<cell|\<rightarrow\><around*|(|\<lambda\>x,T<around*|(|\<lambda\>x|)>|)>\<in\>G<around*|(|T|)>>>|<row|<cell|\<rightarrow\>G<around*|(|*T|)>\<#662F\>\<#5B50\>\<#7A7A\>\<#95F4\>>>|<row|<cell|>>|<row|<cell|G<around*|(|T|)>\<#662F\>\<#5B50\>\<#7A7A\>\<#95F4\>\<rightarrow\>T\<#662F\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>>>|<row|<cell|\<forall\><around*|(|x,T
+    x|)>,<around*|(|y,T y|)>\<in\>G<around*|(|T|)>\<rightarrow\>
+    <around*|(|x+y,T x+T y|)>\<in\>G<around*|(|T|)>>>|<row|<cell|<around*|(|x+y,T<around*|(|x+y|)>|)>\<in\>G<around*|(|T|)>\<rightarrow\>T<around*|(|x+y|)>>>|<row|<cell|\<forall\>u\<in\>V,
+    T<around*|(|u|)>=T<around*|(|u|)>\<rightarrow\>T<around*|(|x|)>+T<around*|(|y|)>=T<around*|(|x+y|)>>>|<row|<cell|>>|<row|<cell|\<forall\><around*|(|x,T
+    x|)>\<in\>G<around*|(|T|)>. \<lambda\><around*|(|x,T
+    x|)>=<around*|(|\<lambda\>x,\<lambda\>T
+    x|)>\<in\>G<around*|(|T|)>>>|<row|<cell|<around*|(|\<lambda\> x,
+    T<around*|(|\<lambda\> x|)>|)>\<in\>G*<around*|(|T|)>\<rightarrow\>\<lambda\>T
+    x=T<around*|(|\<lambda\> x|)>>>|<row|<cell|\<rightarrow\>T\<in\>\<cal-L\><around*|(|V,W|)>>>>>>>
+
+    <item>Proof: <math|V<rsub|1>,\<ldots\>,V<rsub|m>\<#90FD\>\<#662F\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#4F7F\>\<#5F97\>V<rsub|1>\<times\>\<cdots\>\<times\>V<rsub|m>\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>.Proof:
+    \<#6BCF\>\<#4E2A\>V\<#90FD\>\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|dim
+    <around*|(|V<rsub|1>\<times\>\<cdots\>\<times\>V<rsub|m>|)>=dim
+    V<rsub|1>+\<cdots\>+dim V<rsub|m>>>|<row|<cell|\<#82E5\>V<rsub|i>\<#65E0\>\<#9650\>\<rightarrow\>dim
+    <around*|(|V<rsub|1>\<times\>\<cdots\>\<times\>V<rsub|m>|)>\<geqslant\>dim
+    V<rsub|i>\<#77DB\>\<#76FE\>>>|<row|<cell|\<rightarrow\>V<rsub|i>\<#6709\>\<#9650\>\<#7EF4\>>>>>>>
+
+    <item>Example: <math|\<#7ED9\>\<#51FA\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#548C\>\<#4E24\>\<#4E2A\>\<#5B50\>\<#7A7A\>\<#95F4\>U<rsub|1>,U<rsub|2>\<#7684\>\<#4F8B\>\<#5B50\>\<#3002\>U<rsub|1>\<times\>U<rsub|2>\<#540C\>\<#6784\>\<#4E8E\>U<rsub|1>+U<rsub|2>\<#FF0C\>\<#4F46\>U<rsub|1>+U<rsub|2>\<#4E0D\>\<#662F\>\<#76F4\>\<#548C\>>
+
+    \;
+
+    <item>Proof: <math|V<rsub|1>,\<ldots\>,V<rsub|m>\<#5747\>\<#4E3A\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>.
+    Proof: \<cal-L\><around*|(|V<rsub|1>\<times\>\<cdots\>\<times\>V<rsub|m>,W|)>\<#548C\>\<cal-L\><around*|(|V<rsub|1>,W|)>\<times\>\<cdots\>\<times\>\<cal-L\><around*|(|V<rsub|m>,W|)>\<#540C\>\<#6784\>>
+
+    <item>Proof: <math|W<rsub|1>,\<ldots\>,W<rsub|m>\<#4E3A\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>.Proof:
+    \<cal-L\><around*|(|V,W<rsub|1>\<times\>\<cdots\>\<times\>W<rsub|m>|)>\<#548C\>\<cal-L\><around*|(|V,W<rsub|1>|)>\<times\>\<cdots\>\<times\>\<cal-L\><around*|(|V,W<rsub|m>|)>\<#540C\>\<#6784\>>
+
+    <item>Proof: <math|n\<in\>N<rsup|+>,V<rsup|n>=V\<times\>\<ldots\>\<times\>V.
+    Proof: V<rsup|n>\<cong\>\<cal-L\><around*|(|F<rsup|n>,V|)>>
+
+    <item>Proof: <math|x,y\<in\>V. U,W\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>,v+U=x+W.
+    Proof: U=W>
+
+    <item>Proof:<math|V\<#7684\>\<#975E\>\<#7A7A\>\<#5B50\>\<#96C6\>A\<#662F\>V\<#7684\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>\<Leftrightarrow\>\<forall\>x,y\<in\>A,\<forall\>\<lambda\>\<in\>F\<rightarrow\>\<lambda\>v+<around*|(|1-\<lambda\>|)>w\<in\>A>
+
+    <item>Proof: <math|A<rsub|1>\<#548C\>A<rsub|2>\<#5747\>\<#4E3A\>V\<#7684\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>.
+    Proof: A<rsub|1>\<cap\>A<rsub|2>\<#662F\>V\<#7684\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>\<#6216\>\<#7A7A\>\<#96C6\>>
+
+    <item>Proof: <math|V\<#7684\>\<#4EFB\>\<#610F\>\<#4E00\>\<#7EC4\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>\<#7684\>\<#4EA4\>\<#662F\>V\<#7684\>\<#653E\>\<#5C04\>\<#5B50\>\<#96C6\>\<#6216\>\<#7A7A\>\<#96C6\>>
+
+    <item><math|v<rsub|1>,\<ldots\>v<rsub|m>\<in\>V.>
+
+    <\equation*>
+      A=<around*|{|\<lambda\><rsub|1>v<rsub|1>+\<cdots\>+\<lambda\><rsub|m>v<rsub|m>:\<lambda\><rsub|1>,\<ldots\>,\<lambda\><rsub|m>\<in\>F\<wedge\>\<lambda\><rsub|1>+\<cdots\>+\<lambda\><rsub|m>=1|}>
+    </equation*>
+
+    <\enumerate>
+      <item>Proof: <math|A\<#662F\>V\<#7684\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>>
+
+      <item>Proof: <math|V\<#7684\>\<#6BCF\>\<#4E2A\>\<#5305\>\<#542B\>v<rsub|1>,\<ldots\>,v<rsub|m>\<#7684\>\<#4EFF\>\<#5C04\>\<#5B50\>\<#96C6\>\<#5747\>\<#5305\>\<#542B\>A>
+
+      <item>Proof: <math|\<exists\>v\<in\>V,\<exists\>U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<rightarrow\>A=v+U\<wedge\>dim
+      U\<leqslant\>m-1>
+    </enumerate>
+
+    <item>Proof: <math|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<wedge\>V/U\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>.
+    Proof: V\<cong\>U\<times\><around*|(|V/U|)>.>
+
+    <item>Proof: <math|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>,
+    v<rsub|1>+U,\<ldots\>,v<rsub|m>+U\<#662F\>V/U\<#7684\>\<#57FA\>.
+    u<rsub|1>,\<ldots\>,u<rsub|n>\<#662F\>U\<#7684\>\<#57FA\>. Proof:
+    v<rsub|1>,\<ldots\>,v<rsub|m>,u<rsub|1>,\<ldots\>,u<rsub|n>\<#662F\>V\<#7684\>\<#57FA\>>
+
+    <item><math|U=<around*|{|<around*|(|x<rsub|1>,\<ldots\>|)>\<in\>F<rsup|\<infty\>>:
+    \<#53EA\>\<#6709\>\<#81F3\>\<#591A\>\<#6709\>\<#9650\>\<#4E2A\>j,x<rsub|j>\<neq\>0|}>>
+
+    <\enumerate>
+      <item>Proof:<math|U\<#662F\>F<rsup|\<infty\>>\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>>
+
+      <item>Proof: <math|F<rsup|\<infty\>>/U>\<#662F\>\<#65E0\>\<#9650\>\<#7EF4\>\<#7684\>
+    </enumerate>
+
+    <item>Proof: <math|\<varphi\>\<in\>\<cal-L\><around*|(|V,F|)>,
+    \<varphi\>\<neq\>0. Proof: dim <around*|(|V/null \<varphi\>|)>=1.>
+
+    <item>Proof: <math|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<wedge\>dim
+    <around*|(|V/U|)>=1. Proof: \<exists\>\<varphi\>\<in\>\<cal-L\><around*|(|V,F|)>\<rightarrow\>null
+    \<varphi\>=U>
+
+    <item>Proof: <math|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#FF0C\>V/U\<#662F\>\<#6709\>\<#9650\>\<#7EF4\>\<#7684\>.Proof:
+    \<exists\>W\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>\<rightarrow\>dim
+    W=dim V/U\<wedge\>V=U\<oplus\>W>
+
+    <item>Proof: <math|T\<in\>\<cal-L\><around*|(|V,W|)>,U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>.\<#5546\>\<#6620\>\<#5C04\>\<pi\>:V\<rightarrow\>V/U.
+    Proof: \<exists\>S\<in\>\<cal-L\><around*|(|V/U,W|)>\<rightarrow\>T=S\<circ\>\<pi\>\<Leftrightarrow\>U\<subset\>null
+    T>
+
+    <item>Example: <math|\<#6709\>\<#9650\>\<#96C6\>\<#7ED9\>\<#51FA\>\<#4E00\>\<#4E2A\>\<#7C7B\>\<#6BD4\>\<#4E8E\>
+    <around*|(|\<#548C\>\<#662F\>\<#76F4\>\<#548C\>\<Leftrightarrow\>\<#548C\>\<#7684\>\<#7EF4\>\<#6570\>\<#662F\>\<#7EF4\>\<#6570\>\<#7684\>\<#548C\>|)>\<#7684\>\<#547D\>\<#9898\>\<#3002\>>
+
+    <math|\<#96C6\>\<#5408\>\<#7684\>\<#5E76\>\<#7C7B\>\<#6BD4\>\<#4E8E\>\<#5B50\>\<#7A7A\>\<#95F4\>\<#7684\>\<#548C\>\<#FF0C\>\<#4E0D\>\<#4EA4\>\<#5E76\>\<#7C7B\>\<#6BD4\>\<#4E8E\>\<#76F4\>\<#548C\>>
+
+    <item><math|U\<#662F\>V\<#7684\>\<#5B50\>\<#7A7A\>\<#95F4\>. \<Gamma\>:
+    \<cal-L\><around*|(|V/U,W|)>\<rightarrow\>\<cal-L\><around*|(|V,W|)>.
+    \<Gamma\><around*|(|S|)>=S\<circ\>\<pi\>.>
+
+    <\enumerate>
+      <item>Proof: <math|\<Gamma\>\<#662F\>\<#7EBF\>\<#6027\>\<#6620\>\<#5C04\>>
+
+      <item>Proof: <math|\<Gamma\>\<#5355\>>
+
+      <item>Proof: <math|range \<Gamma\>=<around*|{|T\<in\>\<cal-L\><around*|(|V,W|)>:u\<in\><around*|(|U\<cap\>null
+      T|)>|}>>
+    </enumerate>
+  </enumerate>
 
   <section|\<#5BF9\>\<#5076\>>
 
   <doc-data|<doc-title|\<#4E60\>\<#9898\>3.F>>
-
-  \;
 
   \;
 
@@ -1533,8 +1979,11 @@
     <associate|auto-11|<tuple|4.1|19>>
     <associate|auto-12|<tuple|4.2|20>>
     <associate|auto-13|<tuple|4.3|21>>
-    <associate|auto-14|<tuple|5|23>>
-    <associate|auto-15|<tuple|6|23>>
+    <associate|auto-14|<tuple|5|26>>
+    <associate|auto-15|<tuple|5.1|26>>
+    <associate|auto-16|<tuple|5.2|27>>
+    <associate|auto-17|<tuple|6|30>>
+    <associate|auto-18|<tuple|7|?>>
     <associate|auto-2|<tuple|2|6>>
     <associate|auto-3|<tuple|2.1|6>>
     <associate|auto-4|<tuple|2.2|7>>
@@ -1605,9 +2054,17 @@
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-14><vspace|0.5fn>
 
+      <with|par-left|<quote|1tab>|5.1<space|2spc>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#79EF\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-15>>
+
+      <with|par-left|<quote|1tab>|5.2<space|2spc>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#7684\>\<#5546\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-16>>
+
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>\<#5BF9\>\<#5076\>>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
-      <no-break><pageref|auto-15><vspace|0.5fn>
+      <no-break><pageref|auto-17><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

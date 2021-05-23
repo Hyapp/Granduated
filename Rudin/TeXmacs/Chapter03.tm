@@ -1129,12 +1129,27 @@
       <item>Proof: <math|x<rsub|n>\<#5355\>\<#8C03\>\<#51CF\>. lim
       x<rsub|n>=<sqrt|\<alpha\>|>>
 
+      <\math>
+        <tabular*|<tformat|<table|<row|<cell|<frac|x<rsub|n+1>|x<rsub|n>>=<frac|<around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>|)>|2x<rsub|n>>=<frac|1|2>+<frac|\<alpha\>|2x<rsub|n><rsup|2>>>>|<row|<cell|x<rsub|1>\<gtr\><sqrt|\<alpha\>>\<rightarrow\>x<rsub|1><rsup|2>\<gtr\>\<alpha\>\<rightarrow\><frac|\<alpha\>|x<rsub|n><rsup|2>>\<less\>1>>|<row|<cell|\<rightarrow\><frac|x<rsub|n+1>|x<rsub|n>>\<less\>1\<rightarrow\>x<rsub|n+1>\<less\>x<rsub|n>>>|<row|<cell|\<rightarrow\>x<rsub|n>\<#5355\>\<#8C03\>\<#51CF\>>>|<row|<cell|>>|<row|<cell|x<rsub|n+1>=<frac|1|2><around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>|)>=<frac|1|2>x<rsub|n>+<frac|1|2><frac|\<alpha\>|x<rsub|n>>>>|<row|<cell|\<geqslant\><frac|1|2><around*|(|x<rsub|n>+<sqrt|\<alpha\>>|)>>>|<row|<cell|x<rsub|n>x<rsub|n+1>=x<rsub|n><frac|1|2><around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>|)>=<frac|1|2><around*|(|x<rsub|n><rsup|2>+\<alpha\>|)>>>|<row|<cell|>>|<row|<cell|x<rsub|n>\<gtr\>\<alpha\>\<rightarrow\>x<rsub|n+1>=<frac|1|2><around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>|)>>>|<row|<cell|\<geqslant\><frac|1|2><around*|(|2<sqrt|\<alpha\>>|)>=<sqrt|\<alpha\>>>>|<row|<cell|\<rightarrow\>x<rsub|n>\<geqslant\><sqrt|\<alpha\>>>>|<row|<cell|\<rightarrow\>x<rsub|n>\<#6709\>\<#6781\>\<#9650\>>>|<row|<cell|>>|<row|<cell|x<rsub|n>\<#6536\>\<#655B\>\<rightarrow\>
+        lim <frac|x<rsub|n+1>|x<rsub|n>>=<frac|<frac|1|2><around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>|)>|x<rsub|n>>=<frac|x<rsub|n><rsup|2>+\<alpha\>|2x<rsub|n><rsup|2>>=1>>|<row|<cell|\<rightarrow\>lim
+        <around*|(|x<rsub|n><rsup|2>+\<alpha\>|)>=lim 2
+        x<rsub|n><rsup|2>>>|<row|<cell|\<rightarrow\>lim
+        x<rsub|n><rsup|2>+\<alpha\>=2 lim
+        x<rsub|n><rsup|2>>>|<row|<cell|\<rightarrow\>\<alpha\>=lim
+        x<rsub|n><rsup|2>>>|<row|<cell|\<rightarrow\>lim
+        x<rsub|n>=<sqrt|\<alpha\>>>>>>>
+      </math>
+
       <item>Proof: <math|\<varepsilon\><rsub|n>=x<rsub|n>-<sqrt|\<alpha\>>.
       Proof:\<varepsilon\><rsub|n+1>=<frac|\<varepsilon\><rsub|n><rsup|2>|2x<rsub|n>>\<less\><frac|\<varepsilon\><rsup|2><rsub|n>|2<sqrt|\<alpha\>>>.\<beta\>=2<sqrt|\<alpha\>>\<rightarrow\>\<varepsilon\><rsub|n+1>\<less\>\<beta\><around*|(|<frac|\<varepsilon\><rsub|1>|\<beta\>>|)><rsup|2<rsup|n>>
       >
 
+      <math|<tabular*|<tformat|<table|<row|<cell|x<rsub|n+1>-<sqrt|\<alpha\>>=<frac|1|2><around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>|)>-<sqrt|\<alpha\>>>|<cell|>>|<row|<cell|\<varepsilon\><rsub|n>=x<rsub|n>-<sqrt|\<alpha\>>>|<cell|>>|<row|<cell|\<varepsilon\><rsub|n+1>=<frac|1|2><around*|(|x<rsub|n>+<frac|\<alpha\>|x<rsub|n>>-2<sqrt|\<alpha\>>|)>>|<cell|>>|<row|<cell|=<frac|1|2><around*|(|<frac|x<rsub|n><rsup|2>+\<alpha\>-2x<rsub|n><sqrt|\<alpha\>>|x<rsub|n>>|)>>|<cell|>>|<row|<cell|=<frac|1|2><around*|(|<frac|<around*|(|x<rsub|n>-<sqrt|a>|)><rsup|2>|x<rsub|n>>|)>>|<cell|>>|<row|<cell|=<frac|\<varepsilon\><rsub|n><rsup|2>|2x<rsub|n>>\<less\><frac|\<varepsilon\><rsub|n><rsup|2>|2<sqrt|\<alpha\>>>>|<cell|x<rsub|n>\<gtr\><sqrt|\<alpha\>>>>|<row|<cell|\<varepsilon\><rsub|n+1>\<less\><frac|\<varepsilon\><rsub|n><rsup|2>|2<sqrt|\<alpha\>>>\<rightarrow\>\<varepsilon\><rsub|n+1>\<less\><frac|\<varepsilon\><rsub|n><rsup|2>|2<sqrt|\<alpha\>|>>\<less\><frac|<around*|(|<frac|\<varepsilon\><rsub|n-1><rsup|2>|2<sqrt|\<alpha\>><rsup|>>|)><rsup|2>|2<sqrt|\<alpha\>>>>|<cell|>>|<row|<cell|\<less\><frac|\<varepsilon\><rsub|1><rsup|2<rsup|n>>|<around*|(|2<sqrt|\<alpha\>>|)><rsup|2<rsup|0>+2<rsup|1>+\<cdots\>+2<rsup|n>>>=2<sqrt|\<alpha\>><around*|(|<frac|\<varepsilon\><rsub|1>|2<sqrt|\<alpha\>>>|)><rsup|2<rsup|n>>>|<cell|>>>>>>
+
       <item>Proof: <math|\<alpha\>=3,x<rsub|1>=2. Proof:
       <frac|\<varepsilon\><rsub|1>|\<beta\>>\<less\><frac|1|10>\<rightarrow\>\<varepsilon\><rsub|5>\<less\>4\<cdot\>10<rsup|-16>.\<varepsilon\><rsub|6>\<less\>4\<cdot\>10<rsup|-32>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<alpha\>=3,x<rsub|1>=2.>>|<row|<cell|<frac|\<varepsilon\><rsub|1>|\<beta\>>=<frac|1|2><around*|(|2+<frac|3|2>|)>=<frac|7|4>>>|<row|<cell|<frac|\<varepsilon\><rsub|1>|\<beta\>>\<less\><around*|(|<frac|2-<sqrt|3>|2<sqrt|3>>|)>=0.07735\<ldots\>\<less\><frac|1|10>>>|<row|<cell|<frac|\<varepsilon\><rsup|5>|\<beta\>>\<less\><around*|(|<frac|\<varepsilon\><rsub|1>|\<beta\>>|)><rsup|2<rsup|4>>=10<rsup|-16>>>|<row|<cell|\<varepsilon\><rsup|5>\<less\>\<beta\>\<cdot\>10<rsup|-16>.\<beta\>=2<sqrt|3|>\<less\>4>>|<row|<cell|\<rightarrow\>\<varepsilon\><rsup|5>\<less\>4\<cdot\>10<rsup|-16>>>>>>>
     </enumerate>
 
     <item><math|\<alpha\>\<gtr\>1,x<rsub|1>\<gtr\><sqrt|\<alpha\>>.
@@ -1143,9 +1158,14 @@
     <\enumerate>
       <item>Proof: <math|x<rsub|1>\<gtr\>x<rsub|3>\<gtr\>x<rsub|5>\<gtr\>\<cdots\>>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|x<rsub|2n+1>-x<rsub|2n-1>>>|<row|<cell|=<frac|\<alpha\>+x<rsub|2n>|1+x<rsub|2n>>-x<rsub|2n-1>>>|<row|<cell|=<frac|\<alpha\>+<frac|\<alpha\>+x<rsub|2n-1>|1+x<rsub|2n-1>>|1+<frac|\<alpha\>+x<rsub|2n-1>|1+x<rsub|2n-1>>>-x<rsub|2n-1>>>|<row|<cell|=<frac|<frac|\<alpha\><around*|(|1+x<rsub|2n-1>|)>+\<alpha\>+x<rsub|2n-1>|1+x<rsub|2n-1>>|<frac|1+x<rsub|2n-1>+\<alpha\>+x<rsub|2n-1>|1+x<rsub|2n-1>>>-x<rsub|2n-1>>>|<row|<cell|=<frac|2\<alpha\>+<around*|(|\<alpha\>+1|)>x<rsub|2n-1>|1+\<alpha\>+2x<rsub|2n-1>>-x<rsub|2n-1>>>|<row|<cell|x<rsub|1>\<gtr\><sqrt|\<alpha\>>\<gtr\>1\<rightarrow\>2\<alpha\>+\<alpha\>+1x<rsub|2n-1>\<gtr\>1+\<alpha\>+2x<rsub|2n-1>>>|<row|<cell|\<rightarrow\>x<rsub|2n+1>-x<rsub|2n-1>\<gtr\>0>>|<row|<cell|\<rightarrow\>x<rsub|2n+1>\<gtr\>x<rsub|2n-1>>>>>>>
+
       <item>Proof: <math|x<rsub|2>\<less\>x<rsub|4>\<less\>x<rsub|6>\<less\>\<cdots\>>
 
-      <item>Proof: <math|lim x<rsub|n>=\<alpha\>>
+      <math|<tabular*|<tformat|<table|<row|<cell|x<rsub|2>=<frac|\<alpha\>+x<rsub|n>|1+x<rsub|n>>.
+      >>|<row|<cell|<frac|x<rsub|2<around*|(|n+1|)>>|x<rsub|2n>>=<frac|x<rsub|2n+1>|>>>>>>>
+
+      <item>Proof: <math|lim x<rsub|n>=<sqrt|\<alpha\>>>
 
       <item>Compute: <math|\<#4F30\>\<#8BA1\>x<rsub|n>\<#7684\>\<#6536\>\<#655B\>\<#901F\>\<#5EA6\>>
     </enumerate>
@@ -1160,6 +1180,13 @@
 
     <item>Proof: <math|<around*|{|x<rsub|n>|}>\<#662F\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>X\<#4E2D\>\<#7684\>Cauchy\<#5E8F\>\<#5217\>,\<exists\><around*|{|x<rsub|n<rsub|i>>|}>\<rightarrow\>lim
     x<rsub|n<rsub|i>>=x.Proof: lim x<rsub|n>=x>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|lim
+    x<rsub|n<rsub|i>>=x\<rightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,
+    \<exists\>N<rsub|1>\<in\>N<rsup|+>,n<rsub|i>\<gtr\>N\<rightarrow\>d<around*|(|x<rsub|n<rsub|i>>,x|)>\<less\>\<varepsilon\>>>|<row|<cell|\<forall\>\<varepsilon\>\<gtr\>0,\<exists\>N<rsub|2>\<in\>N<rsup|+>,i,j\<gtr\>N\<rightarrow\>d<around*|(|x<rsub|i>,x<rsub|j><rsub|>|)>\<less\>\<varepsilon\>>>|<row|<cell|let
+    N=max<around*|(|N<rsub|1>,N<rsub|2>|)>.
+    d<around*|(|x<rsub|n<rsub|i>>,x<rsub|j>|)>\<less\>\<varepsilon\>>>|<row|<cell|j\<#7684\>\<#4EFB\>\<#610F\>\<#6027\>\<rightarrow\>n\<gtr\>n<rsub|i>\<rightarrow\>d<around*|(|x<rsub|n>,x<rsub|j>|)>\<less\>\<varepsilon\>>>|<row|<cell|d<around*|(|x<rsub|n>,x|)>\<leqslant\>d<around*|(|x<rsub|n>,x<rsub|n<rsub|i>>|)>+d<around*|(|x<rsub|n<rsub|i>>,x<rsub|>|)>=2\<varepsilon\>>>|<row|<cell|\<rightarrow\>lim
+    x<rsub|n>=x>>>>>>
 
     <item>Proof: <math|<around*|{|E<rsub|n>:E<rsub|n>\<in\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>X,E<rsub|n>\<#6709\>\<#754C\>\<wedge\>\<#95ED\>|}>.
     E<rsub|n>\<supset\>E<rsub|n+1>\<wedge\>lim diam
@@ -1177,15 +1204,47 @@
       <item>Proof: <math|Cauchy\<#5E8F\>\<#5217\><around*|{|p<rsub|n>|}>,<around*|{|q<rsub|n>|}>\<#7684\>\<#5173\>\<#7CFB\>\<sim\>.
       lim d<around*|(|p<rsub|n>,q<rsub|n>|)>=0\<rightarrow\>p<rsub|n>,q<rsub|n>\<in\>\<sim\>.Proof:\<sim\>\<#662F\>\<#7B49\>\<#4EF7\>\<#5173\>\<#7CFB\>>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>p<rsub|n>,q<rsub|n>.lim
+      d<around*|(|p<rsub|n>,q<rsub|n>*|)>=0>|<cell|>|<cell|>>|<row|<cell|lim
+      d<around*|(|p<rsub|n>,q<rsub|n>|)>=lim
+      0=0>|<cell|\<rightarrow\>>|<cell|<around*|(|p<rsub|n>,p<rsub|n>|)>\<in\>\<sim\>>>|<row|<cell|lim
+      d<around*|(|p<rsub|n>,q<rsub|n>|)>=0\<rightarrow\>lim
+      d<around*|(|q<rsub|n>,p<rsub|n>|)>=0>|<cell|\<rightarrow\>>|<cell|<around*|(|p<rsub|n>,q<rsub|n>|)>\<in\>\<sim\>\<rightarrow\><around*|(|q<rsub|n>,p<rsub|n>|)>\<in\>\<sim\>>>|<row|<cell|lim
+      d<around*|(|x<rsub|n>,y<rsub|n>|)>=0,lim
+      d<around*|(|y<rsub|n>,z<rsub|n>|)>=0>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>d<around*|(|x<rsub|n>,z<rsub|n>|)>\<leqslant\>d<around*|(|x<rsub|n>,y<rsub|n>|)>+d<around*|(|y<rsub|n>,z<rsub|n>|)>>|<cell|>|<cell|>>|<row|<cell|=0+0=0>|<cell|\<rightarrow\>>|<cell|<around*|(|x<rsub|n>,y<rsub|n>|)>\<in\>\<sim\>\<wedge\><around*|(|y<rsub|n>,z<rsub|n>|)>\<in\>\<sim\>\<rightarrow\><around*|(|x<rsub|n>,z<rsub|n>|)>\<in\>\<sim\>>>|<row|<cell|>|<cell|>|<cell|>>|<row|<cell|\<rightarrow\>>|<cell|>|<cell|\<sim\>\<#662F\>\<#7B49\>\<#4EF7\>\<#5173\>\<#7CFB\>>>>>>>
+
       <item>Proof: <math|X<rsup|*\<ast\>>\<#662F\>\<#4E0A\>\<#8FF0\>\<#7B49\>\<#4EF7\>\<#7C7B\>\<#7684\>\<#96C6\>.P\<in\>X<rsup|\<ast\>>,Q\<in\>X<rsup|\<ast\>>,<around*|{|p<rsub|n>|}>\<in\>P,<around*|{|q<rsub|n>|}>\<in\>Q.
       \<Delta\><around*|(|P,Q|)>=lim d<around*|(|p<rsub|n>,q<rsub|n>|)>.Proof:
       \<Delta\>\<#662F\>\<#5EA6\>\<#91CF\>>
 
-      <item>Proof: <math|X<rsup|\<ast\>>\<#662F\>\<#5B8C\>\<#5907\>\<#7684\>>\ 
+      <math|<tabular*|<tformat|<table|<row|<cell|\<Delta\><around*|(|x,x|)>=lim
+      d<around*|(|x<rsub|1n>,x<rsub|2<rsub|n>>|)>=d<around*|(|x,x|)>=0>>|<row|<cell|\<Delta\><around*|(|x,y|)>=lim
+      d<around*|(|x<rsub|1n>,x<rsub|2n>|)>=d<around*|(|x<rsub|1>,x<rsub|2>|)>=d<around*|(|x<rsub|2>,x<rsub|1>|)>=lim
+      d<around*|(|x<rsub|2n>,x<rsub|1n>|)>=\<Delta\><around*|(|y,x|)>>>|<row|<cell|\<Delta\><around*|(|x,y|)>+\<Delta\><around*|(|y,z|)>=lim
+      d<around*|(|x<rsub|n>,y<rsub|n>|)>+lim
+      d<around*|(|y<rsub|n>,z<rsub|n>|)>>>|<row|<cell|=d<around*|(|x,y|)>+d<around*|(|y,z|)>\<geqslant\>d<around*|(|x,z|)>=lim
+      d<around*|(|x<rsub|n>,z<rsub|n>|)>=\<Delta\><around*|(|x,z|)>>>|<row|<cell|\<rightarrow\>\<Delta\>\<#662F\>\<#5EA6\>\<#91CF\>>>>>>>
+
+      <item>Proof: <math|X<rsup|\<ast\>>\<#662F\>\<#5B8C\>\<#5907\>\<#7684\>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>x<rsub|n>\<in\>X<rsup|\<ast\>>.
+      \<forall\>\<varepsilon\>\<gtr\>0,\<exists\>N\<in\>N<rsup|+>,\<forall\>i,j\<gtr\>N\<rightarrow\>\<Delta\><around*|(|x<rsub|i>,x<rsub|j>|)>\<less\>\<varepsilon\>>>|<row|<cell|x<rsub|n>:
+      lim a<rsub|n>=x<rsub|i>,lim b<rsub|n>=x<rsub|j>,\<ldots\>>>|<row|<cell|\<Delta\><around*|(|x<rsub|i>,x<rsub|j>|)>\<less\>\<varepsilon\>\<rightarrow\>lim
+      d <around*|(|a<rsub|n>,b<rsub|n>|)>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\>lim
+      a<rsub|n>=lim b<rsub|n>=x>>|<row|<cell|\<rightarrow\>\<Delta\><around*|(|x<rsub|n>,x|)>\<leqslant\>\<Delta\><around*|(|x<rsub|n>,a<rsub|n>|)>+\<Delta\><around*|(|a<rsub|n>,x|)>>>|<row|<cell|=2\<varepsilon\>>>|<row|<cell|\<rightarrow\>lim
+      x<rsub|n>=x\<in\>X<rsup|\<ast\>>>>|<row|<cell|\<rightarrow\>X<rsup|\<ast\>>\<#662F\>\<#5B8C\>\<#5907\>\<#7684\>>>>>>>
 
       <item><math|Proof: \<forall\>x\<in\>X.
       \<exists\><around*|{|p|}>\<in\>X; P<rsub|p>\<in\>X<rsup|\<ast\>>\<wedge\><around*|{|p|}>\<in\>P<rsub|p>.
       Proof: \<Delta\><around*|(|P<rsub|p>,P<rsub|q>|)>=d<around*|(|p,q|)>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<Delta\><around*|(|P<rsub|p>,P<rsub|q>|)>=lim
+      d<around*|(|P<rsub|p>,P<rsub|q>|)>>>|<row|<cell|=lim
+      d<around*|(|P<rsub|p>,P<rsub|q>|)>>>|<row|<cell|\<leqslant\>lim
+      d<around*|(|P<rsub|p>,p|)>+lim d<around*|(|P<rsub|q>,q|)>+lim
+      d<around*|(|p,q|)>>>|<row|<cell|p\<#662F\>Cauchy\<#7684\>\<rightarrow\>p\<#662F\>\<#6536\>\<#655B\>\<#7684\>\<rightarrow\>d
+      <around*|(|P<rsub|p>,p|)>\<less\>\<varepsilon\>>>|<row|<cell|=2\<varepsilon\>+lim
+      d<around*|(|p,q|)>=d<around*|(|p,q|)>>>|<row|<cell|\<rightarrow\>\<Delta\><around*|(|P<rsub|p>,P<rsub|q>|)>\<leqslant\>\<Delta\><around*|(|p,q|)>>>|<row|<cell|>>|<row|<cell|???\<#9700\>\<#8981\>\<#53CD\>\<#5411\>\<#8BC1\>\<#660E\>\<mathLaplace\><around*|(|p,q|)>\<leqslant\>\<Delta\><around*|(|P<rsub|p>,P<rsub|q>|)>>>>>>>
 
       <item>Proof: <math|\<varphi\>:X\<rightarrow\>X<rsup|\<ast\>>.\<varphi\><around*|(|p|)>=<around*|{|p|}>.
       \<varphi\><around*|(|X|)>\<#5728\>X<rsup|\<ast\>>\<#4E2D\>\<#7A20\>\<#5BC6\>;
@@ -1195,6 +1254,8 @@
     <item>Construct: <math|X\<#662F\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>.X\<subset\>Q.
     d<around*|(|x,y|)>=<around*|\||x-y|\|>.
     \<#6C42\>X\<#7684\>\<#5B8C\>\<#5907\>\<#5316\>>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|X<rsup|\<ast\>>=R.>>|<row|<cell|\<#8FD9\>\<#662F\>\<#5B9E\>\<#6570\>\<#7684\>Cauchy\<#5B9A\>\<#4E49\>>>>>>>
   </enumerate>
 
   \;
@@ -1292,7 +1353,6 @@
     <associate|auto-12|<tuple|12|14>>
     <associate|auto-13|<tuple|13|14>>
     <associate|auto-14|<tuple|14|15>>
-    <associate|auto-15|<tuple|1|?>>
     <associate|auto-2|<tuple|2|2>>
     <associate|auto-3|<tuple|3|3>>
     <associate|auto-4|<tuple|4|5>>
