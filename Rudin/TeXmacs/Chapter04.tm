@@ -460,15 +460,27 @@
 
   <\enumerate>
     <item>Proof or Disproof: <math|f:R<rsup|1>\<rightarrow\>R.
-    \<forall\>x\<in\>R<rsup|1>, lim<rsub|h=0><around*|(|f<around*|(|x+h|)>-f<around*|(|x-h|)>|)>=0.
+    \<forall\>x\<in\>R<rsup|1>, lim<rsub|h\<rightarrow\>0><around*|(|f<around*|(|x+h|)>-f<around*|(|x-h|)>|)>=0.
     Proof: f\<#8FDE\>\<#7EED\>>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>x\<in\>R. lim
+    f<around*|(|x+h|)>-f<around*|(|x-h|)>=0\<rightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,
+    \<exists\>\<delta\>\<gtr\>0,<around*|\||h|\|>\<less\>\<delta\>\<rightarrow\><around*|\||f<around*|(|x+h|)>-f<around*|(|x-h|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<#91CD\>\<#8981\>\<#7684\>\<#95EE\>\<#9898\>\<#5728\>\<#4E8E\>\<#8BF4\>\<#660E\><around*|\||h|\|>\<less\>\<delta\>\<rightarrow\><around*|\||f<around*|(|x+h|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|<around*|\||f<around*|(|x+h|)>-f<around*|(|x|)>+f<around*|(|x|)>-f<around*|(|x-h|)>|\|>\<geqslant\><around*|\||<around*|\||f<around*|(|x+h|)>-f<around*|(|x|)>|\|>-<around*|\||f<around*|(|x-h|)>-f<around*|(|x|)>|\|>|\|>>>|<row|<cell|=<around*|\||
+    <around*|\||f<around*|(|x+h|)>-f<around*|(|x|)>|\|>-<around*|\||f<around*|(|x-h|)>-f<around*|(|x|)>|\|>
+    |\|>>>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|x+h|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>\<wedge\><around*|\||f<around*|(|x|)>-f<around*|(|x-h|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\><around*|\||h|\|>\<less\>\<delta\>\<rightarrow\><around*|\||f<around*|(|x+h|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>\<rightarrow\>f\<#5728\>x\<#7684\>\<#53F3\>\<#6781\>\<#9650\>\<#7B49\>\<#4E8E\>f<around*|(|x|)>>>|<row|<cell|<around*|\||h|\|>\<less\>\<delta\>\<rightarrow\><around*|\||f<around*|(|x|)>-f<around*|(|x-h|)>|\|>\<less\>\<varepsilon\>\<rightarrow\>f\<#5728\>x\<#7684\>\<#5DE6\>\<#6781\>\<#9650\>\<#7B49\>\<#4E8E\>f<around*|(|x|)>>>|<row|<cell|\<rightarrow\>f\<#5728\>x\<#8FDE\>\<#7EED\>>>>>>>
 
     <item>Proof: <math|f\<#662F\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>X\<#6620\>\<#5165\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>Y\<#7684\>\<#8FDE\>\<#7EED\>\<#6620\>\<#5C04\>.
     Proof: \<forall\>E\<in\>X\<rightarrow\>f<around*|(|<wide|E|\<bar\>>|)>\<subset\><wide|f<around*|(|E|)>|\<bar\>>.\<#4E3E\>\<#4F8B\>\<#771F\>\<#5305\>\<#542B\>\<#5B58\>\<#5728\>>
 
+    <math|<tabular*|<tformat|<table|<row|<cell|f:R<rsup|+>\<rightarrow\>R.
+    f<around*|(|x|)>=<frac|x|1+x>. <wide|R<rsup|+>|\<bar\>>>>>>>=R<rsup|+>\<cup\><around*|{|0|}>.f<around*|(|R<rsup|<rsub|+>>|)>=<around*|(|0,1|)>.f<around*|(|<wide|R<rsup|+>|\<bar\>>|)>=<around*|[|0,1|)>.
+    <wide|f<around*|(|R<rsup|+>|)>|\<bar\>>=<around*|[|0,1|]>>
+
     <item>Proof: <math|f\<#662F\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>X\<#4E0A\>\<#7684\>\<#8FDE\>\<#7EED\>\<#5B9E\>\<#51FD\>\<#6570\>,
     Z<around*|(|f|)>=<around*|{|x\<in\>X:f<around*|(|x|)>=0|}>.Proof:
     Z<around*|(|f|)>\<#662F\>\<#95ED\>\<#96C6\>>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|<around*|{|0|}>\<in\>R\<#4E0A\>\<#7684\>\<#95ED\>\<#96C6\>\<rightarrow\>f<rsup|-1><around*|(|<around*|{|0|}>|)>\<in\>X\<#662F\>\<#95ED\>\<#96C6\>>>>>>>
 
     <item>Proof: <math|f,g\<#662F\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>X\<#6620\>\<#5165\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\>Y\<#7684\>\<#8FDE\>\<#7EED\>\<#6620\>\<#5C04\>,E\<#662F\>X\<#7684\>\<#7A20\>\<#5BC6\>\<#5B50\>\<#96C6\>.
     >
@@ -476,8 +488,15 @@
     <\enumerate>
       <item><math|Proof: f<around*|(|E|)>\<#5728\>f<around*|(|X|)>\<#4E2D\>\<#7A20\>\<#5BC6\>.>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>\<varepsilon\>\<gtr\>0,
+      \<exists\>\<sigma\>\<gtr\>0, \<forall\>y\<in\><around*|\||x-y|\|>\<less\>\<delta\>\<rightarrow\><around*|\||f<around*|(|y|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<forall\>t\<in\><around*|{|<around*|\||x-y|\|>\<less\>\<delta\>|}>\<wedge\>t\<neq\>x>>|<row|<cell|x\<less\>t\<less\>y>>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|y|)>-f<around*|(|t|)>+f<around*|(|t|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|y|)>-f<around*|(|t|)>|\|>+<around*|\||f<around*|(|t|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|y|)>-f<around*|(|t|)>|\|>\<less\>\<varepsilon\>\<wedge\><around*|\||f<around*|(|t|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|???>>>>>>
+
       <item>Proof: <math| \<forall\>x\<in\>E,g<around*|(|x|)>=f<around*|(|x|)>.
       Proof: \<forall\>p\<in\>X,g<around*|(|p|)>=f<around*|(|p|)>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>x\<in\>X.p\<less\>x\<less\>q>>|<row|<cell|\<forall\>\<varepsilon\>\<gtr\>0,
+      \<exists\>\<delta\>\<gtr\>0,\<forall\>y\<in\><around*|\||y-x|\|>\<less\>\<delta\>\<rightarrow\><around*|\||f<around*|(|y|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<forall\>y-x\<in\>\<delta\>,\<exists\>p\<in\>E\<wedge\>p\<in\><around*|\||y-x|\|>\<less\>\<delta\>>>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|y|)>-g<around*|(|p|)>|\|>+<around*|\||f<around*|(|x|)>-g<around*|(|p|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<#7531\>\<#4E8E\>f\<#6536\>\<#655B\>\<rightarrow\>f\<#662F\>cauchy\<#7684\>>>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|y|)>-g<around*|(|p|)>|\|>\<less\>\<varepsilon\>.
+      >>|<row|<cell|\<rightarrow\><around*|\||f<around*|(|y|)>-g<around*|(|p|)>|\|>+<around*|\||f<around*|(|x|)>-g<around*|(|p|)>|\|>\<less\>2\<varepsilon\>>>|<row|<cell|\<rightarrow\>g<around*|(|x|)>=f<around*|(|x|)>>>>>>>
 
       Remark: \<#8FD9\>\<#8BF4\>\<#660E\>\<#8FDE\>\<#7EED\>\<#6620\>\<#5C04\>\<#88AB\>\<#5B9A\>\<#4E49\>\<#57DF\>\<#7684\>\<#7A20\>\<#5BC6\>\<#5B50\>\<#96C6\>\<#786E\>\<#5B9A\>
     </enumerate>
@@ -488,21 +507,37 @@
     <\enumerate>
       <item><math|Proof: \<exists\>R<rsup|1>\<#4E0A\>\<#7684\>\<#8FDE\>\<#7EED\>\<#5B9E\>\<#51FD\>\<#6570\>g\<rightarrow\>\<forall\>x\<in\>E,g<around*|(|x|)>=f<around*|(|x|)>>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|E\<#95ED\>\<rightarrow\>E<rsup|c>\<#5F00\>\<rightarrow\>E<rsup|c>\<#662F\>\<#81F3\>\<#591A\>\<#53EF\>\<#6570\>\<#4E2A\>\<#5F00\>\<#533A\>\<#95F4\>\<#7684\>\<#5E76\>>>|<row|<cell|\<forall\><around*|(|a,b|)>\<in\>E<rsup|c>.f<around*|(|a|)>,f<around*|(|b|)>\<#90FD\>\<#5B58\>\<#5728\>\<rightarrow\>let:
+      \<forall\>x\<in\><around*|(|a,b|)>,
+      g<around*|(|x|)>=<frac|b-x|b-a>f<around*|(|a|)>+<frac|a-x|b-a>f<around*|(|b|)>>>|<row|<cell|lim<rsub|x\<rightarrow\>a<rsup|+>><around*|(|x-a|)>f<around*|(|a|)>+<around*|(|b-x|)>f<around*|(|b|)>=lim<rsub|x\<rightarrow\>a<rsup|->><frac|b-a<rsup|->|b-a>f<around*|(|a|)>+<frac|a-a<rsup|->|b-a>f<around*|(|b|)>>>|<row|<cell|=1<rsup|->f<around*|(|a|)>=f<around*|(|a|)>>>|<row|<cell|lim<rsub|x\<rightarrow\>b<rsup|->><frac|b-b<rsup|->|b-a>f<around*|(|a|)>+<frac|b<rsup|->-a|b-a>f<around*|(|b|)>=1<rsup|+>f<around*|(|b|)>=f<around*|(|b|)>>>|<row|<cell|\<rightarrow\>f\<#5728\><around*|(|a,b|)>\<#4E0A\>\<#8FDE\>\<#7EED\>>>>>>>
+
       <item>Proof: <math|E\<#4E0D\>\<#662F\>\<#95ED\>\<#96C6\>,\<#7ED3\>\<#8BBA\>\<#53EF\>\<#80FD\>\<#4E0D\>\<#6210\>\<#7ACB\>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|E=<around*|(|0,1|)>.
+      f<around*|(|x|)>=<frac|1|x>. f<around*|(|0|)>\<#4E0D\>\<#80FD\>\<#88AB\>\<#5B9A\>\<#4E49\>.\<#5B9A\>\<#4E49\>\<#4EFB\>\<#610F\>f<around*|(|0|)>=y\<in\>R\<#90FD\>\<#4E0D\>\<#80FD\>\<#4F7F\>\<#5F97\>\<#5176\>\<#8FDE\>\<#7EED\>>>>>>>
 
       <item>Proof: \<#5BF9\>\<#4E8E\>\<#5411\>\<#91CF\>\<#503C\>\<#51FD\>\<#6570\><math|\<b-f\><around*|(|x|)>=<around*|(|f<rsub|1><around*|(|x|)>,\<ldots\>,f<rsub|n><around*|(|x|)>|)>>\<#8BC1\>\<#660E\>\<#6B64\>\<#7ED3\>\<#8BBA\>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|R<rsup|n>\<#4E2D\>\<#7684\>\<#95ED\>\<#96C6\>E,
+      E<rsup|c>=<around*|(|a<rsub|1>,b<rsub|1>|)>\<times\>\<cdots\>\<times\><around*|(|a<rsub|n>,b<rsub|n>|)>.>|<cell|\<#5EA6\>\<#91CF\>\<#62D3\>\<#6251\>>>|<row|<cell|\<rightarrow\>\<#4E8C\>\<#91CD\>\<#63D2\>\<#503C\>\<#51FD\>\<#6570\>\<#8FDB\>\<#884C\>\<#63D2\>\<#503C\>\<#5F97\>\<#5230\>\<#7684\>\<#66F2\>\<#9762\>\<#8FB9\>\<#754C\>>|<cell|\<#79EF\>\<#62D3\>\<#6251\>>>|<row|<cell|>|<cell|\<#7BB1\>\<#62D3\>\<#6251\>>>>>>>
+
       <item>Proof: \<#5BF9\>\<#4E8E\>\<#4EFB\>\<#610F\>\<#5EA6\>\<#91CF\>\<#7A7A\>\<#95F4\><math|X.
       E\<subset\>X>\<#8BC1\>\<#660E\>\<#6B64\>\<#7ED3\>\<#8BBA\>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|???>>>>>>
     </enumerate>
 
     <item>Proof: <math|f\<#5B9A\>\<#4E49\>\<#5728\>E\<#4E0A\>,f\<#7684\>\<#56FE\>\<#50CF\>\<#662F\><around*|(|x,f<around*|(|x|)>|)>\<#7EC4\>\<#6210\>\<#7684\>\<#96C6\>.
     \<#7279\>\<#522B\>\<#7684\>E\<subset\>R\<#4E14\>f<around*|(|x|)>\<in\>R.f\<#7684\>\<#56FE\>\<#50CF\>\<subset\>R<rsup|2>>
 
     <\enumerate>
-      <item>E\<#662F\>\<#7D27\>\<#7684\>. Proof:
+      E\<#662F\>\<#7D27\>\<#7684\>. Proof:
       <math|f\<#5728\>E\<#4E0A\>\<#8FDE\>\<#7EED\>\<Leftrightarrow\><around*|{|<around*|(|x,f<around*|(|x|)>|)>|}>\<#662F\>\<#7D27\>\<#7684\>>
     </enumerate>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|f\<#5728\>E\<#4E0A\>\<#8FDE\>\<#7EED\>\<rightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,
+    \<exists\>\<delta\>\<gtr\>0, \<forall\>y\<in\><around*|{|<around*|\||y-x|\|>\<less\>\<delta\>|}>\<rightarrow\><around*|\||f<around*|(|y|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>|<cell|>>|<row|<cell|E\<#662F\>\<#7D27\>\<#7684\>\<rightarrow\>\<forall\><around*|{|G<rsub|a>|}>\<wedge\>E\<subset\>\<vee\><big|cup>G<rsub|a>\<rightarrow\>E\<subset\><big|cup>G<rsub|i>>|<cell|>>|<row|<cell|\<rightarrow\>f<around*|(|E|)>\<#662F\>\<#7D27\>\<#7684\>>|<cell|>>|<row|<cell|\<forall\>x\<in\>E.
+    \<exists\>U<rsub|x>\<rightarrow\>f<around*|(|U<rsub|x>|)>\<#662F\>\<#5F00\>\<#96C6\>>|<cell|>>|<row|<cell|\<rightarrow\>f<around*|(|x|)>\<in\>f<around*|(|U<rsub|x>|)>\<rightarrow\><around*|(|x,f<around*|(|x|)>|)>\<in\>U<rsub|x>\<times\>f<around*|(|U<rsub|x>|)>>|<cell|>>|<row|<cell|\<#7531\>\<#4E8E\>E\<#7684\>\<#7D27\>\<#6027\>\<rightarrow\>\<#81F3\>\<#591A\>\<#6709\>\<forall\>\<#5F00\>\<#8986\>\<#76D6\><around*|{|U<rsub|x>\<times\>f<around*|(|U<rsub|x>|)>|}>\<#5FC5\>\<#6709\>\<#5B50\>\<#8986\>\<#76D6\>U<rsub|x>\<#548C\>f<around*|(|U<rsub|x>|)>>|<cell|>>|<row|<cell|\<rightarrow\><around*|(|x,f<around*|(|x|)>|)>\<subset\><big|cup>U<rsub|i>\<times\>f<around*|(|U<rsub|i>|)>>|<cell|\<#79EF\>\<#62D3\>\<#6251\>\<Leftrightarrow\>\<#5EA6\>\<#91CF\>\<#62D3\>\<#6251\>>>|<row|<cell|>|<cell|>>|<row|<cell|\<#5BF9\>\<#4E8E\>R<rsup|n>\<rightarrow\>R<rsup|n>\<#4E0A\>\<#7684\>\<#51FD\>\<#6570\>.>|<cell|>>|<row|<cell|E\<#7D27\>\<rightarrow\>E\<#6709\>\<#754C\>\<#4E14\>E\<#95ED\>\<rightarrow\>f<around*|(|E|)>\<#95ED\>\<#4E14\>\<#6709\>\<#754C\>\<rightarrow\>f<around*|(|E|)>\<#7D27\>>|<cell|>>>>>>
 
     <item><math|E\<subset\>X. f\<#662F\>\<#5B9A\>\<#4E49\>\<#5728\>X\<#4E0A\>\<#7684\>\<#51FD\>\<#6570\>.
     f\<#5728\>E\<#4E0A\>\<#7684\>\<#7EA6\>\<#675F\>g\<#662F\>\<#5B9A\>\<#4E49\>\<#5728\>E\<#4E0A\>\<#7684\>\<#51FD\>\<#6570\>\<#4E14\>\<forall\>x\<in\>E,g<around*|(|x|)>=f<around*|(|x|)>>
@@ -514,16 +549,41 @@
     </equation*>
 
     <\enumerate>
-      <item>Proof: <math|f\<#5728\>R<rsup|
-      2>\<#4E0A\>\<#6709\>\<#754C\>\<#FF0C\>>
+      <item>Proof: <math|f\<#5728\>R<rsup| 2>\<#4E0A\>\<#6709\>\<#754C\>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|f<around*|(|x|)>=<frac|x
+      y<rsup|2>|x<rsup|2>+y<rsup|4>> x<rsup|2>+y<rsup|4>\<geqslant\>2<sqrt|x<rsup|2>y<rsup|4>>=2<around*|\||x|\|>
+      y<rsup|4>>>|<row|<cell|\<rightarrow\><frac|1|2>\<leqslant\><frac|x
+      y<rsup|2>|x<rsup|2>+y<rsup|4>>\<leqslant\><frac|1|2>>>|<row|<cell|\<rightarrow\>f\<#6709\>\<#754C\>>>>>>>
 
       <item>Proof: <math|f\<#5728\><around*|(|0,0|)>\<#4E0D\>\<#8FDE\>\<#7EED\>>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|line:
+      y=x<rsup|1/2>.>>|<row|<cell|f<around*|(|x,x<rsup|1/2>|)>=<frac|x<rsup|2>|x<rsup|2>+x<rsup|2>>=<frac|1|2>\<neq\>0>>|<row|<cell|lim<rsub|x\<rightarrow\>0>f<around*|(|x,x<rsup|1/2>|)>=<frac|1|2>\<neq\>0\<rightarrow\>f\<#5728\><around*|(|0,0|)>\<#4E0D\>\<#8FDE\>\<#7EED\>>>>>>>
+
       <item>Proof: <math|g\<#5728\>U<rsub|<around*|(|0,0|)>><around*|(|r|)>\<#4E2D\>\<#65E0\>\<#754C\>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|g<around*|(|x,y|)>=<frac|x
+      y<rsup|2>|x<rsup|2>+y<rsup|6>>. \<forall\>U<rsub|<around*|(|0,0|)>><around*|(|r|)>.
+      let r\<less\>1. \<forall\>x\<less\>1,x<rsup|n>\<less\>x>>|<row|<cell|g<around*|(|x,x<rsup|1/2>|)>=<frac|x<rsup|2>|x<rsup|2>+x<rsup|3>>=<frac|1|1+x>>>|<row|<cell|let:0\<less\>x\<less\>y\<less\>1\<rightarrow\><frac|x
+      y<rsup|2>|x<rsup|2>+y<rsup|6>>\<geqslant\><frac|x
+      y<rsup|2>|y<rsup|2>+y<rsup|6>>=<frac|x|1+y<rsup|4>>\<geqslant\><frac|x|2y<rsup|4>>>>|<row|<cell|\<forall\>n\<in\>N<rsup|+>,\<forall\>x,
+      <frac|x|2y<rsup|4>>\<geqslant\>n\<rightarrow\>x\<geqslant\>2n
+      y<rsup|4>\<rightarrow\>y<rsup|4>\<leqslant\><frac|x|2n>>>|<row|<cell|y\<leqslant\><sqrt|<frac|x|2n>|4>\<in\>U<rsub|<around*|(|0,0|)>>.>>|<row|<cell|\<rightarrow\>\<forall\>U<rsub|<around*|(|0,0|)>><around*|(|r|)>,g<around*|(|U|)>\<#65E0\>\<#754C\>>>>>>>
 
       <item>Proof: <math|f,g\<#5728\>R<rsup|
       <rsup|>2>\<#4E2D\>\<#4EFB\>\<#610F\>\<#76F4\>\<#7EBF\>A x+B
       y+C=0\<#4E0A\>\<#8FDE\>\<#7EED\>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|f:>|<cell|f\<#5728\>\<#9664\>\<#4E86\><around*|(|0,0|)>\<#4E4B\>\<#5916\>\<#90FD\>\<#8FDE\>\<#7EED\>.let:
+      A x+B y=0>>|<row|<cell|>|<cell|f<around*|(|x,k x|)>=<frac|x
+      k<rsup|2>x<rsup|2>|x<rsup|2>+k <rsup|4>x<rsup|4>>=<frac|k<rsup|2>x<rsup|3>|x<rsup|2>+k<rsup|4>x<rsup|4>>>>|<row|<cell|>|<cell|lim<rsub|x\<rightarrow\>0>f<around*|(|x,k
+      x|)>=lim<rsub|x\<rightarrow\>0> <frac|k<rsup|2>x|1+k<rsup|4>x<rsup|2>>=<frac|lim
+      k<rsup|2>x|1+lim k<rsup|4>x<rsup|2>>=0>>|<row|<cell|>|<cell|\<rightarrow\>\<#4EFB\>\<#610F\>\<#4E0D\>\<#5782\>\<#76F4\>\<#7684\>\<#76F4\>\<#7EBF\>\<#4E0A\>\<#90FD\>\<#8FDE\>\<#7EED\>>>|<row|<cell|>|<cell|f<around*|(|0,x|)>=0\<#8FDE\>\<#7EED\>>>|<row|<cell|>|<cell|\<rightarrow\>f\<#5728\>\<#6240\>\<#6709\>\<#76F4\>\<#7EBF\>\<#4E0A\>\<#90FD\>\<#8FDE\>\<#7EED\>>>|<row|<cell|>|<cell|>>|<row|<cell|g:>|<cell|g<around*|(|x,k
+      x|)>=<frac|k<rsup|2>x<rsup|3>|x<rsup|2>+k<rsup|6>x<rsup|6>>=<frac|k<rsup|2>x|1+k<rsup|6>x<rsup|4>>>>|<row|<cell|>|<cell|lim<rsub|x\<rightarrow\>0>
+      g<around*|(|x,k x|)>=0>>|<row|<cell|>|<cell|g<around*|(|0,x|)>=0>>|<row|<cell|>|<cell|\<rightarrow\>g\<#5728\>\<#6240\>\<#6709\>\<#8FC7\>\<#539F\>\<#70B9\>\<#7684\>\<#76F4\>\<#7EBF\>\<#4E0A\>\<#8FDE\>\<#7EED\>>>>>>>
+
+      Remark: \<#5FC5\>\<#987B\>\<#8003\>\<#8651\>\<#9886\>\<#57DF\>\<#FF0C\>\<#7528\>\<#76F4\>\<#7EBF\>\<#8D8B\>\<#8FD1\>\<#4E8C\>\<#7EF4\>\<#5E73\>\<#9762\>\<#4E0A\>\<#7684\>\<#70B9\>\<#4ECD\>\<#7136\>\<#662F\>\<#4E0D\>\<#591F\>\<#7684\>\<#FF0C\>\<#4F7F\>\<#7528\>\<#4EFB\>\<#610F\>\<#5E8F\>\<#5217\>
     </enumerate>
 
     <item>
@@ -532,8 +592,16 @@
       <item><math|f\<#662F\>R\<#4E2D\>\<#6709\>\<#754C\>\<#96C6\>E\<#4E0A\>\<#7684\>\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>\<#51FD\>\<#6570\>.
       Proof: f\<#5728\>E\<#4E0A\>\<#6709\>\<#754C\>>
 
+      <math|<tabular*|<tformat|<table|<row|<cell|>>>>>>
+
       <item><math|E\<#65E0\>\<#754C\>. Proof:
       f\<#53EF\>\<#80FD\>\<#5728\>E\<#4E0A\>\<#65E0\>\<#754C\>>
+
+      <math|<tabular*|<tformat|<table|<row|<cell|f<around*|(|x|)>=<sqrt|x>.>>|<row|<cell|f<around*|(|x|)>=f<around*|(|<around*|[|0,1|]>|)>\<cup\>f<around*|(|<around*|(|1,+\<infty\>|)>|)>>>|<row|<cell|f\<#5728\><around*|[|0,1|]>\<#4E0A\>\<#5FC5\>\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>>>|<row|<cell|f<rprime|'><around*|(|x|)>=<frac|1|2>x<rsup|-1/2>.
+      x\<gtr\>1\<rightarrow\>x<rsup|-1/2>\<less\>1>>|<row|<cell|\<rightarrow\>f<rprime|'><around*|(|x|)>\<less\><frac|1|2>>>|<row|<cell|\<forall\>\<varepsilon\>\<gtr\>0,
+      \<exists\>\<delta\>\<gtr\>0. \<exists\>x,y\<in\><around*|{|<around*|\||x-p|\|>\<less\>\<delta\>,
+      <around*|\||y-p|\|>\<less\>\<delta\>|}>\<rightarrow\><around*|\||f<around*|(|x|)>-f<around*|(|y|)>|\|>>>|<row|<cell|\<leqslant\><frac|1|2><around*|\||x-y|\|>=<frac|1|2>\<delta\>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\>\<delta\>=<frac|1|2>\<varepsilon\>.
+      <around*|\||f<around*|(|x|)>-f<around*|(|y|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\>f\<#5728\>R\<#4E0A\>\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>>>|<row|<cell|\<#4F46\>lim<rsub|x\<rightarrow\>\<infty\>><sqrt|x>=\<infty\>>>>>>>
     </enumerate>
 
     <item>Proof: <math|f\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>\<Leftrightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,\<exists\>\<delta\>\<gtr\>0,\<forall\>E\<subset\>X\<wedge\>diam
@@ -579,7 +647,8 @@
     <associate|auto-4|<tuple|4|5>>
     <associate|auto-5|<tuple|5|6>>
     <associate|auto-6|<tuple|6|6>>
-    <associate|auto-7|<tuple|7|6>>
+    <associate|auto-7|<tuple|7|7>>
+    <associate|auto-8|<tuple|1|?>>
   </collection>
 </references>
 
