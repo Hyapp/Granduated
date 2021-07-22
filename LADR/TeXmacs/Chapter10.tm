@@ -757,13 +757,19 @@
     </equation*>
   </example>
 
-  \;
-
-  \;
-
-  \;
-
   <doc-data|<doc-title|10.B>>
+
+  <\enumerate>
+    <item>Pr: <math|V\<#662F\>\<#5B9E\>\<#5411\>\<#91CF\>\<#7A7A\>\<#95F4\>\<#FF0C\>T\<in\>\<cal-L\><around*|(|V|)>\<#6CA1\>\<#6709\>\<#672C\>\<#5F81\>\<#503C\>.
+    Pr: det T\<gtr\>0>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|T\<#6CA1\>\<#6709\>\<#672C\>\<#5F81\>\<#503C\>\<rightarrow\>\<cal-M\><around*|(|T|)>=<matrix|<tformat|<table|<row|<cell|a>|<cell|-b>>|<row|<cell|b>|<cell|a>>>>>.>>|<row|<cell|det
+    T=a<rsup|2>+b<rsup|2>\<gtr\>0>>|<row|<cell|\<rightarrow\>det T=det
+    T\|<rsub|U<rsub|1>>\<times\>\<cdots\>\<times\>det
+    T\|<rsub|U<rsub|n>>\<gtr\>0>>>>>>
+
+    <item>
+  </enumerate>
 
   \;
 </body>
@@ -784,6 +790,7 @@
     <associate|auto-6|<tuple|2.2|5>>
     <associate|auto-7|<tuple|2.3|7>>
     <associate|auto-8|<tuple|2.4|7>>
+    <associate|auto-9|<tuple|3|?>>
   </collection>
 </references>
 
