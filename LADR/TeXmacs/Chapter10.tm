@@ -788,9 +788,8 @@
     <associate|auto-4|<tuple|2|3>>
     <associate|auto-5|<tuple|2.1|3>>
     <associate|auto-6|<tuple|2.2|5>>
-    <associate|auto-7|<tuple|2.3|7>>
-    <associate|auto-8|<tuple|2.4|7>>
-    <associate|auto-9|<tuple|3|?>>
+    <associate|auto-7|<tuple|2.3|8>>
+    <associate|auto-8|<tuple|2.4|9>>
   </collection>
 </references>
 
