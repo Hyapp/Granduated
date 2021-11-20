@@ -3,7 +3,7 @@
 <style|<tuple|generic|chinese>>
 
 <\body>
-  <doc-data|<doc-title|Chapter 6>>
+  <doc-data|<doc-title|Chapter 6>|<doc-author|<author-data|<author-name|\<#5FAE\>\<#5206\>\<#4E2D\>\<#503C\>\<#5B9A\>\<#7406\>>>>>
 
   <section|Def>
 
@@ -223,8 +223,8 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-2|<tuple|2|4>>
-    <associate|auto-3|<tuple|3|4>>
+    <associate|auto-2|<tuple|2|5>>
+    <associate|auto-3|<tuple|3|5>>
   </collection>
 </references>
 

@@ -3,7 +3,7 @@
 <style|<tuple|generic|chinese>>
 
 <\body>
-  <doc-data|<doc-title|Chapter 4>>
+  <doc-data|<doc-title|Chapter 4>|<doc-author|<author-data|<author-name|\<#8FDE\>\<#7EED\>\<#6027\>>>>>
 
   <section|Def>
 

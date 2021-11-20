@@ -3,7 +3,7 @@
 <style|<tuple|generic|chinese>>
 
 <\body>
-  <doc-data|<doc-title|Tricks 2>>
+  <doc-data|<doc-title|Chapter3>|<doc-author|<author-data|<author-name|\<#6570\>\<#5217\>\<#6781\>\<#9650\>>>>>
 
   <section|Def>
 
@@ -63,7 +63,8 @@
   </theorem>
 
   <\theorem>
-    \<#6570\>\<#5217\>. \<#5355\>\<#8C03\>\<#6709\>\<#754C\>\<#FF0C\>\<#5FC5\>\<#6709\>\<#6781\>\<#9650\>
+    \<#6570\>\<#5217\> \<#5355\>\<#8C03\>\<#6709\>\<#754C\>\<#539F\>\<#7406\>.
+    \<#5355\>\<#8C03\>\<#6709\>\<#754C\>\<#FF0C\>\<#5FC5\>\<#6709\>\<#6781\>\<#9650\>
   </theorem>
 
   <\theorem>
@@ -77,6 +78,15 @@
   <\theorem>
     Cauchy\<#51C6\>\<#5219\>\<#FF1A\><math|a<rsub|n>\<rightarrow\>a\<Leftrightarrow\>\<forall\>\<varepsilon\>\<gtr\>0,
     \<exists\>N\<in\>N<rsup|+>,\<forall\>n,m\<gtr\>N\<rightarrow\><around*|\||a<rsub|n>-a<rsub|m>|\|>\<less\>\<varepsilon\>>
+  </theorem>
+
+  <\theorem>
+    Stolz\<#5B9A\>\<#7406\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|\<#5355\>\<#8C03\>\<#589E\>\<#6570\>\<#5217\>y<rsub|n>\<rightarrow\>\<infty\>\<wedge\>lim<rsub|n\<rightarrow\>\<infty\>><frac|x<rsub|n+1>-x<rsub|n>|y<rsub|n+1>-y<rsub|n>>=A<around*|(|A\<in\>R\<cup\>\<pm\>\<infty\>|)>>>|<row|<cell|\<Rightarrow\>>|<cell|lim<rsub|n\<rightarrow\>\<infty\>><frac|x<rsub|n>|y<rsub|n>>=A>>|<row|<cell|Pr>|<cell|n\<gtr\>N\<rightarrow\><around*|\||<frac|x<rsub|n>-x<rsub|n-1>|y<rsub|n>-y<rsub|n-1>>-A|\|>\<less\><frac|\<varepsilon\>|2>>>|<row|<cell|\<rightarrow\>>|<cell|<around*|\||<frac|x<rsub|N+1>-x<rsub|N>+\<cdots\>+x<rsub|n+1>-x<rsub|n>|y<rsub|N+1>-y<rsub|N>+\<cdots\>+y<rsub|n>-y<rsub|n-1>>|\|>=<around*|\||<frac|x<rsub|n>-x<rsub|N>|y<rsub|n>-y<rsub|N>>-A|\|>\<less\><frac|\<varepsilon\>|2>>>|<row|<cell|\<rightarrow\>>|<cell|<frac|x<rsub|n>|y<rsub|n>>-A=<frac|x<rsub|N>-A
+      y<rsub|N>|y<rsub|n>>+<around*|(|1-<frac|y<rsub|N>|y<rsub|n>>|)><around*|(|<frac|x<rsub|n>-x<rsub|N>|y<rsub|n>-y<rsub|N>>-A|)>>>|<row|<cell|>|<cell|y<rsub|n>\<rightarrow\>\<infty\>\<rightarrow\><frac|x<rsub|n>|y<rsub|n>>-A=0+1\<cdot\>A-A=0>>|<row|<cell|>|<cell|\<rightarrow\><around*|\||<frac|x<rsub|n>|y<rsub|n>>-A|\|>\<less\>\<varepsilon\>>>>>>
+    </equation*>
   </theorem>
 
   <section|Tricks>
@@ -132,7 +142,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-2|<tuple|2|1>>
+    <associate|auto-2|<tuple|2|2>>
   </collection>
 </references>
 
