@@ -1,4 +1,4 @@
-<TeXmacs|2.1>
+<TeXmacs|2.1.1>
 
 <style|<tuple|generic|chinese>>
 
@@ -124,7 +124,7 @@
 
     <\equation*>
       <tabular*|<tformat|<table|<row|<cell|a<rsub|n+1>=<sqrt|c+a<rsub|n>>>>|<row|<cell|a<rsub|1>\<less\><sqrt|c>+1;
-      a<rsub|n+1>=<sqrt|c+a<rsub|n>>\<less\><sqrt|c+<sqrt|c>+1>>>|<row|<cell|>>|<row|<cell|>>>>>
+      a<rsub|n+1>=<sqrt|c+a<rsub|n>>\<less\><sqrt|c+<sqrt|c>+1>>>>>>
     </equation*>
   </enumerate>
 

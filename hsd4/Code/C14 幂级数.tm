@@ -1,4 +1,4 @@
-<TeXmacs|2.1>
+<TeXmacs|2.1.1>
 
 <style|generic>
 
@@ -63,7 +63,7 @@
 
     \<#63A8\>\<#8BBA\>\<#FF1A\>\<#5E42\>\<#7EA7\>\<#6570\>\<#5728\>\<#6536\>\<#655B\>\<#534A\>\<#5F84\>\<#5185\>\<#53EF\>\<#4EE5\>\<#4EFB\>\<#610F\>\<#9636\>\<#6C42\>\<#79EF\>\<#3001\>\<#6C42\>\<#5BFC\>
 
-    \<#63A8\>\<#8BBA\>\<#FF1A\>\<#5E42\>\<#7EA7\>\<#6570\>\<#7684\>\<#7CFB\>\<#6570\>\<#4E3A\>\<#FF1A\><math|a<rsub|0>=f<around*|(|x<rsub|0>|)>;a<rsub|n>=<frac|f<rsup|<around*|(|n|)><around*|(|x<rsub|0>|)>>|n!>>
+    \<#63A8\>\<#8BBA\>\<#FF1A\>\<#5E42\>\<#7EA7\>\<#6570\>\<#7684\>\<#7CFB\>\<#6570\>\<#4E3A\>\<#FF1A\><math|a<rsub|0>=f<around*|(|x<rsub|0>|)>;a<rsub|n>=<frac|f<rsup|<around*|(|n|)>><around*|(|x<rsub|0>|)>|n!>>
 
     <item>a\<#5E42\>\<#7EA7\>\<#6570\>\<#5728\>\<#6536\>\<#655B\>\<#534A\>\<#5F84\>\<#5185\>\<#6C42\>\<#5BFC\>\<#548C\>\<#6C42\>\<#79EF\>\<#8FD0\>\<#7B97\>\<#548C\>\<#6C42\>\<#548C\>\<#6781\>\<#9650\>\<#53EF\>\<#4EA4\>\<#6362\>
 
@@ -190,8 +190,8 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|2.3|3>>
-    <associate|auto-11|<tuple|3|3>>
+    <associate|auto-10|<tuple|2.3|4>>
+    <associate|auto-11|<tuple|3|4>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.2|1>>
     <associate|auto-4|<tuple|1.3|1>>

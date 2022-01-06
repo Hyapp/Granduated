@@ -1,4 +1,4 @@
-<TeXmacs|2.1>
+<TeXmacs|2.1.1>
 
 <style|generic>
 
@@ -93,7 +93,7 @@
     <item>\<#963F\>\<#8D1D\>\<#5C14\>\<#5224\>\<#522B\>\<#6CD5\>\<#FF1A\>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<choice|<tformat|<table|<row|<cell|<big|sum>f<rsub|n>\<#5728\>I\<#4E0A\>\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>>>|<row|<cell|\<forall\>x\<in\>I,g<rsub|n><around*|(|x|)>\<#662F\>\<#5355\>\<#8C03\>\<#7684\>>>|<row|<cell|<around*|{|g<rsub|n>|}>\<#5728\>I\<#4E0A\>\<#4E00\>\<#81F4\>\<#6709\>\<#754C\>.<around*|(|\<exists\>M\<gtr\>0,\<forall\>x\<in\>I,\<forall\>n\<in\>N<rsup|+>,<around*|\||g<rsub|n><around*|(|x|)>|\|>\<leqslant\>M|)>>>>>>\<Rightarrow\><big|sum>f<rsub|n>g<rsub|n>\<#5728\>I\<#4E0A\>\<#4E00\>\<#81F4\>\<#6536\>\<#655B\>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|<choice|<tformat|<table|<row|<cell|<big|sum>f<rsub|n>\<#5728\>I\<#4E0A\>\<#4E00\>\<#81F4\>\<#6536\>\<#655B\>>>|<row|<cell|\<forall\>x\<in\>I,g<rsub|n><around*|(|x|)>\<#662F\>\<#5355\>\<#8C03\>\<#7684\>>>|<row|<cell|<around*|{|g<rsub|n>|}>\<#5728\>I\<#4E0A\>\<#4E00\>\<#81F4\>\<#6709\>\<#754C\>.<around*|(|\<exists\>M\<gtr\>0,\<forall\>x\<in\>I,\<forall\>n\<in\>N<rsup|+>,<around*|\||g<rsub|n><around*|(|x|)>|\|>\<leqslant\>M|)>>>>>>\<Rightarrow\><big|sum>f<rsub|n>g<rsub|n>\<#5728\>I\<#4E0A\>\<#4E00\>\<#81F4\>\<#6536\>\<#655B\>>>>>>
     </equation*>
 
     <item>\<#72C4\>\<#5229\>\<#514B\>\<#96F7\>\<#5224\>\<#522B\>\<#6CD5\>\<#FF1A\>
@@ -157,8 +157,7 @@
     \<#5BFC\>\<#51FD\>\<#6570\>\<#5E8F\>\<#5217\>\<#5728\>\<#95ED\>\<#533A\>\<#95F4\>\<#4E0A\>\<#4E00\>\<#81F4\>\<#6536\>\<#655B\>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|\<#5728\>\<#95ED\>\<#533A\>\<#95F4\>D\<#4E0A\><tabular*|<tformat|<table|<row|<cell|f<choice|<tformat|<table|<row|<cell|\<#6536\>\<#655B\>>>|<row|<cell|\<#6709\>\<#8FDE\>\<#7EED\>\<#7684\>\<#5BFC\>\<#51FD\>\<#6570\>>>>>>>>|<row|<cell|f<rprime|'>
-      \<#4E00\>\<#81F4\>\<#6536\>\<#655B\>>>>>>>|<cell|\<Rightarrow\><big|sum><around*|(|<frac|\<up-d\>|\<up-d\>x>u<rsub|n>|)>=<frac|\<up-d\>|\<up-d\>x><around*|(|<big|sum>u<rsub|n>|)>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|\<#5728\>\<#95ED\>\<#533A\>\<#95F4\>D\<#4E0A\><tabular*|<tformat|<table|<row|<cell|f<choice|<tformat|<table|<row|<cell|\<#6536\>\<#655B\>>>>>>>>|<row|<cell|f<rprime|'><rsub|n><choice|<tformat|<table|<row|<cell|\<#4E00\>\<#81F4\>\<#6536\>\<#655B\>>>|<row|<cell|\<#8FDE\>\<#7EED\>>>>>>>>>>>>|<cell|\<Rightarrow\><big|sum><around*|(|<frac|\<up-d\>|\<up-d\>x>u<rsub|n>|)>=<frac|\<up-d\>|\<up-d\>x><around*|(|<big|sum>u<rsub|n>|)>>>>>>
     </equation*>
   </enumerate>
 

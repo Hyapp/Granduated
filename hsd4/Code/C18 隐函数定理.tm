@@ -1,4 +1,4 @@
-<TeXmacs|2.1>
+<TeXmacs|2.1.1>
 
 <style|generic>
 
@@ -58,7 +58,8 @@
       y>-F<rsub|y><rsup|2>F<rsub|x x>|F<rsub|y><rsup|3>>,F<rsub|x>=0\<rightarrow\>y<rsub|x
       x>=<frac|-F<rsub|y><rsup|2>F<rsub|x
       x>|F<rsub|y><rsup|3>>=-<frac|F<rsub|x
-      x>|F<rsub|y>>>>|<row|<cell|\<#6781\>\<#503C\>\<#7B2C\>\<#4E8C\>\<#6761\>\<#4EF6\>\<#FF1A\><choice|<tformat|<table|<row|<cell|y<rsub|xx>\<gtr\>0>|<cell|\<#5728\>P<rsub|0>\<#53D6\>\<#5F97\>\<#6781\>\<#5C0F\>\<#503C\>>>|<row|<cell|y<rsub|x
+      x>|F<rsub|y>>>>|<row|<cell|\<#6781\>\<#503C\>\<#7B2C\>\<#4E8C\>\<#6761\>\<#4EF6\>\<#FF1A\><choice|<tformat|<table|<row|<cell|y<rsub|x
+      x>\<gtr\>0>|<cell|\<#5728\>P<rsub|0>\<#53D6\>\<#5F97\>\<#6781\>\<#5C0F\>\<#503C\>>>|<row|<cell|y<rsub|x
       x>\<less\>0>|<cell|\<#5728\>P<rsub|0>\<#53D6\>\<#5F97\>\<#6700\>\<#5927\>\<#503C\>>>|<row|<cell|y<rsub|x
       x>=0>|<cell|\<#9700\>\<#8981\>\<#66F4\>\<#9AD8\>\<#9636\>\<#5BFC\>\<#6570\>\<#5224\>\<#65AD\>>>>>>>>>>>
     </equation*>
@@ -132,7 +133,7 @@
     <item>\<#5E73\>\<#9762\>\<#66F2\>\<#7EBF\>\<#7684\>\<#5207\>\<#6CD5\>\<#7EBF\>\<#FF1A\>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|F<around*|(|x,y|)>=0\<#786E\>\<#5B9A\>\<#7684\>\<#66F2\>\<#7EBF\>\<#7684\>\<#5207\>\<#7EBF\>\<#548C\>\<#6CD5\>\<#7EBF\>>>|<row|<cell|>|<cell|F<around*|(|x,y|)>\<#5728\>P<rsub|0>\<#7684\>\<#67D0\>\<#9886\>\<#57DF\>\<#4E0A\>\<#6EE1\>\<#8DB3\>\<#9690\>\<#51FD\>\<#6570\>\<#5B9A\>\<#7406\>\<#7684\>\<#6761\>\<#4EF6\>>>|<row|<cell|\<#5207\>\<#7EBF\>>|<cell|y-y<rsub|0>=f<rprime|'><around*|(|x<rsub|0>|)><around*|(|x-x<rsub|0>|)>>>|<row|<cell|>|<cell|F<rsub|x><around*|(|P<rsub|0>|)><around*|(|x-x<rsub|0>|)>+F<rsub|y><around*|(|P<rsub|0>|)><around*|(|y-y<rsub|0>|)>=0>>|<row|<cell|\<#6CD5\>\<#7EBF\>>|<cell|F<rsub|y><around*|(|P<rsub|0>|)><around*|(|x-x<rsub|0>|)>-F<rsub|x><around*|(|P<rsub|0>|)><around*|(|y-y<rsub|0>|)>=0>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|F<around*|(|x,y|)>=0\<#786E\>\<#5B9A\>\<#7684\>\<#66F2\>\<#7EBF\>\<#7684\>\<#5207\>\<#7EBF\>\<#548C\>\<#6CD5\>\<#7EBF\>>>|<row|<cell|>|<cell|F<around*|(|x,y|)>\<#5728\>P<rsub|0>\<#7684\>\<#67D0\>\<#9886\>\<#57DF\>\<#4E0A\>\<#6EE1\>\<#8DB3\>\<#9690\>\<#51FD\>\<#6570\>\<#5B9A\>\<#7406\>\<#7684\>\<#6761\>\<#4EF6\>>>|<row|<cell|\<#5207\>\<#7EBF\>>|<cell|y-y<rsub|0>=f<rprime|'><around*|(|x<rsub|0>|)><around*|(|x-x<rsub|0>|)>>>|<row|<cell|>|<cell|F<rsub|x><around*|(|P<rsub|0>|)><around*|(|x-x<rsub|0>|)>+F<rsub|y><around*|(|P<rsub|0>|)><around*|(|y-y<rsub|0>|)>=0>>|<row|<cell|>|<cell|>>|<row|<cell|\<#6CD5\>\<#7EBF\>>|<cell|F<rsub|y><around*|(|P<rsub|0>|)><around*|(|x-x<rsub|0>|)>-F<rsub|x><around*|(|P<rsub|0>|)><around*|(|y-y<rsub|0>|)>=0>>>>>
     </equation*>
 
     <item>\<#7A7A\>\<#95F4\>\<#66F2\>\<#7EBF\>\<#7684\>\<#5207\>\<#7EBF\>\<#548C\>\<#6CD5\>\<#5E73\>\<#9762\>\<#FF1A\>
@@ -227,7 +228,7 @@
     <item>\<#53CD\>\<#51FD\>\<#6570\>\<#6C42\>\<#5BFC\>\<#516C\>\<#5F0F\>\<#7684\>\<#63A8\>\<#5BFC\>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|y\<#5728\>x<rsub|0>\<#7684\>\<#67D0\>\<#4E2A\>\<#90BB\>\<#57DF\>\<#4E0A\>\<#6709\>\<#8FDE\>\<#7EED\>\<#7684\>\<#5BFC\>\<#6570\>f<rprime|'><around*|(|x|)>,f<around*|(|x<rsub|0>|)>=y<rsub|0>>>|<row|<cell|F<around*|(|x,y|)>=y-f<around*|(|x|)>=0>>|<row|<cell|F<around*|(|x<rsub|0>,y<rsub|0>|)>=0,F<rsub|y>=1,F<rsub|x><around*|(|x<rsub|0>,y<rsub|0>|)>=-f<rprime|'><around*|(|x<rsub|0>|)>>>|<row|<cell|\<rightarrow\>\<#6839\>\<#636E\>\<#9690\>\<#51FD\>\<#6570\>\<#5B9A\>\<#7406\>\<#FF0C\>\<#6709\>\<#552F\>\<#4E00\>\<#7684\>\<#8FDE\>\<#7EED\>\<#53EF\>\<#5FAE\>\<#51FD\>\<#6570\>x=g<around*|(|y|)>>>|<row|<cell|g<rprime|'><around*|(|y|)>=-<frac|F<rsub|y>|F<rsub|x>>=-<frac|1|-f<rprime|'><around*|(|x|)>>=<frac|1|f<rprime|'><around*|(|x|)>>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|y\<#5728\>x<rsub|0>\<#7684\>\<#67D0\>\<#4E2A\>\<#90BB\>\<#57DF\>\<#4E0A\>\<#6709\>\<#8FDE\>\<#7EED\>\<#7684\>\<#5BFC\>\<#6570\>f<rprime|'><around*|(|x|)>,f<around*|(|x<rsub|0>|)>=y<rsub|0>>>|<row|<cell|F<around*|(|x,y|)>=y-f<around*|(|x|)>=0>>|<row|<cell|F<around*|(|x<rsub|0>,y<rsub|0>|)>=0,F<rsub|y>=1,F<rsub|x><around*|(|x<rsub|0>,y<rsub|0>|)>=-f<rprime|'><around*|(|x<rsub|0>|)>>>|<row|<cell|\<rightarrow\>\<#6839\>\<#636E\>\<#9690\>\<#51FD\>\<#6570\>\<#5B9A\>\<#7406\>\<#FF0C\>\<#6709\>\<#552F\>\<#4E00\>\<#7684\>\<#8FDE\>\<#7EED\>\<#53EF\>\<#5FAE\>\<#51FD\>\<#6570\>x=g<around*|(|y|)>>>|<row|<cell|g<rprime|'><around*|(|y|)>=-<frac|F<rsub|y>|F<rsub|x>>=-<frac|1|-f<rprime|'><around*|(|x|)>>=<frac|1|f<rprime|'><around*|(|x|)>>>>|<row|<cell|\<b-g\><rprime|'><around*|(|\<b-y\>|)>=<around*|(|\<b-f\><rprime|'><around*|(|\<b-x\>|)>|)><rsup|-1>>>>>>
     </equation*>
 
     <item>\<#62C9\>\<#683C\>\<#6717\>\<#65E5\>\<#4E58\>\<#6570\>\<#6CD5\>\<#7684\>\<#64CD\>\<#4F5C\>\<#65B9\>\<#6CD5\>\<#FF1A\>
@@ -251,7 +252,7 @@
     <associate|auto-3|<tuple|1.2|4>>
     <associate|auto-4|<tuple|1.3|4>>
     <associate|auto-5|<tuple|1.4|5>>
-    <associate|auto-6|<tuple|2|6>>
+    <associate|auto-6|<tuple|2|7>>
   </collection>
 </references>
 

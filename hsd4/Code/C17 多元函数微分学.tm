@@ -1,4 +1,4 @@
-<TeXmacs|2.1>
+<TeXmacs|2.1.1>
 
 <style|generic>
 
@@ -320,16 +320,15 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|2|?>>
-    <associate|auto-11|<tuple|1|?>>
+    <associate|auto-10|<tuple|2|7>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.2|2>>
     <associate|auto-4|<tuple|1.3|2>>
     <associate|auto-5|<tuple|1.4|3>>
     <associate|auto-6|<tuple|1.5|3>>
     <associate|auto-7|<tuple|1.6|4>>
-    <associate|auto-8|<tuple|1.7|?>>
-    <associate|auto-9|<tuple|1.8|?>>
+    <associate|auto-8|<tuple|1.7|5>>
+    <associate|auto-9|<tuple|1.8|6>>
   </collection>
 </references>
 
@@ -363,6 +362,18 @@
       <with|par-left|<quote|1tab>|1.6<space|2spc>\<#9AD8\>\<#9636\>\<#504F\>\<#5BFC\>\<#6570\>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-7>>
+
+      <with|par-left|<quote|1tab>|1.7<space|2spc>\<#4E2D\>\<#503C\>\<#5B9A\>\<#7406\>\<#548C\>\<#6CF0\>\<#52D2\>\<#516C\>\<#5F0F\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8>>
+
+      <with|par-left|<quote|1tab>|1.8<space|2spc>\<#6781\>\<#503C\>\<#95EE\>\<#9898\>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9>>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Trick>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>

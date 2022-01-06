@@ -1,4 +1,4 @@
-<TeXmacs|2.1>
+<TeXmacs|2.1.1>
 
 <style|generic>
 
@@ -29,7 +29,9 @@
 
     <math|f<rsub|odd>=<frac|f<around*|(|x|)>-f<around*|(|-x|)>|2>=\<#5085\>\<#7ACB\>\<#53F6\>\<#6B63\>\<#5F26\>\<#9879\>;f<rsub|even>=<frac|f<around*|(|x|)>+f<around*|(|-x|)>|2>=\<#5085\>\<#7ACB\>\<#53F6\>\<#4F59\>\<#5F26\>\<#9879\>;>
 
-    <item>\<#6536\>\<#655B\>\<#5B9A\>\<#7406\>\<#FF1A\>\<#82E5\>\<#6570\>\<#9879\>\<#7EA7\>\<#6570\><math|<frac|<around*|\||a<rsub|0>|\|>|2>+<big|sum><around*|(|<around*|\||a<rsub|n>|\|>+<around*|\||b<rsub|n>|\|>|)>>\<#6536\>\<#655B\>\<#FF0C\>\<#5219\>\<#5B9A\>\<#4E49\>\<#51FA\>\<#6765\>\<#7684\>\<#4E09\>\<#89D2\>\<#7EA7\>\<#6570\>\<#5728\>R\<#4E0A\>\<#4E00\>\<#81F4\>\<#4E14\>\<#7EDD\>\<#5BF9\>\<#6536\>\<#655B\>
+    <item>\<#6536\>\<#655B\>\<#5B9A\>\<#7406\>\<#FF1A\>
+
+    \<#82E5\>\<#6570\>\<#9879\>\<#7EA7\>\<#6570\><math|<frac|<around*|\||a<rsub|0>|\|>|2>+<big|sum><around*|(|<around*|\||a<rsub|n>|\|>+<around*|\||b<rsub|n>|\|>|)>>\<#6536\>\<#655B\>\<#FF0C\>\<#5219\>\<#5B9A\>\<#4E49\>\<#51FA\>\<#6765\>\<#7684\>\<#4E09\>\<#89D2\>\<#7EA7\>\<#6570\>\<#5728\>R\<#4E0A\>\<#4E00\>\<#81F4\>\<#4E14\>\<#7EDD\>\<#5BF9\>\<#6536\>\<#655B\>
 
     <item>\<#4E09\>\<#89D2\>\<#7EA7\>\<#6570\>\<#7CFB\>\<#6570\>\<#7684\>\<#8BA1\>\<#7B97\>\<#FF1A\>
 
@@ -145,8 +147,8 @@
     <associate|auto-1|<tuple|1|1>>
     <associate|auto-2|<tuple|1.1|1>>
     <associate|auto-3|<tuple|1.2|2>>
-    <associate|auto-4|<tuple|1.3|2>>
-    <associate|auto-5|<tuple|2|3>>
+    <associate|auto-4|<tuple|1.3|3>>
+    <associate|auto-5|<tuple|2|4>>
   </collection>
 </references>
 
