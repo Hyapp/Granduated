@@ -1,4 +1,4 @@
-<TeXmacs|1.99.21>
+<TeXmacs|1.99.13>
 
 <style|<tuple|generic|chinese|number-long-article>>
 
@@ -216,14 +216,28 @@
     \<#79EF\>\<#5206\>\<#7684\>\<#6027\>\<#8D28\>
 
     <math|<tabular*|<tformat|<table|<row|<cell|>|<cell|<around*|[|a,b|]>\<#4E0A\>f<rsub|1>\<in\>\<frak-R\><around*|(|\<alpha\>|)>,
-    f<rsub|2>\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|\<#52A0\>\<#6CD5\>\<#5C01\>\<#95ED\>>|<cell|f<rsub|1>+f<rsub|2>\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|\<#6807\>\<#4E58\>\<#5C01\>\<#95ED\>>|<cell|\<forall\>c\<in\>R,
-    c f\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|\<#7EBF\>\<#6027\>\<#6027\>>|<cell|<big|int>f<rsub|1>+f<rsub|2>
+    f<rsub|2>\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|\<#52A0\>\<#6CD5\>\<#5C01\>\<#95ED\>>|<cell|f<rsub|1>+f<rsub|2>\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|>|<cell|<big|int><rsub|a><rsup|b><around*|(|f<rsub|1>+f<rsub|2>|)>\<up-d\>\<alpha\>=<big|int><rsub|a><rsup|b>f<rsub|1>\<up-d\>\<alpha\>+<big|int><rsub|a><rsup|b>f<rsub|2>\<up-d\>\<alpha\>>>|<row|<cell|\<#6807\>\<#4E58\>\<#5C01\>\<#95ED\>>|<cell|\<forall\>c\<in\>R,
+    c f\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|\<#7EBF\>\<#6027\>\<#6027\>>|<cell|<big|int>f<rsub|1>\<up-d\>\<alpha\>+f<rsub|2>
     \<up-d\>\<alpha\>=<big|int>f<rsub|1>\<up-d\>\<alpha\>+<big|int>f<rsub|2>\<up-d\>\<alpha\>>>|<row|<cell|>|<cell|<big|int>c
-    f \<up-d\>\<alpha\>=c<big|int>f\<up-d\>\<alpha\>>>|<row|<cell|\<#4FDD\>\<#4E0D\>\<#7B49\>\<#5F0F\>>|<cell|f<rsub|1>\<leqslant\>f<rsub|2>\<rightarrow\><big|int>f<rsub|1>\<leqslant\><big|int>f<rsub|2>>>|<row|<cell|\<#533A\>\<#95F4\>\<#53EF\>\<#5206\>>|<cell|<around*|[|a,b|]>\<#4E0A\>f\<in\>\<frak-R\>.
-    c\<in\><around*|(|a,b|)>\<rightarrow\>f\<#5728\><around*|[|a,c|]>,<around*|[|c,b|]>\<#4E0A\>\<#90FD\>R\<#53EF\>\<#79EF\>>>|<row|<cell|>|<cell|<big|int><rsub|a><rsup|b>f=<big|int><rsub|a><rsup|c>f+<big|int><rsub|c><rsup|b>f>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|f\<#5728\><around*|[|a,b|]>\<#4E0A\><around*|\||f|\|>\<leqslant\>M\<rightarrow\><around*|\||<big|int><rsub|a><rsup|b>f|\|>\<leqslant\>M<around*|(|b-a|)>>>|<row|<cell|>|<cell|f\<in\>\<frak-R\><around*|(|\<alpha\><rsub|1>|)>\<wedge\>f\<in\>\<frak-R\><around*|(|\<alpha\><rsub|2>|)>\<rightarrow\><big|int><rsub|a><rsup|b>f\<up-d\><around*|(|\<alpha\><rsub|1>+\<alpha\><rsub|2>|)>=<big|int>f
+    f \<up-d\>\<alpha\>=c<big|int>f\<up-d\>\<alpha\>>>|<row|<cell|\<#4FDD\>\<#4E0D\>\<#7B49\>\<#5F0F\>>|<cell|f<rsub|1>\<leqslant\>f<rsub|2>\<rightarrow\><big|int>f<rsub|1>\<up-d\>\<alpha\>\<leqslant\><big|int>f<rsub|2>\<up-d\>\<alpha\>>>|<row|<cell|\<#533A\>\<#95F4\>\<#53EF\>\<#5206\>>|<cell|<around*|[|a,b|]>\<#4E0A\>f\<in\>\<frak-R\>.
+    c\<in\><around*|(|a,b|)>\<rightarrow\>f\<#5728\><around*|[|a,c|]>,<around*|[|c,b|]>\<#4E0A\>\<#90FD\>R\<#53EF\>\<#79EF\>>>|<row|<cell|>|<cell|<big|int><rsub|a><rsup|b>f\<up-d\>\<alpha\>=<big|int><rsub|a><rsup|c>f\<up-d\>\<alpha\>+<big|int><rsub|c><rsup|b>f\<up-d\>\<alpha\>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|f\<#5728\><around*|[|a,b|]>\<#4E0A\><around*|\||f|\|>\<leqslant\>M\<rightarrow\><around*|\||<big|int><rsub|a><rsup|b>f\<up-d\>\<alpha\>|\|>\<leqslant\>M<around*|(|b-a|)>>>|<row|<cell|>|<cell|f\<in\>\<frak-R\><around*|(|\<alpha\><rsub|1>|)>\<wedge\>f\<in\>\<frak-R\><around*|(|\<alpha\><rsub|2>|)>\<rightarrow\><big|int><rsub|a><rsup|b>f\<up-d\><around*|(|\<alpha\><rsub|1>+\<alpha\><rsub|2>|)>=<big|int>f
     \<up-d\>\<alpha\><rsub|1>+<big|int>f\<up-d\>\<alpha\><rsub|2>>>|<row|<cell|>|<cell|f\<in\>\<frak-R\><around*|(|\<alpha\>|)>.
     c\<in\>R<rsup|+>, <big|int><rsub|a><rsup|b>f\<up-d\><around*|(|c\<alpha\>|)>=<big|int>c
     f \<up-d\>\<alpha\>=c<big|int>f \<up-d\>\<alpha\>>>>>>>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<#52A0\>\<#6CD5\>\<#5C01\>\<#95ED\>>|<cell|L*<around*|(|P,f<rsub|1>,\<alpha\>|)>+L<around*|(|P,f<rsub|2>,\<alpha\>|)>\<leqslant\>L<around*|(|P,f,\<alpha\>|)>\<leqslant\>U<around*|(|P,f,\<alpha\>|)>>>|<row|<cell|>|<cell|\<leqslant\>U<around*|(|P,f<rsub|1>,\<alpha\>|)>+U<around*|(|P,f<rsub|2>.\<alpha\>|)>>>|<row|<cell|>|<cell|f<rsub|1>\<in\>\<frak-R\>\<rightarrow\>\<exists\>P<rsub|1>\<rightarrow\>U<around*|(|P,f<rsub|1>,\<alpha\>|)>-L<around*|(|P,f<rsub|1>,\<alpha\>|)>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|f<rsub|2>\<in\>\<frak-R\>\<rightarrow\>\<exists\>P<rsub|2>\<rightarrow\>U<around*|(|P,f<rsub|2>,\<alpha\>|)>-L<around*|(|P,f<rsub|2>,\<alpha\>|)>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|P=P<rsub|1>\<cup\>P<rsub|2>>>|<row|<cell|>|<cell|\<rightarrow\>U<around*|(|P,f,\<alpha\>|)>-L<around*|(|P,f,\<alpha\>|)>\<less\>2\<varepsilon\>>>|<row|<cell|>|<cell|\<rightarrow\>f<rsub|1>+f<rsub|2>\<in\>\<frak-R\>>>|<row|<cell|>|<cell|>>|<row|<cell|\<#6807\>\<#4E58\>\<#5C01\>\<#95ED\>>|<cell|f\<in\>\<frak-R\>\<rightarrow\>\<exists\>P\<rightarrow\>U<around*|(|P,f,\<alpha\>|)>-L<around*|(|P,f,\<alpha\>|)>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|U<around*|(|P,c
+      f,\<alpha\>|)>-L<around*|(|P,c f,\<alpha\>|)>\<less\><around*|\||c|\|>\<varepsilon\>>>|<row|<cell|>|<cell|\<rightarrow\>c
+      f\<in\>\<frak-R\>>>|<row|<cell|>|<cell|>>|<row|<cell|\<#7EBF\>\<#6027\>\<#52A0\>\<#6CD5\>>|<cell|P=P<rsub|1>\<cup\>P<rsub|2>>>|<row|<cell|>|<cell|M<rsub|i><around*|(|f<rsub|1>+f<rsub|2>|)>\<leqslant\>M<rsub|i><around*|(|f<rsub|1>|)>+M<rsub|i><around*|(|f<rsub|2>|)>>>|<row|<cell|>|<cell|m<rsub|i><around*|(|f<rsub|1>+f<rsub|2>|)>\<geqslant\>m<rsub|i><around*|(|f<rsub|1>|)>+m<rsub|i><around*|(|f<rsub|2>|)>>>|<row|<cell|>|<cell|L<around*|(|P,f<rsub|1>,\<alpha\>|)>+L<around*|(|P,f<rsub|2>,\<alpha\>|)>\<leqslant\>L<around*|(|P,f<rsub|1>+f<rsub|2>,\<alpha\>|)>>>|<row|<cell|>|<cell|\<leqslant\><big|int><around*|(|f<rsub|1>+f<rsub|2>|)>\<up-d\>\<alpha\>>>|<row|<cell|>|<cell|\<leqslant\>U<around*|(|P,f<rsub|1>+f<rsub|2>,\<alpha\>|)>\<leqslant\>U<around*|(|P,f<rsub|1>,\<alpha\>|)>+U<around*|(|P,f<rsub|2>,\<alpha\>|)>>>|<row|<cell|>|<cell|\<#6839\>\<#636E\>\<#5939\>\<#903C\>\<#5B9A\>\<#7406\>\<rightarrow\>U<around*|(|P,f<rsub|1>+f<rsub|2>,\<alpha\>|)>-L<around*|(|P,f<rsub|1>+f<rsub|2>,\<alpha\>|)>=<big|int>f<rsub|1>+<big|int>f<rsub|2><rsub|>>>|<row|<cell|>|<cell|>>|<row|<cell|\<#7EBF\>\<#6027\>\<#4E58\>\<#6CD5\>>|<cell|f\<in\>\<frak-R\>\<rightarrow\>\<exists\>P\<rightarrow\>U<around*|(|P,f,\<alpha\>|)>-L<around*|(|P,f,\<alpha\>|)>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|M<rsub|i><around*|(|c
+      f|)>=c M<rsub|i><around*|(|f|)>>>|<row|<cell|>|<cell|m<rsub|i><around*|(|c
+      f|)>=c m<rsub|i><around*|(|f|)>>>|<row|<cell|>|<cell|\<rightarrow\>L<around*|(|P,c
+      f,\<alpha\>|)>\<leqslant\>c\<cdot\>L<around*|(|P,f,\<alpha\>|)>\<leqslant\><big|int>c
+      f\<up-d\>\<alpha\>\<leqslant\>c\<cdot\>U<around*|(|P,f,\<alpha\>|)>\<leqslant\>U<around*|(|P,c
+      f,\<alpha\>|)>>>|<row|<cell|>|<cell|\<#5939\>\<#903C\>\<#5B9A\>\<#7406\>\<rightarrow\>c\<cdot\>L<around*|(|P,f,\<alpha\>|)>\<#548C\>c\<cdot\>U<around*|(|P,f,\<alpha\>|)>\<#540C\>\<#65F6\>\<#6536\>\<#655B\>\<#4E8E\><big|int>
+      c f\<up-d\>\<alpha\>>>|<row|<cell|>|<cell|>>|<row|<cell|\<#4FDD\>\<#4E0D\>\<#7B49\>\<#5F0F\>>|<cell|m<rsub|i><around*|(|f<rsub|1>|)>\<leqslant\>m<rsub|i><around*|(|f<rsub|2>|)>>>|<row|<cell|>|<cell|M<rsub|i><around*|(|f<rsub|1>|)>\<leqslant\>M<rsub|i><around*|(|f<rsub|2>|)>>>|<row|<cell|>|<cell|\<rightarrow\>L<around*|(||)>>>>>>><strong|>
+    </proof>
   </theorem>
 
   <section|\<#79EF\>\<#5206\>\<#4E0E\>\<#5FAE\>\<#5206\>>
@@ -243,13 +257,12 @@
 
 <\references>
   <\collection>
-    <associate|1.4|<tuple|1.4|?>>
+    <associate|1.4|<tuple|1.4|2>>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-2|<tuple|2|1>>
-    <associate|auto-3|<tuple|3|1>>
-    <associate|auto-4|<tuple|4|1>>
-    <associate|auto-5|<tuple|5|1>>
-    <associate|auto-6|<tuple|5|?>>
+    <associate|auto-2|<tuple|2|4>>
+    <associate|auto-3|<tuple|3|4>>
+    <associate|auto-4|<tuple|4|4>>
+    <associate|auto-5|<tuple|5|4>>
   </collection>
 </references>
 
