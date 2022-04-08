@@ -138,8 +138,14 @@
   <\definition>
     \<#7FA4\>(group)
 
-    \;
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<#7FA4\>>|<cell|\<#534A\>\<#7FA4\>S\<wedge\>\<forall\>a\<in\>S,a
+      S=S\<wedge\>S a=S>>|<row|<cell|\<#7FA4\>>|<cell|\<#534A\>\<#7FA4\>S\<wedge\>\<exists\>e\<in\>S,\<forall\>a\<in\>S,e
+      a=a>>|<row|<cell|\<#7FA4\>>|<cell|\<#534A\>\<#7FA4\>S,\<forall\>a\<in\>S,\<exists\>a<rsup|-1>\<in\>S,a<rsup|-1>a=e>>>>>
+    </equation*>
   </definition>
+
+  \;
 
   \;
 

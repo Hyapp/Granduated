@@ -116,7 +116,7 @@
   </theorem>
 
   <\theorem>
-    \;
+    <label|1.7>
 
     <math|<tabular*|<tformat|<table|<row|<cell|>|<cell|U<around*|(|P,f,\<alpha\>|)>-L<around*|(|P,f,\<alpha\>|)>\<less\>\<varepsilon\>>>|<row|<cell|1.>|<cell|\<#5BF9\>\<#67D0\>\<#4E2A\>P\<#548C\>\<#67D0\>\<#4E2A\>\<varepsilon\>\<#6210\>\<#7ACB\>\<#4E0A\>\<#5F0F\>\<rightarrow\>\<#5BF9\>\<#6B64\>\<varepsilon\>,
     P\<#7684\>\<#4EFB\>\<#610F\>\<#52A0\>\<#7EC6\>\<#6B64\>\<#5F0F\>\<#4E5F\>\<#6210\>\<#7ACB\>>>|<row|<cell|2.>|<cell|\<#4E0A\>\<#5F0F\>\<#5BF9\>P\<#6210\>\<#7ACB\>\<#FF0C\>s<rsub|i>,t<rsub|i>\<#662F\><around*|[|x<rsub|i-1>,x<rsub|i>|]>\<#5185\>\<#7684\>\<#4EFB\>\<#610F\>\<#70B9\>\<rightarrow\><big|sum><rsub|1><rsup|n><around*|\||f<around*|(|s<rsub|i>|)>-f<around*|(|t<rsub|i>|)>|\|>\<Delta\>\<alpha\><rsub|i>\<less\>\<varepsilon\>>>|<row|<cell|3.>|<cell|f\<in\>\<frak-R\><around*|(|\<alpha\>|)>\<#4E14\>2.\<#6210\>\<#7ACB\>\<rightarrow\><around*|\||<big|sum><rsub|1><rsup|n>f<around*|(|t<rsub|i>|)>\<Delta\>\<alpha\><rsub|i>-<big|int><rsub|a><rsup|b>f\<up-d\>\<alpha\>|\|>\<less\>\<varepsilon\>>>>>>>
@@ -186,8 +186,8 @@
   </theorem>
 
   <\theorem>
-    \<#95ED\>\<#533A\>\<#95F4\>\<#5185\>.
-    \<#5185\>\<#51FD\>\<#6570\>\<#53EF\>\<#79EF\>\<#FF0C\>\<#5916\>\<#51FD\>\<#6570\>\<#8FDE\>\<#7EED\>\<#5219\>\<#590D\>\<#5408\>\<#53EF\>\<#79EF\>
+    <label|1.11>\<#95ED\>\<#533A\>\<#95F4\>\<#5185\>.
+    \<#5185\>\<#51FD\>\<#6570\>\<#53EF\>\<#79EF\>\<#FF0C\>\<#5916\>\<#51FD\>\<#6570\>\<#8FDE\>\<#7EED\>-\<gtr\>\<#590D\>\<#5408\>\<#53EF\>\<#79EF\>
 
     <\equation*>
       f\<#5728\><around*|[|a,b|]>\<#4E0A\>\<in\>\<frak-R\><around*|(|\<alpha\>|)>,
@@ -242,11 +242,158 @@
 
   <section|\<#79EF\>\<#5206\>\<#4E0E\>\<#5FAE\>\<#5206\>>
 
+  \ \ \ \ \<#8FD9\>\<#8868\>\<#660E\>\<#67D0\>\<#79CD\>\<#7A0B\>\<#5EA6\>\<#4E0A\>\<#FF0C\>\<#5B9E\>\<#51FD\>\<#6570\>\<#7684\>\<#79EF\>\<#5206\>\<#548C\>\<#5FAE\>\<#5206\>\<#662F\>\<#4E92\>\<#9006\>\<#8FD0\>\<#7B97\>
+
+  <\theorem>
+    f\<#53EF\>\<#79EF\>-\<gtr\>\<#53D8\>\<#4E0A\>\<#9650\>\<#79EF\>\<#5206\>\<#51FD\>\<#6570\>F\<#8FDE\>\<#7EED\>\<#FF08\>\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>\<#FF09\>.f\<#5728\>\<#67D0\>\<#70B9\>x\<#8FDE\>\<#7EED\>-\<gtr\>F\<#5728\>x\<#53EF\>\<#5FAE\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|f\<#5728\><around*|[|a,b|]>\<#4E0A\>R\<#53EF\>\<#79EF\>,
+      \<forall\>a\<leqslant\>x\<leqslant\>b>>|<row|<cell|>|<cell|F<around*|(|x|)>=<big|int><rsub|a><rsup|x>f<around*|(|t|)>\<up-d\>t>>|<row|<cell|1.>|<cell|F\<#5728\><around*|[|a,b|]>\<#4E0A\>\<#8FDE\>\<#7EED\>>>|<row|<cell|2.>|<cell|f\<#5728\>x<rsub|0>\<#8FDE\>\<#7EED\>\<rightarrow\>F\<#5728\>x<rsub|0>\<#53EF\>\<#5FAE\>\<wedge\>F<rprime|'><around*|(|x<rsub|0>|)>=f<around*|(|x<rsub|0>|)>>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|1.>|<cell|f\<in\>\<frak-R\>,
+      f\<#6709\>\<#754C\>. \<forall\>t\<in\><around*|[|a,b|]>,<around*|\||f<around*|(|t|)>|\|>\<leqslant\>M.
+      a\<leqslant\>x\<less\>y\<leqslant\>b>>|<row|<cell|>|<cell|\<rightarrow\><around*|\||F<around*|(|y|)>-F<around*|(|x|)>|\|>=<around*|\||<big|int><rsub|x><rsup|y>f<around*|(|t|)>\<up-d\>t|\|>\<leqslant\>M<around*|(|y-x|)>>>|<row|<cell|>|<cell|<around*|\||y-x|\|>\<less\><frac|\<varepsilon\>|M>\<rightarrow\><around*|\||F<around*|(|y|)>-f<around*|(|x|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|>>|<row|<cell|2.>|<cell|f\<#5728\>x<rsub|0>\<#8FDE\>\<#7EED\>\<rightarrow\>
+      \<forall\>\<varepsilon\>\<gtr\>0, \<exists\>\<delta\>\<gtr\>0\<rightarrow\><around*|\||t-x<rsub|0>|\|>\<less\>\<delta\>\<wedge\>a\<leqslant\>t\<leqslant\>b\<rightarrow\><around*|\||f<around*|(|t|)>-f<around*|(|x<rsub|0>|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|>|<cell|s,x<rsub|0>,t\<in\>U<rsub|x<rsub|0>><around*|(|\<delta\>|)>\<wedge\>s\<leqslant\>x<rsub|0>\<leqslant\>t>>|<row|<cell|>|<cell|<around*|\||<frac|F<around*|(|t|)>-F<around*|(|s|)>|t-s>-f<around*|(|x<rsub|0>|)>|\|>=<around*|\||<frac|1|t-s><big|int><rsub|s><rsup|t><around*|(|f<around*|(|u|)>-f<around*|(|x<rsub|0>|)>|)>\<up-d\>u|\|>\<leqslant\>\<varepsilon\>>>|<row|<cell|>|<cell|<around*|\||<frac|1|t-s><around*|(|F<around*|(|t|)>-F<around*|(|s|)>|)>-f<around*|(|x<rsub|0>|)>|\|>=<around*|\||<frac|1|t-s><big|int><rsub|s><rsup|t>f<around*|(|u|)>\<up-d\>u-f<around*|(|x<rsub|0>|)>|\|>>>|<row|<cell|>|<cell|<around*|\||f<around*|(|u|)>-f<around*|(|x<rsub|0>|)>|\|>\<less\>\<varepsilon\>,
+      t-s\<less\>\<delta\>>>|<row|<cell|>|<cell|\<rightarrow\><around*|\||<frac|1|t-s><big|int><rsub|s><rsup|t>f<around*|(|u|)>\<up-d\>u|\|>\<leqslant\><around*|(|f<around*|(|x<rsub|0>|)>+\<varepsilon\>|)>\<cdot\><frac|1|\<delta\>>>>|<row|<cell|>|<cell|\<rightarrow\><around*|\||<frac|1|t-s><big|int><rsub|s><rsup|t>f<around*|(|u|)>\<up-d\>u-f<around*|(|x<rsub|0>|)>|\|>\<leqslant\>\<varepsilon\>>>|<row|<cell|>|<cell|???>>>>>>
+    </proof>
+  </theorem>
+
+  <\theorem>
+    \<#5FAE\>\<#79EF\>\<#5206\>\<#57FA\>\<#672C\>\<#5B9A\>\<#7406\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|f\<#5728\>\<#95ED\>\<#533A\>\<#95F4\><around*|[|a,b|]>R\<#53EF\>\<#79EF\>,\<#5728\><around*|[|a,b|]>\<#4E0A\>\<#6709\>\<#53EF\>\<#5FAE\>\<#51FD\>\<#6570\>F\<wedge\>F<rprime|'>=f>>|<row|<cell|\<rightarrow\>>|<cell|<big|int><rsub|a><rsup|b>f<around*|(|x|)>\<up-d\>x=F<around*|(|b|)>-F<around*|(|a|)>>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|\<forall\>\<varepsilon\>\<gtr\>0.
+      <around*|[|a,b|]>\<#7684\>\<#5206\>\<#6CD5\>P=<around*|{|x<rsub|0>,\<ldots\>,x<rsub|n>|}>\<rightarrow\>U<around*|(|P,f|)>-L<around*|(|P,f|)>\<less\>\<varepsilon\>>>|<row|<cell|\<#7531\>\<#4E2D\>\<#503C\>\<#5B9A\>\<#7406\>\<rightarrow\>\<exists\>t<rsub|i>\<in\><around*|[|x<rsub|i-1>,x<rsub|i>|]>\<rightarrow\>F<around*|(|x<rsub|i>|)>-F<around*|(|x<rsub|i-1>|)>=f<around*|(|t<rsub|i>|)>\<Delta\>x<rsub|i>>>|<row|<cell|\<rightarrow\><big|sum><rsub|1><rsup|n>f<around*|(|t<rsub|i>|)>\<Delta\>x<rsub|i>=F<around*|(|b|)>-F<around*|(|a|)>>>|<row|<cell|\<rightarrow\><around*|\||F<around*|(|b|)>-F<around*|(|a|)>-<big|int><rsub|a><rsup|b>f<around*|(|x|)>\<up-d\>x|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\>F<around*|(|b|)>-F<around*|(|a|)>=<big|int><rsub|a><rsup|b>f<around*|(|x|)>\<up-d\>x>>>>>>
+    </proof>
+  </theorem>
+
+  <\theorem>
+    \<#5206\>\<#90E8\>\<#79EF\>\<#5206\>\<#6CD5\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|F,G\<#662F\><around*|[|a,b|]>\<#4E0A\>\<#7684\>\<#53EF\>\<#5FAE\>\<#51FD\>\<#6570\>.
+      F<rprime|'>=f\<in\>\<frak-R\>, G<rprime|'>=g\<in\>\<frak-R\>>>|<row|<cell|\<rightarrow\>>|<cell|<big|int><rsub|a><rsup|b>F<around*|(|x|)>g<around*|(|*x|)>\<up-d\>x=F<around*|(|b|)>G<around*|(|b|)>-F<around*|(|a|)>G<around*|(|a|)>-<big|int><rsub|a><rsup|b>f<around*|(|x|)>G<around*|(|x|)>\<up-d\>x>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|let:
+      H<around*|(|x|)>=F<around*|(|x|)>G*<around*|(|x|)>.
+      >>|<row|<cell|f\<#53EF\>\<#79EF\>\<rightarrow\>F\<#8FDE\>\<#7EED\>\<rightarrow\>F\<#53EF\>\<#79EF\>>>|<row|<cell|F\<#53EF\>\<#79EF\>\<#FF0C\>g\<#53EF\>\<#79EF\>\<rightarrow\>F
+      g\<#53EF\>\<#79EF\>>>|<row|<cell|H<rprime|'>=<around*|(|F<around*|(|x|)>G<around*|(|x|)>|)><rprime|'>=f<around*|(|x|)>G<around*|(|x|)>+F<around*|(|x|)>g<around*|(|x|)>>>|<row|<cell|\<rightarrow\>H<rprime|'>\<#53EF\>\<#79EF\>>>|<row|<cell|>>|<row|<cell|H<rprime|'>=f<around*|(|x|)>G<around*|(|x|)>+F<around*|(|x|)>g<around*|(|x|)>>>|<row|<cell|H<around*|(|b|)>-H<around*|(|a|)>=<big|int><rsub|a><rsup|b>H<rprime|'><around*|(|x|)>\<up-d\>x>>|<row|<cell|=<big|int><rsub|a><rsup|b><around*|(|f<around*|(|x|)>G<around*|(|x|)>+F<around*|(|x|)>g<around*|(|x|)>|)>\<up-d\>x>>|<row|<cell|=<big|int><rsub|a><rsup|b>f<around*|(|x|)>G<around*|(|x|)>\<up-d\>x+<big|int><rsub|a><rsup|b>F<around*|(|x|)>g<around*|(|x|)>\<up-d\>x>>|<row|<cell|\<rightarrow\><big|int><rsub|a><rsup|b>F<around*|(|x|)>g<around*|(|x|)>\<up-d\>x=F<around*|(|b|)>G<around*|(|b|)>-F<around*|(|a|)>G<around*|(|a|)>-<big|int><rsub|a><rsup|b>f<around*|(|x|)>G<around*|(|x|)>\<up-d\>x>>>>>>
+    </proof>
+  </theorem>
+
   <section|\<#5411\>\<#91CF\>\<#503C\>\<#51FD\>\<#6570\>\<#7684\>\<#79EF\>\<#5206\>>
+
+  <\definition>
+    \;
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|f<rsub|1>,\<ldots\>,f<rsub|k>\<#662F\><around*|[|a,b|]>\<#4E0A\>\<#7684\>\<#5B9E\>\<#51FD\>\<#6570\>.\<b-f\>:<around*|[|a,b|]>\<rightarrow\>R<rsup|k>,\<b-f\>=<around*|(|f<rsub|1>,\<ldots\>,f<rsub|k>|)>.
+      >>|<row|<cell|\<alpha\>\<#5728\><around*|[|a,b|]>\<#4E0A\>\<#5355\>\<#8C03\>\<#589E\>\<rightarrow\>\<b-f\>\<in\>\<frak-R\><around*|(|\<alpha\>|)>\<Leftrightarrow\>f<rsub|i>\<in\>\<frak-R\><around*|(|\<alpha\>|)>>>|<row|<cell|<big|int><rsub|a><rsup|b>\<b-f\>\<up-d\>\<alpha\>=<around*|(|<big|int><rsub|a><rsup|b>f<rsub|1>\<up-d\>\<alpha\>,\<ldots\>,<big|int><rsub|a><rsup|b>f<rsub|k>\<up-d\>\<alpha\>|)>>>>>>
+    </equation*>
+  </definition>
+
+  <\theorem>
+    \<#5411\>\<#91CF\>\<#503C\>\<#51FD\>\<#6570\>\<#4E5F\>\<#5177\>\<#6709\>\<#5FAE\>\<#79EF\>\<#5206\>\<#5B66\>\<#57FA\>\<#672C\>\<#5B9A\>\<#7406\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<b-f\>,\<b-F\>:<around*|[|a,b|]>\<rightarrow\>R<rsup|k>.
+      \<b-f\>\<#53EF\>\<#79EF\>\<wedge\>\<b-F\><rprime|'>=\<b-f\>>>|<row|<cell|\<rightarrow\><big|int><rsub|a><rsup|b>\<b-f\><around*|(|t|)>\<up-d\>t=\<b-F\><around*|(|b|)>-\<b-F\><around*|(|a|)>>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+    </proof>
+  </theorem>
+
+  <\theorem>
+    \<#5411\>\<#91CF\>\<#503C\>\<#51FD\>\<#6570\>\<#7684\>\<#7EDD\>\<#5BF9\>\<#503C\>\<#4E0D\>\<#7B49\>\<#5F0F\>\<#7B49\>\<#4EF7\>\<#4E8E\>\<#8303\>\<#6570\>\<#4E0D\>\<#7B49\>\<#5F0F\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<b-f\>:<around*|[|a,b|]>\<rightarrow\>R<rsup|k>.
+      \<alpha\>\<#662F\><around*|[|a,b|]>\<#4E0A\>\<#7684\>\<#589E\>\<#51FD\>\<#6570\>,
+      \<b-f\>\<#53EF\>\<#79EF\>\<rightarrow\><around*|\||\<b-f\>|\|>\<#53EF\>\<#79EF\>>>|<row|<cell|<around*|\||<big|int><rsub|a><rsup|b>\<b-f\>\<up-d\>\<alpha\>|\|>\<leqslant\><big|int><rsub|a><rsup|b><around*|\||\<b-f\>|\|>\<up-d\>\<alpha\>>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|f<rsub|1>,\<ldots\>,f<rsub|n>\<#662F\>f\<#7684\>\<#5206\>\<#91CF\>>|<cell|>>|<row|<cell|<around*|\||\<b-f\>|\|>=<around*|(|f<rsub|1><rsup|2>+\<cdots\>+f<rsub|n><rsup|2>|)><rsup|1/2>>|<cell|>>|<row|<cell|f<rsub|i>\<in\>\<frak-R\>\<rightarrow\>f<rsub|i><rsup|2>\<in\>\<frak-R\>\<rightarrow\><big|sum>f<rsub|i><rsup|2>\<in\>\<frak-R\>\<rightarrow\><sqrt|<big|sum><around*|(|f<rsub|i><rsup|2>|)>>\<in\>\<frak-R\>>|<cell|>>|<row|<cell|>|<cell|>>|<row|<cell|<around*|\||\<b-y\>|\|><rsup|2>=<big|sum>y<rsub|i><rsup|2>=<big|sum>y<rsub|i><big|int>f<rsub|i>\<up-d\>\<alpha\>>|<cell|>>|<row|<cell|=<big|int><around*|(|<big|sum>y<rsub|i>f<rsub|i>|)>\<up-d\>\<alpha\>>|<cell|>>|<row|<cell|<big|sum>y<rsub|i>f<rsub|i>\<leqslant\><around*|\||\<b-y\>|\|>\<cdot\><around*|\||\<b-f\><around*|(|t|)>|\|>>|<cell|Schwarz\<#4E0D\>\<#7B49\>\<#5F0F\>>>|<row|<cell|\<rightarrow\><around*|\||\<b-y\>|\|><rsup|2>\<leqslant\><around*|\||\<b-y\>|\|>\<cdot\><big|int><around*|\||\<b-f\>|\|>\<up-d\>\<alpha\>>|<cell|>>|<row|<cell|\<rightarrow\><around*|\||\<b-y\>|\|>\<leqslant\><big|int><around*|\||\<b-f\>|\|>\<up-d\>\<alpha\>>|<cell|>>|<row|<cell|y<rsub|i>=<big|int><rsub|a><rsup|b>f<rsub|i><around*|(|x|)>\<up-d\>\<alpha\>\<rightarrow\>\<#539F\>\<#5F0F\>\<#6210\>\<#7ACB\>>|<cell|>>|<row|<cell|???>|<cell|>>>>>>
+    </proof>
+  </theorem>
 
   <section|\<#53EF\>\<#6C42\>\<#957F\>\<#66F2\>\<#7EBF\>>
 
+  <\definition>
+    \<#66F2\>\<#7EBF\>\<#3001\>\<#53EF\>\<#6C42\>\<#957F\>\<#66F2\>\<#7EBF\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<gamma\>\<#66F2\>\<#7EBF\>>|<cell|\<gamma\>:<around*|[|a,b|]>\<rightarrow\>R<rsup|k>>>|<row|<cell|\<#5F27\>>|<cell|\<gamma\>\<#662F\>1-1\<#7684\>>>|<row|<cell|\<#95ED\>\<#66F2\>\<#7EBF\>>|<cell|\<gamma\><around*|(|a|)>=\<gamma\><around*|(|b|)>>>>>>
+    </equation*>
+
+    <\remark>
+      \<#8FD9\>\<#91CC\>\<#7684\>\<#66F2\>\<#7EBF\>\<#5B9A\>\<#4E49\>\<#662F\>\<#6620\>\<#5C04\>\<#800C\>\<#4E0D\>\<#662F\>\<#70B9\>\<#96C6\>.
+      <math|\<gamma\>>\<#7684\>\<#503C\>\<#57DF\>\<#662F\>\<#51E0\>\<#4F55\>\<#4E0A\>\<#7684\>\<#66F2\>\<#7EBF\>\<#FF0C\>\<#4F46\>\<#8FD9\>\<#91CC\>\<#4E0D\>\<#540C\>\<#7684\>\<#66F2\>\<#7EBF\>\<#53EF\>\<#4EE5\>\<#6709\>\<#76F8\>\<#540C\>\<#7684\>\<#503C\>\<#57DF\>
+    </remark>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|<around*|[|a,b|]>\<#7ED9\>\<#5B9A\>\<#5206\>\<#6CD5\>P=<around*|{|x<rsub|0>,\<ldots\>,x<rsub|n>|}>\<#548C\>\<#66F2\>\<#7EBF\>\<gamma\>>>|<row|<cell|>|<cell|\<Lambda\><around*|(|P,r|)>=<big|sum><rsub|1><rsup|n><around*|\||\<gamma\><around*|(|x<rsub|i>|)>-\<gamma\><around*|(|x<rsub|i-1>|)>|\|>.\<#5176\>\<#4E2D\><around*|\|||\|>\<#4E3A\>\<#8303\>\<#6570\>\<#8BF1\>\<#5BFC\>\<#7684\>\<#8DDD\>\<#79BB\>>>|<row|<cell|>|<cell|\<#8FD9\>\<#91CC\>\<#53EF\>\<#4EE5\>\<#7406\>\<#89E3\>\<#4E3A\>\<#66F2\>\<#7EBF\>\<#4E0A\>\<#5206\>\<#70B9\>\<#8FDE\>\<#63A5\>\<#7684\>\<#6298\>\<#7EBF\>\<#957F\>>>|<row|<cell|\<#66F2\>\<#7EBF\>\<#957F\>>|<cell|\<Lambda\><around*|(|\<gamma\>|)>=sup<rsub|P\<in\>\<cal-P\>>
+      \<Lambda\><around*|(|P,\<gamma\>|)>>>|<row|<cell|\<#53EF\>\<#6C42\>\<#957F\>>|<cell|\<Lambda\><around*|(|\<gamma\>|)>\<less\>\<infty\>>>|<row|<cell|R\<#79EF\>\<#5206\>\<#8868\>\<#793A\>\<#66F2\>\<#7EBF\>\<#957F\>>|<cell|\<gamma\><rprime|'>\<#8FDE\>\<#7EED\>\<rightarrow\>\<gamma\>\<#7684\>\<#957F\>\<#53EF\>\<#88AB\>R\<#79EF\>\<#5206\>\<#8868\>\<#793A\>>>>>>
+    </equation*>
+  </definition>
+
+  <\theorem>
+    \<#66F2\>\<#7EBF\>\<#5728\>\<#95ED\>\<#533A\>\<#95F4\>\<#4E0A\>\<#8FDE\>\<#7EED\>\<#53EF\>\<#5FAE\>\<#FF0C\>\<#5219\>\<#6B64\>\<#66F2\>\<#7EBF\>\<#53EF\>\<#6C42\>\<#957F\>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<gamma\><rprime|'>\<#5728\><around*|[|a,b|]>\<#4E0A\>\<#8FDE\>\<#7EED\>,\<gamma\>\<#53EF\>\<#6C42\>\<#957F\>>>|<row|<cell|\<Lambda\><around*|(|\<gamma\>|)>=<big|int><rsub|a><rsup|b><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <math|<tabular*|<tformat|<table|<row|<cell|a\<leqslant\>x<rsub|i-1>\<less\>x<rsub|i>\<leqslant\>b>>|<row|<cell|\<rightarrow\><around*|\||\<gamma\><around*|(|x<rsub|i>|)>-\<gamma\><around*|(|x<rsub|i-1>|)>|\|>=<around*|\||<big|int><rsub|x<rsub|i-1>><rsup|x<rsub|i>>\<gamma\><rprime|'><around*|(|t|)>\<up-d\>t|\|>\<leqslant\><big|int><rsub|x<rsub|i-1>><rsup|x<rsub|i>><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t>>|<row|<cell|\<forall\>P\<in\>\<cal-P\>.
+      \<Lambda\><around*|(|P,\<gamma\>|)>\<leqslant\><big|int><rsub|a><rsup|b><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t>>|<row|<cell|\<rightarrow\>\<Lambda\><around*|(|\<gamma\>|)>\<leqslant\><big|int><rsub|a><rsup|b><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t>>|<row|<cell|>>|<row|<cell|\<forall\>\<varepsilon\>\<gtr\>0,
+      \<gamma\><rprime|'>\<#5728\><around*|[|a,b|]>\<#4E0A\>\<#4E00\>\<#81F4\>\<#8FDE\>\<#7EED\>,\<rightarrow\>\<exists\>\<delta\>\<gtr\>0,d<around*|(|s,t|)>\<less\>\<delta\>\<rightarrow\><around*|\||\<gamma\><rprime|'><around*|(|s|)>-\<gamma\><rprime|'><around*|(|t|)>|\|>\<less\>\<varepsilon\>>>|<row|<cell|\<rightarrow\>P\<#662F\><around*|[|a,b|]>\<#7684\>\<#5206\>\<#6CD5\>,
+      \<forall\>i, \<Delta\>x<rsub|i>\<less\>\<delta\>,\<forall\>x<rsub|i-1>\<leqslant\>t\<leqslant\>x<rsub|i>\<rightarrow\><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<leqslant\><around*|\||\<gamma\><rprime|'><around*|(|x<rsub|i>|)>|\|>+\<varepsilon\>>>|<row|<cell|\<rightarrow\><big|int><rsub|x<rsub|i-1>><rsup|x<rsub|i>><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t\<leqslant\><around*|\||\<gamma\><rprime|'><around*|(|x<rsub|i>|)>|\|>\<Delta\>x<rsub|i>+\<varepsilon\>\<Delta\>x<rsub|i>>>|<row|<cell|=<around*|\||<big|int><rsub|x<rsub|i-1>><rsup|x<rsub|i>><around*|(|\<gamma\><rprime|'><around*|(|t|)>+\<gamma\><rprime|'><around*|(|x<rsub|i>|)>-\<gamma\><rprime|'><around*|(|t|)>|)>\<up-d\>t|\|>+\<varepsilon\>\<Delta\>x<rsub|i>>>|<row|<cell|\<leqslant\><around*|\||<big|int><rsub|x<rsub|i-1>><rsup|x<rsub|i>>\<gamma\><rprime|'><around*|(|t|)>\<up-d\>t|\|>+<around*|\||<big|int><rsub|x<rsub|i-1>><rsup|x<rsub|i>><around*|(|\<gamma\><rprime|'><around*|(|x<rsub|i>|)>-\<gamma\><rprime|'><around*|(|t|)>|)>\<up-d\>t|\|>+\<varepsilon\>\<Delta\>x<rsub|i>>>|<row|<cell|\<leqslant\><around*|\||\<gamma\><around*|(|x<rsub|i>|)>-\<gamma\><around*|(|x<rsub|i-1>|)>|\|>+2\<varepsilon\>\<Delta\>x<rsub|i>>>|<row|<cell|>>|<row|<cell|<big|int><rsub|a><rsup|b><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t\<leqslant\>\<Lambda\><around*|(|P,\<gamma\>|)>+2\<varepsilon\><around*|(|b-a|)>>>|<row|<cell|\<leqslant\>\<Lambda\><around*|(|\<gamma\>|)>+2\<varepsilon\><around*|(|b-a|)>>>|<row|<cell|\<rightarrow\><big|int><rsub|a><rsup|b><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t\<leqslant\>\<Lambda\><around*|(|\<gamma\>|)>>>|<row|<cell|>>|<row|<cell|\<rightarrow\><big|int><rsub|a><rsup|b><around*|\||\<gamma\><rprime|'><around*|(|t|)>|\|>\<up-d\>t=\<Lambda\><around*|(|\<gamma\>|)>>>>>>>
+
+      <\math>
+        \<#5BF9\>R<rsup| 2>\<#4E0A\>\<#5F27\>\<#7684\>\<#5FAE\>\<#5206\>:\<up-d\>s=<sqrt|<around*|(|<around*|(|\<up-d\>x|)><rsup|2>+<around*|(|\<up-d\>y|)><rsup|2>|)>>=<sqrt|\<up-d\>x<rsup|2>+\<up-d\>y<rsup|2>>
+      </math>
+
+      <math|\<up-d\><rsup|2>x: \<up-d\><around*|(|\<up-d\>x|)>.
+      \<up-d\>x<rsup|2>: <around*|(|\<up-d\>x|)><rsup|2>>
+    </proof>
+  </theorem>
+
+  \;
+
   <doc-data|<doc-title|\<#4E60\>\<#9898\>>>
+
+  <\enumerate>
+    <item>Proof: <math|\<alpha\>\<#5728\><around*|[|a,b|]>\<#4E0A\>\<#589E\>.
+    a\<leqslant\>x<rsub|0>\<leqslant\>b, \<alpha\>\<#5728\>x<rsub|0>\<#8FDE\>\<#7EED\>.
+    f<around*|(|<rsub|>x<rsub|0>|)>=1, x\<neq\>x<rsub|0>\<rightarrow\>f<around*|(|x|)>=0.
+    Proof: f\<in\>\<frak-R\><around*|(|\<alpha\>|)>\<wedge\><big|int>f\<up-d\>\<alpha\>=0>
+
+    <math|<tabular*|<tformat|<table|<row|<cell|U<around*|(|P,f,\<alpha\>|)>=<big|sum>M<around*|(|f<around*|(|x<rsub|i>|)>|)>\<cdot\>\<Delta\>\<alpha\><rsub|i>>>|<row|<cell|=1\<Delta\>\<alpha\><rsub|x<rsub|0>>>>|<row|<cell|=\<Delta\>\<alpha\><around*|(|x-x<rsub|0>|)>>>|<row|<cell|\<alpha\>\<#5728\>x<rsub|0>\<#8FDE\>\<#7EED\>\<rightarrow\>\<alpha\><around*|(|x-x<rsub|0>|)>=0>>|<row|<cell|\<rightarrow\>U<around*|(|P,f,\<alpha\>|)>=0>>|<row|<cell|L<around*|(|P,f,\<alpha\>|)>=<big|sum>m<around*|(|f<around*|(|x<rsub|i>|)>|)>\<cdot\>\<Delta\>\<alpha\><rsub|i>>>|<row|<cell|=<big|sum>0\<cdot\>\<Delta\>\<alpha\><rsub|i>>>|<row|<cell|=0>>|<row|<cell|\<rightarrow\>U<around*|(|P,f,\<alpha\>|)>=L<around*|(|P,f,\<alpha\>|)>=0>>|<row|<cell|\<rightarrow\><big|int>f\<up-d\>\<alpha\>=0>>>>>>
+
+    <item>
+  </enumerate>
 </body>
 
 <\initial>
