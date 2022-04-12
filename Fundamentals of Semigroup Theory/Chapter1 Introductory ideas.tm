@@ -16,7 +16,7 @@
   </definition>
 
   <\remark>
-    \<#672C\>\<#4E66\>\<#91C7\>\<#7528\>\<#53F3\>\<#7F6E\>\<#8868\>\<#8FBE\>\<#5F0F\>\<#4E60\>\<#60EF\>
+    \<#672C\>\<#4E66\>\<#8FD0\>\<#7B97\>\<#91C7\>\<#7528\>\<#53F3\>\<#7F6E\>\<#8868\>\<#8FBE\>\<#5F0F\>\<#4E60\>\<#60EF\>
   </remark>
 
   <\notation>
@@ -244,7 +244,7 @@
     \<#5355\>\<#6001\>\<#5C04\>(monomorphism<space|1em>\<#5355\>\<#540C\>\<#6001\>)
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|\<#51FD\>\<#6570\>\<phi\>,\<#5B9A\>\<#4E49\>\<#57DF\>\<#662F\>S\<#FF0C\>\<#503C\>\<#57DF\>\<#662F\>T,\<phi\>\<#7684\>\<#50CF\>\<#5B9A\>\<#4E49\>\<#4E3A\><around*|{|s\<phi\>:s\<in\>S|}>>>|<row|<cell|\<#82E5\>\<phi\>\<#662F\>\<#4E00\>\<#4E00\>\<#6620\>\<#5C04\>\<#FF0C\>\<#5219\>\<phi\>\<#79F0\>\<#4E3A\>\<#5355\>\<#6001\>\<#5C04\>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|\<#51FD\>\<#6570\>\<phi\>,\<#5B9A\>\<#4E49\>\<#57DF\>\<#662F\>S\<#FF0C\>\<#503C\>\<#57DF\>\<#662F\>T,\<phi\>\<#7684\>\<#50CF\>\<#5B9A\>\<#4E49\>\<#4E3A\><around*|{|s\<phi\>:s\<in\>S|}>>>|<row|<cell|\<#82E5\>\<phi\>\<#662F\>\<#5355\>\<#5C04\><around*|(|one-one|)>\<#FF0C\>\<#5219\>\<phi\>\<#79F0\>\<#4E3A\>\<#5355\>\<#6001\>\<#5C04\>>>>>>
     </equation*>
 
     \<#6B64\>\<#5B9A\>\<#4E49\>\<#7B49\>\<#4EF7\>\<#4E8E\>\<#5728\>\<#6620\>\<#5C04\>\<#590D\>\<#5408\>\<#4E2D\>\<#FF0C\><math|\<phi\>>\<#5177\>\<#6709\>\<#53F3\>\<#6D88\>\<#53BB\>\<#5F8B\>\<#FF0C\>\<#79F0\><math|\<phi\>>\<#662F\>\<#53F3\>\<#53EF\>\<#6D88\>\<#53BB\>\<#6001\>\<#5C04\>(right
@@ -265,7 +265,7 @@
     \<#6839\>\<#636E\>\<#5B9A\>\<#4E49\>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|\<phi\>\<#662F\>\<#6001\>\<#5C04\>\<Leftrightarrow\>\<phi\>\<#662F\>\<#53CC\>\<#5C04\>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|\<phi\>\<#662F\>\<#6001\>\<#5C04\>\<Rightarrow\>\<phi\>\<#662F\>\<#53CC\>\<#5C04\>>>>>>
     </equation*>
 
     \<#8BB0\>\<#53F7\>\<#FF1A\>\<#82E5\>S\<#548C\>T\<#4E4B\>\<#95F4\>\<#5B58\>\<#5728\>\<#4E00\>\<#4E2A\>\<#540C\>\<#6784\>\<#6620\>\<#5C04\><math|\<phi\>>.\<#5219\>\<#79F0\>S\<#4E0E\>T\<#540C\>\<#6784\>.\<#8BB0\>\<#4E3A\><math|S\<simeq\>T>
@@ -333,7 +333,7 @@
     \<#53EF\>\<#4FE1\>\<#8868\>\<#793A\>(faithful representation)
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|\<#53D8\>\<#6362\>\<#534A\>\<#7FA4\>>|<cell|\<#534A\>\<#7FA4\>S\<subseteq\>\<cal-T\><rsub|X>>>|<row|<cell|S\<#7684\><around*|(|\<#6620\>\<#5C04\>|)>\<#8868\>\<#793A\>>|<cell|\<#6620\>\<#5C04\>\<phi\>:S\<rightarrow\>\<cal-T\><rsub|X>>>|<row|<cell|S\<#7684\>\<#53EF\>\<#4FE1\>\<#8868\>\<#793A\>>|<cell|\<phi\>\<#662F\>\<#4E00\>\<#4E00\>\<#7684\>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|\<#53D8\>\<#6362\>\<#534A\>\<#7FA4\>>|<cell|\<#534A\>\<#7FA4\>S\<subseteq\>\<cal-T\><rsub|X>>>|<row|<cell|S\<#7684\><around*|(|\<#6620\>\<#5C04\>|)>\<#8868\>\<#793A\>>|<cell|\<#6620\>\<#5C04\>\<phi\>:S\<rightarrow\>\<cal-T\><rsub|X>>>|<row|<cell|S\<#7684\>\<#53EF\>\<#4FE1\>\<#8868\>\<#793A\>>|<cell|\<phi\>\<#662F\>\<#5355\>\<#7684\>>>>>>
     </equation*>
 
     <\remark>
@@ -357,7 +357,7 @@
         \<#5B9A\>\<#4E49\>\<#6620\>\<#5C04\>\<rho\><rsub|a>:S<rsup|1>\<rightarrow\>S<rsup|1>,x\<rho\><rsub|a>=x
         a<around*|(|x\<in\>S<rsup|1>|)>>>|<row|<cell|\<#6620\>\<#5C04\>\<alpha\>:S\<rightarrow\>\<cal-T\><rsub|X>,
         a\<alpha\>=\<rho\><rsub|a><around*|(|a\<in\>S|)>>>|<row|<cell|\<forall\>a,b\<in\>S,a\<alpha\>=b\<alpha\>>>|<row|<cell|\<Rightarrow\>\<rho\><rsub|a>=\<rho\><rsub|b>>>|<row|<cell|\<Rightarrow\>\<forall\>x\<in\>S<rsup|1>,x
-        a=x b>>|<row|<cell|\<Rightarrow\>1a=1b>>|<row|<cell|\<Rightarrow\>a=b>>|<row|<cell|\<Rightarrow\>\<alpha\>\<#662F\>1-1\<#7684\>>>|<row|<cell|\<rightarrow\>\<alpha\>\<#662F\>S\<#7684\>\<#53EF\>\<#4FE1\>\<#8868\>\<#793A\>>>>>>
+        a=x b>>|<row|<cell|\<Rightarrow\>1a=1b>>|<row|<cell|\<Rightarrow\>a=b>>|<row|<cell|\<Rightarrow\>\<alpha\>\<#662F\>\<#5355\>\<#7684\>>>|<row|<cell|\<rightarrow\>\<alpha\>\<#662F\>S\<#7684\>\<#53EF\>\<#4FE1\>\<#8868\>\<#793A\>>>>>>
       </equation*>
 
       \<#6839\>\<#636E\>\<#5B9A\>\<#4E49\>\<#7684\><math|\<rho\>>\<#6620\>\<#5C04\>\<#7684\>\<#6027\>\<#8D28\>
@@ -395,9 +395,61 @@
     <\proof>
       \;
 
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|1\<rightarrow\>2>>|<row|<cell|\<forall\>a\<in\>S,a<rsup|3>=a>>|<row|<cell|\<Rightarrow\>a<rsup|2>=a
+        a<rsup|3>=a<rsup|4>=a a<rsup|2>a=a>>|<row|<cell|\<Rightarrow\>a<rsup|2>=a>>|<row|<cell|>>|<row|<cell|\<forall\>a,b,c\<in\>S,a=a
+        b a,c=c b c,b=b<around*|(|a c|)>b>>|<row|<cell|\<Rightarrow\>a
+        c=<around*|(|a b a|)><around*|(|c b c|)>=a<around*|(|b a c b|)>c=a b
+        c>>>>>
+      </equation*>
+
       \;
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|2\<rightarrow\>3>>|<row|<cell|>|<cell|\<forall\>c\<in\>S,L=S
+        c, R=c S>>|<row|<cell|>|<cell|\<forall\>x=z c,y=t
+        c\<in\>L>>|<row|<cell|>|<cell|\<Rightarrow\>x y=z c t c=z c<rsup|2>=z
+        c=x>>|<row|<cell|>|<cell|\<Rightarrow\>L is \ \<up-a\> left zero
+        semigroup>>|<row|<cell|>|<cell|\<cong\>\<gtr\>R is \<up-a\> right
+        zero semigroup>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<phi\>:S\<rightarrow\>L\<times\>R,x
+        \<phi\>=<around*|(|x c, c x|)>>>|<row|<cell|>|<cell|>>|<row|<cell|1>|<cell|<around*|(|x
+        c,c x|)>=<around*|(|y c,c y|)>>>|<row|<cell|>|<cell|\<Rightarrow\>x=x<rsup|2>=x
+        c x=y c x=y c y=y<rsup|2>=y>>|<row|<cell|>|<cell|\<Rightarrow\>\<phi\>
+        is one-one<around*|(|*\<#5355\>\<#5C04\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|2>|<cell|\<forall\>a,b\<in\>S,<around*|(|a
+        c, c b|)>=<around*|(|a b c, c \ a b|)>=<around*|(|a
+        b|)>\<phi\>>>|<row|<cell|>|<cell|\<rightarrow\>\<phi\> is
+        onto<around*|(|\<#6EE1\>\<#5C04\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|3>|<cell|<around*|(|x
+        y|)>\<phi\>=<around*|(|x y c,c x y|)>=<around*|(|x c,y
+        c|)>=<around*|(|x c y c,c x c y|)>>>|<row|<cell|>|<cell|=<around*|(|x
+        c,c x|)><around*|(|y c,c y|)>=<around*|(|x\<phi\>|)><around*|(|y\<phi\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\>is
+        \<up-a\> isomorphism between S and L\<times\>R>>>>>
+      </equation*>
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|3\<rightarrow\>4>>|<row|<cell|A=L,B=R>>|<row|<cell|\<Rightarrow\>S\<simeq\>L\<times\>R>>>>>
+      </equation*>
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|4\<rightarrow\>1>>|<row|<cell|S=A\<times\>B>>|<row|<cell|\<forall\>a=<around*|(|x,y|)>,b=<around*|(|z,t|)>\<in\>S>>|<row|<cell|\<Rightarrow\>a
+        b a=<around*|(|x,y|)><around*|(|z,t|)>*<around*|(|x,y|)>=<around*|(|x,t|)><around*|(|x,y|)>>>|<row|<cell|=<around*|(|x,y|)>=a>>|<row|<cell|\<Rightarrow\>S
+        is \<up-a\> rectangular band>>>>>
+      </equation*>
+
+      <with|gr-mode|<tuple|edit|text-at>|gr-frame|<tuple|scale|1cm|<tuple|0.509999gw|0.480002gh>>|gr-geometry|<tuple|geometry|1par|0.6par>|gr-grid|<tuple|empty>|gr-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-edit-grid-aspect|<tuple|<tuple|axes|none>|<tuple|1|none>|<tuple|10|none>>|gr-edit-grid|<tuple|empty>|gr-edit-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-text-at-halign|center|<graphics||<line|<point|-3.58677|2.56176>|<point|-3.6079342505622436|-0.17933919830665432>|<point|1.9801064955681968|-0.15817237729858447>|<point|1.9166060325439873|2.5194304802222516>|<point|-3.597350840058209|2.5511807117343563>>|<text-at|<math|<around*|(|a,b|)>>|<point|-3.9466033866913612|-0.5497585659478768>>|<text-at|<math|<around*|(|c,b|)>>|<point|-3.9254365656832912|2.75226551131102>>|<text-at|<math|<around*|(|a,d|)>>|<point|1.5673534859108347|-0.5709253869559465>>|<text-at|<math|<around*|(|c,d|)>>|<point|1.4721027913745204|2.73109869030295>>|<with|text-at-halign|center|<text-at|
+      |<point|-1|-2>>>|<with|text-at-halign|center|<text-at||<point|-4.2|3.5>>>>>
+
+      Remark: The"Rectangular band" comes from property 4. The products
+      (a,b)(c,d)and (c,d)(a,b)are placed at the vertices of the rectangle.
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|Vertical>|<cell| right zero
+        element>|<cell|<around*|(|a,b|)><around*|(|c,b|)>=<around*|(|a,b|)>>>|<row|<cell|Horizontal>|<cell|left
+        zero element>|<cell|<around*|(|a,b|)><around*|(|a,d|)>=<around*|(|a,d|)>>>|<row|<cell|Normal>|<cell|>|<cell|<around*|(|a,b|)><around*|(|c,d|)>=<around*|(|a,d|)>>>|<row|<cell|>|<cell|>|<cell|<around*|(|c,d|)><around*|(|a,b|)>=<around*|(|c,b|)>>>>>>
+      </equation*>
     </proof>
   </theorem>
+
+  <section|Monogenic Semigroups.(\<#5355\>\<#57FA\>\<#56E0\>\<#534A\>\<#7FA4\>)>
 
   \;
 
@@ -435,6 +487,7 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
+    <associate|auto-2|<tuple|2|?>>
     <associate|def group|<tuple|16|2>>
   </collection>
 </references>
