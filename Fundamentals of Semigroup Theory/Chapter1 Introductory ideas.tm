@@ -701,6 +701,84 @@
       element>>|<row|<cell|2>|<cell|Y is totally ordered\<rightarrow\>minimal
       and minimum are equivalent>>>>>
     </equation*>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|The minimal
+      condition>|<cell|A,\<forall\>X\<subseteq\>A,X\<neq\>\<varnothing\>,A
+      has \<up-a\> minimal element.>>|<row|<cell|well-ordered>|<cell|\<up-A\>
+      totally ordered set X>>>>>
+    </equation*>
+
+    Remark: Maximal, maximum and the maximal condition could be defined by
+    the analogues.
+  </proposition>
+
+  <\definition>
+    Lower bound, The greatest lower bound(meet).
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|Y\<subseteq\>X>>|<row|<cell|Lower
+      bound c>|<cell|c\<in\>X, \<forall\>y\<in\>Y,c\<leqslant\>y>>|<row|<cell|Greatest\<sim\>
+      d>|<cell|Z=<around*|{| Lower bound|}>\<neq\>\<varnothing\>, The maximum
+      of Z>>|<row|<cell|meet*<around*|(|\<#96C6\>\<#5408\>\<#7684\>\<#4EA4\>|)>>|<cell|>>>>>
+    </equation*>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<#8BB0\>\<#53F7\>>>|<row|<cell|d=<big|wedge><around*|{|y\|y\<in\>Y|}>>>|<row|<cell|If
+      Y=<around*|{|a,b|}> marked d=a<big|wedge>b>>>>>
+    </equation*>
+
+    Lower Semilattice, Complete Lower Semilattice.
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|Lower
+      Semilattice>|<cell|<around*|(|X,\<leqslant\>|)>>|<cell|\<forall\>a,b\<in\>X,\<exists\>a<big|wedge>b>>|<row|<cell|Complete\<sim\>>|<cell|<around*|(|X,\<leqslant\>|)>>|<cell|\<forall\>Y\<subseteq\>X,Y\<neq\>\<varnothing\>\<rightarrow\>\<exists\><big|wedge>Y>>>>>
+    </equation*>
+
+    <math|Lower Semilattice <around*|(|X,\<leqslant\>|)>,\<forall\>a,b\<in\>X.
+    a\<leqslant\>b\<Leftrightarrow\>a<big|wedge>b=a>
+
+    Least upper bound(join)
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|Y\<subseteq\>X>>|<row|<cell|Upper
+      bound c>|<cell|c\<in\>X,\<forall\>y\<in\>Y,c\<geqslant\>y>>|<row|<cell|Least\<sim\>
+      d>|<cell|Z=<around*|{|Upper bound|}>\<neq\>\<varnothing\>,The minimum
+      of Z>>>>>
+    </equation*>
+
+    Lattice
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|Lattice>|<cell|<around*|(|X,\<leqslant\>|)><choice|<tformat|<table|<row|<cell|
+      \<up-a\> \ upper semilattice>>|<row|<cell| \<up-a\> \ lower
+      semilattice>>>>>>>|<row|<cell|Complete\<sim\>>|<cell|<around*|(|X,\<leqslant\>|)><choice|<tformat|<table|<row|<cell|\<up-a\>
+      upper complete semilattice>>|<row|<cell|\<up-a\> lower complete
+      semilattice>>>>>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|X=<around*|(|X,\<leqslant\>,<big|wedge>,<big|vee>|)>>>>>>
+    </equation*>
+
+    \;
+
+    Sublattice
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|Y\<subseteq\>X,Y\<neq\>\<varnothing\>>>|<row|<cell|\<forall\>a,b\<in\>Y\<Rightarrow\>a<big|wedge>b\<in\>Y\<wedge\>a<big|vee>b\<in\>Y>>>>>
+    </equation*>
+  </definition>
+
+  <\example>
+    \;
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,\<leqslant\>|)>is
+      \<up-a\> lower semilattice.>>|<row|<cell|\<Rightarrow\><around*|(|a<big|wedge>b|)><big|wedge>c=
+      a<big|wedge><around*|(|b<big|wedge>c|)>>>|<row|<cell|\<Rightarrow\><around*|(|E,\<leqslant\>|)>is
+      \<up-a\> semigroup>>>>>
+    </equation*>
+  </example>
+
+  <\proposition>
+    \;
   </proposition>
 
   <section|Binary Relations; Equivalences.(\<#4E8C\>\<#5143\>\<#5173\>\<#7CFB\>\<#FF0C\>\<#7B49\>\<#4EF7\>)>
@@ -753,15 +831,15 @@
 <\references>
   <\collection>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|10|?>>
+    <associate|auto-10|<tuple|10|11>>
     <associate|auto-2|<tuple|2|7>>
-    <associate|auto-3|<tuple|3|?>>
-    <associate|auto-4|<tuple|4|?>>
-    <associate|auto-5|<tuple|5|?>>
-    <associate|auto-6|<tuple|6|?>>
-    <associate|auto-7|<tuple|7|?>>
-    <associate|auto-8|<tuple|8|?>>
-    <associate|auto-9|<tuple|9|?>>
+    <associate|auto-3|<tuple|3|10>>
+    <associate|auto-4|<tuple|4|11>>
+    <associate|auto-5|<tuple|5|11>>
+    <associate|auto-6|<tuple|6|11>>
+    <associate|auto-7|<tuple|7|11>>
+    <associate|auto-8|<tuple|8|11>>
+    <associate|auto-9|<tuple|9|11>>
     <associate|def group|<tuple|16|2>>
   </collection>
 </references>
@@ -777,6 +855,41 @@
       Semigroups.(\<#5355\>\<#57FA\>\<#56E0\>\<#534A\>\<#7FA4\>)>
       <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Ordered
+      Sets, Semilattices and Lattices.(\<#534A\>\<#683C\>\<#3001\>\<#683C\>)>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-3><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|4<space|2spc>Binary
+      Relations; Equivalences.(\<#4E8C\>\<#5143\>\<#5173\>\<#7CFB\>\<#FF0C\>\<#7B49\>\<#4EF7\>)>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-4><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|5<space|2spc>Congruences(\<#540C\>\<#4F59\>)>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-5><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|6<space|2spc>Free
+      Semigroups and Monoids; Presentations.>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-6><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|7<space|2spc>Ideals
+      and Rees Congruences.> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-7><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|8<space|2spc>Lattices
+      of Equivalences and Congruences.> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-8><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|9<space|2spc>Exercises.>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-9><vspace|0.5fn>
+
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|10<space|2spc>Notes.>
+      <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <no-break><pageref|auto-10><vspace|0.5fn>
     </associate>
   </collection>
 </auxiliary>
