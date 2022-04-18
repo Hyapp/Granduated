@@ -778,7 +778,22 @@
   </example>
 
   <\proposition>
-    \;
+    <math|<around*|(|E,\<leqslant\>|)> is \<up-a\> lower semilattice.>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,<big|wedge>|)>is
+      \<up-a\> commutative semigroup consisting entirely of
+      idempotents>>|<row|<cell|<around*|(|\<forall\>a,b\<in\>E|)>,a\<leqslant\>b\<Leftrightarrow\>a<big|wedge>b=a>>>>>
+    </equation*>
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,.|)> is \<up-a\>
+      commutative semigroup of idempotents>>|<row|<cell|relation\<leqslant\>:a\<leqslant\>b\<Leftrightarrow\>a
+      b=a>>|<row|<cell|\<leqslant\>is \<up-a\> partial order on E,with
+      respect to which <around*|(|E,\<leqslant\>|)> is \<up-a\> lower
+      semilattice>>|<row|<cell|<around*|(|E,\<leqslant\>|)>,the meet of a and
+      b is their product a b.>>>>>
+    </equation*>
   </proposition>
 
   <section|Binary Relations; Equivalences.(\<#4E8C\>\<#5143\>\<#5173\>\<#7CFB\>\<#FF0C\>\<#7B49\>\<#4EF7\>)>
