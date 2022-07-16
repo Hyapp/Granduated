@@ -35,7 +35,7 @@ $$\forall x \in S, x1'=1'x=x \to 1'=11' =1$$
 
 \Def[Monoid]{$S, 1 \in S$}
 
-\begin{Rmk}[$S^{1}$]
+\begin{Sym}[$S^{1}$]
     \[
         S^1 =
         \begin{cases}
@@ -43,12 +43,646 @@ $$\forall x \in S, x1'=1'x=x \to 1'=11' =1$$
             S \cup \{1\}    &   \text{if } 1 \notin S
         \end{cases}
     \]
-    
+\end{Sym}
+
+\begin{Def}[Zero Element]
+    A semigroup S. $|S| > 1. \forall x \in S, 0x=x0=0$ 
+\end{Def}
+
+It's easy to add a 0 to semigroup.
+
+\begin{Exap}[Trivial Semigroups]
+
+\end{Exap}
+
+\begin{Sym}[$S^{0}$]
+    \[
+        S^0 =
+        \begin{cases}
+            S               &   \text{if } 0 \in S  \\
+            S \cup \{0\}    &   \text{if } 0 \notin S
+        \end{cases}
+    \]
+\end{Sym}
+
+\begin{Rmk}
+    The semigroup's extentions of 1 and 0 is not work on group.
+    $G$ is a group, $G \cup \{0\}$ is a semigroup but not a group yet. 
 \end{Rmk}
 
+\begin{Def}[Left/Right zero semigroup]
+    \[
+        \text{Left: \space} S \neq \emptyset, \forall a,b \in S, ab=a
+    \]
+    Right is analogue.
+\end{Def}
+
+\begin{Exap}[Semigroups]
+    \[
+        I=\left[0,1\right],xy=\min(x,y)
+    \]   
+    \[
+        \{0\},0 \text{\space is both Identity and Zero}
+    \]
+\end{Exap}
+
+\begin{Def}[Multiplication of Set]
+    \[
+        AB=\{ab:a \in A \wedge b \in B\}
+    \]    
+    Notes: $A^2 \neq \{a^2 : a \in A \} $
+
+    \[
+        Ab=A\{b\}
+    \]
+\end{Def}
+
+\begin{Exap}[Monoid and Multiplication]
+    \[
+        1 \notin S \rightarrow 1 \notin S^1
+    \]
+    \[
+        1 \notin 
+        \begin{cases}
+            S^1 a & = Sa \cup \{a\} \\
+            a S^1 & = aS \cup \{a\} \\
+            S^1 a S^1 & = SaS \cup Sa \cup aS \cup \{a\}
+        \end{cases}
+    \]
+\end{Exap}
+
+\begin{Def}[Group]
+    If a semigroup S has the property that
+    \[
+        (\forall a \in S) aS=S \wedge Sa=S
+    \]
+    This definition is equivalent to the common definition of group. 
+    \begin{proof}
+        \begin{gather*}
+            Sa=S \rightarrow \exists s \in S, sa=a \rightarrow s \text{\space is the left identity element of }a \\
+            \forall x \in S, ax=sax=s(ax) \rightarrow s \text{\space s is a left identity element of } ax   \\
+            {ax}=S  \\
+            \rightarrow s \text{\space is the left identity element of } S  \\
+            \rightarrow \text{analogue, }s \text{\space is the identity element of }S   \\
+            \rightarrow E \in S \text{;}\\
+            aS=S \rightarrow \exists b \in S, ba=E \\
+            \rightarrow b=a^{-1}    \\
+            \rightarrow S\text{\space is a group}
+        \end{gather*}
+    \end{proof}
+\end{Def}
+
+\begin{Def}[0-Group]
+    $G$ is a group,$G^0=G\cup\{0\}$ is a semigroup.
+\end{Def}
+
+\begin{Prop}[There is no $0-group$ different from $G\cup\{0\}$]
+    \[
+        \text{A semigroup with zero is a }0-group \Leftrightarrow (\forall a \in S \setminus \{0\})aS=S\wedge Sa=S
+    \]
+    \begin{proof}
+        Sufficiency
+        \begin{gather*}
+        S=G^0,a \in G=S \setminus \{0\} \rightarrow aG=Ga=G \\
+        aS=aG \cup a\{0\}=aG \cup \{0\} \\
+        Sa=Ga \cup \{0\} a=Ga \cup \{0\}    \\
+        \rightarrow aS = Sa = S
+        \end{gather*}
+        Necessity
+        \begin{gather*}
+            (\forall a \in S \setminus \{0\})aS=Sa=S    \\
+            \text{Let }G=S \setminus \{0\}
+            \text{Suppose }\exists a,b \neq 0 \in G \rightarrow ab=0   \\
+            \rightarrow S^2=(Sa)(bS)=S(ab)S=S\{0\}S=\{0\}   \\
+            \rightarrow S=aS \subset S^2 =\{0\} \\
+            \text{It is a contradiction.}   \\
+            \rightarrow \forall a,b \in G \rightarrow ab \in G  \\
+            \forall a \in G, aG=aS \setminus a\{0\}=aS \setminus \{0\}=S \setminus \{0\}=G  \\
+            \forall a \in G,Ga=Sa \setminus \{0\}a=Sa \setminus \{0\}=S \setminus \{0\}=G   \\
+            \rightarrow G  \text{\space is a group.}
+        \end{gather*}
+    \end{proof}
+\end{Prop}
+
+\Def[Subsemigroup]{$T \subset S \wedge T \neq \emptyset \wedge \forall x,y \in T \rightarrow xy \in T$ or $T^2 \subset T$}
+
+\Def[Idempotent]{$e \in S, e^2=e$}
+
+\begin{Exap}[Subgroups]
+    $\{0\},\{1\},\{e\}$ \space are all subgroups.   
+\end{Exap}
+
+\begin{Rmk}[No trivial subgroup's condition]
+    \[
+        T \subset S,(\forall a \in T) aT=T \wedge Ta=T
+    \]
+\end{Rmk}
+
+\begin{Def}[Left/Right Ideal, Ideal]
+    \[
+        A: A \subset S \wedge A \neq \emptyset \space
+        \begin{cases}
+            SA \subseteq A \text{\space : Right Ideal}  \\
+            AS \subseteq A \text{\space : Left Ideal }  \\
+        \end{cases}
+    \]
+    Ideal : Both left and right ideal.
+\end{Def}
+
+\Rmk{Every ideal is a subsemigroup, but the converse is not the case.}
+
+\begin{Def}[Proper]
+    Ideal : $I: \{0\} \subset I \subset S$. Symbol '$\subset$'  is strictly. 
+\end{Def}
+
+\begin{Def}[Morphism.Homomorphism]
+    $S,T$ are semigroups.
+    \[
+        \text{A map }\phi: S \rightarrow T, \forall x,y \in S,(xy)\phi=(x)\phi(y)\phi
+    \]
+\end{Def}
+
+\begin{Rmk}[Morphism of monoid has better properties]
+    \[
+        (S,.,1_S),(T,.,1_T)\text{ are monoids.}
+        \phi \text{ is a morphism} \rightarrow
+        1_S\phi =1_T
+    \]   
+    \begin{proof}
+        \begin{gather*}
+            \forall x \in S, (x) \phi = (1_S x) \phi =(1_S) \phi (x) \phi   \\
+            \rightarrow (1_S) \phi \text{\space is the left identity of S}  \\
+            \text{The right analogue is same.}  \\
+            \rightarrow (1_S) \phi = 1_T
+        \end{gather*}
+    \end{proof}
+\end{Rmk}
+
+\begin{Def}[Monomorphism]
+    $S,T$ are semigroups, A morphism $\phi : S \rightarrow T \wedge \phi$ is one-one.
+    
+    This definition is equivalent to the 'categorical' definition of a monomorphism as a right cancellative morphism. (The function symbol in this book is right.)
+
+    \[
+        \forall \text{semigroups } U, \forall \text{morphisms } \alpha, \beta : U \rightarrow S, \alpha \phi = \beta \phi \Rightarrow \alpha = \beta
+    \]
+\end{Def}
+
+\begin{Def}[Isomorphism]
+    \[
+        \phi. \exists \phi^{-1}: T \rightarrow S. \rightarrow
+        \phi\phi^{-1}=I_S \wedge \phi^{-1}\phi=I_T. S \simeq T
+    \]
+\end{Def}
+
+\begin{Def}[Endomorphism, Automorphism]
+    \begin{gather*}
+        \text{A morphism } \phi: S \rightarrow S    \text{: Endomorphism}\\
+        \text{An Endomorphism } \phi \text{ is onto and one-one \text{: Automorphism}}
+    \end{gather*}
+\end{Def}
+
+\begin{Def}[Direct(cartesian) product;Projection morphism]
+    \[\text{Semigroups:}S,T. S\times T \text{ is } (s,t)(s',t')=(ss',tt')\]
+
+    General notion of direct product.
+    \begin{gather*}
+        \text{The product of } \{S_i:i\in I\}   \\
+        \text{All maps } p: I \rightarrow \bigcup _{i \in I} S_i. ip\in S_i, P=\{p\}  \\
+        \text{Define the multiplication }i(pq)=(ip)(iq) \\
+        \rightarrow P \text{\space is a semigroup}
+    \end{gather*}
+    Projection morphism
+    $\pi_i:P \rightarrow S, p\pi_i=ip(p \in P)$
+    
+    Moreover, if $T$ is a semigroup and if there are morphisms $\tau_i:T\rightarrow S_i(i \in I) \rightarrow \exists \text{unique } \gamma: T \rightarrow P, \forall i\in I,\gamma \pi_i=\tau_i$. The map $\gamma:= \forall t \in T, (t\gamma)(i)=t\tau_i,(i \in I)$
+
+    $P$ is the product of the semigroups $S_i$ said in categroy.
+
+    ??? $(t\gamma)(\pi_i)=t\tau_i$ ???
+\end{Def}
+
+\begin{Def}[Permutation(Symmetric) group;Full transformation semigroup]
+    Set $X$.
+    \[
+    \begin{cases}
+        (\mathcal{G},\circ):= \text{All permutations of }X  &  \text{Symmetric group}   \\
+        (\mathcal{T},\circ):= \text{All maps of }X          &   \text{Full transformation semigroup}
+    \end{cases}\]
+    
+    $\mathcal{G}_X$, consisting of all bijections from X onto X, is a subgroup of $\mathcal{T}_X$.
+
+    $|\mathcal{G}_X|=n!; |\mathcal{T}_X|=n^n$
+\end{Def}
+
+\begin{Def}[Transformation semigroup. Representation of S. Faithful Representation]
+    \[\begin{cases}
+        S \text{ is a subsemigroup of }\mathcal{T}_X   &   \text{Transformation semigroup} \\
+        \text{A morphism }\phi: S \rightarrow \mathcal{T}_X &   \text{Representation of S (by maps).}   \\
+        \text{A representation of S }\phi \text{ is one-one} &  \text{Faithful ...}
+    \end{cases}\]
+    
+    The first S and second S is different.
+\end{Def}
+
+\begin{Them}
+    If $S$ is a semigroup and $X=S^1$ then there is a faithful representation $\phi:S \rightarrow \mathcal{T}_X$.
+    \begin{proof}
+        \begin{gather*}
+            \forall a \in S, \rho_a : S^1\rightarrow S^1:= x\rho_a=xa. (x\in S^1)    \\
+            \exists \alpha: S\rightarrow\mathcal{T}_X:=a\alpha=\rho_a(a\in S)   \\
+            a\alpha=b\alpha \rightarrow \rho_a=\rho_b\rightarrow  \forall x \in S^1,xa=xb\rightarrow 1a=1b \rightarrow a=b  \\
+            \rightarrow \alpha \text{\space is one-one} \\
+            ??? \forall x\in S, xa=xb \nrightarrow{?} a=b, \text{Is this the key?} \\
+            \forall x \in S^1,x(\rho_a\rho_b)=(x\rho_a)\rho_b=(xa)b=x(ab)=x\rho_{ab} \rightarrow (a\alpha)(b\alpha)=(ab)\alpha  \\
+            \rightarrow \alpha \text{\space is a morphism}  \\
+            \rightarrow \alpha \text{\space is a faithful representation of }S
+        \end{gather*}
+    \end{proof}
+
+    The representation $\alpha$ introduced in this proof is called extended right regular representation.
+\end{Them}
+
+\Def[Rectangular band]{$\forall a,b \in S, aba=a$}
+
+\begin{Them}
+    Let $S$ be a semigroup. Then the four conditions are equivalent.
+    \begin{gather*}
+        S \text{\space is a rectangular band}   \\
+        \forall s \in s, s^2=s; \forall a,b,c \in S \rightarrow abc=ac  \\
+        \exists \text{\space left zero ... } L,\text{right zero ... }R\rightarrow S \simeq L \times R   \\
+        S\simeq A\times B, A\neq \emptyset,B\neq \emptyset. \text{multiplication: } (a_1,b_1)(a_2,b_2)=(a_1,b_2)
+    \end{gather*}
+
+    \begin{proof}
+        \center{$1 \rightarrow 2$}
+        \begin{align*}
+            &\forall x \in S, x=xxx=x^3\rightarrow xx=x^3x=x^4   \\
+            &x^4=x(xx)x=x \rightarrow x=x^4=x^2 \\
+            &\rightarrow x \text{\space is idempotent.} \\
+            &\forall a,b,c \in S,ac=(aba)(cbc)=a(bacb)c=abc
+        \end{align*}
+        \center{$2 \rightarrow 3$}
+        \begin{align*}
+            &\text{Fix an element } c\in S. L=Sc, R=cS\\
+            &\forall x=zc,y=tc, x,y\in L \rightarrow xy=zctc=zc^2=zc=x  \\
+            &\rightarrow L \text{\space is a left zero ...} \\
+            &\rightarrow R \text{\space is a right zero ...}    \\
+            &\phi:S\rightarrow L\times R:=x\phi=(xc, cx)(x\in S)    \\
+            &(xc,cx)=(yc,cy) \rightarrow x=x^2=xcx=ycx=ycy=y^2=y    \\
+            &\rightarrow \phi \text{\space is one-one.}    \\
+            &\forall (ac,cb)\in L\times R, (ac,cb)=(abc,cab)=(ab)\phi   \\
+            &\rightarrow \phi \text{\space is onto.}    \\
+            &\forall x,y \in S  \\
+            &(xy)\phi=(xyc,cxy)=(xc,yc)=(xcyc,cxcy)=(xc,cx)(yc,cy)=(x\phi)(y\phi)   \\
+            &\rightarrow \phi \text{\space is a morphism.}  \\
+            &\rightarrow S\simeq L\times R
+        \end{align*}
+
+        \center{$3 \rightarrow 4$}
+        \begin{align*}
+            &S=L\times R.\text{L is left zero ... and R is right zero ...}  \\
+            &\text{Multiplication: } (a,b)(c,d)=(ac,bd)=(a,d)
+        \end{align*}
+        \center{$4 \rightarrow 1$}
+        \begin{align*}
+            &S=A\times B, \text{with multiplication: }(a,b)(c,d)=(a,d)\\
+            &\forall a=(x,y),b=(p,q)\in S   \\
+            &\rightarrow aba=(x,y)(p,q)(x,y)=(x,q)(x,y)=(x,y)=a \\
+            &\rightarrow S\text{\space is a rectangular band.}
+        \end{align*}
+    \end{proof}
+\end{Them}
+
 \subsection[2]{Monogenic semigroups}
+
+\begin{Sym}[$\langle A\rangle $, Generators]
+    \[
+        A \subset S, U_i \text{\space are all subgroups that }A \subset U_i.\langle A \rangle:=\bigcap_{i \in I}U_i
+    \]
+    
+    $\langle A \rangle$ has two properties:
+    \[\begin{cases}
+        A \subseteq \langle A\rangle    \\
+        \text{Subsemigroup } U, A\subset U \rightarrow \langle A\rangle \subseteq U
+    \end{cases}\]
+
+    If $\langle A\rangle = S$ we say that A is a set of generators, or a generating set, of S.
+\end{Sym}
+
+\begin{Exap}
+    Finite $A$.
+
+    $A=\{a\}. \langle A\rangle=\{a,a^2,a^3,...\}$.
+
+    If we need a submonoid of $S$ generated by $S$, the $A$ always contains $1$.
+
+    $\langle A \rangle=\{1,a,a^2,...\}$
+\end{Exap}
+
+\begin{Def}[Monogenic semigroup]
+    $S=\langle a\rangle$ is said to be a monogenic semigroup.
+
+    $\langle a\rangle$ is said to be a monogenic subsemigroup of $S$ generated by the element $a$.
+
+    Order of element $a = |\langle a\rangle|$
+
+    The analogue of monogenic in group-theoretic terminology named 'cyclic'. We must judge whether monogenic semigroups are 'round' enough to merit the description 'cyclic'. 
+\end{Def}
+
+\begin{Def}[Finite/Infinite order]Period, Index.
+
+    $a\in S, \langle a\rangle=\{a,a^2,...\}$.
+
+    If $a^m=a^n\rightarrow m=n$, that $\langle a\rangle \simeq (N,+)$. We say that $a$ is an infinite monogenic semigroup, and a has infinite order in $S$.
+    \begin{align*}
+        \text{Index: } & \min(\{x \in N: a^x=a^y,x\neq y\})   \\
+        \text{Period: }& \min(\{x\in N: a^{m+x}=a^m\})  \\
+    \end{align*}
+\end{Def}
+
+\begin{Exap}
+    Some properties of finite period geenrator.'
+    
+    $a$ is an element with index $m$ and period $r \rightarrow a^m=a^{m+r}$.
+    Moreover, $(\forall q \in N)a^m=a^{m+qr}$.
+    
+    $\langle a\rangle=\{a,a^2,...,a^m,a^{m+1},...,a^{m+r-1}\}.|\langle a\rangle|=m+r-1$.
+\end{Exap}
+
+\begin{Def}[Kernel of $\langle a\rangle$]
+    $K_\alpha=\{a^m,...,a^{m+r-1}\}$
+\end{Def}
+
+\begin{Prop}
+    $K_a$ is a subsemigroup, indeed a ideal, of $\langle a\rangle$. $a^{m+u}$.
+    \begin{proof}
+        $K_a\langle a\rangle=\langle a\rangle K_a=\{a^{m+1},...,a^{2m+r-1}\}=K_a$
+    \end{proof}
+    $K_a$ is a subgroup, indeed a cyclic group.
+    \begin{proof}
+        \begin{align*}
+            &ea^x=a^x \rightarrow e=a^{qr}  \\
+            &\leftarrow \exists q \rightarrow a^qr \in K_a \\
+            &\rightarrow e \in K_a;  \\
+            &\forall u,v \in N, \exists x \in N \rightarrow a^{m+u}a^{m+x}=a^{m_+v} \\
+            &\leftarrow x\equiv v-u-m\mod{r} \text{\space and } 0\leq x\leq r-1. \\
+            &\rightarrow \forall a^x \in K_a, \exists a^y \in K_a \rightarrow a^{x+y}=e \\
+            &\rightarrow K_a \text{ is a group}.    \\
+            &\\
+            &\leftarrow \exists g,0\leq g\leq r-1 \wedge m+g\equiv 1\mod{r} \\
+            &\rightarrow i=a^{m+g},K_a={i,i^2,...,i^{r-1}}  \\
+            &\rightarrow K_a \text{ is a cyclic group}.
+        \end{align*}
+    \end{proof}
+\end{Prop}
+
+\begin{Exap}Some monogenic semigroups.
+    
+    $X=\{1,2,...,7\},\alpha = (\begin{matrix}
+        1,2,3,4,5,6,7   \\
+        2,3,4,5,6,7,5
+    \end{matrix}) \in \mathcal{T}_X$
+    \begin{align*}
+        \alpha^2=(\begin{matrix}
+            1,2,3,4,5,6,7   \\
+            3,4,5,6,7,5,6
+        \end{matrix})   \\
+        \alpha^3=(\begin{matrix}
+            1,2,3,4,5,6,7   \\
+            4,5,6,7,5,6,7
+        \end{matrix})   \\
+        \alpha^4=(\begin{matrix}
+            1,2,3,4,5,6,7   \\
+            5,6,7,5,6,7,5
+        \end{matrix})   \\
+        \alpha^5=(\begin{matrix}
+            1,2,3,4,5,6,7   \\
+            6,7,5,6,7,5,6
+        \end{matrix})   \\
+        \alpha^6=(\begin{matrix}
+            1,2,3,4,5,6,7   \\
+            7,5,6,7,5,6,7
+        \end{matrix})   \\
+        \alpha^7=(\begin{matrix}
+            1,2,3,4,5,6,7   \\
+            5,6,7,5,6,7,5
+        \end{matrix})   \\
+    \end{align*}
+    $\alpha$ has index 4 and period 3. $K_\alpha = \{\alpha^4, \alpha^5, \alpha^6\}$.
+    \begin{center}
+        \begin{tabular}{c|ccc}
+                       & $\alpha^4$ & $\alpha^5$ & $\alpha^6$ \\   \hline
+            $\alpha^4$ & $\alpha^5$ & $\alpha^6$ & $\alpha^4$ \\  
+            $\alpha^5$ & $\alpha^6$ & $\alpha^4$ & $\alpha^5$ \\
+            $\alpha^6$ & $\alpha^4$ & $\alpha^5$ & $\alpha^6$ \\
+        \end{tabular}
+    \end{center}
+    $6\equiv 0 \mod{3} \rightarrow \alpha^6$ is the identity, $4\equiv 1\mod{3}\rightarrow \alpha^4$ is the generator. $(\alpha^4)^2=\alpha^5, (\alpha^4)^3=\alpha^6$.
+\end{Exap}
+
+\begin{Them}[$\langle a \rangle \simeq (N,+) \text{ or } \{a,a^2,..,a^m,...,a^{m+r-1}\}$] is all.
+
+    1. $\{x:a^x=a^y,x\neq y\} = \emptyset \rightarrow \langle a\rangle \simeq (N,+)$;
+
+    2. $\exists$ index $m$, period $r$ with:
+    \begin{align*}
+        &a^m=a^m+r   \\
+        &\forall u,v \in N^0, a^{m+u}=a^{m+v} \Leftrightarrow u \equiv v \mod{r}    \\
+        &\langle a\rangle =\{a,a^2,...,a^{m+r-1}\}  \\
+        &K_a=\{a^m,...,a^{m+r-1}\} \text{ is a cyclic subgroup of }\langle a\rangle
+    \end{align*}
+\end{Them}
+
+\begin{Rmk}[Finite semigroup]$\langle a\rangle \simeq \langle b\rangle$
+
+    It is easy to see $\langle a\rangle \simeq \langle b\rangle \Leftrightarrow $ they have same index and period.
+    We note monogenic semigroup $M(m,r)$ with index $m$ and period $r$.
+    $M(1,r)$ is the cyclic group of order $r$.
+
+    Periodic semigroup: $\forall a \in S, |\langle a \rangle|$ is finite.
+    Finite semigroup is always periodic.
+\end{Rmk}
+
+\begin{Prop}Every periodic semigroup has a idempotent.
+    
+    In a periodic semigroup every element has a power which is idempotent. 
+    Every periodic semigroup--in particular, in evert finite semigroup, there is at least one idempotent.
+    \begin{proof}
+        $\forall a \in S \rightarrow |\langle a\rangle| < \infty\rightarrow \exists I \in K_a$
+    \end{proof}
+    Otherwise, the idempotent may not exist.
+\end{Prop}
+
 \subsection[3]{Ordered sets, semilattices and lattices}
+
+\begin{Def}[Order, Partial Order]A binary relation $\omega$ on set X. If 
+    \begin{align*}
+        1. & \text{reflexive} & \forall x \in X,(x,x) \in \omega   \\
+        2. & \text{antisymmetric} & \forall x,y\in X,(x,y)\in \omega \wedge (y,x)\in \omega \rightarrow x=y    \\
+        3. & \text{transitive} & \forall x,y,z \in X, (x,y)\in \omega \wedge (y,z)\in \omega \rightarrow (x,z)\in \omega
+    \end{align*}
+    Traditionally one writes $x\leq y$ rather than $(x,y)\in \omega$.
+\end{Def}
+\begin{Def}[Total order] Partial order $(X,\omega)$
+    $(\forall x,y\in X)x\leq X \vee y\leq x$   
+\end{Def}
+
+\begin{Def}[Minimal, Minimum]
+    \begin{align*}
+        a\text{ :minimal } & (\forall y\in Y)y\leq a \Rightarrow y=a   \\
+        b\text{ :minimum } & (\forall y \in Y)b\leq y
+    \end{align*}
+    In patrial ordered set it is perfectly possible to have minimal elements that are not minimum.
+\end{Def}
+
+\begin{Prop}[Let $Y\neq \emptyset, Y \subset X, (X,\leq)$]Then
+    \begin{align*}
+        Y \text{ has at most one minimum element.}  \\
+        Y \text{ is totally ordered} \rightarrow \text{ 'minimal'='minimum'.}
+    \end{align*}
+\end{Prop}
+
+\begin{Def}[Minimal condition, Well-ordered] $(X,\leq)$
+
+    Minimal condition: Every non-empty subset of X has a minimal element.
+
+    Well-ordered: A totally ordered set X with minimal condition.
+\end{Def}
+\Def[Analogue, Maximal, Maximum, Maximal condition]{.}
+\begin{Def}[Lower bound, the Greatest lower bound(meet)]$Y\subset X, Y\neq \emptyset$
+    \begin{align*}
+        \text{Lower bounds: } & \{c\in S, \forall y\in Y, c\leq Y\}\\
+        \text{meet: }   & \text{ maximum element of {\{c\}}}
+    \end{align*}
+    Note: meet $d=\bigwedge \{y:y\in Y\}$. If $Y=\{a,b\}, d=a\wedge b$.
+\end{Def}
+
+\begin{Def}[Upper bound, the least upper bound(join)]
+    analogue
+\end{Def}
+
+\begin{Def}[Lower semilattice, Complete lower semilattice]
+    \begin{align*}
+        \text{lower semilattice: } & \forall a,b \in X, a \wedge b \in X    \\
+        \text{complete lower ...: } & \text{lower ...}, \forall Y \subset X, \exists\bigwedge \{y:y\in Y\}
+    \end{align*}
+\end{Def}
+
+\begin{Def}[Upper semilattice, Complete upper semilattice]
+    analogue    
+\end{Def}
+
+\begin{Def}[lattice, complete lattice, sublattice]
+    \begin{align*}
+        \text{lattice : } & X \text{ both upper and lower semilattice.} \\
+        \text{complete ... : } & X \text{both complete upper and complete lower semilattice.}   \\
+        \text{sublattice : } & Y\subset X,Y\neq \emptyset. \forall a,b\in Y, a\wedge b, a\vee b \in Y
+    \end{align*}
+    Note: lattice: $X=(X,\leq, \wedge,\vee)$
+\end{Def}
+
+\begin{Prop}[The multiplication and $\wedge$ of lattice].
+
+    Let $(E,\leq)$ be a lower semilattice. Then $(E,\wedge)$ is a commutative semigroup consisting entirely of idempotents, and 
+    $$(\forall a,b\in E)a\leq b \Leftrightarrow a\wedge b=a$$
+
+    Conversely, suppose that $(E,.)$ is a commutative semigroup of idempotents. Then the relation $\leq$ on $E$ defined by
+    $$a\leq b \Leftrightarrow ab = a$$
+    is a partial order on $E$, with respect to which $(E,\leq)$ is a lower semilattice.
+    
+    \begin{proof}
+        1.
+        \begin{align*}
+            &\forall a,b \in E, a\wedge b \in E    \\
+            &\forall a,b,c\in E, a\wedge(b\wedge c)=(a\wedge b)\wedge c  \\
+            &\rightarrow E \text{ is a semigroup.}  \\
+            &\forall a,b \in E, a\wedge b=b\wedge a \\
+            &\rightarrow E \text{ is commutative.}  \\
+            &\forall a \in E, a\wedge a=a   \\
+            &\rightarrow a \text{ is a idempotent.}  \\
+        \end{align*}
+        2.
+        \begin{align*}
+            &\text{By the definition. } a^2=a \rightarrow a \leq a  \\
+            & a\leq b \wedge b\leq a \rightarrow ab = a\wedge ba =b\rightarrow a=ab=ba=b    \\
+            & a\leq b \wedge b\leq c \rightarrow ab=a\wedge bc =b \rightarrow ac =(ab)c=a(bc)=ab=a  \\
+            &\rightarrow a \leq c   \\
+            &\rightarrow \leq \text{ is a partial order.}\\
+            & \\
+            &\forall a,b \in E, ab \leq a \wedge ab \leq b \rightarrow ab\text{ is a lower bound.}  \\
+            &\forall c\leq a,c\leq b, c(ab)=(ca)b=cb=c \rightarrow c \leq ab    \\
+            &\rightarrow ab=a\wedge b   \\
+            &\rightarrow E \text{ is a lower lattice.}
+        \end{align*}
+    \end{proof}
+    This proposition is that the notions of 'lower semilattice' and 'commutative semigroup of idempotents' are equivalent.
+\end{Prop}
+
+\begin{Sym}[Hasse diagrams]    ??? Wait for learning TikZ.
+    
+    The bigger element is always upper to lower one.
+
+    If $a\leq b, \forall x\in E, a<x<b$ is impossible, paint a line bettwen $a$ and $b$
+\end{Sym}
+
 \subsection[4]{Binary relations; equivalences}
+
+\Def[Equality(diagnoal)  relation]{ $1_X=\{(x,x):x\in X\}$}
+
+\begin{Def}[$\circ$ on $\mathcal{B}_X$]
+    \[
+        \forall \rho, \sigma \in \mathcal{B}_X, \rho \circ \sigma =\{(x,y)\in X\times X: (\exists z\in X)(x,z)\in \rho \wedge (z,y)\in \sigma\}
+    \]
+\end{Def}
+
+\begin{Prop}[$(\mathcal{B}_X,\circ)$ is a semigroup]
+    $\forall \rho, \sigma, \tau \in \mathcal{B}_X.$
+    \begin{align*}
+        (x,y) &\in (\rho \circ \sigma) \circ \tau   \\
+        &\Leftrightarrow (\exists \in X)(x,z)\in \rho \wedge (z,y)\in \tau  \\
+        &\Leftrightarrow (\exists z\in X)(\exists u \in X)(x,u)\in \rho,(u,z)\in \sigma \wedge (z,y) \in \tau   \\
+        &\Leftrightarrow (\exists u \in X)(x,u)\in \rho \wedge (u,y)\in \sigma \circ \tau   \\
+        &\Leftrightarrow (x,y)\in \rho \circ (\sigma \circ \tau)    \\
+        &\rightarrow (\rho \circ \sigma) \circ \tau = \rho \circ (\sigma \circ \tau)
+    \end{align*}
+\end{Prop}
+
+\begin{Rmk}[The $\circ$ operator keeps order of relations]
+    $\forall \rho, \sigma, \tau \in \mathcal{B}_X$
+    \[\rho \subseteq \sigma \rightarrow \rho \circ \tau \subseteq \sigma \circ \tau \wedge \tau \circ \rho \subseteq \tau \circ \sigma\]
+\end{Rmk}
+
+\begin{Def}[Domain, Image, Converse] in $\mathcal{B}_X$
+    \begin{align*}
+        \text{Domain: } & \mathrm{dom } \rho=\{x\in X: (\exists y\in X)(x,y)\in \rho\} \\
+        \text{Image: } & \mathrm{im } \rho = \{y\in X:(\exists x\in X)(x,y)\in \rho\}  \\
+        \text{Converse: } & \rho^{-1}=\{(x,y)\in X\times X: (y,x)\in \rho\}
+    \end{align*}
+    By this definition, we immediate that, $\forall \rho,\sigma\in \mathcal{B}_X$:
+    \begin{align*}
+        \rho \subseteq \sigma \rightarrow \mathrm{dom } \rho \subseteq \mathrm{dom }\sigma \wedge \mathrm{im }\rho \subseteq \mathrm{im } \sigma    \\
+        \mathrm{dom }\rho^{-1}=\mathrm{im }\rho, \mathrm{im }\rho^{-1}=\mathrm{dom }\rho
+    \end{align*}
+\end{Def}
+
+\begin{Def}[$x\in X,x\rho, A\subseteq X, A\rho$].
+    \begin{align*}
+        x\rho=\{y\in X: (x,y)\in\rho\}  \\
+        A\rho=\bigcup\{a\rho:a\in A\}
+    \end{align*}
+\end{Def}
+
+\begin{Def}[Partial map, Restriction, Extension]
+    \begin{align*}
+        \text{Partial map: } &\phi \in \mathcal{B}_X, \forall x\in \mathrm{dom }\phi, |x\phi|=1 \\
+        & \phi, \varphi \text{ are partial maps}, \phi \subseteq \psi    \\
+        \text{Restriction: } & \phi \text{ is a restriction of } \psi, \phi = \psi|_{\mathrm{dom }\phi}  \\
+        \text{Extension: } & \psi \text{ is a extension of } \phi   \\
+    \end{align*}
+    Empty relation is also a partial map.
+\end{Def}
+
 \subsection[5]{Congruences}
 \subsection[6]{Free semigroups and monoids; presentations}
 \subsection[7]{Ideals and Rees congruences}
