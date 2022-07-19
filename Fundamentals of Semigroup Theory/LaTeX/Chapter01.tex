@@ -259,11 +259,10 @@ It's easy to add a 0 to semigroup.
 
     $P$ is the product of the semigroups $S_i$ said in categroy.
 
-    ??? $(t\gamma)(\pi_i)=t\tau_i$ ???
+    \textcolor{red}{???} $(t\gamma)(\pi_i)=t\tau_i$
 \end{Def}
 
-\begin{Def}[Permutation(Symmetric) group;Full transformation semigroup]
-    Set $X$.
+\begin{Def}[Permutation(Symmetric) group; Full transformation semigroup]Set $X$.
     \[
     \begin{cases}
         (\mathcal{G},\circ):= \text{All permutations of }X  &  \text{Symmetric group}   \\
@@ -293,7 +292,6 @@ It's easy to add a 0 to semigroup.
             \exists \alpha: S\rightarrow\mathcal{T}_X:=a\alpha=\rho_a(a\in S)   \\
             a\alpha=b\alpha \rightarrow \rho_a=\rho_b\rightarrow  \forall x \in S^1,xa=xb\rightarrow 1a=1b \rightarrow a=b  \\
             \rightarrow \alpha \text{\space is one-one} \\
-            ??? \forall x\in S, xa=xb \nrightarrow{?} a=b, \text{Is this the key?} \\
             \forall x \in S^1,x(\rho_a\rho_b)=(x\rho_a)\rho_b=(xa)b=x(ab)=x\rho_{ab} \rightarrow (a\alpha)(b\alpha)=(ab)\alpha  \\
             \rightarrow \alpha \text{\space is a morphism}  \\
             \rightarrow \alpha \text{\space is a faithful representation of }S
@@ -619,7 +617,7 @@ It's easy to add a 0 to semigroup.
     This proposition is that the notions of 'lower semilattice' and 'commutative semigroup of idempotents' are equivalent.
 \end{Prop}
 
-\begin{Sym}[Hasse diagrams]    ??? Wait for learning TikZ.
+\begin{Sym}[Hasse diagrams]    \textcolor{blue}{!!!} Wait for learning TikZ.
     
     The bigger element is always upper to lower one.
 
@@ -682,6 +680,228 @@ It's easy to add a 0 to semigroup.
     \end{align*}
     Empty relation is also a partial map.
 \end{Def}
+
+\begin{Prop}[$\mathcal{P}_X \subset \mathcal{B}_X$] is a subsemigroup.
+    \begin{proof}
+        Let $\phi ,\psi \in \mathcal{P}_X, (x,y_1),(x,y_2)\in \phi \circ \psi $.
+        \begin{align*}
+            \exists z_1,z_2\in X &\rightarrow (x,z_1) \in \phi ,(z_1,y_1)\in \psi, (x,z_2)\in \phi ,(z_2,y_2)\in \psi    \\
+            &\rightarrow z_1=z_2\rightarrow y_1=y_2  \\
+            &\rightarrow \phi \circ \psi \in \mathcal{P}_X
+        \end{align*}
+    \end{proof}
+\end{Prop}
+
+\begin{Prop}
+    $\phi, \psi \in \mathcal{P}_X$
+    \begin{align*}
+        \mathrm{dom}(\phi \circ \psi) &= [\mathrm{im} \phi \cap \mathrm{dom}\psi]\phi^{-1}     \\
+        \mathrm{im}(\phi \circ \psi) &= [\mathrm{im} \phi \cap \mathrm{dom}\psi]\psi   \\
+        (\forall x \in \mathrm{dom}(\phi \circ \psi))x(\phi \circ \psi) &= (x\phi)\psi
+    \end{align*}
+    \begin{proof}
+        1.
+        \begin{align*}
+            &\forall x\in \mathrm{dom}(\phi\circ \psi ) \rightarrow \exists y,z \in X,(x,z)\in \phi ,(z,y)\in \psi \\
+            &\rightarrow z\in \mathrm{im}\phi \cap \mathrm{dom} \psi \\
+            &(z,x) \in \phi^{-1}    \\
+            &\rightarrow x \in z \phi^{-1} \subseteq [\mathrm{im}\phi \cap \mathrm{dom} \psi ]\phi^{-1} \\
+            &\text{Conversely}  \\
+            &\forall x\in [\mathrm{im}\phi \cap \mathrm{dom}\psi ]\phi^{-1} \\
+            &\rightarrow \exists z\in \mathrm{im}\phi \cap \mathrm{dom}\psi \rightarrow x \in z\phi^{-1} \rightarrow (x,z)\in \phi     \\
+            &z\in \mathrm{dom}\psi \\
+            &\rightarrow \exists y \in X,(z,y)\in \psi \\
+            &\rightarrow (x,y)\in \phi \circ \psi   \\
+            &\Rightarrow \mathrm{dom}(\phi \circ \psi )=[\mathrm{im}\phi \cap \mathrm{dom}\psi ]\phi^{-1}
+        \end{align*}
+        2.
+        \begin{align*}
+            &\forall x \in \mathrm{im}(\phi \circ \psi)\rightarrow \exists (y,x)\in \psi ,\exists (z,y) \in \phi \\
+            &\rightarrow y \in \mathrm{dom}\psi \cap \mathrm{im}\phi    \\
+            &(y,x)\in \psi \\
+            &\rightarrow x \in y\psi \subseteq [\mathrm{im}\phi \cap \mathrm{dom}\psi ]\psi     \\
+            &\text{Conversely}  \\
+            &\forall x\in \mathrm{im}(\phi \circ \psi)  \\
+            &\rightarrow \exists y \in \mathrm{im}\phi \cap \mathrm{dom}\psi \rightarrow x\in y\psi \rightarrow (y,x)\in \psi   \\
+            &y \in \mathrm{im}\phi \\
+            &\rightarrow \exists z \in X, (z,y) \in \phi    \\
+            &\rightarrow (z,x)\in \phi \circ \psi \\
+            &\Rightarrow \mathrm{im}(\phi \circ \psi)=[\mathrm{im}\phi \cap \mathrm{dom}\psi]\psi
+        \end{align*}
+        The above proofs have used no special properties of partial maps.
+
+        3.
+        \begin{align*}
+            &(x,y)\in \phi \circ \psi \Leftrightarrow \exists z (x,z)\in \phi \wedge (z,y)\in \psi  \\
+            &\rightarrow z=x\phi ,y=z\psi ,y=x(\phi \circ \psi) \\
+            &\rightarrow x(\phi \circ \psi)=y=z\psi =(x\phi )\psi 
+        \end{align*}
+    \end{proof}
+\end{Prop}
+
+\begin{Def}[Map, Function]
+    Partial map $\phi \wedge \mathrm{dom}\phi =X$. 
+\end{Def}
+
+\begin{Prop}
+    $(\mathcal{T}_X=\{\phi:X\rightarrow X\}, \circ )$ is a subsemigroup of $(\mathcal{B}_X,\circ )$ 
+\end{Prop}
+
+\begin{Prop}
+    $X\neq \emptyset$
+    \begin{align*}
+        \text{1. } & \phi \in \mathcal{P}_X \rightarrow \phi^{-1} \in \mathcal{P}_X \Leftrightarrow \phi \text{ is one-one.}    \\
+        \text{2. } & \phi \in \mathcal{T}_X \rightarrow \phi^{-1} \in \mathcal{T}_X \Leftrightarrow \phi \text{ is bijective.}  
+    \end{align*}
+\end{Prop}
+
+\begin{Rmk}[Order relation]$\rho $
+    \begin{align*}
+        \text{reflexive} &\text{    }  1_X \subseteq \rho \\
+        \text{anti-symmetric} &\text{    } \rho\cap \rho^{-1} =1_X \\
+        \text{transitive}  &\text{    } \rho \circ \rho \subseteq \rho 
+    \end{align*}
+\end{Rmk}
+
+\begin{Rmk}[Equivalence relation]$\rho $
+    \begin{align*}
+        \text{reflexive } & \text{    } 1_X \subseteq \rho \\
+        \text{symmetric } & \text{    } \rho^{-1}=\rho \\
+        \text{transitive } & \text{    } \rho \circ \rho = \rho 
+    \end{align*}
+    Symmetric $\rho \subseteq \rho^{-1}\rightarrow \rho^{-1}\subseteq \rho \rightarrow \rho^{-1}=\rho $. Transitive $\rho =1_X\circ \rho \subseteq \rho \circ \rho \rightarrow \rho \circ \rho =\rho$.
+\end{Rmk}
+
+\begin{Rmk}
+    \begin{align*}
+        &\rho \text{ is an equivalence on }X   \\
+        &\Rightarrow  X = \mathrm{dom}1_X \subseteq \mathrm{dom} \rho ; X=\mathrm{im}1_X\subseteq \mathrm{im}\rho   \\
+        &\Rightarrow \mathrm{dom}\rho =\mathrm{im}\rho =X
+    \end{align*}
+\end{Rmk}
+
+\begin{Def}[Partition] of $X$
+    A family $\pi=\{A_i \in X:i\in I\}$, if
+    \begin{align*}
+        &\forall i\in I, A_i \neq \emptyset \\
+        &\forall i,j \in I, A_i=A_j \vee A_i \cap A_j = \emptyset \\
+        &\bigcup\{A_i: i\in I\}=X
+    \end{align*}
+\end{Def}
+
+\begin{Prop}
+    Partition and equivalence are closely related.
+
+    Let $\rho $ be an equivalence on a set $X$. Then the family 
+    \[\Phi(\rho )={x\rho : x\in X} \]
+    of subset of $X$ is a partition of $X$.
+    
+    \[\forall\text{ equivalence } \rho  \text{ on } X, \Psi(\Phi(\rho ))=\rho, \forall \text{ partition } \pi \text{ of } X, \Phi(\Psi(\pi))=\pi\]
+\end{Prop}
+
+\begin{Def}[$\rho$-classes,quotient set, natural map].
+
+    If $\rho$ is an equivalence on $X$, we write $x \rho y $ or $x\equiv y \mod{\rho }$.
+    \begin{align*}
+        &\rho\text{-classes, (equivalence-classes):}\\
+        &\text{  The sets } x\rho \text{ that from the partition associated with the equivalence.} \\
+        &\text{quotient set :}  \\
+        &\text{The set of }\rho\text{-classes, whose elements are the subsets }x\rho.
+    \end{align*}
+\end{Def}
+
+\begin{Sym}[$X/\rho, \rho^{\natural}$]
+    \begin{align*}
+        X/\rho :&\text{ Quotient set of X}  \\
+        \rho^{\natural} :&\text{ onto map:} X\rightarrow X/\rho 
+    \end{align*}
+\end{Sym}
+
+\begin{Prop}[A relation $\phi$, $\rightarrow \phi \circ \phi^{-1} $ is an equivalence].
+
+\begin{proof}
+    \begin{align*}
+        &\phi \circ \phi^{-1} \\
+        &=\{(x,y)\in X\times X: (\exists z\in X)(x,z)\in \phi ,(y,z)\in \phi\}   \\
+        &=\{(x,y)\in X\times X: x\phi =y\phi \} \\
+        &\text{The reflexive, symmetric and transitive is clear.}
+    \end{align*}
+\end{proof}
+\end{Prop}
+
+\begin{Def}[kernel of a relations].
+    \[\ker \phi =\phi \circ \phi^{-1}\]
+    Notice that $\ker \rho^{\natural} =\rho $ 
+\end{Def}
+
+\begin{Rmk}
+    \begin{align*}
+        &{\rho_i:i\in I} \text{ is a non-empty family of equivalences on a set } X   \\ 
+        &\rightarrow \bigcap\{\rho_i:i\in I\}\text{ is again an equivalence.}
+    \end{align*}
+\end{Rmk}
+
+\begin{Def}[$\mathbf{R^e}$].
+
+    $\mathbf{R}$ is any relation on $X$, The family of equivalences containing $\mathbf{R}$ is non-empty. Hence the intersection of all the equivalences containing $\mathbf{R}$ is an equivalence. We call it the equivalence generated by $\mathbf{R}$, denoted it by $\mathbf{R^e}$.
+\end{Def}
+
+\begin{Def}[transitive closure].
+
+    Let $\mathbf{S}$ be a relation on $X, 1_X \subseteq \mathbf{S}$, then
+    \[
+        \mathbf{S}\subseteq \mathbf{S}\circ \mathbf{S}\subseteq \mathbf{S}\circ \mathbf{S}\circ \mathbf{S}\cdots 
+    \]
+    The relation $\mathbf{S}^{\infty}=\bigcup\{\mathbf{S}^n: n\in \mathbf{Z}^+\}$ is called the Transitive closure of the relation $\mathbf{S}$.
+\end{Def}
+
+\begin{Lem}
+    Every reflexive relation $\mathbf{S}$, the relation $\mathbf{S}^{\infty}$ is the smallest transitive relation on $X$ containing $\mathbf{S}$.
+
+    \begin{proof}
+        \begin{align*}
+            &\forall (x,y),(y,z)\in \mathbf{S}^{\infty}\rightarrow  \exists m,n (x,y)\in \mathbf{S}^m \wedge (y,z)\in \mathbf{S}^n  \\
+            &\rightarrow (x,z) \in \mathbf{S}^{m+n} \subseteq \mathbf{S}^{\infty}   \\
+            &\forall \mathbf{T} \text{ is transitive relation containing }\mathbf{S}.\\
+            &\rightarrow \mathbf{S}^2=\mathbf{S}\circ \mathbf{S}\subseteq \mathbf{T}\circ \mathbf{T}\subseteq T \\
+            &\rightarrow \forall n \in \mathbb{Z}^+, \mathbf{S}^n \subseteq T   \\
+            &\rightarrow \mathbf{S}^{\infty} \subseteq T
+        \end{align*}
+    \end{proof}
+\end{Lem}
+
+\begin{Prop}
+    $\mathbf{R^e}=[\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X]^{\infty}$
+    \begin{proof}
+        \begin{align*}
+            &\mathbf{E}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X]^{\infty} \text{ is transitive and contains } \mathbf{R}    \\
+            &\rightarrow 1_X \subseteq \mathbf{R}\cup \mathbf{R^{-1}}\cup 1_X \subseteq \mathbf{E}   \\
+            &\rightarrow \mathbf{E} \text{ is also reflaxive.}  \\
+            &\mathbf{S}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X \text{ is symmetric.}  \\
+            &\rightarrow \mathbf{S}^n=(\mathbf{S^{-1}})^n=(\mathbf{S^n})^{-1}   \\
+            &\rightarrow \mathbf{S}^n \text{ is symmetric}  \\
+            &\rightarrow \mathbf{S}^{\infty} \text{ is symmetric}   \\
+            &\rightarrow \mathbf{E} \text{ is an equivalence relation containing }\mathbf{R}
+        \end{align*}
+        Suppose that $\sigma$ is an equivalence relation containing $\mathbf{R}\rightarrow 1_X \subseteq \sigma , \mathbf{R}^{-1}\subseteq \sigma^{-1} =\sigma$
+        \begin{align*}
+            &\rightarrow \mathbf{S}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X \subseteq \sigma \\
+            &\rightarrow \mathbf{S}\circ \mathbf{S} \subseteq \sigma \circ \sigma =\sigma \\
+            &\rightarrow \forall n\in \mathbb{Z}^+, \mathbf{S}^n \subseteq \sigma   \\
+            &\rightarrow \mathbf{S}^{\infty} \subseteq \sigma 
+        \end{align*}
+        Now, $\mathbf{E}$ is the smallest equivalence on $X$ containing $\mathbf{R}$.
+        \[\rightarrow \mathbf{R^e}=[R\cup R^{-1}\cup 1_X]^{\infty}\]
+    \end{proof}
+\end{Prop}
+
+\begin{Prop}
+    \begin{align*}
+        (x,y)\in \mathbf{R^e} \Leftrightarrow \text{either } x=y    \\
+        \text{or } x=z_1\rightarrow z_2\rightarrow \cdots\rightarrow z_n\rightarrow y
+    \end{align*}
+    in witch,$\forall i \in \{1,2,\cdot,n-1\},$ either $(z_i,z_{i+1})\in \mathbf{R}$ or $(z_{i+1},z_i)\in \mathbf{R}$
+\end{Prop}
 
 \subsection[5]{Congruences}
 \subsection[6]{Free semigroups and monoids; presentations}
