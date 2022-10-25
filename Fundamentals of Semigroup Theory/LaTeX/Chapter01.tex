@@ -350,6 +350,17 @@ It's easy to add a 0 to semigroup.
             &\rightarrow S\text{\space is a rectangular band.}
         \end{align*}
     \end{proof}
+    \[\begin{tikzcd}
+        (c,b)
+            \arrow[r, dash]
+            \arrow[d, dash] &
+        (c,d)
+            \arrow[d, dash] \\
+        (a,b)
+            \arrow[r, dash] &
+        (a,d)
+    \end{tikzcd}\]
+
 \end{Them}
 
 \subsection[2]{Monogenic semigroups}
@@ -392,7 +403,7 @@ It's easy to add a 0 to semigroup.
 
     $a\in S, \langle a\rangle=\{a,a^2,...\}$.
 
-    If $a^m=a^n\rightarrow m=n$, that $\langle a\rangle \simeq (N,+)$. We say that $a$ is an infinite monogenic semigroup, and a has infinite order in $S$.
+    If $a^m=a^n\rightarrow m=n$, that $\langle a\rangle \simeq (N,+)$. We say that $(\langle a\rangle, \cdot)$ is an infinite monogenic semigroup, and a has infinite order in $S$.
     \begin{align*}
         \text{Index: } & \min(\{x \in N: a^x=a^y,x\neq y\})   \\
         \text{Period: }& \min(\{x\in N: a^{m+x}=a^m\})  \\
@@ -477,6 +488,17 @@ It's easy to add a 0 to semigroup.
         \end{tabular}
     \end{center}
     $6\equiv 0 \mod{3} \rightarrow \alpha^6$ is the identity, $4\equiv 1\mod{3}\rightarrow \alpha^4$ is the generator. $(\alpha^4)^2=\alpha^5, (\alpha^4)^3=\alpha^6$.
+    Visualize $\langle \alpha \rangle$ :
+    \[\begin{tikzcd}
+        &&&& 6   
+            \arrow[ld]  \\
+        1 \arrow[r] &
+        2 \arrow[r] & 
+        3 \arrow[r] &
+        4 \arrow[dr] &  \\
+        &&&&  5
+            \arrow[uu]
+    \end{tikzcd}\]
 \end{Exap}
 
 \begin{Them}[$\langle a \rangle \simeq (N,+) \text{ or } \{a,a^2,..,a^m,...,a^{m+r-1}\}$] is all.
