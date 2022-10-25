@@ -5,4 +5,5 @@
 *.fdb_latexmk
 .DS_Store
 Rudin/LaTeX/Chapter1.tex
-.vscode/settings.json
+.vscode
+*.tm~
