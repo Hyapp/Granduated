@@ -3,7 +3,7 @@
 <style|<tuple|generic|chinese|number-long-article>>
 
 <\body>
-  /？<doc-data|<doc-title|C1 Introductory ideas>>
+  <doc-data|<doc-title|C1 Introductory ideas>>
 
   <section|Basic Definitions>
 
@@ -286,7 +286,7 @@
         \<phi\>>>|<row|<cell|range \<phi\>>|<cell|x<rsub|1>\<in\>range
         \<phi\>, x<rsub|2>=1<rsub|T>>>|<row|<cell|range
         \<phi\>>|<cell|x<rsub|2>\<in\>range
-        \<phi\>,x<rsub|1>=1<rsub|T>>>|<row|<cell|1<rsub|T>>|<cell|x<rsub|1>=x<rsub|2>=1<rsub|T>>>>>>\<subseteq\>X>>|<row|<cell|\<Rightarrow\>>|<cell|X是T的子半群>>|<row|<cell|>|<cell|X有两单位元1<rsub|T>,1<rsub|S>矛盾>>|<row|<cell|>|<cell|>>|<row|<cell|All\<Rightarrow\>>|<cell|1<rsub|S>\<phi\>=1<rsub|T>>>>>>
+        \<phi\>,x<rsub|1>=1<rsub|T>>>|<row|<cell|1<rsub|T>>|<cell|x<rsub|1>=x<rsub|2>=1<rsub|T>>>>>>\<subseteq\>X>>|<row|<cell|\<Rightarrow\>>|<cell|X是T的子半群>>|<row|<cell|>|<cell|X有两单位元1<rsub|T>,1<rsub|S>\<phi\>矛盾>>|<row|<cell|>|<cell|>>|<row|<cell|All\<Rightarrow\>>|<cell|1<rsub|S>\<phi\>=1<rsub|T>>>>>>
       </equation*>
 
       \;
@@ -358,16 +358,34 @@
       q|)>=<around*|(|i p|)><around*|(|i q|)>;i\<in\>I>>|<row|<cell|此时<around*|(|P,\<cdot\>|)>是半群>>|<row|<cell|>>|<row|<cell|<around*|\||I|\|>\<less\>\<infty\>>>|<row|<cell|i<around*|(|p
       q|)>=<around*|(|i p|)><around*|(|i q|)>=<around*|(|<around*|(|i
       p<rsub|1>|)> <around*|(|i p<rsub|2>|)>,\<cdots\>,<around*|(|i
-      p<rsub|n>|)><around*|(|i q<rsub|n>|)>|)> >>>>>
+      p<rsub|n>|)><around*|(|i q<rsub|n>|)>|)>>>>>>
     </equation*>
 
     半群族的投影映射(projection morphism):
 
     <\equation*>
       <tabular*|<tformat|<table|<row|<cell|\<pi\><rsub|i>:P\<rightarrow\>S<rsub|i>,p
-      \<pi\><rsub|i>=i p>|<cell|>>|<row|<cell|T是半群，对于一组映射\<tau\><rsub|i>:T\<rightarrow\>S<rsub|i>>|<cell|>>|<row|<cell|\<exists\>唯一\<gamma\>:T\<rightarrow\>P,\<gamma\>\<pi\><rsub|i>=\<tau\><rsub|i>>|<cell|>>|<row|<cell|\<gamma\>:\<forall\>t\<in\>T,<around*|(|i|)><around*|(|t\<gamma\>|)>=t\<tau\><rsub|i>>|<cell|?i在t\<tau\>的右边>>|<row|<cell|在范畴论中称为：P是半群S<rsub|i>的积<around*|(|the
-      product of the S<rsub|i>|)>>|<cell|>>>>>
+      \<pi\><rsub|i>=i p>>|<row|<cell|T是半群，对于一组映射\<tau\><rsub|i>:T\<rightarrow\>S<rsub|i>>>|<row|<cell|\<exists\>唯一\<gamma\>:T\<rightarrow\>P,\<gamma\>\<pi\><rsub|i>=\<tau\><rsub|i>>>|<row|<cell|\<gamma\>:\<forall\>t\<in\>T,<around*|(|i|)><around*|(|t\<gamma\>|)>=t\<tau\><rsub|i>>>|<row|<cell|在范畴论中称为：P是半群S<rsub|i>的积<around*|(|the
+      product of the S<rsub|i>|)>>>>>>
     </equation*>
+
+    <\proof>
+      <math|P\<rightarrow\><big|prod>S<rsub|i>的同构>
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|\<phi\>:p\<phi\>=I
+        p>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<forall\>p\<in\>P,p\<phi\>=I
+        p=s\<in\><big|prod>S<rsub|i>>>|<row|<cell|\<Rightarrow\>>|<cell|\<forall\>p<rsub|1>\<neq\>p<rsub|2>,p<rsub|1>\<phi\>=I
+        p<rsub|1>\<neq\>I p<rsub|2>=p<rsub|2>\<phi\>>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\>:is
+        one-one>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<forall\>s\<in\><big|prod>S<rsub|i>\<rightarrow\>\<exists\>p\<in\>P,
+        I p=s>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\> is
+        onto>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\> is
+        bijective>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|<around*|(|p<rsub|1>p<rsub|2>|)>\<phi\>>>|<row|<cell|=>|<cell|I
+        p<rsub|1>p<rsub|2>=I p<rsub|1> I p<rsub|2>>>|<row|<cell|=>|<cell|<around*|(|p<rsub|1>\<phi\>|)><around*|(|p<rsub|2>\<phi\>|)>>>>>>
+      </equation*>
+
+      \;
+    </proof>
   </definition>
 
   <\definition>
@@ -387,6 +405,12 @@
     </equation*>
   </definition>
 
+  对称群是完全变换群的子群
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>t<rsub|1>,t<rsub|2>\<in\>\<cal-T\><rsub|X>>>|<row|<cell|>|<cell|具有结合律和封闭性>>|<row|<cell|\<Rightarrow\>>|<cell|\<cal-T\><rsub|X>是半群>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<forall\>f,g\<in\>\<cal-G\><rsub|X>>>|<row|<cell|>|<cell|g\<circ\>f\<in\>\<cal-G\><rsub|X>>>|<row|<cell|\<Rightarrow\>>|<cell|\<cal-G\><rsub|X>是半群>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|id<rsub|X>\<in\>\<cal-G\><rsub|X>>>|<row|<cell|>|<cell|\<forall\>f\<in\>\<cal-G\><rsub|X>>>|<row|<cell|>|<cell|f<rsup|-1>f=id<rsub|X>>>|<row|<cell|\<Rightarrow\>>|<cell|f<rsup|-1>\<in\>\<cal-G\><rsub|X>>>|<row|<cell|\<Rightarrow\>>|<cell|\<cal-G\><rsub|X>是群>>>>>
+  </equation*>
+
   <\definition>
     变换半群(transformation semigroup),
     半群的(映射)表示(representation of S by maps)
@@ -404,6 +428,19 @@
         <tabular*|<tformat|<table|<row|<cell|忠实表示\<phi\>,range
         S\<phi\>\<simeq\>S>>>>>
       </equation*>
+
+      <\proof>
+        \;
+
+        <\equation*>
+          <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>s<rsub|1>,s<rsub|2>\<in\>S,<around*|(|s<rsub|1>s<rsub|2>|)>\<phi\>=s<rsub|1>\<phi\>s<rsub|2>\<phi\>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<varphi\>:S\<rightarrow\>range
+          S\<phi\>>>|<row|<cell|>|<cell|s\<varphi\>=s\<phi\>>>|<row|<cell|>|<cell|双射是显然的>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<forall\>s<rsub|1>,s<rsub|2>\<in\>S,
+          <around*|(|s<rsub|1>s<rsub|2>|)>\<varphi\>=<around*|(|s<rsub|1>s<rsub|2>|)>\<phi\>>>|<row|<cell|>|<cell|=s<rsub|1>\<phi\>s<rsub|2>\<phi\>>>|<row|<cell|>|<cell|=<around*|(|s<rsub|1>\<varphi\>|)><around*|(|s<rsub|2>\<varphi\>|)>>>|<row|<cell|\<Rightarrow\>>|<cell|\<varphi\>是S和range
+          S\<phi\>的同构>>>>>
+        </equation*>
+
+        \;
+      </proof>
     </remark>
   </definition>
 
@@ -438,18 +475,19 @@
   </theorem>
 
   <\definition>
-    Rectangular band. <math|\<forall\>a,b\<in\>S, a b a=a>
+    矩形带<label|Rectangular Band>. <math|\<forall\>a,b\<in\>S, a b a=a>
   </definition>
 
   <\theorem>
-    S is a semigroup, The four conditions are eqvivalent.
+    <math|S>是半群。以下四条件等价
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|1>|<cell|S is \<up-a\> rectangular
-      band>>|<row|<cell|2>|<cell|\<forall\>x\<in\>S,
+      <tabular*|<tformat|<table|<row|<cell|1>|<cell|S
+      是一个矩形带<reference|Rectangular
+      Band>>>|<row|<cell|2>|<cell|\<forall\>x\<in\>S,
       x<rsup|2>=x;\<forall\>a,b,c\<in\>S,a b c=a
-      c>>|<row|<cell|3>|<cell|\<exists\>left zero semigroup L,right zero
-      semigroup R\<rightarrow\>S\<simeq\>L\<times\>R>>|<row|<cell|4>|<cell|\<exists\>A,B\<neq\>\<varnothing\>,\<circ\>:A\<times\>B,<around*|(|a<rsub|1>,b<rsub|1>|)><around*|(|a<rsub|2>,b<rsub|2>|)>=<around*|(|a<rsub|1>,b<rsub|2>|)>\<rightarrow\>S\<simeq\>A\<times\>B>>>>>
+      c>>|<row|<cell|3>|<cell|\<exists\>左零半群 L,右零半群
+      R\<rightarrow\>S\<simeq\>L\<times\>R>>|<row|<cell|4>|<cell|\<exists\>A,B\<neq\>\<varnothing\>,\<circ\>:A\<times\>B,<around*|(|a<rsub|1>,b<rsub|1>|)><around*|(|a<rsub|2>,b<rsub|2>|)>=<around*|(|a<rsub|1>,b<rsub|2>|)>\<rightarrow\>S\<simeq\>A\<times\>B>>>>>
     </equation*>
 
     <\proof>
@@ -468,10 +506,10 @@
       <\equation*>
         <tabular*|<tformat|<table|<row|<cell|>|<cell|2\<rightarrow\>3>>|<row|<cell|>|<cell|\<forall\>c\<in\>S,L=S
         c, R=c S>>|<row|<cell|>|<cell|\<forall\>x=z c,y=t
-        c\<in\>L>>|<row|<cell|>|<cell|\<Rightarrow\>x y=z c t c=z c<rsup|2>=z
-        c=x>>|<row|<cell|>|<cell|\<Rightarrow\>L is \ \<up-a\> left zero
-        semigroup>>|<row|<cell|>|<cell|\<cong\>\<gtr\>R is \<up-a\> right
-        zero semigroup>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<phi\>:S\<rightarrow\>L\<times\>R,x
+        c\<in\>L>>|<row|<cell|\<Rightarrow\>>|<cell|x y=z c t c=z c<rsup|2>=z
+        c=x>>|<row|<cell|\<Rightarrow\>>|<cell|L
+        是左零半群>>|<row|<cell|同理>|<cell|R
+        是右零半群>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|\<phi\>:S\<rightarrow\>L\<times\>R,x
         \<phi\>=<around*|(|x c, c x|)>>>|<row|<cell|>|<cell|>>|<row|<cell|1>|<cell|<around*|(|x
         c,c x|)>=<around*|(|y c,c y|)>>>|<row|<cell|>|<cell|\<Rightarrow\>x=x<rsup|2>=x
         c x=y c x=y c y=y<rsup|2>=y>>|<row|<cell|>|<cell|\<Rightarrow\>\<phi\>
@@ -481,8 +519,8 @@
         onto<around*|(|满射|)>>>|<row|<cell|>|<cell|>>|<row|<cell|3>|<cell|<around*|(|x
         y|)>\<phi\>=<around*|(|x y c,c x y|)>=<around*|(|x c,y
         c|)>=<around*|(|x c y c,c x c y|)>>>|<row|<cell|>|<cell|=<around*|(|x
-        c,c x|)><around*|(|y c,c y|)>=<around*|(|x\<phi\>|)><around*|(|y\<phi\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\>is
-        \<up-a\> isomorphism between S and L\<times\>R>>>>>
+        c,c x|)><around*|(|y c,c y|)>=<around*|(|x\<phi\>|)><around*|(|y\<phi\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\>是
+        S 和 L\<times\>R的同构>>>>>
       </equation*>
 
       <\equation*>
@@ -491,139 +529,146 @@
 
       <\equation*>
         <tabular*|<tformat|<table|<row|<cell|4\<rightarrow\>1>>|<row|<cell|S=A\<times\>B>>|<row|<cell|\<forall\>a=<around*|(|x,y|)>,b=<around*|(|z,t|)>\<in\>S>>|<row|<cell|\<Rightarrow\>a
-        b a=<around*|(|x,y|)><around*|(|z,t|)>*<around*|(|x,y|)>=<around*|(|x,t|)><around*|(|x,y|)>>>|<row|<cell|=<around*|(|x,y|)>=a>>|<row|<cell|\<Rightarrow\>S
-        is \<up-a\> rectangular band>>>>>
+        b a=<around*|(|x,y|)><around*|(|z,t|)>*<around*|(|x,y|)>=<around*|(|x,t|)><around*|(|x,y|)>>>|<row|<cell|=<around*|(|x,y|)>=a>>|<row|<cell|\<Rightarrow\>S是矩形带>>>>>
       </equation*>
 
-      <with|gr-mode|<tuple|edit|text-at>|gr-frame|<tuple|scale|1cm|<tuple|0.509999gw|0.480002gh>>|gr-geometry|<tuple|geometry|1par|0.6par>|gr-grid|<tuple|empty>|gr-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-edit-grid-aspect|<tuple|<tuple|axes|none>|<tuple|1|none>|<tuple|10|none>>|gr-edit-grid|<tuple|empty>|gr-edit-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-text-at-halign|center|<graphics||<line|<point|-3.58677|2.56176>|<point|-3.6079342505622436|-0.17933919830665432>|<point|1.9801064955681968|-0.15817237729858447>|<point|1.9166060325439873|2.5194304802222516>|<point|-3.597350840058209|2.5511807117343563>>|<text-at|<math|<around*|(|a,b|)>>|<point|-3.9466033866913612|-0.5497585659478768>>|<text-at|<math|<around*|(|c,b|)>>|<point|-3.9254365656832912|2.75226551131102>>|<text-at|<math|<around*|(|a,d|)>>|<point|1.5673534859108347|-0.5709253869559465>>|<text-at|<math|<around*|(|c,d|)>>|<point|1.4721027913745204|2.73109869030295>>|<with|text-at-halign|center|<text-at|
-      |<point|-1|-2>>>|<with|text-at-halign|center|<text-at||<point|-4.2|3.5>>>>>
-
-      Remark: The"Rectangular band" comes from property 4. The products
-      (a,b)(c,d)and (c,d)(a,b)are placed at the vertices of the rectangle.
-
-      <\equation*>
-        <tabular*|<tformat|<table|<row|<cell|Vertical>|<cell| right zero
-        element>|<cell|<around*|(|a,b|)><around*|(|c,b|)>=<around*|(|a,b|)>>>|<row|<cell|Horizontal>|<cell|left
-        zero element>|<cell|<around*|(|a,b|)><around*|(|a,d|)>=<around*|(|a,d|)>>>|<row|<cell|Normal>|<cell|>|<cell|<around*|(|a,b|)><around*|(|c,d|)>=<around*|(|a,d|)>>>|<row|<cell|>|<cell|>|<cell|<around*|(|c,d|)><around*|(|a,b|)>=<around*|(|c,b|)>>>>>>
-      </equation*>
+      \;
     </proof>
   </theorem>
 
-  <section|Monogenic Semigroups (单基因半群)>
+  <\remark>
+    \;
+
+    <\enumerate>
+      <item>带(band)通常用来表示仅由幂等元组成的半群
+
+      <item>矩形带的叫法是因为第四条性质，乘法可以使用矩形的顶点表示
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|垂直相乘>|<cell|
+        右零>|<cell|<around*|(|a,b|)><around*|(|c,b|)>=<around*|(|a,b|)>>>|<row|<cell|水平相乘>|<cell|左零>|<cell|<around*|(|a,b|)><around*|(|a,d|)>=<around*|(|a,d|)>>>|<row|<cell|对角相乘>|<cell|>|<cell|<around*|(|a,b|)><around*|(|c,d|)>=<around*|(|a,d|)>>>|<row|<cell|>|<cell|>|<cell|<around*|(|c,d|)><around*|(|a,b|)>=<around*|(|c,b|)>>>>>>
+      </equation*>
+
+      \;
+
+      <with|gr-mode|<tuple|edit|text-at>|gr-frame|<tuple|scale|1cm|<tuple|0.529997gw|0.480002gh>>|gr-geometry|<tuple|geometry|1par|0.6par>|gr-grid|<tuple|empty>|gr-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-edit-grid-aspect|<tuple|<tuple|axes|none>|<tuple|1|none>|<tuple|10|none>>|gr-edit-grid|<tuple|empty>|gr-edit-grid-old|<tuple|cartesian|<point|0|0>|1>|gr-text-at-halign|center|<graphics||<line|<point|-3.58677|2.56176>|<point|-3.6079342505622436|-0.17933919830665432>|<point|1.9801064955681968|-0.15817237729858447>|<point|1.9166060325439873|2.5194304802222516>|<point|-3.597350840058209|2.5511807117343563>>|<text-at|<math|<around*|(|a,b|)>>|<point|-3.9466033866913612|-0.5497585659478768>>|<text-at|<math|<around*|(|c,b|)>>|<point|-3.9254365656832912|2.75226551131102>>|<text-at|<math|<around*|(|a,d|)>>|<point|1.5673534859108347|-0.5709253869559465>>|<text-at|<math|<around*|(|c,d|)>>|<point|1.4721027913745204|2.73109869030295>>|<with|text-at-halign|center|<text-at|
+      |<point|-1|-2>>>|<with|text-at-halign|center|<text-at||<point|6.58445|1.81694>>>>>
+    </enumerate>
+  </remark>
+
+  <section|单(生成,基因)半群(Monogenic Semigroups)>
 
   <\definition>
-    The Generators of Semigroup.
+    半群的生成元
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<around*|\<langle\>||\<rangle\>>>|<cell|S
-      is \<up-a\> semigroup, A\<subseteq\>S,A\<neq\>\<varnothing\>,Operator
-      <around*|\<langle\>|A|\<rangle\>>>>|<row|<cell|>|<cell|U<rsub|i> are
-      subsemigroups of S, A\<subseteq\>U, specialy
-      A\<subseteq\>S<around*|(|exist*|)>>>|<row|<cell|>|<cell|<around*|\<langle\>|A|\<rangle\>>\<assign\><big|cap>U<rsub|i>**<around*|(|A\<neq\>\<varnothing\>\<rightarrow\><around*|\<langle\>|A|\<rangle\>>is
-      \<up-s\> semigroup|)>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|运算符<around*|\<langle\>||\<rangle\>>>|<cell|半群S,
+      子集A\<subseteq\>S,A\<neq\>\<varnothing\>,Operator
+      <around*|\<langle\>|A|\<rangle\>>>>|<row|<cell|>|<cell|U<rsub|i>
+      是S的子半群族, \<exists\>U<rsub|i>\<rightarrow\>A\<subseteq\>U.
+      特别地 A\<subseteq\>S<around*|(|存在*|)>>>|<row|<cell|>|<cell|<around*|\<langle\>|A|\<rangle\>>\<assign\><big|cap>U<rsub|i>**<around*|(|A\<neq\>\<varnothing\>\<rightarrow\><around*|\<langle\>|A|\<rangle\>>是子半群|)>>>>>>
     </equation*>
 
-    Properties of <math|<around*|\<langle\>||\<rangle\>>>:
+    <math|<around*|\<langle\>||\<rangle\>>>的性质:
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|1>|<cell|A\<subseteq\><around*|\<langle\>|A|\<rangle\>>>>|<row|<cell|2>|<cell|\<forall\>subsemigroup
+      <tabular*|<tformat|<table|<row|<cell|1>|<cell|A\<subseteq\><around*|\<langle\>|A|\<rangle\>>>>|<row|<cell|2>|<cell|\<forall\>子半群
       U\<subseteq\>S\<wedge\>A\<subseteq\>U\<rightarrow\><around*|\<langle\>|A|\<rangle\>>\<subseteq\>U>>>>>
     </equation*>
 
-    Definition of Generator
+    定义：生成元
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|Generators>|<cell|if
+      <tabular*|<tformat|<table|<row|<cell|生成元>|<cell|if
       <around*|\<langle\>|A|\<rangle\>>=S,A is \<up-a\> set of generators or
       generating set, of S>>>>>
     </equation*>
 
     <\math>
-      <tabular*|<tformat|<table|<row|<cell|If 0\<less\> card
-      A\<less\>\<infty\>,<around*|\<langle\>|A|\<rangle\>>=S,We
-      write<around*|\<langle\>|A|\<rangle\>>as
-      <around*|\<langle\>|a<rsub|1>,\<ldots\>,a<rsub|2>|\<rangle\>>>>|<row|<cell|If
-      A=<around*|{|a|}>,<around*|\<langle\>|A|\<rangle\>>=<around*|\<langle\>|a|\<rangle\>>=<around*|{|a,a<rsup|2>,\<ldots\>|}>>>|<row|<cell|If
-      S is \<up-s\> monoid, the submonoid of S always contains
-      1.>>|<row|<cell|<around*|\<langle\>|a|\<rangle\>>=<around*|{|1,a,a<rsup|2>,\<ldots\>|}>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|A为有限集.<around*|\<langle\>|A|\<rangle\>>=S,<around*|\<langle\>|A|\<rangle\>>可简写为
+      <around*|\<langle\>|a<rsub|1>,\<ldots\>,a<rsub|2>|\<rangle\>>>>|<row|<cell|若A=<around*|{|a|}>,<around*|\<langle\>|A|\<rangle\>>=<around*|\<langle\>|a|\<rangle\>>=<around*|{|a,a<rsup|2>,\<ldots\>|}>>>|<row|<cell|S是幺半群,
+      S的子幺半群必含有 1.>>|<row|<cell|A\<subset\>S. 1<rsub|S>=
+      1<rsub|A>???>>|<row|<cell|<around*|\<langle\>|a|\<rangle\>>=<around*|{|1,a,a<rsup|2>,\<ldots\>|}>>>>>>
     </math>
 
-    Definition: Monogenic Semigroups.
+    定义: 单半群
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|monogenic subsemigroup of
-      S>|<cell|<around*|\<langle\>|a|\<rangle\>>,a\<in\>S>>|<row|<cell|monogenic
-      semigroup>|<cell|<around*|\<langle\>|a|\<rangle\>>=S>>>>>
+      <tabular*|<tformat|<table|<row|<cell|S的单
+      子半群>|<cell|<around*|\<langle\>|a|\<rangle\>>,a\<in\>S>>|<row|<cell|单半群>|<cell|<around*|\<langle\>|a|\<rangle\>>=S>>>>>
     </equation*>
 
-    Remark: The analog of monogenic in group-theoretic terminology named
-    "cyclic"(循环), We may judge whether monogenic semigroups are "round"
-    enough to merit the description "cyclic"
+    注意:这个概念对应的群论术语是“循环群”。我们需要判断单生成半群是否足够的“循环”使得构成循环群
   </definition>
 
   <\definition>
-    Infinite order and Finite order
+    有限阶和无限阶
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|Infinite>>|<row|<cell|>|<cell|a\<in\>S,<around*|\<langle\>|a|\<rangle\>>=<around*|{|a,a<rsup|2>,a<rsup|3>,\<ldots\>|}>>>|<row|<cell|>|<cell|a<rsup|m>=a<rsup|n>\<rightarrow\>m=n>>|<row|<cell|>|<cell|\<Rightarrow\><around*|(|<around*|\<langle\>|a|\<rangle\>>,\<cdot\>|)>\<simeq\><around*|(|N,+|)>>>|<row|<cell|infinite
-      sub\<sim\>>|<cell|<around*|\<langle\>|a|\<rangle\>>>>|<row|<cell|>|<cell|a
-      has infinite order in S>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|无限阶>>|<row|<cell|>|<cell|a\<in\>S,<around*|\<langle\>|a|\<rangle\>>=<around*|{|a,a<rsup|2>,a<rsup|3>,\<ldots\>|}>>>|<row|<cell|>|<cell|a<rsup|m>=a<rsup|n>\<rightarrow\>m=n>>|<row|<cell|>|<cell|\<Rightarrow\><around*|(|<around*|\<langle\>|a|\<rangle\>>,\<cdot\>|)>\<simeq\><around*|(|N,+|)>>>|<row|<cell|无限子半群>|<cell|<around*|\<langle\>|a|\<rangle\>>>>|<row|<cell|>|<cell|a在S中有无限阶>>>>>
     </equation*>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|Finite>>|<row|<cell|>|<cell|X=<around*|{|x\<in\>N,<around*|(|\<exists\>y\<in\>N|)>a<rsup|x>=a<rsup|y>,x\<neq\>y|}>\<neq\>\<varnothing\>>>|<row|<cell|index
-      of a<around*|(|a的指数|)>>|<cell|the least element of
-      X>>|<row|<cell|>|<cell|Y=<around*|{|x\<in\>N\|a<rsup|m+x>=a<rsup|m>|}>>>|<row|<cell|period
-      of a<around*|(|a的阶|)>>|<cell|the least element of
-      Y>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|a<rsup|m>=a<rsup|m+r>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|有限阶>>|<row|<cell|>|<cell|X=<around*|{|x\<in\>N,<around*|(|\<exists\>y\<in\>N|)>a<rsup|x>=a<rsup|y>,x\<neq\>y|}>\<neq\>\<varnothing\>>>|<row|<cell|a的指数>|<cell|X的最小元>>|<row|<cell|>|<cell|Y=<around*|{|x\<in\>N\|a<rsup|m+x>=a<rsup|m>|}>>>|<row|<cell|a的周期>|<cell|Y的最小元>>|<row|<cell|>|<cell|a<rsup|m>=a<rsup|m+r>>>>>>
     </equation*>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|m,r as the index and period of the
-      monogenic semigroup<around*|\<langle\>|a|\<rangle\>>>>|<row|<cell|a<rsup|m>=a<rsup|m+r>=a<rsup|m>a<rsup|r>=a<rsup|m+r>a<rsup|r>=a<rsup|m+2r>>>|<row|<cell|\<Rightarrow\>*<around*|(|\<forall\>q\<in\>N|)>a<rsup|m>=a<rsup|m+q
+      <tabular*|<tformat|<table|<row|<cell|m,r
+      称为单半群<around*|\<langle\>|a|\<rangle\>>的指数和周期>>|<row|<cell|a<rsup|m>=a<rsup|m+r>=a<rsup|m>a<rsup|r>=a<rsup|m+r>a<rsup|r>=a<rsup|m+2r>>>|<row|<cell|\<Rightarrow\>*<around*|(|\<forall\>q\<in\>N|)>a<rsup|m>=a<rsup|m+q
       r>>>>>>
     </equation*>
   </definition>
 
   <\equation*>
-    <tabular*|<tformat|<table|<row|<cell|<around*|\<langle\>|a|\<rangle\>>=<around*|{|a,a<rsup|2>,\<ldots\>,a<rsup|m>,a<rsup|m+1>,\<ldots\>,a<rsup|m+r-1>|}>;<around*|\||<around*|\<langle\>|a|\<rangle\>>|\|>=m+r-1>>|<row|<cell|order
-    of a=<around*|(|index of a|)>+<around*|(|period of a|)>-1>>>>>
+    <tabular*|<tformat|<table|<row|<cell|<around*|\<langle\>|a|\<rangle\>>=<around*|{|a,a<rsup|2>,\<ldots\>,a<rsup|m>,a<rsup|m+1>,\<ldots\>,a<rsup|m+r-1>|}>;<around*|\||<around*|\<langle\>|a|\<rangle\>>|\|>=m+r-1>>|<row|<cell|a的阶=a的指数+a的周期-1>>>>>
   </equation*>
 
   <\definition>
-    Kernel.
-  </definition>
-
-  <\equation*>
-    <tabular*|<tformat|<table|<row|<cell|Kernel of
-    <around*|\<langle\>|a|\<rangle\>>>|<cell|K<rsub|a>=<around*|{|a<rsup|m>,a<rsup|m+1>,\<ldots\>,a<rsup|m+r-1>|}>>>>>>
-  </equation*>
-
-  Remark:
-
-  <\equation*>
-    <tabular*|<tformat|<table|<row|<cell|K<rsub|a> is \<up-a\>
-    subgroup>>|<row|<cell|K<rsub|a> is an ideal of A>>|<row|<cell|K<rsub|a>
-    is \<up-a\> cyclic group>>>>>
-  </equation*>
-
-  <\proof>
-    <math|K<rsub|a> is \<up-a\> cyclic group>
+    核(kernel)
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|m,m+1,\<ldots\>,m+r-1>>|<row|<cell|\<exists\>g,0\<leqslant\>g\<leqslant\>r-1\<wedge\>m+g\<equiv\>1<around*|(|mod
-      r|)>>>|<row|<cell|\<Rightarrow\>\<forall\>k\<in\>N,k<around*|(|m+g|)>\<equiv\>k<around*|(|mod
-      r|)>>>|<row|<cell|\<Rightarrow\>K<rsub|a>=<around*|{|<around*|(|a<rsup|m+g>|)><rsup|k>,k=1,2,\<ldots\>,r|}>>>|<row|<cell|\<Rightarrow\>K<rsub|a>
-      is \<up-a\> cyclic group of order r, \ has generator
-      a<rsup|m+g>>>|<row|<cell|??每个和阶数互质的非1元a<rsup|m+x>也是generator>>>>>
+      <tabular*|<tformat|<table|<row|<cell|<around*|\<langle\>|a|\<rangle\>>的核>|<cell|K<rsub|a>=<around*|{|a<rsup|m>,a<rsup|m+1>,\<ldots\>,a<rsup|m+r-1>|}>>>>>>
     </equation*>
-  </proof>
+  </definition>
+
+  <\remark>
+    \;
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|K<rsub|a>
+      是<around*|\<langle\>|a|\<rangle\>>的子半群>>|<row|<cell|K<rsub|a>
+      是<around*|\<langle\>|a|\<rangle\>>的理想>>|<row|<cell|K<rsub|a>
+      是循环群>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      1、2显然
+
+      <math|K<rsub|a>>是循环群
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|m,m+1,\<ldots\>,m+r-1构成模r的完全剩余系>>|<row|<cell|\<Rightarrow\>>|<cell|\<exists\>g\<in\><around*|[|0,r-1|]>\<rightarrow\>m+g\<equiv\>1
+        mod r>>|<row|<cell|\<Rightarrow\>>|<cell|\<forall\>k\<in\>N,k<around*|(|m+g|)>\<equiv\>k
+        mod r>>|<row|<cell|\<Rightarrow\>>|<cell|K<rsub|a>=<around*|{|<around*|(|a<rsup|m+g>|)><rsup|k>,k=1,2,\<ldots\>,r|}>>>|<row|<cell|>|<cell|\<Rightarrow\>K<rsub|a>
+        是阶数为 r的循环群，有生成元a<rsup|m+g>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|根据数论定理*a\<equiv\>r
+        mod m>>|<row|<cell|>|<cell|<around*|(|a,m|)>=1>>|<row|<cell|\<Rightarrow\>>|<cell|a<rsup|k>\<equiv\>k
+        r mod m>>|<row|<cell|\<Rightarrow\>>|<cell|<around*|{|k\<in\><around*|[|1,m-1|]>|}>=<around*|{|k
+        r mod m:k\<in\><around*|[|1,m-1|]>|}>>>|<row|<cell|>|<cell|每个和阶数互质的非1元a<rsup|m+x>也是K<rsub|\<alpha\>>的生成元>>>>>
+      </equation*>
+
+      \;
+    </proof>
+  </remark>
+
+  \;
 
   <\equation*>
-    <tabular*|<tformat|<table|<row|<cell|0\<leqslant\>z\<leqslant\>r-1\<wedge\>m+z\<equiv\>0<around*|(|mod
-    r|)>>>|<row|<cell|\<Rightarrow\>a<rsup|m+z> is
-    idempotent>>|<row|<cell|a<rsup|m+z> is the identity of the group
-    K<rsub|a>>>>>>
+    <tabular*|<tformat|<table|<row|<cell|>|<cell|0\<leqslant\>z\<leqslant\>r-1\<wedge\>m+z\<equiv\>0
+    mod r>>|<row|<cell|\<Rightarrow\>>|<cell|a<rsup|m+z>
+    是幂等元>>|<row|<cell|>|<cell|a<rsup|m+z>是
+    K<rsub|a>的单位元>>>>>
   </equation*>
 
   <\example>
@@ -658,7 +703,7 @@
   </example>
 
   <\theorem>
-    <math|a\<in\>S>
+    <math|S> is a semigroup. <math|a\<in\>S>
 
     <\equation*>
       <tabular*|<tformat|<table|<row|<cell|1>|<cell|\<forall\>a<rsup|m>=a<rsup|n>\<rightarrow\>m=n>>|<row|<cell|>|<cell|\<Rightarrow\><around*|\<langle\>|a|\<rangle\>>\<simeq\><around*|(|N,+|)>>>|<row|<cell|>|<cell|>>|<row|<cell|2>|<cell|\<exists\>m<around*|(|index|)>,\<exists\>r<around*|(|period|)>
@@ -705,123 +750,126 @@
 
     Every periodic finite semigroup has at least one idempotent.
 
-    有限周期半群至少有一个幂等元
+    有限周期半群,(有限半群)至少有一个幂等元
 
     <\proof>
       \;
 
       <\equation*>
         <tabular*|<tformat|<table|<row|<cell|\<forall\>a\<in\>S
-        >>|<row|<cell|\<rightarrow\><around*|\<langle\>|a|\<rangle\>>is
-        finite>>|<row|<cell|\<rightarrow\>\<exists\>a<rsup|n>\<in\>K<rsub|a>,a<rsup|n>
-        is identity.>>>>>
+        >>|<row|<cell|\<rightarrow\><around*|\<langle\>|a|\<rangle\>>是有限的>>|<row|<cell|\<rightarrow\>\<exists\>a<rsup|n>\<in\>K<rsub|a>,a<rsup|n>是单位元>>>>>
       </equation*>
-    </proof>
-  </proposition>
 
-  Remark:The periodicity is necessary. The semigroup(N,+)is an obvious
-  example.
+      \;
+    </proof>
+
+    <\remark>
+      这里的周期性假定是必要的，否则会出现显然的反例<math|<around*|(|N,+|)>>
+    </remark>
+  </proposition>
 
   <section|Ordered Sets, Semilattices and Lattices (半格、格)>
 
   <\definition>
-    Binary relation.
+    二元关系
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<around*|(|partial|)>
-      order>|<cell|A binary relation \<omega\> on \<up-a\> set X. The subset
-      \<omega\> of X\<times\> X>>|<row|<cell|>|<cell|<choice|<tformat|<table|<row|<cell|reflexive>|<cell|\<forall\>x\<in\>X,<around*|(|x,x|)>\<in\>\<omega\>>>|<row|<cell|antisymmetric>|<cell|\<forall\><around*|(|x,y\<in\>X|)><around*|(|x,y|)>\<in\>\<omega\>\<wedge\><around*|(|y,x|)>\<in\>\<omega\>\<Rightarrow\>x=y>>|<row|<cell|transitive>|<cell|\<forall\><around*|(|x,y,z\<in\>X|)><around*|(|x,y|)>\<in\>\<omega\>\<wedge\><around*|(|y,z|)>\<in\>\<omega\>\<Rightarrow\><around*|(|x,z|)>\<in\>\<omega\>>>>>>>>|<row|<cell|total
-      order>|<cell|\<forall\><around*|(|x,y\<in\>X|)><around*|(|x,y|)>\<in\>\<omega\>\<vee\><around*|(|y,x|)>\<in\>\<omega\>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|偏序>|<cell|集合X上的二元关系\<omega\>\<in\>X\<times\>
+      X>>|<row|<cell|>|<cell|<choice|<tformat|<table|<row|<cell|自反性>|<cell|reflexive>|<cell|\<forall\>x\<in\>X,<around*|(|x,x|)>\<in\>\<omega\>>>|<row|<cell|反称性>|<cell|antisymmetric>|<cell|\<forall\><around*|(|x,y\<in\>X|)><around*|(|x,y|)>\<in\>\<omega\>\<wedge\><around*|(|y,x|)>\<in\>\<omega\>\<Rightarrow\>x=y>>|<row|<cell|传递性>|<cell|transitive>|<cell|\<forall\><around*|(|x,y,z\<in\>X|)><around*|(|x,y|)>\<in\>\<omega\>\<wedge\><around*|(|y,z|)>\<in\>\<omega\>\<Rightarrow\><around*|(|x,z|)>\<in\>\<omega\>>>>>>>>>>>
     </equation*>
 
-    Traditionally one writes <math|x\<leqslant\>y> rather than
+    一般使用传统记法 <math|x\<leqslant\>y> 替代
     <math|<around*|(|x,y|)>\<in\>\<omega\>>.
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|total order>|<cell|partial
-      order>>|<row|<cell|refer to>|<cell|<around*|(|X,\<leqslant\>|)>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|全序>|<cell|<choice|<tformat|<table|<row|<cell|偏序>>|<row|<cell|\<forall\><around*|(|x,y\<in\>X|)><around*|(|x,y|)>\<in\>\<omega\>\<vee\><around*|(|y,x|)>\<in\>\<omega\>>>>>>>>>>>
     </equation*>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|a is
-      minimal>|<cell|Y\<subseteq\>X,>>|<row|<cell|>|<cell|a\<in\>Y\<wedge\>\<forall\>y\<in\>Y,y\<leqslant\>a\<rightarrow\>y=a>>|<row|<cell|b
-      is minimum>|<cell|b\<in\>Y\<wedge\>\<forall\>y\<in\>Y,b\<leqslant\>y>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|X是偏序集.
+      Y\<neq\>\<varnothing\>. Y\<subseteq\>X,>>|<row|<cell|a是Y的极小元minimal>|<cell|a\<in\>Y\<wedge\>\<forall\>y\<in\>Y,y\<leqslant\>a\<rightarrow\>y=a>>|<row|<cell|b是Y的最小元minimum>|<cell|b\<in\>Y\<wedge\>\<forall\>y\<in\>Y,b\<leqslant\>y>>>>>
     </equation*>
 
-    Remark: A minimum element is minimal, but in a partially ordered set it
-    is perfectly possible to have minimal elements that are not minimum.
+    <\remark>
+      最小元一定是极小元，但是偏序集可能只有极小元但没有最小元
+    </remark>
   </definition>
 
   <\proposition>
-    <math|X is \<up-a\> ordered set. Y\<subseteq\>X,Y\<neq\>\<varnothing\>>
+    <math|X是偏序集. Y\<subseteq\>X,Y\<neq\>\<varnothing\>>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|1>|<cell|Y has at most one minimum
-      element>>|<row|<cell|2>|<cell|Y is totally ordered\<rightarrow\>minimal
-      and minimum are equivalent>>>>>
+      <tabular*|<tformat|<table|<row|<cell|1>|<cell|Y至多有一个最小元>>|<row|<cell|2>|<cell|Y是全序集\<rightarrow\>极小元=最小元>>>>>
     </equation*>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|The minimal
-      condition>|<cell|A,\<forall\>X\<subseteq\>A,X\<neq\>\<varnothing\>,A
-      has \<up-a\> minimal element.>>|<row|<cell|well-ordered>|<cell|\<up-A\>
-      totally ordered set X>>>>>
+      <tabular*|<tformat|<table|<row|<cell|极小条件>|<cell|A,\<forall\>X\<subseteq\>A,A\<neq\>\<varnothing\>,A有一个极小元>>|<row|<cell|良序的>|<cell|满足极小条件的全序集X>>>>>
     </equation*>
 
-    Remark: Maximal, maximum and the maximal condition could be defined by
-    the analogues.
+    <\remark>
+      极大元(Maximal),最大元(Maximum),极大条件(maximal
+      condition)可以被类似的方式定义
+    </remark>
   </proposition>
 
   <\definition>
-    Lower bound, The greatest lower bound(meet).
+    下界(Lower bound), 最大下界(The greatest lower bound(meet)).
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|Y\<subseteq\>X>>|<row|<cell|Lower
-      bound c>|<cell|c\<in\>X, \<forall\>y\<in\>Y,c\<leqslant\>y>>|<row|<cell|Greatest\<sim\>
-      d>|<cell|Z=<around*|{| Lower bound|}>\<neq\>\<varnothing\>, The maximum
-      of Z>>|<row|<cell|meet*<around*|(|集合的交|)>>|<cell|>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|Y\<subseteq\>X.
+      Y\<neq\>\<varnothing\>>>|<row|<cell|下界c>|<cell|c\<in\>X,
+      \<forall\>y\<in\>Y,c\<leqslant\>y>>|<row|<cell|最大下界
+      d>|<cell|max Z. Z=<around*|{|Y的 下界|}>\<neq\>\<varnothing\>>>|<row|<cell|meet*>|<cell|>>>>>
     </equation*>
 
+    若最大下界存在，则唯一。
+
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|记号>>|<row|<cell|d=<big|wedge><around*|{|y\|y\<in\>Y|}>>>|<row|<cell|If
-      Y=<around*|{|a,b|}> marked d=a<big|wedge>b>>>>>
+      <tabular*|<tformat|<table|<row|<cell|记号<big|wedge>>|<cell|d=<big|wedge><around*|{|y\|y\<in\>Y|}>>>|<row|<cell|>|<cell|如果
+      Y=<around*|{|a,b|}> 也可以写作d=a<big|wedge>b>>>>>
     </equation*>
 
-    Lower Semilattice, Complete Lower Semilattice.
+    下半格(Lower Semilattice)，完全下半格(Complete Lower
+    Semilattice)
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|Lower
-      Semilattice>|<cell|<around*|(|X,\<leqslant\>|)>>|<cell|\<forall\>a,b\<in\>X,\<exists\>a<big|wedge>b>>|<row|<cell|Complete\<sim\>>|<cell|<around*|(|X,\<leqslant\>|)>>|<cell|\<forall\>Y\<subseteq\>X,Y\<neq\>\<varnothing\>\<rightarrow\>\<exists\><big|wedge>Y>>>>>
+      <tabular*|<tformat|<table|<row|<cell|下半格>|<cell|<around*|(|X,\<leqslant\>|)>>|<cell|\<forall\>a,b\<in\>X,\<exists\>a<big|wedge>b\<in\>X>>|<row|<cell|完全下半格>|<cell|<around*|(|X,\<leqslant\>|)>>|<cell|\<forall\>Y\<subseteq\>X,Y\<neq\>\<varnothing\>\<rightarrow\>\<exists\><big|wedge>Y>>>>>
     </equation*>
 
-    <math|Lower Semilattice <around*|(|X,\<leqslant\>|)>,\<forall\>a,b\<in\>X.
-    a\<leqslant\>b\<Leftrightarrow\>a<big|wedge>b=a>
+    <math|下半格 <around*|(|X,\<leqslant\>|)>,\<forall\>a,b\<in\>X.
+    \ \ a\<leqslant\>b\<Leftrightarrow\>a<big|wedge>b=a>
 
-    Least upper bound(join)
+    <\proof>
+      \;
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|a\<leqslant\>b\<rightarrow\>a<big|wedge>b=a>>|<row|<cell|>|<cell|偏序关系\<rightarrow\>a\<leqslant\>a>>|<row|<cell|>|<cell|a\<leqslant\>b>>|<row|<cell|\<Rightarrow\>>|<cell|a是<around*|{|a,b|}>的下界>>|<row|<cell|>|<cell|\<forall\>c\<gtr\>a,c不是<around*|{|a,b|}>的下界>>|<row|<cell|\<Rightarrow\>>|<cell|a<big|wedge>b=a>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|a<big|wedge>b=a>>|<row|<cell|\<Rightarrow\>>|<cell|a\<in\><around*|{|x<mid|\|>x\<leqslant\>a\<wedge\>x\<leqslant\>b|}>>>|<row|<cell|\<Rightarrow\>>|<cell|a\<leqslant\>b>>>>>
+      </equation*>
+
+      \;
+    </proof>
+
+    最小上界(Least upper bound(join))
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|Y\<subseteq\>X>>|<row|<cell|Upper
-      bound c>|<cell|c\<in\>X,\<forall\>y\<in\>Y,c\<geqslant\>y>>|<row|<cell|Least\<sim\>
-      d>|<cell|Z=<around*|{|Upper bound|}>\<neq\>\<varnothing\>,The minimum
-      of Z>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|Y\<subseteq\>X.
+      Y\<neq\>\<varnothing\>>>|<row|<cell|上界c>|<cell|c\<in\>X,\<forall\>y\<in\>Y,c\<geqslant\>y>>|<row|<cell|最小上界
+      d>|<cell|min Z. \ Z=<around*|{|Y的上界|}>\<neq\>\<varnothing\>>>>>>
     </equation*>
 
-    Lattice
+    格 Lattice
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|Lattice>|<cell|<around*|(|X,\<leqslant\>|)><choice|<tformat|<table|<row|<cell|
-      \<up-a\> \ upper semilattice>>|<row|<cell| \<up-a\> \ lower
-      semilattice>>>>>>>|<row|<cell|Complete\<sim\>>|<cell|<around*|(|X,\<leqslant\>|)><choice|<tformat|<table|<row|<cell|\<up-a\>
-      upper complete semilattice>>|<row|<cell|\<up-a\> lower complete
-      semilattice>>>>>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|X=<around*|(|X,\<leqslant\>,<big|wedge>,<big|vee>|)>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|格>|<cell|<around*|(|X,\<leqslant\>|)><choice|<tformat|<table|<row|<cell|
+      上半格>>|<row|<cell| 下半格>>>>>>>|<row|<cell|完全格>|<cell|<around*|(|X,\<leqslant\>|)><choice|<tformat|<table|<row|<cell|完全上半格>>|<row|<cell|完全下半格>>>>>>>|<row|<cell|为了强调格，记作>|<cell|X=<around*|(|X,\<leqslant\>,<big|wedge>,<big|vee>|)>>>>>>
     </equation*>
 
     \;
 
-    Sublattice
+    子格 Sublattice
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|Y\<subseteq\>X,Y\<neq\>\<varnothing\>>>|<row|<cell|\<forall\>a,b\<in\>Y\<Rightarrow\>a<big|wedge>b\<in\>Y\<wedge\>a<big|vee>b\<in\>Y>>>>>
+      <tabular*|<tformat|<table|<row|<cell|Y是X的子格>>|<row|<cell|Y\<subseteq\>X,Y\<neq\>\<varnothing\>>>|<row|<cell|\<forall\>a,b\<in\>Y\<Rightarrow\>a<big|wedge>b\<in\>Y\<wedge\>a<big|vee>b\<in\>Y>>>>>
     </equation*>
   </definition>
 
@@ -829,96 +877,87 @@
     \;
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,\<leqslant\>|)>is
-      \<up-a\> lower semilattice.>>|<row|<cell|\<Rightarrow\><around*|(|a<big|wedge>b|)><big|wedge>c=
-      a<big|wedge><around*|(|b<big|wedge>c|)>>>|<row|<cell|\<Rightarrow\><around*|(|E,\<leqslant\>|)>is
-      \<up-a\> semigroup>>>>>
+      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,\<leqslant\>|)>是下半格>>|<row|<cell|\<Rightarrow\><around*|(|a<big|wedge>b|)><big|wedge>c=
+      a<big|wedge><around*|(|b<big|wedge>c|)>=<big|wedge><around*|{|a,b,c|}>>>|<row|<cell|\<Rightarrow\><around*|(|E,\<leqslant\>|)>是半群>>>>>
     </equation*>
   </example>
 
   <\proposition>
-    <math|<around*|(|E,\<leqslant\>|)> is \<up-a\> lower semilattice.>
+    下半格可以和一个由幂等元组成的交换半群同构
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,<big|wedge>|)>is
-      \<up-a\> commutative semigroup consisting entirely of
-      idempotents>>|<row|<cell|<around*|(|\<forall\>a,b\<in\>E|)>,a\<leqslant\>b\<Leftrightarrow\>a<big|wedge>b=a>>>>>
+      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,\<leqslant\>|)>是下半格>>|<row|<cell|<around*|(|E,<big|wedge>|)>是一个完全由幂等元组成的交换半群>>|<row|<cell|<around*|(|\<forall\>a,b\<in\>E|)>,a\<leqslant\>b\<Leftrightarrow\>a<big|wedge>b=a>>>>>
     </equation*>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,.|)> is \<up-a\>
-      commutative semigroup of idempotents>>|<row|<cell|relation\<leqslant\>:a\<leqslant\>b\<Leftrightarrow\>a
-      b=a>>|<row|<cell|\<leqslant\>is \<up-a\> partial order on E,with
-      respect to which <around*|(|E,\<leqslant\>|)> is \<up-a\> lower
-      semilattice>>|<row|<cell|<around*|(|E,\<leqslant\>|)>,the meet of a and
-      b is their product a b.>>>>>
+      <tabular*|<tformat|<table|<row|<cell|<around*|(|E,.|)>是由幂等元组成的交换半群>>|<row|<cell|定义关系\<leqslant\>:a\<leqslant\>b\<Leftrightarrow\>a
+      b=a>>|<row|<cell|\<leqslant\>是E上的偏序. 结合起来的
+      结构<around*|(|E,\<leqslant\>|)> 是一个下半格>>|<row|<cell|<around*|(|E,\<leqslant\>|)>,<around*|{|a,b|}>的最大下界是积a
+      b>>>>>
     </equation*>
 
     <\proof>
       \;
 
       <\equation*>
-        <tabular*|<tformat|<table|<row|<cell|<around*|(|E,\<cdot\>|)>is
-        \<up-a\> commutative semigroup of
-        idempotents>>|<row|<cell|a\<leqslant\>b\<Leftrightarrow\>a
-        b=a>>|<row|<cell|<choice|<tformat|<table|<row|<cell|\<forall\>a\<in\>E.a<rsup|2>=a\<rightarrow\>a\<leqslant\>a>>|<row|<cell|a\<leqslant\>b,b\<leqslant\>a\<rightarrow\>a
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|<around*|(|E,\<cdot\>|)>是由幂等元组成的交换半群>>|<row|<cell|Def>|<cell|a\<leqslant\>b\<Leftrightarrow\>a
+        b=a>>|<row|<cell|>|<cell|<choice|<tformat|<table|<row|<cell|\<forall\>a\<in\>E.a<rsup|2>=a\<rightarrow\>a\<leqslant\>a>>|<row|<cell|a\<leqslant\>b,b\<leqslant\>a\<rightarrow\>a
         b=a\<wedge\>b a=b\<rightarrow\>a=a b=b a=b
         >>|<row|<cell|a\<leqslant\>b,b\<leqslant\>c\<rightarrow\>a b=a,b
         c=b\<rightarrow\>a c=a b c=a<around*|(|b c|)>=a
-        b=a\<rightarrow\>a\<leqslant\>c>>>>>>>|<row|<cell|\<Rightarrow\>\<leqslant\>is
-        \<up-a\> partial order.>>|<row|<cell|>>|<row|<cell|<choice|<tformat|<table|<row|<cell|a<around*|(|a
+        b=a\<rightarrow\>a\<leqslant\>c>>>>>>>|<row|<cell|\<Rightarrow\>>|<cell|\<leqslant\>is
+        \<up-a\> partial order.>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|<choice|<tformat|<table|<row|<cell|a<around*|(|a
         b|)>=a<rsup|2>b=a b\<rightarrow\>a
         b\<leqslant\>a>>|<row|<cell|b<around*|(|a b|)>=a b<rsup|2>=a
-        b\<rightarrow\>a b\<leqslant\>b>>>>>>>|<row|<cell|\<forall\>c\<leqslant\>a\<wedge\>c\<leqslant\>b>>|<row|<cell|c<around*|(|a
-        b|)>=<around*|(|c a|)>b=c b=c>>|<row|<cell|\<Rightarrow\>c\<leqslant\>ab>>|<row|<cell|\<Rightarrow\>a
-        b is the unique greatest lower bound<around*|(|meet|)> of a and
-        b>>>>>
+        b\<rightarrow\>a b\<leqslant\>b>>>>>>>|<row|<cell|>|<cell|\<forall\>c\<leqslant\>a\<wedge\>c\<leqslant\>b>>|<row|<cell|>|<cell|c<around*|(|a
+        b|)>=<around*|(|c a|)>b=c b=c>>|<row|<cell|>|<cell|\<Rightarrow\>c\<leqslant\>ab>>|<row|<cell|>|<cell|\<Rightarrow\>a
+        b 是<around*|{|a,b|}>唯一的最大下界>>>>>
       </equation*>
 
       \;
     </proof>
 
-    Remark: This Proposition means the notion of Lower Semilattice and
-    Commutative Semigroup of Idempotents are equivalent. We shall use the
-    term Semilattice with either meaning.
+    此命题表明下半格和由幂等元组成的交换半群是同构的。本书倾向于使用术语
+    半格
   </proposition>
 
   <\definition>
     \ Hasse diagrams.(哈斯图)
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|ordered finite
-      set<around*|(|X,\<leqslant\>|)>>>|<row|<cell|x\<geqslant\>y expressed
-      by x is above y in the position.>>>>>
+      <tabular*|<tformat|<table|<row|<cell|有限的偏序集<around*|(|X,\<leqslant\>|)>>>|<row|<cell|x\<gtr\>y\<wedge\>\<forall\>a\<in\>X,\<neg\><around*|(|y\<less\>a\<less\>x|)>图示为>>|<row|<cell|x在y的上方，并且x与y间有连线>>>>>
     </equation*>
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|<block|<tformat|<table|<row|<cell|X=<around*|{|a,b|}>>>|<row|<cell|a\<leqslant\>b>>>>>>|<cell|<image|<tuple|<#89504E470D0A1A0A0000000D4948445200000105000000DA0806000000AF8957DF000000E16943435073524742000018956360603CCD00044C0E0C0CB979254541EE4E0A1191510A0C482031B9B8800137606460F8760D4432305CD60D2C61E5C7A3161BE02C025A08A43F00B1483A98CDC802622741D81220767949410990AD036227171481D8401733F01485043903D93E40B6423A123B09899D925A9C0C64E700D9F108BFE5CF6760B0F8C2C0C03C112196348D81617B3B0383C41D8498CA420606FE5606866D9711629FFDC1FE65143B54925A510212F1D3776428482C4A044B338302342D8D81E1D3720606DE480606E10B0C0C5CD1107780016B3130A0490C2742000072D83684A31F47B30000000970485973000016250000162501495224F00000155E49444154789CEDDD7B5054F5FB07F0F7C2B2A29665A8A995334AA566A56666214A1A6A5EB21C1591DB625C84F0928A514D16822645A590612993A602666529A5A539A68E94976C5940049415135B76B9A90928C2F9FD61EECFFD8AC25EE0ECEE79BF669C71D9B3E7F338A36F3FCFB367CFCA0441104044F41F27B10B2022DBC2502022230C052232C2502022230C052232C2502022230C052232C2502022230C052232C2502022230C052232C2502022230C052232C2502022230C0522322217BB0022325D972E5D6EF9D998316390919161F1B9B95320B243656565E8D1A3079C9C9C50515181CACA4A74EEDCD92AE7662810D921676767E4E4E42024240400E0EAEA8A949414AB9C9BA1404446180A440E40ABD55AED5C0C05222B3B73E60C8E1D3B86CCCC4CC864322C5DBA14C78E1D434E4E8E55D7D9B3670F1212120000E3C78FB7DA7965BC9B3391755CBE7C19292929F8F6DB6F71E4C8915B9E777373434C4C0C264D9A84FEFDFB5BBCDE9E3D7B3076EC58008035FF19331488AC64F4E8D1D8B76F5FB3C7656464C0D7D7D7A2B51A1A1AF0DC73CFE1E8D1A300180A4436E7C9279F6C717B2097CB515A5A8A6EDDBA99BD5E434303E4F2EB9719EDDFBF1F23478E34FB5CFF8B3305222BA8AFAF6FF1B1D7AE5DC3FDF7DF6FB5B5BDBCBCE0ECEC0C0F0F0F787878A063C78EB8EBAEBB909595857FFEF9C7E4F331148844F2F9E79F9BFDDAE5CB971B3D7EF7DD7791959585ACAC2C7CF8E187B87CF932860F1F8E6FBFFDD6E4733314882C94949484B367CF9AFCBA41830699BDE67BEFBD67F87D7272B2D1E3A8A828B3CF0B3014882C565858889A9A1A935F77E36A444B2C5FBE1C73E6CCB9EDF3F3E6CD435E5E9E49E764281059E8B3CF3E43BF7EFD4C7E9DA9FF586F983F7FBEE1F732990C3299EC966376ECD861D6B90186029128DE78E30DB35FFBE4934F0200FAF4E9831123463479CCE4C993CD3E3F4381C80A366FDE6CD2F18B162D327BADAFBEFA0A00505151018D4663F6796E87A14064A1868606F8FBFBB7E858994C862D5BB6987D8D424343031A1B1B010043870E456060E01D8F4F4E4EC68001034C5A83375921B28056AB455858180A0A0A0C971C03C0C18307515B5B6B783C72E448B8BABA62C2840998316386D9EBA5A7A71B661143860C69F298ACAC2CB3CF0FF08A4622B3D5D4D4C0CFCF0FDBB76FC7C2850BF1F1C71F1B9EFBE28B2F505D5D6D781C1919894E9D3A5965DD912347E2D0A14368686868F2F9C1830743A55201B8BE53983B77AE690B08446496C183070B0084E8E868A1A6A6A64DD65CBB76AD70D75D77094E4E4E4D3EBF72E54AA143870E0200C1CBCB4BD06AB526AFC1502032515D5D9DF0F8E38F0B00043F3FBF365F7FC488110200C1DBDBDBE8E73FFEF8A300400020F4ECD9D3ECF373D0486402AD560B1F1F1FE4E6E6A273E7CE484B4B6BF31A3C3C3C00007ABD1E4545450080CCCC4C1C3E7CD8704C6969A9D9E7E7A091C804478F1EC58E1D3BB068D122F4E9D347941A121212D0B56B5744474763D6AC59183A742856AD5A05E0FAF509CF3FFFBC45E7E7A091A8856A6B6BF1D8638F61EAD4A9888F8F47FBF6ED45AB451004A8D56A24252561FDFAF586C1628F1E3D2CFA4836C050206A564D4D0D3C3D3DF1D75F7F61D2A449C8CCCC14BBA456C599025133E2E2E2F0D75F7F19EE59E0E8385320BA8313274E60F7EEDD00AE7FF069F6ECD92257D4FAD83E10DD467D7D3DDCDDDDF1F7DF7F63CB962D165D89684FB853206A42797939BA76ED0A854281E4E464C90402C09902D12DD46A35860F1F6EF8CE06932F13B673DC2910DDA4A0A0004AA512858585484D4DB5CADD91EC0D670A443779E0810770FEFC79AB7C3783BD62FB4084EB5FED2E93C95051518155AB5649361000860211B2B3B30D9706C7C6C61ADD03518AD83E90A4151515C1C7C7072A950A1B366C8052A914BB24D1311448D2BA75EB06BD5E8F8C8C0CCC9831A3C93B234B0DDB0792A4D2D25228140AE8F57ABCFDF6DBF0F5F56520FC87A14092A352A9306EDC38D4D7D7233C3C1C43870E15BB249BC2F68124A5B8B81853A64C815AADC6A64D9B1010102076493687A1409272DF7DF7A1AAAA0AE9E9E96C196E83ED0349424949093A76EC88DADA5A24262662E6CC990C84DBE04E811C9E4AA542505010727272F0D4534FE1CF3FFF14BB249BC6CF3E90432B29293104C2E6CD9BD1B3674FB14BB279DC299043BBFBEEBBF1EFBFFF62F3E6CDF0F3F363CBD0029C2990432A2E2E46E7CE9D71EDDA357CF8E187F0F7F76720B41043811C8E4AA5C2942953505D5D8DF8F8782C5EBC58EC92EC0ADB077228E7CE9DC3F8F1E3919B9B8BB4B434F8F9F9895D92DD61289043717575C5952B57B069D326B60C6662FB40764FA7D3E1C5175F844C26834C2643424202020202180866E24E81EC5A757535424242B06DDB3600C0C71F7F8C850B178A5C957D6328905DF3F4F4C4A143870040D2B750B3265EBC4476CBDDDD1DC5C5C500800D1B3648EA36ECAD893305B24B050505A8A9A941BB76EDB062C50A28954ACE10AC843B05B23B6AB51A4AA5125AAD162B57AEC4EBAFBF2E76490E853305B22BE5E5E5F0F4F444414181A4BECAAD2D3114C86E5CBB760D2E2E2E90C964484D4DC5ABAFBE2A76490E893305B20BF9F9F9E8DDBB37140A05962F5FCE4068459C2990CDCBC9C98152A9C4B973E7909C9C2CB9EF766C6B6C1FC8A65DB870014F3FFD344E9D3AC519421BE14E816C566D6D2DEEBDF75E383B3B63EDDAB50C8436C29902D9A4BCBC3CF4EFDF1F2E2E2E888F8F47585898D8254906770A647372737311141484929212AC5EBD1A515151629724290C05B22983070FC6850B17A0D1683843100943816C424D4D0D860F1F0E954A05171717A4A4A4301044C25020D169B55A444444186EA33674E8504446468A5D9664F12D4912557D7D3DA64E9D8ACCCC4C44474723313151EC92248F3B0512D5C08103919F9F8F050B16202E2E4EEC7208DC299048FEFDF75F8C1A350AC78E1DC3B871E3F0F3CF3F8B5D12FD87D729509B2B2B2B436060208E1D3B06272727787979895D12DD843B056A7393264DC24F3FFD040058B76E1D42434345AE886EC69902B5A9871F7E18A74F9F06005E8760A3D83E509BB870E1029E7BEE399C3E7D1AEDDAB5C3AA55AB1808368AA140AD4EA7D361D6AC59F8E38F3F0000B1B1B1983F7FBEC855D1ED70A640AD6EFCF8F1867717366CD800A55229724574279C2950ABBA711BF6B973E7223A3A1ABD7AF512BB246A06770AD42AAAAAAAF0F2CB2FE3E0C183F0F0F0307C610BD93ECE14C8EAF47A3D42434371F0E04100C04B2FBD247245640AEE14C8EAC68D1B87DDBB770300366EDC88C0C040912B225370A64056D5A74F1F68341A44454561C99225E8D6AD9BD8259189180A641515151598366D1A341A0DA64F9F8ED5AB578B5D1299893305B258797939C2C3C3F1DB6FBF213C3C1C5BB76E15BB24B200670A64316F6F6FECDDBB17313131888F8F878B8B8BD8259105180A64911B3384D9B367233939190A8542EC92C8426C1FC82C7ABD1EDEDEDED06834F0F1F1C1E79F7FCE4070100C053259656525222222B077EF5E444646E2EBAFBF16BB24B222B60F64B2E79F7F1EFBF7EF474C4C0CE2E2E2B84370300C0532C98D1942686828D6AC5903B99CEF6A3B1AB60FD4223A9D0EE3C68D335C87B06EDD3A068283E24E819A55555585D0D0506CDBB60D00C0BF328E8D514FCDAAAAAAC2B66DDB10131383D1A3478B5D0EB532B60FD4AC471F7D1400F0C4134F60ECD8B1225743AD8DA1404D2A2B2BC3C18307D1BD7B77C8E572AC58B102FEFEFE6297456D80ED033569F7EEDD080A0A0200AC5CB912AFBFFEBAC815515BE1A0916EA1D7EB3162C408141414F036EC12C45020238D8D8D70767606007CF9E59798356B96C815515BE34C810CF2F3F3D1AB572F28140AAC58B1828120519C29100040AD5623383818A5A5A5484A4AC2BC79F3C42E8944C2F6815055558561C386A1A8A8883304E24E41EAEAEAEA70DF7DF7C1D9D9196BD7AE652010670A52969797877EFDFAC1C5C505F1F1F1080B0B13BB24B201DC2948546E6E2E82828250525282D5AB57232A2A4AEC92C84670A62041972E5DC2A04183505C5CCC1902DD823B0589B974E9123A75EA04B95C8E356BD63010E8169C2948486E6E2E060D1A04B95C8EB8B838444444885D12D920EE1424222F2F0F414141282E2EC69A356B1808745B9C2948C0952B57D0B76F5F949494708640CDE24EC1C1555656C2CDCD0D00D0B16347F4EBD74FE48AC8D671A6E0C0D46A35860D1B06272727F8F8F8203D3D1D03070E14BB2CB271DC2938A8FCFC7C040707E3D4A95358B76E1D424343C52E89EC04670A0EA8B1B111BD7AF54269692967086432B60F0E46AFD7C3D9D919E5E5E5484A4A622090C9180A0E243B3B1B23468C0000C4C6C6F2E3CF6416CE141C44616121828383515050C03B26914538537010DDBB7747595919323232E0EBEB2B763964C7D83ED8B97FFEF90772B91CD5D5D558B9722503812CC650B0533A9D0EA9A9A9F0F6F646434303962E5DCADBB09355B07DB053870F1FC6B3CF3E0B00D8B8712302030345AE881C0543C14E75E9D205151515484F4F87AFAF2F643299D825918360FB6067FEFEFB6FB46FDF1E972F5FC6471F7D849933673210C8AA180A7644A55261C28409A8ABABC3D2A54BB168D122B14B2207C4F6C14E68341ABCF2CA2B50ABD5D8B46913020202C42E891C1443C14EDC73CF3DB878F122D2D2D2D83250AB62FB60E3CE9C39834E9D3AE1EAD5AB484C4C849F9F1F03815A1543C186A9542A4C9E3C19972E5D425C5C1CA2A3A3C52E892480ED838D3A7BF62C264D9A849C9C1CA4A5A5C1CFCF4FEC924822180A36AA43870EA8ADADC5A64D9BE0EFEFCF9681DA0CDB071B73EAD429B8B9B94110047CF0C1070808086020509B6228D890ECEC6C4C9B360D95959558B66C19DE78E30DB14B220962FB6023CE9F3F8F3163C6E0C48913484F4FC7CC9933C52E89248AA16023140A05EAEBEBB171E346B60C242AB60F222B2C2CC4FDF7DF0F272727242424203030908140A2E2EDD844949D9D8DE0E060E8743A7CF2C92758B06081D82511B17D108B4EA7839797174E9E3CC95BA8914D61288840100438395DEFDCD6AF5F8FE0E060710B22BA09670A6DECE4C99378F0C107D1AE5D3B8C1A350ADDBB7717BB2422239C29B421B55A0DA55289F3E7CF23292989DFCB403689ED431BA9ACACC4B3CF3E8BA2A2227E951BD934EE14DAC0D5AB57E1E6E606272727AC5BB78E8140368D338556A4D56AB16BD72E3CF2C82350281458B66C19BFFD996C1E770AAD282B2B0B53A74E05007CFAE9A79833678EC81511358FA1D04A9E7EFA69545757030067086457180A5656575787679E790639393990CBE558B3660D0381EC0A670A56A4D56A3163C60C4320C4C5C521222242ECB2884CC2B724ADE4EAD5AB983E7D3A76ECD80100484949416464A4C85511998EA160254F3CF10472737301708640F68DED83852E5FBE8C21438620373717BEBEBE1004818140768DA16001AD560B7F7F7F1C3F7E1CFEFEFEC8C8C810BB24228B3114CCD4D8D888B0B0306CDFBE1D8B172FC6E6CD9BC52E89C82AF896A499FAF7EF8FC2C2422C58B0004B972E15BB1C22ABE1A0D144972E5D82B7B7378E1C39021F1F1F7CFDF5D762974464556C1F4C50565606A5528923478E2020208081400E893B05134C983001BB76ED424C4C0C121212C42E87A85570A6D042EEEEEE282E2EC6BC79F3101B1B2B763944AD86ED4333AAABABE1E9E989E2E262F8F8F820292909AEAEAE629745D46A180A77A0D3E91012128243870E2138389833049204CE14EEE0C5175FC42FBFFC82989818BCFFFEFB863B3013393286C26DF4E9D3071A8D0673E6CC416262225B06920CFED7F73F2A2B2BE1E5E5058D4683E9D3A7E3D34F3F652090A430146EA2D7EB1116168603070E203434145BB76E15BB24A236C7F6E12663C68CC1AFBFFE8A9898182C5BB60C7239DFB125E96128FCE7C60C21323212AB56AD8242A110BB24225148BE7D282F2FC7E8D1A3A1D168E0E3E3839494140602499AA443A1A2A202B367CFC6BE7DFB307BF66C5E87400489B70FA3478FC6BE7DFBF0E69B6F222E2E0E2E2E2E629744243AC986C28D194278783856AF5ECD4020FA8F24C7EBA74F9F46555515A64F9F8E2FBEF842EC72886C8AA4760A959595484D4D455A5A1AD46A3524F447276A3149ED14A64C998203070E0000D2D3D345AE86C836496AA72093C900001B376E44404080E13111FDBF56DB29141414A0A2A2C2F0B86FDFBE7073736BADE5EEA8A8A808C3870F87ABAB2B626363111818284A1D447641B0B2F2F272213E3E5E1830608000C0F0CBCFCF4FA8ABAB13E2E3E3853D7BF65875CD9D3B770A7ABDBEC9E7542A953070E0400180F0C9279F58755D224764F5F6A1A0A000FDFAF503007CF7DD77B8F7DE7B01004B962C815C2EC7810307F0D0430FE19B6FBEC1B061C32C5AEBE2C58B78E5955750585888071F7C101D3A7400002C5AB40813274E8456ABC5A851A370F2E449646464C0D7D7D7B23F1C91145833617AF6EC290010C2C3C385C6C646A1B1B1D1F0DCCB2FBF6CB473D8B973A7C5EBDD7CBE3BFDDAB06183512D44747B560B858080000180F0E8A38FDEF698BBEFBE5B00204447475BB4566161A1E0EEEEDEA240502A9516AD45243556F9ECC3F1E3C7919D9DDDA2637BF4E881B163C79ABDD6C9932711181888D3A74F9B7D0E22BA3DAB84824AA5424E4E0E80DBBFFFFFD65B6FA1A6A606172F5E446161A1D96B151515E1F0E1C32D3E7ED7AE5DF8F9E79FCD5E8F486A2C0E853367CE2024240400E0E2E28221438634795C7E7E3E1A1A1AD0B76F5F44454599B5962008A8AFAF37E9353A9D0EE7CF9FE7D58B442D64D58F4EAF5FBFBEC99F97949440A7D3597CFE9A9A1A4C9D3AD5E4D7858484E0DCB97316AF4F24051687C2CD5F9F76E2C489268FF9E1871FF0FBEFBF0300E6CE9D6BF65A2E2E2E502A9526BFCEC7C707F7DC738FD9EB124989C5A170F3A70C5F7BEDB5668F0F0E0E36FCDED3D3D3A4B5140A85593B85891327A253A74E26BF8E488A5AFDCE4B0D0D0DB872E5CA2D3F1F3F7E3C0E1D3A64F2F99C9D9D4DBAF7815C2EE70D58894C607128BCF0C20B777CFEC4891388898901703D0800E0D4A953D0E974983871A2C9EB4D9830012929292DFA9FBF7DFBF6484C4C849F9F9FC9EB104995C5FF85A6A6A6A277EFDE4D3EF7CE3BEFA0A4A4C4F078CB962D0080EFBFFF1EC78F1F476D6DAD596B868686C2D5D5B5D90F36252727233434D4AC358824CBD2AB9FAE5CB922C4C6C60A0084FEFDFB1B7E1E1D1D2D383B3B0BEEEEEEC2E2C58B0500C2E38F3F2EE4E5E5093D7AF4100008B5B5B516ADAD52A9848F3EFAE896AB18972C5922A8542A4BFF68449264B50F4445444460EBD6ADA8AAAA020074ECD81167CE9C41972E5D0000010101D8B97327AAAAAAE0EAEA8ACCCC4C787B7B5B636922B222AB7F4A72DAB4690080850B17C2C3C3A3C9E7274F9E8CA0A0206B2E4B445622A93B2F1151F324FD653044742B860211196128109111860211196128109111860211196128109111860211196128109111860211196128109111860211196128109111860211196128109191FF03B19ECD18DC3CD6EE0000000049454E44AE426082>|png>|100pt|80pt||>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|<block|<tformat|<table|<row|<cell|X=<around*|{|a,b|}>>>|<row|<cell|a\<less\>b>>>>>>|<cell|<image|<tuple|<#89504E470D0A1A0A0000000D4948445200000105000000DA0806000000AF8957DF000000E16943435073524742000018956360603CCD00044C0E0C0CB979254541EE4E0A1191510A0C482031B9B8800137606460F8760D4432305CD60D2C61E5C7A3161BE02C025A08A43F00B1483A98CDC802622741D81220767949410990AD036227171481D8401733F01485043903D93E40B6423A123B09899D925A9C0C64E700D9F108BFE5CF6760B0F8C2C0C03C112196348D81617B3B0383C41D8498CA420606FE5606866D9711629FFDC1FE65143B54925A510212F1D3776428482C4A044B338302342D8D81E1D3720606DE480606E10B0C0C5CD1107780016B3130A0490C2742000072D83684A31F47B30000000970485973000016250000162501495224F00000155E49444154789CEDDD7B5054F5FB07F0F7C2B2A29665A8A995334AA566A56666214A1A6A5EB21C1591DB625C84F0928A514D16822645A590612993A602666529A5A539A68E94976C5940049415135B76B9A90928C2F9FD61EECFFD8AC25EE0ECEE79BF669C71D9B3E7F338A36F3FCFB367CFCA0441104044F41F27B10B2022DBC2502022230C052232C2502022230C052232C2502022230C052232C2502022230C052232C2502022230C052232C2502022230C052232C2502022230C0522322217BB0022325D972E5D6EF9D998316390919161F1B9B95320B243656565E8D1A3079C9C9C50515181CACA4A74EEDCD92AE7662810D921676767E4E4E42024240400E0EAEA8A949414AB9C9BA1404446180A440E40ABD55AED5C0C05222B3B73E60C8E1D3B86CCCC4CC864322C5DBA14C78E1D434E4E8E55D7D9B3670F1212120000E3C78FB7DA7965BC9B3391755CBE7C19292929F8F6DB6F71E4C8915B9E777373434C4C0C264D9A84FEFDFB5BBCDE9E3D7B3076EC58008035FF19331488AC64F4E8D1D8B76F5FB3C7656464C0D7D7D7A2B51A1A1AF0DC73CFE1E8D1A300180A4436E7C9279F6C717B2097CB515A5A8A6EDDBA99BD5E434303E4F2EB9719EDDFBF1F23478E34FB5CFF8B3305222BA8AFAF6FF1B1D7AE5DC3FDF7DF6FB5B5BDBCBCE0ECEC0C0F0F0F787878A063C78EB8EBAEBB909595857FFEF9C7E4F331148844F2F9E79F9BFDDAE5CB971B3D7EF7DD7791959585ACAC2C7CF8E187B87CF932860F1F8E6FBFFDD6E4733314882C94949484B367CF9AFCBA41830699BDE67BEFBD67F87D7272B2D1E3A8A828B3CF0B3014882C565858889A9A1A935F77E36A444B2C5FBE1C73E6CCB9EDF3F3E6CD435E5E9E49E764281059E8B3CF3E43BF7EFD4C7E9DA9FF586F983F7FBEE1F732990C3299EC966376ECD861D6B90186029128DE78E30DB35FFBE4934F0200FAF4E9831123463479CCE4C993CD3E3F4381C80A366FDE6CD2F18B162D327BADAFBEFA0A00505151018D4663F6796E87A14064A1868606F8FBFBB7E858994C862D5BB6987D8D424343031A1B1B010043870E456060E01D8F4F4E4EC68001034C5A83375921B28056AB455858180A0A0A0C971C03C0C18307515B5B6B783C72E448B8BABA62C2840998316386D9EBA5A7A71B661143860C69F298ACAC2CB3CF0FF08A4622B3D5D4D4C0CFCF0FDBB76FC7C2850BF1F1C71F1B9EFBE28B2F505D5D6D781C1919894E9D3A5965DD912347E2D0A14368686868F2F9C1830743A55201B8BE53983B77AE690B08446496C183070B0084E8E868A1A6A6A64DD65CBB76AD70D75D77094E4E4E4D3EBF72E54AA143870E0200C1CBCB4BD06AB526AFC1502032515D5D9DF0F8E38F0B00043F3FBF365F7FC488110200C1DBDBDBE8E73FFEF8A300400020F4ECD9D3ECF373D0486402AD560B1F1F1FE4E6E6A273E7CE484B4B6BF31A3C3C3C00007ABD1E4545450080CCCC4C1C3E7CD8704C6969A9D9E7E7A091C804478F1EC58E1D3BB068D122F4E9D347941A121212D0B56B5744474763D6AC59183A742856AD5A05E0FAF509CF3FFFBC45E7E7A091A8856A6B6BF1D8638F61EAD4A9888F8F47FBF6ED45AB451004A8D56A24252561FDFAF586C1628F1E3D2CFA4836C050206A564D4D0D3C3D3DF1D75F7F61D2A449C8CCCC14BBA456C599025133E2E2E2F0D75F7F19EE59E0E8385320BA8313274E60F7EEDD00AE7FF069F6ECD92257D4FAD83E10DD467D7D3DDCDDDDF1F7DF7F63CB962D165D89684FB853206A42797939BA76ED0A854281E4E464C90402C09902D12DD46A35860F1F6EF8CE06932F13B673DC2910DDA4A0A0004AA512858585484D4DB5CADD91EC0D670A443779E0810770FEFC79AB7C3783BD62FB4084EB5FED2E93C95051518155AB5649361000860211B2B3B30D9706C7C6C61ADD03518AD83E90A4151515C1C7C7072A950A1B366C8052A914BB24D1311448D2BA75EB06BD5E8F8C8C0CCC9831A3C93B234B0DDB0792A4D2D25228140AE8F57ABCFDF6DBF0F5F56520FC87A14092A352A9306EDC38D4D7D7233C3C1C43870E15BB249BC2F68124A5B8B81853A64C815AADC6A64D9B1010102076493687A1409272DF7DF7A1AAAA0AE9E9E96C196E83ED0349424949093A76EC88DADA5A24262662E6CC990C84DBE04E811C9E4AA542505010727272F0D4534FE1CF3FFF14BB249BC6CF3E90432B29293104C2E6CD9BD1B3674FB14BB279DC299043BBFBEEBBF1EFBFFF62F3E6CDF0F3F363CBD0029C2990432A2E2E46E7CE9D71EDDA357CF8E187F0F7F76720B41043811C8E4AA5C2942953505D5D8DF8F8782C5EBC58EC92EC0ADB077228E7CE9DC3F8F1E3919B9B8BB4B434F8F9F9895D92DD61289043717575C5952B57B069D326B60C6662FB40764FA7D3E1C5175F844C26834C2643424202020202180866E24E81EC5A757535424242B06DDB3600C0C71F7F8C850B178A5C957D6328905DF3F4F4C4A143870040D2B750B3265EBC4476CBDDDD1DC5C5C500800D1B3648EA36ECAD893305B24B050505A8A9A941BB76EDB062C50A28954ACE10AC843B05B23B6AB51A4AA5125AAD162B57AEC4EBAFBF2E76490E853305B22BE5E5E5F0F4F444414181A4BECAAD2D3114C86E5CBB760D2E2E2E90C964484D4DC5ABAFBE2A76490E893305B20BF9F9F9E8DDBB37140A05962F5FCE4068459C2990CDCBC9C98152A9C4B973E7909C9C2CB9EF766C6B6C1FC8A65DB870014F3FFD344E9D3AC519421BE14E816C566D6D2DEEBDF75E383B3B63EDDAB50C8436C29902D9A4BCBC3CF4EFDF1F2E2E2E888F8F47585898D8254906770A647372737311141484929212AC5EBD1A515151629724290C05B22983070FC6850B17A0D1683843100943816C424D4D0D860F1F0E954A05171717A4A4A4301044C25020D169B55A444444186EA33674E8504446468A5D9664F12D4912557D7D3DA64E9D8ACCCC4C44474723313151EC92248F3B0512D5C08103919F9F8F050B16202E2E4EEC7208DC299048FEFDF75F8C1A350AC78E1DC3B871E3F0F3CF3F8B5D12FD87D729509B2B2B2B436060208E1D3B06272727787979895D12DD843B056A7393264DC24F3FFD040058B76E1D42434345AE886EC69902B5A9871F7E18A74F9F06005E8760A3D83E509BB870E1029E7BEE399C3E7D1AEDDAB5C3AA55AB1808368AA140AD4EA7D361D6AC59F8E38F3F0000B1B1B1983F7FBEC855D1ED70A640AD6EFCF8F1867717366CD800A55229724574279C2950ABBA711BF6B973E7223A3A1ABD7AF512BB246A06770AD42AAAAAAAF0F2CB2FE3E0C183F0F0F0307C610BD93ECE14C8EAF47A3D42434371F0E04100C04B2FBD247245640AEE14C8EAC68D1B87DDBB770300366EDC88C0C040912B225370A64056D5A74F1F68341A44454561C99225E8D6AD9BD8259189180A641515151598366D1A341A0DA64F9F8ED5AB578B5D1299893305B258797939C2C3C3F1DB6FBF213C3C1C5BB76E15BB24B200670A64316F6F6FECDDBB17313131888F8F878B8B8BD8259105180A64911B3384D9B367233939190A8542EC92C8426C1FC82C7ABD1EDEDEDED06834F0F1F1C1E79F7FCE4070100C053259656525222222B077EF5E444646E2EBAFBF16BB24B222B60F64B2E79F7F1EFBF7EF474C4C0CE2E2E2B84370300C0532C98D1942686828D6AC5903B99CEF6A3B1AB60FD4223A9D0EE3C68D335C87B06EDD3A068283E24E819A55555585D0D0506CDBB60D00C0BF328E8D514FCDAAAAAAC2B66DDB10131383D1A3478B5D0EB532B60FD4AC471F7D1400F0C4134F60ECD8B1225743AD8DA1404D2A2B2BC3C18307D1BD7B77C8E572AC58B102FEFEFE6297456D80ED033569F7EEDD080A0A0200AC5CB912AFBFFEBAC815515BE1A0916EA1D7EB3162C408141414F036EC12C45020238D8D8D70767606007CF9E59798356B96C815515BE34C810CF2F3F3D1AB572F28140AAC58B1828120519C29100040AD5623383818A5A5A5484A4AC2BC79F3C42E8944C2F6815055558561C386A1A8A8883304E24E41EAEAEAEA70DF7DF7C1D9D9196BD7AE652010670A52969797877EFDFAC1C5C505F1F1F1080B0B13BB24B201DC2948546E6E2E82828250525282D5AB57232A2A4AEC92C84670A62041972E5DC2A04183505C5CCC1902DD823B0589B974E9123A75EA04B95C8E356BD63010E8169C2948486E6E2E060D1A04B95C8EB8B838444444885D12D920EE1424222F2F0F414141282E2EC69A356B1808745B9C2948C0952B57D0B76F5F949494708640CDE24EC1C1555656C2CDCD0D00D0B16347F4EBD74FE48AC8D671A6E0C0D46A35860D1B06272727F8F8F8203D3D1D03070E14BB2CB271DC2938A8FCFC7C040707E3D4A95358B76E1D424343C52E89EC04670A0EA8B1B111BD7AF54269692967086432B60F0E46AFD7C3D9D919E5E5E5484A4A622090C9180A0E243B3B1B23468C0000C4C6C6F2E3CF6416CE141C44616121828383515050C03B26914538537010DDBB7747595919323232E0EBEB2B763964C7D83ED8B97FFEF90772B91CD5D5D558B9722503812CC650B0533A9D0EA9A9A9F0F6F646434303962E5DCADBB09355B07DB053870F1FC6B3CF3E0B00D8B8712302030345AE881C0543C14E75E9D205151515484F4F87AFAF2F643299D825918360FB6067FEFEFB6FB46FDF1E972F5FC6471F7D849933673210C8AA180A7644A55261C28409A8ABABC3D2A54BB168D122B14B2207C4F6C14E68341ABCF2CA2B50ABD5D8B46913020202C42E891C1443C14EDC73CF3DB878F122D2D2D2D83250AB62FB60E3CE9C39834E9D3AE1EAD5AB484C4C849F9F1F03815A1543C186A9542A4C9E3C19972E5D425C5C1CA2A3A3C52E892480ED838D3A7BF62C264D9A849C9C1CA4A5A5C1CFCF4FEC924822180A36AA43870EA8ADADC5A64D9BE0EFEFCF9681DA0CDB071B73EAD429B8B9B94110047CF0C1070808086020509B6228D890ECEC6C4C9B360D95959558B66C19DE78E30DB14B220962FB6023CE9F3F8F3163C6E0C48913484F4FC7CC9933C52E89248AA16023140A05EAEBEBB171E346B60C242AB60F222B2C2CC4FDF7DF0F272727242424203030908140A2E2EDD844949D9D8DE0E060E8743A7CF2C92758B06081D82511B17D108B4EA7839797174E9E3CC95BA8914D61288840100438395DEFDCD6AF5F8FE0E060710B22BA09670A6DECE4C99378F0C107D1AE5D3B8C1A350ADDBB7717BB2422239C29B421B55A0DA55289F3E7CF23292989DFCB403689ED431BA9ACACC4B3CF3E8BA2A2227E951BD934EE14DAC0D5AB57E1E6E606272727AC5BB78E8140368D338556A4D56AB16BD72E3CF2C82350281458B66C19BFFD996C1E770AAD282B2B0B53A74E05007CFAE9A79833678EC81511358FA1D04A9E7EFA69545757030067086457180A5656575787679E790639393990CBE558B3660D0381EC0A670A56A4D56A3163C60C4320C4C5C521222242ECB2884CC2B724ADE4EAD5AB983E7D3A76ECD80100484949416464A4C85511998EA160254F3CF10472737301708640F68DED83852E5FBE8C21438620373717BEBEBE1004818140768DA16001AD560B7F7F7F1C3F7E1CFEFEFEC8C8C810BB24228B3114CCD4D8D888B0B0306CDFBE1D8B172FC6E6CD9BC52E89C82AF896A499FAF7EF8FC2C2422C58B0004B972E15BB1C22ABE1A0D144972E5D82B7B7378E1C39021F1F1F7CFDF5D762974464556C1F4C50565606A5528923478E2020208081400E893B05134C983001BB76ED424C4C0C121212C42E87A85570A6D042EEEEEE282E2EC6BC79F3101B1B2B763944AD86ED4333AAABABE1E9E989E2E262F8F8F820292909AEAEAE629745D46A180A77A0D3E91012128243870E2138389833049204CE14EEE0C5175FC42FBFFC82989818BCFFFEFB863B3013393286C26DF4E9D3071A8D0673E6CC416262225B06920CFED7F73F2A2B2BE1E5E5058D4683E9D3A7E3D34F3F652090A430146EA2D7EB1116168603070E203434145BB76E15BB24A236C7F6E12663C68CC1AFBFFE8A9898182C5BB60C7239DFB125E96128FCE7C60C21323212AB56AD8242A110BB24225148BE7D282F2FC7E8D1A3A1D168E0E3E3839494140602499AA443A1A2A202B367CFC6BE7DFB307BF66C5E87400489B70FA3478FC6BE7DFBF0E69B6F222E2E0E2E2E2E629744243AC986C28D194278783856AF5ECD4020FA8F24C7EBA74F9F46555515A64F9F8E2FBEF842EC72886C8AA4760A959595484D4D455A5A1AD46A3524F447276A3149ED14A64C998203070E0000D2D3D345AE86C836496AA72093C900001B376E44404080E13111FDBF56DB29141414A0A2A2C2F0B86FDFBE7073736BADE5EEA8A8A808C3870F87ABAB2B626363111818284A1D447641B0B2F2F272213E3E5E1830608000C0F0CBCFCF4FA8ABAB13E2E3E3853D7BF65875CD9D3B770A7ABDBEC9E7542A953070E0400180F0C9279F58755D224764F5F6A1A0A000FDFAF503007CF7DD77B8F7DE7B01004B962C815C2EC7810307F0D0430FE19B6FBEC1B061C32C5AEBE2C58B78E5955750585888071F7C101D3A7400002C5AB40813274E8456ABC5A851A370F2E449646464C0D7D7D7B23F1C91145833617AF6EC290010C2C3C385C6C646A1B1B1D1F0DCCB2FBF6CB473D8B973A7C5EBDD7CBE3BFDDAB06183512D44747B560B858080000180F0E8A38FDEF698BBEFBE5B00204447475BB4566161A1E0EEEEDEA240502A9516AD45243556F9ECC3F1E3C7919D9DDDA2637BF4E881B163C79ABDD6C9932711181888D3A74F9B7D0E22BA3DAB84824AA5424E4E0E80DBBFFFFFD65B6FA1A6A606172F5E446161A1D96B151515E1F0E1C32D3E7ED7AE5DF8F9E79FCD5E8F486A2C0E853367CE2024240400E0E2E28221438634795C7E7E3E1A1A1AD0B76F5F44454599B5962008A8AFAF37E9353A9D0EE7CF9FE7D58B442D64D58F4EAF5FBFBEC99F97949440A7D3597CFE9A9A1A4C9D3AD5E4D7858484E0DCB97316AF4F24051687C2CD5F9F76E2C489268FF9E1871FF0FBEFBF0300E6CE9D6BF65A2E2E2E502A9526BFCEC7C707F7DC738FD9EB124989C5A170F3A70C5F7BEDB5668F0F0E0E36FCDED3D3D3A4B5140A85593B85891327A253A74E26BF8E488A5AFDCE4B0D0D0DB872E5CA2D3F1F3F7E3C0E1D3A64F2F99C9D9D4DBAF7815C2EE70D58894C607128BCF0C20B777CFEC4891388898901703D0800E0D4A953D0E974983871A2C9EB4D9830012929292DFA9FBF7DFBF6484C4C849F9F9FC9EB104995C5FF85A6A6A6A277EFDE4D3EF7CE3BEFA0A4A4C4F078CB962D0080EFBFFF1EC78F1F476D6DAD596B868686C2D5D5B5D90F36252727233434D4AC358824CBD2AB9FAE5CB922C4C6C60A0084FEFDFB1B7E1E1D1D2D383B3B0BEEEEEEC2E2C58B0500C2E38F3F2EE4E5E5093D7AF4100008B5B5B516ADAD52A9848F3EFAE896AB18972C5922A8542A4BFF68449264B50F4445444460EBD6ADA8AAAA020074ECD81167CE9C41972E5D0000010101D8B97327AAAAAAE0EAEA8ACCCC4C787B7B5B636922B222AB7F4A72DAB4690080850B17C2C3C3A3C9E7274F9E8CA0A0206B2E4B445622A93B2F1151F324FD653044742B860211196128109111860211196128109111860211196128109111860211196128109111860211196128109111860211196128109111860211196128109191FF03B19ECD18DC3CD6EE0000000049454E44AE426082>|png>|100pt|80pt||>>>>>>
     </equation*>
   </definition>
 
-  <section|Binary Relations; Equivalences>
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|A<big|wedge>B=C>|<cell|>>|<row|<cell|A<big|wedge>x=x
+    >|<cell|x\<nin\><around*|{|B|}>>>|<row|<cell|B<big|wedge>x=x
+    >|<cell|x\<nin\><around*|{|A|}>>>|<row|<cell|C<big|wedge>x=x>|<cell|x\<nin\><around*|{|A.B|}>>>|<row|<cell|D<big|wedge>x=x>|<cell|x\<nin\><around*|{|A,B,C|}>>>|<row|<cell|E<big|wedge>x=H>|<cell|x\<nin\><around*|{|A,B,C,D,E|}>>>|<row|<cell|F<big|wedge>x=H>|<cell|x\<nin\><around*|{|A,B,C,D,F|}>>>|<row|<cell|G<big|wedge>x=H>|<cell|x\<nin\><around*|{|A,B,C,D,G|}>>>|<row|<cell|H<big|wedge>x=H>|<cell|\<forall\>x>>>>>
+  </equation*>
+
+  <section|二元关系>
 
   <\equation*>
-    <tabular*|<tformat|<table|<row|<cell|all
-    relation>|<cell|\<cal-B\><rsub|X>\<assign\><around*|{|B\|B\<subseteq\>X\<times\>X|}>>>|<row|<cell|empty>|<cell|\<varnothing\>>>|<row|<cell|universal>|<cell|X\<times\>X>>|<row|<cell|equality>|<cell|1<rsub|X>=<around*|{|<around*|(|x,x|)>\|x\<in\>X|}>>>>>>
+    <tabular*|<tformat|<table|<row|<cell|X上的所有关系>|<cell|\<cal-B\><rsub|X>\<assign\><around*|{|B\|B\<subseteq\>X\<times\>X|}>>>|<row|<cell|特别地有>|<cell|>>|<row|<cell|空关系>|<cell|\<varnothing\>>>|<row|<cell|全关系>|<cell|X\<times\>X>>|<row|<cell|相等关系>|<cell|1<rsub|X>=<around*|{|<around*|(|x,x|)>\|x\<in\>X|}>>>>>>
   </equation*>
 
   <\proposition>
     \;
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|The relation\<circ\> on
-      \<cal-B\><rsub|X>>>|<row|<cell|\<circ\>:=\<forall\>\<rho\>,\<sigma\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|\<rho\>\<circ\>\<sigma\>=<around*|{|<around*|(|x,y|)>\<in\>X\<times\>X\|<around*|(|\<exists\>z\<in\>X|)><around*|(|x,z|)>\<in\>\<rho\>\<wedge\><around*|(|z,y|)>\<in\>\<sigma\>|}>>>|<row|<cell|\<Rightarrow\><around*|(|\<cal-B\><rsub|X>,\<circ\>|)>is
-      \<up-a\> semigroup>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|X上的全体二元映射
+      \<cal-B\><rsub|X>>>|<row|<cell|\<circ\>>|<cell|\<circ\>:=\<forall\>\<rho\>,\<sigma\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|\<rho\>\<circ\>\<sigma\>=<around*|{|<around*|(|x,y|)>\<in\>X\<times\>X\|<around*|(|\<exists\>z\<in\>X|)><around*|(|x,z|)>\<in\>\<rho\>\<wedge\><around*|(|z,y|)>\<in\>\<sigma\>|}>>>|<row|<cell|\<Rightarrow\>>|<cell|<around*|(|\<cal-B\><rsub|X>,\<circ\>|)>具有封闭性,是半群>>>>>
     </equation*>
 
     <\proof>
       \;
 
       <\equation*>
-        <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>\<rho\>,\<sigma\>,\<tau\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|\<rho\>\<subseteq\>\<sigma\>\<Rightarrow\>\<rho\>\<circ\>\<tau\>\<subseteq\>\<sigma\>\<circ\>\<tau\>\<wedge\>\<tau\>\<circ\>\<rho\>\<subseteq\>\<tau\>\<circ\>\<sigma\>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|<around*|(|x,y|)>\<in\><around*|(|\<rho\>\<circ\>\<sigma\>|)>\<circ\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<exists\>z\<in\>X|)><around*|(|x,z|)>\<in\>\<rho\>\<circ\>\<sigma\>\<wedge\><around*|(|z,y|)>\<in\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<exists\>z\<in\>X|)><around*|(|\<exists\>u\<in\>X|)><around*|(|x,u|)>\<in\>\<rho\>\<wedge\><around*|(|u,z|)>\<in\>\<sigma\>\<wedge\><around*|(|z,y|)>\<in\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<exists\>u\<in\>X|)><around*|(|x,u|)>\<in\>\<rho\>\<wedge\><around*|(|u,y|)>\<in\>\<sigma\>\<circ\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x,y|)>\<in\>\<rho\>\<circ\><around*|(|\<sigma\>\<circ\>\<tau\>|)>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<rho\>\<circ\>\<sigma\>|)>\<circ\>\<tau\>=\<rho\>\<circ\><around*|(|\<sigma\>\<circ\>\<tau\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|\<Rightarrow\>>|<cell|<around*|(|\<cal-B\><rsub|X>,\<circ\>|)>is
-        \<up-a\> semigroup>>>>>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>\<rho\>,\<sigma\>,\<tau\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|\<Rightarrow\>>|<cell|\<rho\>\<subseteq\>\<sigma\>\<Rightarrow\>\<rho\>\<circ\>\<tau\>\<subseteq\>\<sigma\>\<circ\>\<tau\>\<wedge\>\<tau\>\<circ\>\<rho\>\<subseteq\>\<tau\>\<circ\>\<sigma\>>>|<row|<cell|>|<cell|根据定义，这是显然的>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|<around*|(|x,y|)>\<in\><around*|(|\<rho\>\<circ\>\<sigma\>|)>\<circ\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<exists\>z\<in\>X|)><around*|(|x,z|)>\<in\>\<rho\>\<circ\>\<sigma\>\<wedge\><around*|(|z,y|)>\<in\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<exists\>z\<in\>X|)><around*|(|\<exists\>u\<in\>X|)><around*|(|x,u|)>\<in\>\<rho\>\<wedge\><around*|(|u,z|)>\<in\>\<sigma\>\<wedge\><around*|(|z,y|)>\<in\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<exists\>u\<in\>X|)><around*|(|x,u|)>\<in\>\<rho\>\<wedge\><around*|(|u,y|)>\<in\>\<sigma\>\<circ\>\<tau\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x,y|)>\<in\>\<rho\>\<circ\><around*|(|\<sigma\>\<circ\>\<tau\>|)>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|\<rho\>\<circ\>\<sigma\>|)>\<circ\>\<tau\>=\<rho\>\<circ\><around*|(|\<sigma\>\<circ\>\<tau\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|\<Rightarrow\>>|<cell|<around*|(|\<cal-B\><rsub|X>,\<circ\>|)>是半群>>>>>
       </equation*>
 
       \;
@@ -926,71 +965,161 @@
   </proposition>
 
   <\definition>
-    Domain, Image. Converse. Partial map.
+    定义域, 值域. 逆关系. 偏(半，部分)映射.
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>\<rho\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|Domain>|<cell|dom
-      \<rho\>=<around*|{|x\<in\>X\|\<exists\>y\<in\>X,<around*|(|x,y|)>\<in\>\<rho\>|}>>>|<row|<cell|Image>|<cell|im
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>\<rho\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|定义域>|<cell|dom
+      \<rho\>=<around*|{|x\<in\>X\|\<exists\>y\<in\>X,<around*|(|x,y|)>\<in\>\<rho\>|}>>>|<row|<cell|值域>|<cell|im
       \<rho\>=<around*|{|y\<in\>X\|\<exists\>x\<in\>X,<around*|(|x,y|)>\<in\>\<rho\>|}>>>>>>
     </equation*>
 
-    From defination, such that
+    根据定义, 容易得到
 
     <\equation*>
       <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>\<rho\>,\<sigma\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|\<rho\>\<subseteq\>\<sigma\>\<Rightarrow\>dom\<rho\>\<subseteq\>dom
       \<sigma\>\<wedge\>im \<rho\>\<subseteq\>im
-      \<sigma\>>>|<row|<cell|>|<cell|>>|<row|<cell|1>|<cell|\<forall\>x\<in\>X,\<rho\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|x<rsub|\<rho\>>=<around*|{|y\<in\>X\|<around*|(|x,y|)>\<in\>\<rho\>|}>>>|<row|<cell|>|<cell|\<rightarrow\>x<rsub|\<rho\>>\<neq\>\<varnothing\>\<Leftrightarrow\>x\<in\>dom
-      \<rho\>>>|<row|<cell|>|<cell|>>|<row|<cell|2>|<cell|A\<subseteq\>X,\<rho\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|A<rsub|\<rho\>>=<big|cup><around*|{|a<rsub|\<rho\>>\|a\<in\>A|}>>>|<row|<cell|>|<cell|>>|<row|<cell|3>|<cell|\<rho\><rsup|-1>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|Prop>|<cell|<choice|<tformat|<table|<row|<cell|<around*|(|\<rho\><rsup|-1>|)><rsup|-1>=\<rho\>>>|<row|<cell|<around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>|)><rsup|-1>=\<rho\><rsub|2><rsup|-1>\<circ\>\<rho\><rsub|1><rsup|-1>>>|<row|<cell|\<rho\>\<subseteq\>\<sigma\>\<Rightarrow\>\<rho\><rsup|-1>\<subseteq\>\<sigma\><rsup|-1>>>|<row|<cell|dom
+      \<sigma\>>>|<row|<cell|>|<cell|>>|<row|<cell|1>|<cell|\<forall\>x\<in\>X,\<rho\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|x\<rho\>=<around*|{|y\<in\>X\|<around*|(|x,y|)>\<in\>\<rho\>|}>>>|<row|<cell|>|<cell|\<rightarrow\>x\<rho\>\<neq\>\<varnothing\>\<Leftrightarrow\>x\<in\>dom
+      \<rho\>>>|<row|<cell|>|<cell|>>|<row|<cell|2>|<cell|A\<subseteq\>X,\<rho\>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|A\<rho\>=<big|cup><around*|{|a\<rho\>\|a\<in\>A|}>>>|<row|<cell|>|<cell|>>|<row|<cell|3>|<cell|\<rho\><rsup|-1>\<in\>\<cal-B\><rsub|X>>>|<row|<cell|>|<cell|>>|<row|<cell|4>|<cell|<around*|(|\<rho\><rsup|-1>|)><rsup|-1>=\<rho\>>>|<row|<cell|>|<cell|>>|<row|<cell|5>|<cell|<around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>|)><rsup|-1>=\<rho\><rsub|2><rsup|-1>\<circ\>\<rho\><rsub|1><rsup|-1>>>|<row|<cell|>|<cell|\<forall\>>>|<row|<cell|\<Leftrightarrow\>>|<cell|\<forall\><around*|(|x,y|)>\<in\><around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>|)><rsup|-1>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|y,x|)>\<in\><around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>|)>>>|<row|<cell|\<Leftrightarrow\>>|<cell|\<exists\>z\<in\>X,<around*|(|y,z|)>\<in\>\<rho\><rsub|1>\<wedge\>*<around*|(|z,x|)>\<in\>\<rho\><rsub|2>>>|<row|<cell|\<Leftrightarrow\>>|<cell|\<exists\>z\<in\>X,<around*|(|z,x|)>\<in\>\<rho\><rsub|2>\<wedge\><around*|(|y,z|)>\<in\>\<rho\><rsub|1>>>|<row|<cell|\<Leftrightarrow\>>|<cell|\<exists\>z\<in\>X,<around*|(|x,z|)>\<in\>\<rho\><rsub|2><rsup|-1>\<wedge\><around*|(|z,y|)>\<in\>\<rho\><rsub|1><rsup|-1>>>|<row|<cell|\<Leftrightarrow\>>|<cell|<around*|(|x,y|)>\<in\>\<rho\><rsub|2><rsup|-1>\<circ\>\<rho\><rsub|1><rsup|-1>>>|<row|<cell|>|<cell|>>|<row|<cell|6>|<cell|<around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>\<circ\>\<rho\><rsub|3>|)><rsup|-1>>>|<row|<cell|=>|<cell|<around*|(|<around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>|)>\<circ\>\<rho\><rsub|3>|)><rsup|-1>>>|<row|<cell|=>|<cell|\<rho\><rsub|3><rsup|-1>\<circ\><around*|(|\<rho\><rsub|1>\<circ\>\<rho\><rsub|2>|)><rsup|-1>>>|<row|<cell|=>|<cell|\<rho\><rsub|3><rsup|-1>\<circ\>\<rho\><rsub|2><rsup|-1>\<circ\>\<rho\><rsub|1><rsup|-1>>>|<row|<cell|>|<cell|>>|<row|<cell|5+6>|<cell|\<forall\>\<circ\>的有限复合>>|<row|<cell|>|<cell|<around*|(|<big|prod><rsup|n><rsub|i=1>\<rho\><rsub|i>|)>=<big|prod><rsub|i=n><rsup|1>\<rho\><rsub|i><rsup|-1>>>|<row|<cell|>|<cell|>>|<row|<cell|7>|<cell|\<rho\>\<subseteq\>\<sigma\>\<Rightarrow\>\<rho\><rsup|-1>\<subseteq\>\<sigma\><rsup|-1>>>|<row|<cell|>|<cell|>>|<row|<cell|8>|<cell|<choice|<tformat|<table|<row|<cell|dom
       <around*|(|\<rho\><rsup|-1>|)>=im \<rho\>>>|<row|<cell|im<around*|(|\<rho\><rsup|-1>|)>=dom
-      \<rho\>>>>>>>>|<row|<cell|>|<cell|x<rsub|\<rho\><rsup|-1>>\<neq\>\<varnothing\>\<Leftrightarrow\>x\<in\>im
+      \<rho\>>>>>>>>|<row|<cell|>|<cell|>>|<row|<cell|9>|<cell|x\<rho\><rsup|-1>\<neq\>\<varnothing\>\<Leftrightarrow\>x\<in\>im
       \<rho\>>>>>>
     </equation*>
 
-    Partial map
+    部分(偏，半，柯里化Curry)映射：
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|\<phi\>\<in\>\<cal-B\><rsub|X>,\<forall\>x\<in\>dom\<phi\>,<around*|\||x\<phi\>|\|>=1>|<cell|<around*|\|||\|>is
-      the order>>>>>
+      <tabular*|<tformat|<table|<row|<cell|\<phi\>\<in\>\<cal-B\><rsub|X>,\<forall\>x\<in\>dom\<phi\>,<around*|\||x\<phi\>|\|>=1>|<cell|<around*|\|||\|>是集合的基数运算符>>>>>
     </equation*>
 
-    This definition means
+    此定义蕴含着
 
-    <math|\<forall\>x,y<rsub|1>,y<rsub|2> in
-    X.<around*|[|<around*|(|x,y<rsub|1>|)>\<in\>\<phi\>\<wedge\><around*|(|x,y<rsub|2>|)>\<in\>\<phi\>|]>\<Rightarrow\>y<rsub|1>=y<rsub|2>>
+    <\equation*>
+      \<forall\>x,y<rsub|1>,y<rsub|2>\<in\>
+      X.<around*|[|<around*|(|x,y<rsub|1>|)>\<in\>\<phi\>\<wedge\><around*|(|x,y<rsub|2>|)>\<in\>\<phi\>|]>\<Rightarrow\>y<rsub|1>=y<rsub|2>
+    </equation*>
 
-    By the definition, the empty map <math|\<Phi\>>.
-    <math|\<forall\>x\<in\>X,x\<Phi\> >is a partial map.
+    根据定义, 空关系<math|\<varnothing\>>也是<math|X>上的半映射
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|要验证>|<cell|\<forall\>x\<in\>dom\<varnothing\>\<rightarrow\><around*|\||x\<varnothing\>|\|>=1>>|<row|<cell|>|<cell|dom
+      \<varnothing\>=\<varnothing\>>>|<row|<cell|\<Rightarrow\>>|<cell|x\<nin\>dom
+      \<varnothing\>\<vee\><around*|\||x\<phi\>|\|>=1是永真
+      命题>>|<row|<cell|\<Rightarrow\>>|<cell|\<varnothing\>也是部分映射>>>>>
+    </equation*>
+
+    特别注明空关系是部分映射，这能保证<math|\<circ\>>运算的封闭性进而构成半群。
   </definition>
 
   <\definition>
-    Restriction. Extension.
+    限制. 扩张(延拓)
 
     <\equation*>
-      <tabular*|<tformat|<table|<row|<cell|>|<cell|\<phi\>,\<psi\> are
-      partial maps of X\<wedge\>\<phi\>\<subseteq\>\<psi\>>>|<row|<cell|restriction>|<cell|\<phi\>
-      is \<psi\>>>|<row|<cell|extension>|<cell|\<psi\> is \<phi\>>>>>>
+      <tabular*|<tformat|<table|<row|<cell|>|<cell|\<phi\>,\<psi\>
+      是X上的部分映射\<wedge\>\<phi\>\<subseteq\>\<psi\>>>|<row|<cell|限制>|<cell|\<phi\>
+      是 \<psi\>的>>|<row|<cell|扩张>|<cell|\<psi\> 是 \<phi\>的>>>>>
     </equation*>
   </definition>
 
   <\proposition>
-    <math|\<cal-P\><rsub|X>\<subseteq\>\<cal-B\><rsub|X>,\<cal-P\><rsub|X>
-    consisting of all partial maps of X is \<up-a\> subsemigroup of
-    \<cal-B\><rsub|X>.>
+    <math|\<cal-P\><rsub|X>\<subseteq\>\<cal-B\><rsub|X>,\<cal-P\><rsub|X>是所有X上的部分映射.
+    \<cal-P\><rsub|X>是 \<cal-B\><rsub|X>的子半群>
 
     <\proof>
       \;
 
       <\equation*>
-        <tabular*|<tformat|<table|<row|<cell|\<forall\>\<phi\>,\<psi\>\<in\>\<cal-P\><rsub|X>,<around*|(|x,y<rsub|1>|)>,<around*|(|x,y<rsub|2>*|)>\<in\>\<phi\>\<circ\>\<psi\>>>|<row|<cell|\<exists\>z<rsub|1>,z<rsub|2>\<in\>X\<rightarrow\><choice|<tformat|<table|<row|<cell|<around*|(|x,z<rsub|1>|)>\<in\>\<phi\>,<around*|(|*z<rsub|1>,y<rsub|1>|)>\<in\>\<psi\>>>|<row|<cell|<around*|(|x,z<rsub|2>|)>\<in\>\<phi\>,<around*|(|z<rsub|2>,y<rsub|2>|)>\<in\>\<psi\>>>>>>*>>|<row|<cell|<around*|(|<rsub|>x,z<rsub|1>|)>\<in\>\<phi\>\<wedge\><around*|(|x,z<rsub|2>|)>\<in\>\<phi\>\<Rightarrow\>z<rsub|1>=z<rsub|2>>>|<row|<cell|\<Rightarrow\>y<rsub|1>=y<rsub|2>>>|<row|<cell|\<Rightarrow\>\<phi\>\<circ\>\<psi\>\<in\>\<cal-P\><rsub|X>>>>>>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|\<forall\>\<phi\>,\<psi\>\<in\>\<cal-P\><rsub|X>,<around*|(|x,y<rsub|1>|)>,<around*|(|x,y<rsub|2>*|)>\<in\>\<phi\>\<circ\>\<psi\>>>|<row|<cell|>|<cell|\<exists\>z<rsub|1>,z<rsub|2>\<in\>X\<rightarrow\><choice|<tformat|<table|<row|<cell|<around*|(|x,z<rsub|1>|)>\<in\>\<phi\>,<around*|(|*z<rsub|1>,y<rsub|1>|)>\<in\>\<psi\>>>|<row|<cell|<around*|(|x,z<rsub|2>|)>\<in\>\<phi\>,<around*|(|z<rsub|2>,y<rsub|2>|)>\<in\>\<psi\>>>>>>*>>|<row|<cell|>|<cell|<around*|(|<rsub|>x,z<rsub|1>|)>\<in\>\<phi\>\<wedge\><around*|(|x,z<rsub|2>|)>\<in\>\<phi\>>>|<row|<cell|\<Rightarrow\>>|<cell|z<rsub|1>=z<rsub|2>>>|<row|<cell|\<Rightarrow\>>|<cell|y<rsub|1>=y<rsub|2>>>|<row|<cell|\<Rightarrow\>>|<cell|\<phi\>\<circ\>\<psi\>\<in\>\<cal-P\><rsub|X>>>>>>
       </equation*>
     </proof>
   </proposition>
 
-  \;
+  <\remark>
+    部分映射<math|\<rho\>>的逆<math|\<rho\><rsup|-1>>不一定是部分映射
+  </remark>
 
-  \;
+  <\proposition>
+    若<math|\<phi\>,\<psi\>\<in\>\<cal-P\><rsub|X>>就有
 
-  \;
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|dom<around*|(|\<phi\>\<circ\>\<psi\>|)>=<around*|[|im
+      \<phi\>\<cap\>dom \<psi\>|]>\<phi\><rsup|-1>>>|<row|<cell|im<around*|(|\<phi\>\<circ\>\<psi\>|)>=<around*|[|im\<phi\>\<cap\>dom
+      \<psi\>|]>\<psi\>>>|<row|<cell|<around*|(|\<forall\>x\<in\>dom<around*|(|\<phi\>\<circ\>\<psi\>|)>|)>
+      x<around*|(|\<phi\>\<circ\>\<psi\>|)>=<around*|(|x\<phi\>|)>\<psi\>>>>>>
+    </equation*>
+
+    <\proof>
+      \;
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|1>>|<row|<cell|>|<cell|\<forall\>x\<in\>dom<around*|(|\<phi\>\<circ\>\<psi\>|)>>>|<row|<cell|\<Rightarrow\>>|<cell|\<exists\>y,z\<in\>X\<rightarrow\><around*|(|x,z|)>\<in\>\<phi\>,<around*|(|z,y|)>\<in\>\<psi\>>>|<row|<cell|>|<cell|z\<in\>im
+        \<phi\>\<cap\>dom \<psi\>>>|<row|<cell|\<Rightarrow\>>|<cell|x\<in\>z\<phi\><rsup|-1>\<subseteq\><around*|[|im\<phi\>\<cap\>dom\<psi\>|]>\<phi\><rsup|-1>>>|<row|<cell|>|<cell|>>|<row|<cell|>|<cell|x\<in\><around*|[|im\<phi\>\<cap\>dom\<psi\>|]>\<phi\><rsup|-1>>>|<row|<cell|\<Rightarrow\>>|<cell|\<exists\>z\<in\>im\<phi\>\<cap\>dom\<psi\>\<wedge\><around*|(|z,x|)>\<in\>\<phi\><rsup|-1>>>|<row|<cell|\<Rightarrow\>>|<cell|<around*|(|x,z|)>\<in\>\<phi\>>>|<row|<cell|\<Rightarrow\>>|<cell|z\<in\>dom
+        \<psi\>,\<exists\>y\<in\>X\<rightarrow\><around*|(|z,y|)>\<in\>\<psi\>>>|<row|<cell|\<Rightarrow\>>|<cell|<around*|(|x,y|)>\<in\>\<phi\>\<circ\>\<psi\>>>|<row|<cell|\<Rightarrow\>>|<cell|x\<in\>dom<around*|(|\<phi\>\<circ\>\<psi\>|)>>>|<row|<cell|>|<cell|>>|<row|<cell|\<Rightarrow\>>|<cell|dom<around*|(|\<phi\>\<circ\>\<psi\>|)>=<around*|[|im\<phi\>\<cap\>dom\<psi\>|]>\<phi\><rsup|-1>>>>>>
+      </equation*>
+
+      注意到此证明过程没有使用部分映射的性质，只用了关系的性质，因此对所有关系都成立
+
+      2的证明和1类似
+
+      <\equation*>
+        <tabular*|<tformat|<table|<row|<cell|>|<cell|3>>|<row|<cell|>|<cell|\<phi\>,\<psi\>,\<phi\>\<circ\>\<varphi\>都是部分映射>>|<row|<cell|\<Rightarrow\>>|<cell|\<exists\>!z=x\<phi\>\<wedge\>z=y\<psi\>\<wedge\>y=x<around*|(|\<phi\>\<circ\>\<psi\>|)>>>|<row|<cell|\<Rightarrow\>>|<cell|x<around*|(|\<phi\>\<circ\>\<psi\>|)>=y=z\<psi\>=<around*|(|x\<phi\>|)>\<psi\>>>>>>
+      </equation*>
+
+      此证明过程<math|z>的唯一性用到了部分映射的定义。
+    </proof>
+  </proposition>
+
+  部分映射与映射的关系
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|部分映射\<phi\>>|<cell|+>|<cell|dom\<phi\>=X>|<cell|\<Rightarrow\>>|<cell|\<phi\>是映射>>|<row|<cell|关系\<phi\>>|<cell|+>|<cell|\<forall\>x\<in\>X,<around*|\||x\<phi\>|\|>=1>|<cell|\<Rightarrow\>>|<cell|\<varphi\>是映射>>>>>
+  </equation*>
+
+  <\proposition>
+    <math|X>上所有映射组成的集合<math|\<cal-T\><rsub|X>>是(<math|\<cal-B\><rsub|X>,\<circ\>>)的子半群
+  </proposition>
+
+  <\proposition>
+    部分映射和映射可逆的刻画
+
+    <\equation*>
+      <tabular*|<tformat|<table|<row|<cell|\<phi\>\<in\>\<cal-P\><rsub|X>>|<cell|\<phi\><rsup|-1>\<in\>\<cal-P\><rsub|X>>|<cell|\<Leftrightarrow\>>|<cell|\<phi\>是单的>>|<row|<cell|\<phi\>\<in\>\<cal-T\><rsub|X>>|<cell|\<phi\><rsup|-1>\<in\>\<cal-T\><rsub|X>>|<cell|\<Leftrightarrow\>>|<cell|\<phi\>是双射>>|<row|<cell|>|<cell|>|<cell|>|<cell|<around*|\||X|\|>\<geqslant\>\<omega\>需要满性>>>>>
+    </equation*>
+  </proposition>
+
+  偏序关系，等价关系的条件：使用关系运算符<math|\<circ\>>刻画：
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|自反性>|<cell|1<rsub|X>\<subseteq\>P>>|<row|<cell|反对称性>|<cell|\<rho\>\<cap\>\<rho\><rsup|-1>=1<rsub|X>>>|<row|<cell|传递性>|<cell|\<rho\>\<circ\>\<rho\>\<subseteq\>\<rho\>>>>>>
+  </equation*>
+
+  对于等价关系
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|对称性>|<cell|\<rho\>\<subseteq\>\<rho\><rsup|-1>>>|<row|<cell|>|<cell|a\<subset\>b\<Leftrightarrow\>a<rsup|-1>\<subset\>b<rsup|-1>>>|<row|<cell|\<Rightarrow\>>|<cell|\<rho\><rsup|-1>\<subseteq\>\<rho\>>>|<row|<cell|对称性简化为>|<cell|\<rho\>=\<rho\><rsup|-1>>>>>>
+  </equation*>
+
+  若首先满足自反性，则传递性可进一步简化：
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|>|<cell|\<rho\>=1<rsub|X>\<circ\>\<rho\>\<subseteq\>\<rho\>\<circ\>\<rho\>>>|<row|<cell|\<Rightarrow\>>|<cell|\<rho\>\<circ\>\<rho\>=\<rho\>>>>>>
+  </equation*>
+
+  此时等价关系的刻画：
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|1<rsub|X>\<subseteq\>\<rho\>>>|<row|<cell|\<rho\>=\<rho\><rsup|-1>>>|<row|<cell|\<rho\><rsup|2>=\<rho\>>>>>>
+  </equation*>
+
+  若<math|\<rho\>>是<math|X>上的等价关系
+
+  <\equation*>
+    <tabular*|<tformat|<table|<row|<cell|dom\<rho\>\<supseteq\>dom1<rsub|X>=X>|<cell|
+    >|<cell|im\<rho\>\<supseteq\>im1<rsub|X>=X>>>>>
+  </equation*>
+
+  <\definition>
+    集合的划分
+  </definition>
 
   \;
 
@@ -1018,16 +1147,17 @@
 
 <\references>
   <\collection>
+    <associate|Rectangular Band|<tuple|1.34|7>>
     <associate|auto-1|<tuple|1|1>>
-    <associate|auto-10|<tuple|10|14>>
-    <associate|auto-2|<tuple|2|7>>
-    <associate|auto-3|<tuple|3|10>>
-    <associate|auto-4|<tuple|4|12>>
-    <associate|auto-5|<tuple|5|14>>
-    <associate|auto-6|<tuple|6|14>>
-    <associate|auto-7|<tuple|7|14>>
-    <associate|auto-8|<tuple|8|14>>
-    <associate|auto-9|<tuple|9|14>>
+    <associate|auto-10|<tuple|10|17>>
+    <associate|auto-2|<tuple|2|9>>
+    <associate|auto-3|<tuple|3|12>>
+    <associate|auto-4|<tuple|4|15>>
+    <associate|auto-5|<tuple|5|17>>
+    <associate|auto-6|<tuple|6|17>>
+    <associate|auto-7|<tuple|7|17>>
+    <associate|auto-8|<tuple|8|17>>
+    <associate|auto-9|<tuple|9|17>>
     <associate|def group|<tuple|1.16|2>>
   </collection>
 </references>
@@ -1039,8 +1169,8 @@
       Definitions> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-1><vspace|0.5fn>
 
-      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>Monogenic
-      Semigroups (单基因半群)> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
+      <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|2<space|2spc>单(生成,基因)半群(Monogenic
+      Semigroups)> <datoms|<macro|x|<repeat|<arg|x>|<with|font-series|medium|<with|font-size|1|<space|0.2fn>.<space|0.2fn>>>>>|<htab|5mm>>
       <no-break><pageref|auto-2><vspace|0.5fn>
 
       <vspace*|1fn><with|font-series|<quote|bold>|math-font-series|<quote|bold>|3<space|2spc>Ordered

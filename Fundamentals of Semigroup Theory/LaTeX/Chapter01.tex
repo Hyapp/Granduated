@@ -255,11 +255,20 @@ It's easy to add a 0 to semigroup.
     Projection morphism
     $\pi_i:P \rightarrow S, p\pi_i=ip(p \in P)$
     
-    Moreover, if $T$ is a semigroup and if there are morphisms $\tau_i:T\rightarrow S_i(i \in I) \rightarrow \exists \text{unique } \gamma: T \rightarrow P, \forall i\in I,\gamma \pi_i=\tau_i$. The map $\gamma:= \forall t \in T, (t\gamma)(i)=t\tau_i,(i \in I)$
+    Moreover, if $T$ is a semigroup and if there are morphisms $\tau_i:T\rightarrow S_i(i \in I) \rightarrow \exists !\gamma: T \rightarrow P, \forall i\in I,\gamma \pi_i=\tau_i$. The map $\gamma:= \forall t \in T, (i)(t\gamma)=t\tau_i,(i \in I)$
 
     $P$ is the product of the semigroups $S_i$ said in categroy.
-
-    \textcolor{red}{???} $(t\gamma)(\pi_i)=t\tau_i$
+    \begin{Prof} The isomorphism of $P \to \prod S_i$
+        \begin{align*}
+            & \phi: P \to \prod S_i. p \phi =I p    \\
+            & \forall p \in P, p \phi = I p = s \in \prod S_i \\
+            \Rightarrow & \forall p_1 \neq p_2, p_1 \phi = I p_1 \neq I p_2 = p_2 \phi  \\
+            \Rightarrow & \phi \text{\space is one-one} \\
+            & \forall s \in \prod S_I \rightarrow \exists p \in P, I p = s  \\
+            \Rightarrow & \phi \text{\space is onto}    \\
+            \Rightarrow & \phi \text{\space is bijective}
+        \end{align*}
+    \end{Prof}
 \end{Def}
 
 \begin{Def}[Permutation(Symmetric) group; Full transformation semigroup]Set $X$.
@@ -312,7 +321,7 @@ It's easy to add a 0 to semigroup.
         S\simeq A\times B, A\neq \emptyset,B\neq \emptyset. \text{multiplication: } (a_1,b_1)(a_2,b_2)=(a_1,b_2)
     \end{gather*}
 
-    \begin{proof}
+    \begin{Prof}
         \center{$1 \rightarrow 2$}
         \begin{align*}
             &\forall x \in S, x=xxx=x^3\rightarrow xx=x^3x=x^4   \\
@@ -349,7 +358,7 @@ It's easy to add a 0 to semigroup.
             &\rightarrow aba=(x,y)(p,q)(x,y)=(x,q)(x,y)=(x,y)=a \\
             &\rightarrow S\text{\space is a rectangular band.}
         \end{align*}
-    \end{proof}
+    \end{Prof}
     \[\begin{tikzcd}
         (c,b)
             \arrow[r, dash]
@@ -521,7 +530,8 @@ It's easy to add a 0 to semigroup.
     $M(1,r)$ is the cyclic group of order $r$.
 
     Periodic semigroup: $\forall a \in S, |\langle a \rangle|$ is finite.
-    Finite semigroup is always periodic.
+
+    \emph{Finite} semigroup is always periodic.
 \end{Rmk}
 
 \begin{Prop}Every periodic semigroup has a idempotent.
@@ -930,4 +940,48 @@ It's easy to add a 0 to semigroup.
 \subsection[7]{Ideals and Rees congruences}
 \subsection[8]{Lattices of equivalences and congruences}
 \subsection[9]{Exercises}
+1. An element $e$ is a semigroup $S$ is called a \emph{left identity} if $\forall x \in S\rightarrow ex = x$. Analogue is for \emph{right identity}.
+An element $z$ of $S$ is called a \emph{left zero} if $\forall x \in S, zx=z$. Analogue is for \emph{right zero}.
+
+Proof: If $S$ has a left identity $e$ and a right identity $f$, then $e=f$ and $e$ is the unique two-sided identity for $S$.
+\begin{Prof}
+    \begin{align*}
+        e=ef=f \Rightarrow e=f  \\
+        \forall e' \neq e, e' = e'e = e \Rightarrow e'=e
+    \end{align*}
+\end{Prof}
+That semigroup has both left identity(ies) and right identity(ies) has only one identity.
+
+
+Proof: If $S$ has a left zero $z$ and a right zero $u$, then $z=u$, and $z$ is the unique two-sided zero for $S$.
+\begin{Prof}
+    \begin{align*}
+        z=zu=u \Rightarrow z=u  \\
+        \forall z'\neq z, z' = z'z = z \Rightarrow z'=z
+    \end{align*}
+\end{Prof}
+
+Proof: Give an example of a semigroup having two (at least) left identities and two (at least) right zeros.
+\begin{align*}
+    & \{e_1, e_2\}    \\
+    \text{Multiplication: } &
+    \begin{cases}
+        e_1 e_2 = e_2   \\
+        e_2 e_1 = e_1   \\
+        e_1 e_1 = e_1   \\
+        e_2 e_2 = e_2
+    \end{cases} \\
+    \text{Association: } &
+    \begin{cases}
+        e^3_1=e_1   \\
+        e^3_2=e_2   \\
+        (e_1 e_1)e_2 = e_1 e_2 = e_2 \quad e_1 (e_1 e_2) = e_1 e_2 = e_2   \\
+        (e_1 e_2)e_1 = e_2 e_1 = e_1 \quad e_1 (e_2 e_1) = e_1 e_1 = e_1   \\
+        (e_2 e_1)e_1 = e_1 e_1 = e_1 \quad e_2 (e_1 e_1) = e_2 e_1 = e_1   \\
+        (e_2 e_2)e_1 = e_2 e_1 = e_1 \quad e_2 (e_2 e_1) = e_2 e_1 = e_1   \\
+        (e_2 e_1)e_2 = e_1 e_2 = e_2 \quad e_2 (e_1 e_2) = e_2 e_2 = e_2   \\
+        (e_1 e_2)e_2 = e_2 e_2 = e_2 \quad e_1 (e_2 e_2) = e_1 e_2 = e_2
+    \end{cases}
+\end{align*}
+so $e_1,e_2$ are the left identities and the right zeros.
 \subsection[10]{Notes}
