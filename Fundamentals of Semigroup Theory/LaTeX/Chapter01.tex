@@ -1,9 +1,9 @@
-\section[1]{Introductory ideas}
+\section[1]{Introductory Ideas}
 The definitions will be refer to all book, but 1.8 is refered to only in Section 3.5.
 
 \textbf{Throughout the book, mapping symbols are written on the right.}
 
-\subsection[1]{Basic definitions}
+\subsection[1]{Basic Definitions}
 
 \begin{Def}[Semigroup]
     A groupoid $(S,\mu), S \neq \emptyset, \mu$ is a map $: S\times S \to S$ and $\mu$ is associative
@@ -372,7 +372,7 @@ It's easy to add a 0 to semigroup.
 
 \end{Them}
 
-\subsection[2]{Monogenic semigroups}
+\subsection[2]{Monogenic Semigroups}
 
 \begin{Sym}[$\langle A\rangle $, Generators]
     \[
@@ -544,7 +544,7 @@ It's easy to add a 0 to semigroup.
     Otherwise, the idempotent may not exist.
 \end{Prop}
 
-\subsection[3]{Ordered sets, semilattices and lattices}
+\subsection[3]{Ordered Sets, Semilattices and Lattices}
 
 \begin{Def}[Order, Partial Order]A binary relation $\omega$ on set X. If 
     \begin{align*}
@@ -649,14 +649,61 @@ It's easy to add a 0 to semigroup.
     This proposition is that the notions of 'lower semilattice' and 'commutative semigroup of idempotents' are equivalent.
 \end{Prop}
 
-\begin{Sym}[Hasse diagrams]    \textcolor{blue}{!!!} Wait for learning TikZ.
-    
-    The bigger element is always upper to lower one.
+\begin{Sym}[Hasse diagrams]
+    The bigger element is always upper to lower one.If $a\leq b, \forall x\in E, a<x<b$ is impossible, paint a line between $a$ and $b$
+    \begin{center}
+        \begin{tikzcd}
+            & b
+            \arrow[ld, dash] \\
+            a
+        \end{tikzcd}
+    \end{center}
 
-    If $a\leq b, \forall x\in E, a<x<b$ is impossible, paint a line bettwen $a$ and $b$
+    This example shows a lower semilattice. Next table should be used by pattern matching, like computer programming language.
+    \begin{center}
+        \begin{tabular}{c|c}
+        & $x\in \{a,b,c,d,e,f,g,h\}, x \bigwedge y = y \bigwedge x$    \\
+        \begin{tikzcd}
+            a
+            \arrow[rd, dash] & & 
+            b
+            \arrow[ld, dash]    \\
+            & c
+            \arrow[d, dash] 
+            & \\
+            & d
+            \arrow[ld, dash]
+            \arrow[d, dash]
+            \arrow[rd, dash] &   \\
+            e
+            \arrow[rd, dash] &
+            f
+            \arrow[d, dash] &
+            g
+            \arrow[ld, dash] \\
+            & h &
+        \end{tikzcd}
+        &
+        \begin{tabular}{c|c} \hline
+            $x \bigwedge x = x$ & \\ \hline
+            $a \bigwedge b = c$ & \\ \hline
+            $a \bigwedge x = x$ & $x \neq b$    \\ \hline
+            $b \bigwedge x = x$ & $x \neq a$    \\ \hline
+            $c \bigwedge x = x$ & $x \notin \{a,b\}$ \\ \hline
+            $d \bigwedge x = x$ & $x \notin \{a,b,c\}$ \\ \hline
+            $e \bigwedge x = h$ & $x \in \{f, g\}$ \\ \hline
+            $f \bigwedge x = h$ & $x \in \{e, g\}$ \\ \hline
+            $g \bigwedge x = h$ & $x \in \{e, f\}$ \\ \hline
+            $h \bigwedge x = h$ & \\ \hline
+            & \\
+            & \\ \hline
+            \textcolor{purple}{$a \bigvee b = \emptyset$} & \textcolor{purple}{Not a upper semilattice} \\ \hline
+        \end{tabular}
+    \end{tabular}
+    \end{center}
 \end{Sym}
 
-\subsection[4]{Binary relations; equivalences}
+\subsection[4]{Binary Relations; Equivalences}
 
 \Def[Equality(diagnoal)  relation]{ $1_X=\{(x,x):x\in X\}$}
 
@@ -724,7 +771,7 @@ It's easy to add a 0 to semigroup.
     \end{proof}
 \end{Prop}
 
-\begin{Prop}
+\begin{Prop}\label{Prop:1.4.3}
     $\phi, \psi \in \mathcal{P}_X$
     \begin{align*}
         \mathrm{dom}(\phi \circ \psi) &= [\mathrm{im} \phi \cap \mathrm{dom}\psi]\phi^{-1}     \\
@@ -785,6 +832,38 @@ It's easy to add a 0 to semigroup.
         \text{1. } & \phi \in \mathcal{P}_X \rightarrow \phi^{-1} \in \mathcal{P}_X \Leftrightarrow \phi \text{ is one-one.}    \\
         \text{2. } & \phi \in \mathcal{T}_X \rightarrow \phi^{-1} \in \mathcal{T}_X \Leftrightarrow \phi \text{ is bijective.}  
     \end{align*}
+
+    \begin{proof}.
+        \begin{center}
+            \begin{tabular}{c c}
+                1. & $\Rightarrow$  \\
+                & $\phi\in \mathcal{P}_X \rightarrow \phi^{-1} \in \mathcal{P}_X$   \\
+                $\Rightarrow$ & $\forall x\phi = y\phi$     \\
+                $\Rightarrow$ & $|x\phi| = 1$              \\ 
+                $\Rightarrow$ & $|(x\phi)\phi^{-1}| = 1$    \\
+                equivalence$\Rightarrow$ & $1_X \subseteq \phi \circ \phi^{-1}$      \\
+                $\Rightarrow$ & $\phi \circ \phi^{-1} = 1_X$    \\
+                $\Rightarrow$ & $\phi$ is one-one   \\
+                & $\Leftarrow$  \\
+                & $\phi$ is one-one $\wedge \phi \in \mathcal{P}_X$ \\
+                $\Rightarrow$ & $\forall x\phi^{-1} = y\phi^{-1}$   \\
+                $\Rightarrow$ & $x\phi^{-1}\phi = y\phi^{-1}\phi$   \\
+                $\Rightarrow$ & $x = y (\phi^{-1} \circ \phi = 1_X $                             \\
+                $\Rightarrow$ & $|x\phi^{-1}| = 1$  \\
+                $\Rightarrow$ & $\phi^{-1} \in \mathcal{P}_X$   \\
+                2. & By:1. $\phi$ is one-one. Target is $\Image \phi = X$   \\
+                &  $\Rightarrow$    \\
+                & $\phi^{-1} \in \mathcal{T}_X$ \\
+                $\Rightarrow$ & $\Dom\phi^{-1} = \Image\phi = X$    \\
+                $\Rightarrow$ & $\phi$ is bijective.    \\
+                & $\Leftarrow$  \\
+                & $\phi$ is bijective   \\
+                $\Rightarrow$ & $\phi$ is one-one and onto. \\
+                $\Rightarrow$ & $\phi^{-1}$ is one-one and onto.    \\
+                $\Rightarrow$ & $\phi^{-1} \in \mathcal{T}_X$
+            \end{tabular}
+        \end{center}
+    \end{proof}
 \end{Prop}
 
 \begin{Rmk}[Order relation]$\rho $
@@ -801,7 +880,10 @@ It's easy to add a 0 to semigroup.
         \text{symmetric } & \text{    } \rho^{-1}=\rho \\
         \text{transitive } & \text{    } \rho \circ \rho = \rho 
     \end{align*}
-    Symmetric $\rho \subseteq \rho^{-1}\rightarrow \rho^{-1}\subseteq \rho \rightarrow \rho^{-1}=\rho $. Transitive $\rho =1_X\circ \rho \subseteq \rho \circ \rho \rightarrow \rho \circ \rho =\rho$.
+
+    Symmetric$(\rho \subseteq \rho^{-1})$: $\rho \subseteq \rho^{-1}\rightarrow \rho^{-1}\subseteq \rho \rightarrow \rho^{-1}=\rho $. 
+    
+    Transitive$(\rho^2 \subseteq \rho)$: $\rho =1_X\circ \rho \subseteq \rho \circ \rho \rightarrow \rho \circ \rho =\rho$.
 \end{Rmk}
 
 \begin{Rmk}
@@ -812,23 +894,92 @@ It's easy to add a 0 to semigroup.
     \end{align*}
 \end{Rmk}
 
-\begin{Def}[Partition] of $X$
-    A family $\pi=\{A_i \in X:i\in I\}$, if
+\begin{Def}[Partition of $X$]
+    A family $\pi=\{A_i \subseteq X:i\in I\}$, if
     \begin{align*}
-        &\forall i\in I, A_i \neq \emptyset \\
-        &\forall i,j \in I, A_i=A_j \vee A_i \cap A_j = \emptyset \\
-        &\bigcup\{A_i: i\in I\}=X
+        1. &\forall i\in I, A_i \neq \emptyset \\
+        2. &\forall i,j \in I, \text{either } A_i = A_j \text{ or } A_i \cap A_j = \emptyset \\
+        \Leftrightarrow &(A_i=A_j) \vee (A_i \cap A_j = \emptyset)\wedge \lnot [(A_i = A_j) \wedge (A_i \cap A_j) = \emptyset]  \\
+        3. &\bigcup\{A_i: i\in I\}=X
     \end{align*}
 \end{Def}
 
-\begin{Prop}
+\begin{Prop}\label{Prop:1.4.6}
     Partition and equivalence are closely related.
 
     Let $\rho $ be an equivalence on a set $X$. Then the family 
     \[\Phi(\rho )={x\rho : x\in X} \]
     of subset of $X$ is a partition of $X$.
-    
+
+    Let $\pi = {A_i: i\in I}$ is a partition of $X$, then the relation:
+    \[
+        \Psi(\pi) = \{(x,y)\in X\times X:(\exists i\in I)x,y\in A_i\}
+    \]
+    is an equivalence on $X$.
     \[\forall\text{ equivalence } \rho  \text{ on } X, \Psi(\Phi(\rho ))=\rho, \forall \text{ partition } \pi \text{ of } X, \Phi(\Psi(\pi))=\pi\]
+    \begin{proof} 
+        1. $\rho$ is an equivalence $\to \Phi(\rho)$ is a partition. 
+        \begin{center}
+            \begin{tabular}{c c}
+                1. & $\forall i, A_i \neq \emptyset$    \\
+                & $\forall A_i \in \Phi(\rho)$    \\
+                Let & $A_i = \emptyset$    \\
+                $\Rightarrow$ & $\forall x\in X, x\rho \neq A_i$  \\
+                $\Rightarrow$ & $A_i \notin \Phi(\rho)$ Conflict!  \\
+                $\Rightarrow$ & $A_i \neq \emptyset $ \\
+                2. & Either $A_i = A_j $ or $ A_i \cap A_j = \emptyset$   \\
+                & $\exists x \in A_i,$ $\exists y \in A_j$  \\
+                $x\rho y\Rightarrow$ & $\exists p,q \in X, (p, x), (q,y) \in \rho$  \\
+                $\Rightarrow$ & $(p, q) \in \rho$    \\
+                $\Rightarrow$ & $p\rho = A_i = A_j = q\rho$ \\
+                $(x,y)\notin \rho\Rightarrow$ & $\exists p,q\in X, (p, x),(q, y)\in \rho$    \\
+                $\Rightarrow$ & $p\rho x\not\rho y \rho q$ \\
+                $\Rightarrow$ & $(p, q)\notin \rho$  \\
+                $\Rightarrow$ & $p\rho = A_i \neq A_j = q\rho$  \\
+                3. & $\bigcup_{i\in I} A_i = X$ \\
+                & $\bigcup_{i \in I} A_i = \bigcup_{x \in X} x\rho$  \\
+                & $x\in x\rho. (x,x)\in \rho$   \\
+                $\Rightarrow$ & $X = \bigcup_{x\in X}x \subseteq \bigcup_{x\in X} x\rho$    \\
+                & $x\rho \subseteq X \rightarrow \bigcup_{x\in X}x\rho \subseteq X$   \\
+                $\Rightarrow$ & $\bigcup_{i\in I} A_i = X$  \\
+                1,2,3$\Rightarrow$ & $\Phi(\rho)$ is a partition. 
+            \end{tabular}
+        \end{center}
+
+        2. $\pi$ is a partition $\to \Psi(\pi)$ is an equivalence.
+
+        \begin{center}
+            \begin{tabular}{c c}
+                1. & $\forall x \in X, (x, x) \in \Psi(\pi)$ \\
+                $\Rightarrow$ & $1_X \in \Psi(\pi)$ \\
+                2. & $\forall x, y\in A_i \rightarrow y,x\in A_i$   \\
+                $\Rightarrow$ & $(x,y)\in A_i, (y,x)\in A_i$    \\
+                $\Rightarrow$ & $\forall (x,y)\in \Psi(\pi), (y,x)\in \Psi(\pi)$    \\
+                3. & $\forall (x,y), (y,z) \in \Psi(\pi)$   \\
+                $\Rightarrow$ & $(x,y)\in A_i, (y,z)\in A_j$   \\
+                $\Rightarrow$ & $i = j \wedge (x,z) \in A_i$    \\
+                $\Rightarrow$ & $(x,z) \in \Psi(\pi)$   \\
+                1,2,3$\Rightarrow$ & $\Psi(\pi)$ is an equivalence.
+            \end{tabular}
+        \end{center}
+
+        3. $\forall$ equivalence $\rho$ on $X \to \Psi(\Phi(\rho)) = \rho$
+
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\forall (x,y)\in \rho$   \\
+                $\Leftrightarrow$ & $\exists p \rightarrow x,y\in p\rho$   \\
+                $\Leftrightarrow$ & $\exists i\in I, x,y \in A_i, A_i \in \Phi(\rho)$    \\
+                $\Leftrightarrow$ & $(x,y)\in \Psi(\Phi(\rho))$ \\
+                $\Leftrightarrow$ & $\rho = \Psi(\Phi(\rho))$   \\
+            \end{tabular}
+        \end{center}
+
+        4. $\forall$ partition $\pi$ of $X \to \phi(\Psi(\pi)) = \pi$.
+
+        \textcolor{purple}{Analogue with 3 }.
+    \end{proof}
+    
 \end{Prop}
 
 \begin{Def}[$\rho$-classes,quotient set, natural map].
@@ -844,26 +995,39 @@ It's easy to add a 0 to semigroup.
 
 \begin{Sym}[$X/\rho, \rho^{\natural}$]
     \begin{align*}
-        X/\rho :&\text{ Quotient set of X}  \\
-        \rho^{\natural} :&\text{ onto map:} X\rightarrow X/\rho 
+        X/\rho :&\text{ All quotient sets of X by }\rho  \\
+        \rho^{\natural} :&\text{ onto map:} X\rightarrow X/\rho \\
+        &\forall x\in X, x\rho^{\natural} = x\rho \text{ (is a set.)}
     \end{align*}
 \end{Sym}
 
-\begin{Prop}[A relation $\phi$, $\rightarrow \phi \circ \phi^{-1} $ is an equivalence].
+\begin{Prop}$\forall$ relation $\phi$ $\Rightarrow \phi \circ \phi^{-1} $ is an equivalence.
 
 \begin{proof}
     \begin{align*}
         &\phi \circ \phi^{-1} \\
         &=\{(x,y)\in X\times X: (\exists z\in X)(x,z)\in \phi ,(y,z)\in \phi\}   \\
-        &=\{(x,y)\in X\times X: x\phi =y\phi \} \\
-        &\text{The reflexive, symmetric and transitive is clear.}
+        &=\{(x,y)\in X\times X: x\phi =y\phi \}
     \end{align*}
+    The reflexive, symmetric and transitive is clear to be proved by quotient set theory.
 \end{proof}
 \end{Prop}
 
 \begin{Def}[kernel of a relations].
     \[\ker \phi =\phi \circ \phi^{-1}\]
     Notice that $\ker \rho^{\natural} =\rho $ 
+    \begin{proof}
+        \begin{align*}
+            & \ker \rho^{\natural}  \\
+            =& \rho^{\natural} \circ (\rho^{\natural})^{-1} \\
+            =& \{(x,y)\in X^2:(\exists z\in X/\rho)(x,z),(y,z)\in \rho^{\natural}\}    \\
+            =& \{(x,y)\in X^2:x\rho^{\natural}=y\rho^{\natural}\}   \\
+            & x\rho^{\natural} = y\rho^{\natural}   \\
+            \Leftrightarrow& x\rho = y\rho  \\
+            \Leftrightarrow& x\rho y    \\
+            \Rightarrow& \ker \rho^{\natural} = \rho
+        \end{align*}
+    \end{proof}
 \end{Def}
 
 \begin{Rmk}
@@ -871,11 +1035,51 @@ It's easy to add a 0 to semigroup.
         &{\rho_i:i\in I} \text{ is a non-empty family of equivalences on a set } X   \\ 
         &\rightarrow \bigcap\{\rho_i:i\in I\}\text{ is again an equivalence.}
     \end{align*}
+    \begin{proof}
+        Firstly, we prove some laws between operators of sets and composition operator of relations.
+
+        \begin{center}
+        \begin{tabular}{c c}
+            & $a,b,c$ are relations on $X$ \\
+            1 & $(a\cap b)\circ c = a \circ c \cap b \circ c$    \\
+            & $(x,y)\in (a \cap b)\circ c$  \\
+            $\Leftrightarrow $ & $\exists z,(x,z)\in a \wedge (x,z) \in b \wedge (z,y)\in c$    \\
+            $\Leftrightarrow $ & $\exists z, [(x,z)\in a \wedge (z,y)\in c] \wedge [(x,z)\in b \wedge (z,y)\in c]$  \\
+            $\Leftrightarrow $ & $(x,y)\in a\circ c\cap b \circ c$  \\ 
+            &   \\
+            2 & $(a \cap b)^{-1}=a^{-1} \cap b^{-1}$    \\
+            & $(x,y)\in (a\cap b)^{-1}$ \\
+            $\Leftrightarrow $ & $(y,x) \in a \cap b$   \\
+            $\Leftrightarrow $ & $(y,x) \in a \wedge (y,x) \in b$   \\
+            $\Leftrightarrow $ & $(x,y) \in a^{-1} \wedge (x,y) \in b^{-1}$ \\
+            $\Leftrightarrow $ & $(x,y) \in a^{-1} \cap b^{-1}$ \\
+            & Particularl, this law is also true for any intersection of sets.  \\
+            & $(\bigcap a_i)^{-1} = \bigcap a_i^{-1}$
+        \end{tabular}
+        \end{center}
+        Now, Let us proof this Remark!
+
+        \begin{center}
+            \begin{tabular}{c c}
+                reflaxive: & $\forall i \in I, 1_X\in \rho_i \rightarrow 1_X \subseteq \bigcap \rho_i$  \\
+                symmetric: & $(\bigcap \rho_i)^{-1} = \bigcap \rho_i^{-1} = \bigcap \rho_i$ \\
+                transitive: & $(\bigcap \rho_i)^2\text{\textcolor{red}{?}}\subseteq \bigcap \rho_i^2 = \bigcap \rho_i$  \\
+                & $(\bigcap \rho_i)\circ (\bigcap \rho_i) ?\subseteq (\bigcap \rho_i)\circ \rho_i$   \\
+                $=$ & $\bigcap \rho_i^2$    \\
+                & Use the proof of elements.    \\
+                & $\forall (x,y),(y,z) \in \bigcap \rho_i$  \\
+                $\Rightarrow $ & $\forall i \in I, (x,y),(y,z)\in \rho_i$   \\
+                $\Rightarrow $ & $\forall i \in I, (x,z) \in \rho_i$ \\
+                $\Rightarrow $ & $(x,z) \in \bigcap \rho_i$
+            \end{tabular}
+        \end{center}
+
+    \end{proof}
 \end{Rmk}
 
 \begin{Def}[$\mathbf{R^e}$].
 
-    $\mathbf{R}$ is any relation on $X$, The family of equivalences containing $\mathbf{R}$ is non-empty. Hence the intersection of all the equivalences containing $\mathbf{R}$ is an equivalence. We call it the equivalence generated by $\mathbf{R}$, denoted it by $\mathbf{R^e}$.
+    $\mathbf{R}$ is any relation on $X$, The family of equivalences containing $\mathbf{R}$ is non-empty$X^2$. Hence the intersection of all the equivalences containing $\mathbf{R}$ is an equivalence. We call it the equivalence generated by $\mathbf{R}$, denoted it by $\mathbf{R^e}$.
 \end{Def}
 
 \begin{Def}[transitive closure].
@@ -884,61 +1088,666 @@ It's easy to add a 0 to semigroup.
     \[
         \mathbf{S}\subseteq \mathbf{S}\circ \mathbf{S}\subseteq \mathbf{S}\circ \mathbf{S}\circ \mathbf{S}\cdots 
     \]
-    The relation $\mathbf{S}^{\infty}=\bigcup\{\mathbf{S}^n: n\in \mathbf{Z}^+\}$ is called the Transitive closure of the relation $\mathbf{S}$.
+    The relation $\mathbf{S}^{\infty}=\bigcup\{\mathbf{S}^n: n\in \mathbf{Z}^+\}$ is called the \emph{Transitive Closure} of the relation $\mathbf{S}$.
 \end{Def}
 
-\begin{Lem}
+\begin{Lem}\label{Lem:1.4.8}
     Every reflexive relation $\mathbf{S}$, the relation $\mathbf{S}^{\infty}$ is the smallest transitive relation on $X$ containing $\mathbf{S}$.
 
     \begin{proof}
         \begin{align*}
+            \text{Transitive: } & \\
             &\forall (x,y),(y,z)\in \mathbf{S}^{\infty}\rightarrow  \exists m,n (x,y)\in \mathbf{S}^m \wedge (y,z)\in \mathbf{S}^n  \\
-            &\rightarrow (x,z) \in \mathbf{S}^{m+n} \subseteq \mathbf{S}^{\infty}   \\
+            \Rightarrow& (x,z) \in \mathbf{S}^{m+n} \subseteq \mathbf{S}^{\infty}   \\
+            \text{Smallest: } & \\
             &\forall \mathbf{T} \text{ is transitive relation containing }\mathbf{S}.\\
-            &\rightarrow \mathbf{S}^2=\mathbf{S}\circ \mathbf{S}\subseteq \mathbf{T}\circ \mathbf{T}\subseteq T \\
-            &\rightarrow \forall n \in \mathbb{Z}^+, \mathbf{S}^n \subseteq T   \\
-            &\rightarrow \mathbf{S}^{\infty} \subseteq T
+            \Rightarrow& \mathbf{S}^2=\mathbf{S}\circ \mathbf{S}\subseteq \mathbf{T}\circ \mathbf{T}\subseteq T \\
+            \Rightarrow& \forall n \in \mathbb{Z}^+, \mathbf{S}^n \subseteq T   \\
+            \Rightarrow& \mathbf{S}^{\infty} \subseteq T
         \end{align*}
     \end{proof}
 \end{Lem}
 
-\begin{Prop}
+\begin{Prop}\label{Prop:1.4.9}
     $\mathbf{R^e}=[\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X]^{\infty}$
     \begin{proof}
+        Equivalence: 
         \begin{align*}
             &\mathbf{E}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X]^{\infty} \text{ is transitive and contains } \mathbf{R}    \\
-            &\rightarrow 1_X \subseteq \mathbf{R}\cup \mathbf{R^{-1}}\cup 1_X \subseteq \mathbf{E}   \\
-            &\rightarrow \mathbf{E} \text{ is also reflaxive.}  \\
+            \Rightarrow& 1_X \subseteq \mathbf{R}\cup \mathbf{R^{-1}}\cup 1_X \subseteq \mathbf{E}   \\
+            \Rightarrow& \mathbf{E} \text{ is reflaxive.}  \\
             &\mathbf{S}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X \text{ is symmetric.}  \\
-            &\rightarrow \mathbf{S}^n=(\mathbf{S^{-1}})^n=(\mathbf{S^n})^{-1}   \\
-            &\rightarrow \mathbf{S}^n \text{ is symmetric}  \\
-            &\rightarrow \mathbf{S}^{\infty} \text{ is symmetric}   \\
-            &\rightarrow \mathbf{E} \text{ is an equivalence relation containing }\mathbf{R}
+            \Rightarrow& \mathbf{S}^n=(\mathbf{S^{-1}})^n=(\mathbf{S^n})^{-1}   \\
+            \Rightarrow& \mathbf{S}^n \text{ is symmetric}  \\
+            \textcolor{red}{?}\Rightarrow& \mathbf{S}^{\infty} \text{ is symmetric}   \\
+            \Rightarrow& \mathbf{E} \text{ is an equivalence relation containing }\mathbf{R}
         \end{align*}
-        Suppose that $\sigma$ is an equivalence relation containing $\mathbf{R}\rightarrow 1_X \subseteq \sigma , \mathbf{R}^{-1}\subseteq \sigma^{-1} =\sigma$
+
+        Smallest:
         \begin{align*}
-            &\rightarrow \mathbf{S}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X \subseteq \sigma \\
-            &\rightarrow \mathbf{S}\circ \mathbf{S} \subseteq \sigma \circ \sigma =\sigma \\
-            &\rightarrow \forall n\in \mathbb{Z}^+, \mathbf{S}^n \subseteq \sigma   \\
-            &\rightarrow \mathbf{S}^{\infty} \subseteq \sigma 
+            & \forall \text{equivalence } \sigma \wedge \mathbf{R} \subseteq \sigma   \\
+            \Rightarrow& 1_X \subseteq \sigma \wedge \sigma^{-1} = \sigma   \\
+            \Rightarrow& \mathbf{S}=\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_X \subseteq \sigma \\
+            \Rightarrow& \mathbf{S}\circ \mathbf{S} \subseteq \sigma \circ \sigma =\sigma \\
+            \Rightarrow& \forall n\in \mathbb{Z}^+, \mathbf{S}^n \subseteq \sigma   \\
+            \Rightarrow& \mathbf{S}^{\infty} \subseteq \sigma 
         \end{align*}
-        Now, $\mathbf{E}$ is the smallest equivalence on $X$ containing $\mathbf{R}$.
-        \[\rightarrow \mathbf{R^e}=[R\cup R^{-1}\cup 1_X]^{\infty}\]
+        The foregoing $\Rightarrow \mathbf{E}$ is the smallest equivalence on $X$ containing $\mathbf{R}$.
+        \[\text{Def}\Rightarrow \mathbf{R^e}=[R\cup R^{-1}\cup 1_X]^{\infty}\]
     \end{proof}
 \end{Prop}
 
-\begin{Prop}
+\begin{Prop}\label{Prop:1.4.10}
     \begin{align*}
         (x,y)\in \mathbf{R^e} \Leftrightarrow \text{either } x=y    \\
         \text{or } x=z_1\rightarrow z_2\rightarrow \cdots\rightarrow z_n\rightarrow y
     \end{align*}
     in witch,$\forall i \in \{1,2,\cdot,n-1\},$ either $(z_i,z_{i+1})\in \mathbf{R}$ or $(z_{i+1},z_i)\in \mathbf{R}$
+
+    \textcolor{purple}{\textbf{Remark:} $\forall (x,y)\in \mathbf{R}^e$, either $x=y$ or $(x,y)$ is added by the transitive closure.}
 \end{Prop}
 
 \subsection[5]{Congruences}
-\subsection[6]{Free semigroups and monoids; presentations}
-\subsection[7]{Ideals and Rees congruences}
-\subsection[8]{Lattices of equivalences and congruences}
+
+\begin{Def}[Compatible]
+    Let $S$ be a semigroup. A relation $\mathbf{R}$ on the set $S$ is called:
+    \begin{center}
+        \begin{tabular}{c|c}
+            Left Compatible & $(\forall s,t,a \in S)(s,t)\in \mathbf{R} \Rightarrow (as, at)\in \mathbf{R}$   \\
+            Right Compatible & $(\forall s,t,a \in S)(s,t)\in \mathbf{R} \Rightarrow (sa,ta)\in \mathbf{R}$   \\
+            Compatible & $(\forall s,t,s',t' \in S)[(s,t)\in\mathbf{R}\wedge (s',t')\in \mathbf{R}] \Rightarrow (ss',tt')\in \mathbf{R}$
+        \end{tabular}
+    \end{center}
+\end{Def}
+
+\begin{Def}[Congruence].
+    \begin{center}
+        \begin{tabular}{c|c}
+            Left Congruence & Left compatible equivalence   \\
+            Right Congruence & Right compatible equivalence \\
+            Congruence  & Compatible equivalence    \\
+        \end{tabular}
+    \end{center}
+\end{Def}
+
+\begin{Prop}\label{Prop:1.5.1}
+    A relation $\rho$ on a semigroup $S$ is a  \emph{Congruence} $\Leftrightarrow$
+    $\rho$ is both a \emph{Left Congruence} and a \emph{Right Congruence}.
+    \begin{proof}.
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\rho$ is congruence $\Rightarrow $ $\rho$ is both left and right congruence. \\
+                & $\forall a\in S, (a,a) \in \rho$  \\
+                $\Rightarrow $ & $(as,at)\in \rho \wedge (sa, ta)\in \rho$  \\
+                $\Rightarrow $ & $\rho$ is both left and right congruence.  \\
+                &   \\
+                & $\rho$ is both left and right congruence $\Rightarrow \rho$ is congruence.    \\
+                & $\forall (s,t),(s',t')\in \mathbf{R}$  \\
+                $\Rightarrow $ & $(ss',ts')\in R \wedge (ts',tt') \in \mathbf{R}$    \\
+                $\Rightarrow $ & $(ss',tt')\in \mathbf{R}$
+            \end{tabular}
+        \end{center}
+    \end{proof}
+\end{Prop}
+
+If $\rho$ is a congruence on a semigroup $S$ then we can define a binary operation on the quotient set $S/\rho$ in a natural way as follows:
+\begin{equation}\label{Eq_1_5_1}
+    (a\rho)(b\rho)=(ab)\rho
+\end{equation}
+
+This is well-defined precisely because $\rho$ is compatible: 
+$\forall a,a',b,b' \in S$
+\begin{align*}
+    & a\rho=a'\rho \wedge b\rho  =b'\rho                \\
+    \Rightarrow & (a,a')\in \rho \wedge (b,b') \in \rho \\
+    \Rightarrow & (ab,a'b') \in \rho                    \\
+    \Rightarrow & (ab)\rho = (a'b')\rho                 \\
+\end{align*}
+this operation is easily seen to be associatice, and so $S/\rho$ is a semigroup.
+
+\begin{Them}\label{Them:1.5.2}
+    Let $S$ be a semigroup, and let $\rho$ be a congruence on $S$. Then $S/\rho$ is a semigroup with respect to the operation defined by period, and the map $\rho^{\natural}$ from $S$ onto $S/\rho$ given by $x\rho^{\natural}=x\rho$ is a morphism.
+
+    Let $T$ be a semigroup and let $\phi:S\rightarrow T$ be a morphism. Then the relation
+    \[
+        \ker \phi = \phi \circ \phi^{-1}=\{(a,b)\in S\times S| a\phi = b\phi\}
+    \]
+    is a congruence on $S$, and there is a monomorphism $\alpha:S/\ker \phi \rightarrow T$ such that $\Image \alpha = \Image \phi$ and the diagram commutes.
+    \[
+        \begin{tikzcd}
+            S
+            \arrow[dd, "(\ker \phi)^{\natural}"']
+            \arrow[r,"\phi"] &
+            T   \\
+            \\
+            S/\ker \phi
+            \arrow[uur, "\alpha"'] &
+        \end{tikzcd}
+    \]
+
+    \textbf{Remark:} $S/\ker \phi \rightarrow T$ is a one-one monomorphism, so that $S \rightarrow S/\ker \phi$ do not lost the main infomation of $\phi: S\rightarrow T$.
+    \begin{proof}
+        It is easy to verify that $\rho^{\natural}$ is a morphism.
+        \begin{center}
+            \begin{tabular}{c c}
+                & $(xy)\rho^{\natural}$ \\
+                $=$ & $(xy)\rho$        \\
+                $\ref{Eq_1_5_1}=$ & $(x\rho)(y\rho)$  \\
+                $=$ & $(x\rho^{\natural})(y\rho^{\natural})$
+            \end{tabular}
+        \end{center}
+
+        The $\ker \phi = \phi \circ \phi^{-1}$ is a congruence.
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\forall (a,a'),(b,b')\in \ker \phi$  \\
+                $\Rightarrow $ & $a\phi = a'\phi \wedge b\phi=b'\phi$   \\
+                $\Rightarrow $ & $(ab)\phi=(a\phi)(b\phi)=(a'\phi)(b'\phi)=(a'b')\phi$      \\
+                $\Rightarrow $ & $(ab, a'b')\in \ker\phi$
+            \end{tabular}
+        \end{center}
+
+        Let $\kappa:= \ker \phi$. Define $\alpha:S/\kappa \rightarrow T$
+        \[
+            (\forall a \in S)(a\kappa)\alpha = a\phi
+        \]
+        Then $\alpha$ is well-defined and one-one, since
+        \[
+            a\kappa =b\kappa \Leftrightarrow (a,b)\in \kappa \textcolor{blue}{\Leftrightarrow} a\phi = b\phi \Leftrightarrow (a\kappa)\alpha = (b\kappa)\alpha
+        \]
+        It is also a morphism, since
+        \begin{align*}
+            & \forall a,b \in S \\
+            & [(a\kappa)(b\kappa)]\alpha    \\
+            =& [(ab)\kappa]\alpha   \\
+            =& (ab)\phi \\
+            =& (a\phi)(b\phi)   \\
+            =& [(a\kappa)\alpha][(b\kappa)\alpha]   \\
+        \end{align*}
+
+        Clearly $\Image \alpha = \Image \phi$, and from the definition of $\alpha$ it is clear that:
+        \[
+            (\forall a \in S) a\kappa^{\natural}\alpha = a\phi
+        \]
+    \end{proof}
+\end{Them}
+
+\begin{Them}\label{Them:1.5.3}
+    Let $\rho$ be a congruence on a semigroup $S$, and let $\phi: S \to T$ be a morphism such that $\rho \subseteq \ker \phi$. Then there is a unique morphism $\beta:S/\rho \to T$ such that $\Image \beta = \Image \phi$ and such that the diagram commutes.
+    \[\begin{tikzcd}
+        S        
+        \arrow[dd, "\rho^{\natural}"'] 
+        \arrow[r,"\phi"] &
+        T   \\
+        \\
+        S/\rho
+        \arrow[uur, "\beta"']
+    \end{tikzcd}\]
+
+    \textbf{Remark:} $S/\rho \rightarrow T$ is a morphism but not always one-one, some infomation lost by $\rho$ and some by $\beta$. Both of the losses constitute the $\phi$'s.
+    \begin{proof}
+        Define $\beta: S/\rho\rightarrow T$:
+        \[
+            (a \rho) \beta = a\phi (a \in S)
+        \]
+
+        $\beta$ is well-defined and not always one-one, since, $\forall a,b \in S$
+        \[
+            a\rho = b \rho \Leftrightarrow (a,b) \in \rho \textcolor{blue}{\Rightarrow} (a,b) \in \ker \phi \Leftrightarrow a \phi = b \phi \Leftrightarrow (a\rho)\beta = (b\rho)\beta
+        \]
+
+        $\beta$ is a morphism. 
+
+        \begin{center}
+        \begin{tabular}{c c}
+            & $\forall a,b\in S. [(a\rho)(b\rho)]\beta$   \\
+            $=$ & $[(a b)\rho]\beta$    \\
+            $=$ & $(a b)\phi$   \\
+            $=$ & $(a)\phi (b)\phi$ \\
+            $=$ & $[(a\rho)\beta][(b\rho)\beta]$
+        \end{tabular}
+        \end{center}
+        
+        $\rho^{\natural} \circ \beta = \phi$
+        
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\forall a \in S, a \rho^{\natural} \circ \beta$ \\
+                $=$ & $(a\rho)\beta$    \\
+                $=$ & $a\phi$
+            \end{tabular}
+        \end{center}
+
+        so that: $\Dom \phi = \Dom \rho^{\natural} \circ \beta = S \Rightarrow \Image \phi = \Image \rho^{\natural} \circ \beta$
+
+        $\beta$ is unique.
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\forall \gamma \in (S/\rho \rightarrow T) \wedge (a \rho)\gamma = a \phi  $ \\
+                $=$ & $(a\rho)\beta$    \\
+                $\wedge$ & $\Dom \gamma = \Dom \beta$   \\
+                $\Rightarrow $ & $\gamma = \beta$
+            \end{tabular}
+        \end{center}
+        
+        Any morphism satisfying $\rho^{\natural} \circ \beta = \phi$ must be defined by the rule.
+    \end{proof}
+\end{Them}
+
+    Theorem \ref{Them:1.5.3} has a application to the situation where $\rho$ and $\sigma$ are congruences on the $S$ and where $\rho \subseteq \sigma$. The theorem implies that there is a morphism $\beta$ from $S/\rho$ onto $S/\sigma$ such that the diagram commutes.
+    \textcolor{blue}{
+    \[
+        \rho \subseteq \ker \sigma^{\natural} = \sigma
+    \]}
+\[\begin{tikzcd}
+    S
+    \arrow[dd, "\rho^{\natural}"']
+    \arrow[r, "\sigma^{\natural}"] &
+    S/\sigma    \\
+    \\
+    S/\rho
+    \arrow[uur, "\beta"']
+\end{tikzcd}\]
+
+The morphism $\beta$ is given by
+\[
+    \forall (a\in S)(a\rho)\beta = a\sigma
+\]
+
+and the congruence $\ker \beta$ on $S/\rho$ is given by
+\[
+    \ker \beta = 
+    \{  
+        (a\rho,b\rho)\in (S/\rho)^2 | a\rho\beta = b\rho\beta \Leftrightarrow  a\sigma=b\sigma \Leftrightarrow (a,b)\in \ker\sigma = \sigma 
+    \}
+\]
+
+It is usual to write $\ker \beta$ as $\sigma/\rho(\frac{S/\rho}{S/\sigma}\approx\frac{\sigma}{\rho})$. From Theorem\ref{Them:1.5.2} it now follows that there is an isomorphism $\alpha:(S/\rho)/(\sigma/\rho) \to S/\sigma$ defined by:
+\[
+    (\forall a\in S)[(a\rho)(\sigma/\rho)]\alpha = a\sigma
+\]
+\textbf{Remark:}
+This map $\alpha$ may be a functor, defined by:
+\begin{align*}
+    a:\cate{Set} &\to \cate{Set} \\
+    a(\{A\}) &= A  \\
+    \alpha &:= a^n
+\end{align*}
+
+\begin{Them}\label{Them:1.5.4}
+    Let $\rho, \sigma$ be congruences on a semigroup $S$ such that $\rho \subseteq \sigma$. Then:
+    \[
+        \sigma/\rho = 
+        \{
+            (x\rho, y\rho)\in S/\rho \times S/\rho | (x,y)\in \sigma
+        \}
+    \]
+    is a congruence on $S/\rho$, and $(S/\rho)/(\sigma/\rho) \simeq S/\sigma$. The dragram commutes.
+    \[\begin{tikzcd}
+        S
+        \arrow[r, "\sigma^{\natural}"]
+        \arrow[dd, "\rho^{\natural}"'] &
+        S/\sigma    \\
+        \\
+        S/\rho
+        \arrow[uur, "\beta"]
+        \arrow[r, "(\sigma/\rho)^{\natural}"'] &
+        (S/\rho)/(\sigma/\rho)
+        \arrow[uu, "\alpha"']
+    \end{tikzcd}\]
+    \begin{proof}
+        \begin{align*}
+            & \rho \subseteq \ker \sigma^{\natural} = \sigma \\
+            \ref{Them:1.5.3}\Rightarrow& \sigma^{\natural} = \rho^{\natural}\circ \beta \\
+            & \ker \beta = (\sigma/\rho)    \\
+            \Rightarrow& \ker \beta^{\natural} = \ker(\sigma/\rho)^{\natural} = \sigma/\rho \\
+            \ref{Them:1.5.2}\Rightarrow& \beta = (\sigma/\rho)^{\natural}\circ \alpha \wedge \alpha \text{ is a Isomorphism.}
+        \end{align*}
+    \end{proof}
+\end{Them}
+
+The intersection of a non-empty family of congruences on a semigroup $S$ is also a congruence on $S$.
+
+\begin{align*}
+    & \forall (s,t),(s',t')\in R = \bigcap_i R_i,  \\
+    \Rightarrow & (s, t),(s',t') \in R_i    \\
+    \Rightarrow & (ss', tt'),(s's, t't) \in R_i \\
+    \Rightarrow & (ss', tt'),(s's, t't) \in R
+\end{align*}
+
+\begin{Def}$\mathbf{R}^{\sharp}$
+    \[
+        \mathbf{R}^{\sharp} = \{\bigcap \mathbf{C} : \mathbf{R} \subseteq \mathbf{C} \wedge \mathbf{C}\text{ is a congruence}\}
+    \]
+    $\mathbf{R}^{\sharp}$ is unique smallest congruence on $S$ containing $\mathbf{R}$.
+    Because of the analogue of equivalence, the $\mathbf{R}^{\sharp}$ is unique and smallest. \textcolor{purple}{?maybe it is not true, but the proof may be easy.}
+\end{Def}
+
+To describe the $\mathbf{R}^{\sharp}$, we firstly describe the $\mathbf{R}^{c}$.
+
+\begin{Def}$\mathbf{R}^{c}$
+    
+    $\mathbf{R}$ is arbitrary relation on $S$.
+    \[
+        \mathbf{R}^{c} =
+        \{
+            (xay, xby): x,y \in S^1, (a,b)\in \mathbf{R}
+        \}
+    \]
+\end{Def}
+
+\begin{Lem}\label{Lem:1.5.5}
+    $\mathbf{R}^c$ is the smallest left and right compatible relation containing $\mathbf{R}$.
+    \begin{proof}
+         \begin{align*}
+            \mathbf{R}\subseteq \mathbf{R}^c \text{: } & 1 \in S^1    \\
+            \Rightarrow & \forall (a,b) \in \mathbf{R}, (1a1,1b1) \in \mathbf{R}^c  \\
+            \Rightarrow & \mathbf{R} \subseteq \mathbf{R}^c \\
+            & \\
+            \text{Compatible: } & \forall (u,v) \in \mathbf{R}^c,\forall w \in S  \\
+            \Rightarrow & \exists (a,b)\in \mathbf{R}\rightarrow u=xay, v=xby   \\
+            \Rightarrow & wu = wxay = (wx)ay, wv = wxby = (wx)by  \\
+            \Rightarrow & (wu, wv) \in \mathbf{R}^c \\
+            \Rightarrow & \mathbf{R}^c \text{ is left compatible.}  \\
+            & \text{The right compatible is an analogue.}   \\
+            & \\
+            \text{Smallest: } & \forall \mathbf{S} \text{ satisfying left and right compatible and containing } \mathbf{R}   \\
+            \Rightarrow & \forall x,y \in S^1, \forall (a,b) \in \mathbf{R} \\
+            \Rightarrow & (xay, xby) \in \mathbf{S} \\
+            \Rightarrow & \mathbf{R}^c \subseteq \mathbf{S}
+         \end{align*}
+    \end{proof}
+\end{Lem}
+
+\begin{Lem}\label{Lem:1.5.6}
+    Let $\mathbf{R}, \mathbf{S}$ be relations on a semigroup $S$. Then:
+    \begin{enumerate}
+        \item $\mathbf{R} \subseteq \mathbf{S} \Rightarrow \mathbf{R}^c \subseteq \mathbf{S}^c$ 
+        \item $(\mathbf{R}^{-1})^c = (\mathbf{R}^c)^{-1}$
+        \item $(\mathbf{R} \cup \mathbf{S})^c = \mathbf{R}^c \cup \mathbf{S}^c$
+        \item $1_S^c=1_S$
+    \end{enumerate}
+    \begin{proof}
+        \begin{align*}
+            1. & \forall (xuy, xvy)\in \mathbf{R}^c \\
+            \Rightarrow& (u,v) \in \mathbf{R} \subseteq \mathbf{S}  \\
+            \Rightarrow& (xuy, xvy) \in \mathbf{S}^c \\
+            & \\
+            2. & \forall (xuy, xvy) \in (\mathbf{R}^{-1})^c \\
+            \Rightarrow& (u,v) \in \mathbf{R}^{-1}  \\
+            \Rightarrow& (v,u) \in \mathbf{R}   \\
+            \Rightarrow& (xvy, xuy) \in \mathbf{R}^c    \\
+            \Rightarrow& (xuy, xvy) \in (\mathbf{R}^c)^{-1} \\
+            & \\
+            3. & \forall (xuy,xvy) \in (\mathbf{R}\cup \mathbf{S})^c    \\
+            \Rightarrow& (u,v)\in \mathbf{R} \vee (u,v) \in \mathbf{S} \\
+            \Rightarrow& (xuy, xvy) \in \mathbf{R}^c \vee (xuy, xvy)\in \mathbf{S}^c \\
+            \Rightarrow& (xuy, xvy) \in \mathbf{R}^c \cup \mathbf{S}^c \\
+            & \\
+            &
+            \begin{cases}
+                1_S \subseteq 1_S^c \\
+                \forall (xay,xay) \in 1_S^c\rightarrow (xay, xay)\in 1_S \rightarrow 1_S^c \subseteq 1_S
+            \end{cases}         \\
+            \Rightarrow & 1_S^c = 1_S       \\
+        \end{align*}
+    \end{proof}
+\end{Lem}
+
+\begin{Lem}\label{Lem:1.5.7}
+    Let $\mathbf{R}$ be a left and right compatible relation on a semigroup $S$. Then: $\mathbf{R}^n$ is left and right compatible for every $n\geq 1$.
+    \textbf{Formula: }
+    \begin{align*}
+        & \forall \mathbf{R} \text{ is a left and right compatible relation on a semigroup }S \\
+        \Rightarrow &
+        \forall n\in \mathbb{N}^+, \mathbf{R}^n \text{ is also left and right compatible.}
+    \end{align*}
+
+    \begin{proof}
+        \begin{align*}
+            & \forall (s,t)\in \mathbf{R}^n     \\
+            \Rightarrow & \exists z_1,z_2,\cdots, z_{n-1}\rightarrow (s,z_1),(s,z_2),\cdots, (z_n-1,t) \in \mathbf{R}    \\
+            \Rightarrow &\forall a \in S \rightarrow 
+            \begin{cases}
+                (as,az_1),(az_1,az_2),\cdots, (az_{n-1},a t) \in \mathbf{R}  \\
+                (sa,z_1a),(z_1a,z_2,a),\cdots, (z_{n-1}a,ta) \in \mathbf{R}  \\ 
+            \end{cases} \\
+            \Rightarrow & (as,at),(sa,ta) \in \mathbf{R}
+        \end{align*}
+    \end{proof}
+\end{Lem}
+
+\begin{Prop}\label{Prop:1.5.8}
+    $\mathbf{R}^{\sharp} = (\mathbf{R}^c)^e$.
+
+    \begin{proof}
+        \begin{align*}
+            \text{Congruence:}\\
+            \ref{Prop:1.4.9}\Rightarrow &
+            \begin{cases}
+                (\mathbf{R}^c)^e \text{ is an equivalence.} \\
+                \mathbf{R}^c \subseteq (\mathbf{R}^c)^e     \\
+                \rightarrow \mathbf{R} \subseteq (\mathbf{R}^c)^e       \\
+            \end{cases}             \\
+            \text{Let:} & \mathbf{S} = \mathbf{R}^c \cup (\mathbf{R}^c)^{-1} \cup 1_S \\
+            \ref{Lem:1.5.6}=& \mathbf{R}^c \cup (\mathbf{R}^{-1})^c \cup 1_S^c \\
+            \ref{Lem:1.5.6}=& (\mathbf{R} \cup \mathbf{R^{-1}} \cup 1_S )^c    \\
+            \ref{Lem:1.5.5}\Rightarrow & \mathbf{S} \text{ is left and right compatible.}   \\
+            \ref{Lem:1.5.7} \Rightarrow & \mathbf{S}^n \text{ is left and right compatible.}    \\
+            \ref{Prop:1.5.1}\Rightarrow & (\mathbf{R}^c)^e \text{ is a congruence on } S \text{ containing } \mathbf{R}.    \\
+            & \forall (s,t) \in (\mathbf{R}^c)^e, \forall a \in S   \\
+            \Rightarrow& (as, at) \in \mathbf{S}^n \subseteq (\mathbf{R}^c)^e \wedge (sa, ta) \in \mathbf{S}^n \subseteq (\mathbf{R}^c)^e  \\
+            \\
+            \text{Smallest:} & \forall \text{congruence } \kappa \wedge \mathbf{R} \subseteq \kappa \\
+            & \ref{Lem:1.5.5}\Rightarrow \kappa^c = \kappa  \\
+            \Rightarrow & \mathbf{R}^c \subseteq \kappa^c = \kappa  \\
+            & \kappa \text{ is an equivalence}  \\
+            \Rightarrow & (\mathbf{R}^c)^e \subseteq \kappa
+        \end{align*}
+    \end{proof}
+    \textbf{Remark: }The method used to prove this smallest property is  describing the smallest equivalence condition could somehow prove the smallest congurence.
+\end{Prop}
+
+\begin{Def}[connected by an elementary $\mathbf{R}$-transition].
+
+    By analogue with Proposition \ref{Prop:1.4.9} and \ref{Prop:1.4.10} we may write the last result in more elementary terms. First, if $c, d \in S$ are such that
+    \[
+        c = xay, d = xby.
+    \]
+for some $x, y$ in $S^1$, where either $(a, b)$ or $(b, a)$ belongs to $\mathbf{R}$, we say that $c$ is connected to $d$ by an \emph{elementary $\mathbf{R}$-transition}.
+\end{Def}
+
+\begin{Prop}\label{Prop:1.5.9}
+    Let $\mathbf{R}$ be a relation on a semigroup $S$, and let $a, b \in S$. Then $(a, b)\in \mathbf{R}^{\sharp} \Leftrightarrow $either $a=b$ or, for some $n \in N$, there is a sequence
+    \[
+        a = z_1 \rightarrow z_2 \rightarrow \cdots \rightarrow z_n = b
+    \]
+    of elementary $\mathbf{R}$-transitions connecting $a$ to $b$.
+    \begin{proof}
+        \textcolor{red}{This proof may be wrong?}
+        \begin{align*}
+            & \forall (a, b) \in \mathbf{R}^{\sharp} \wedge (a, b) \notin \mathbf{R}  \\
+            \Leftrightarrow& \exists n, (a, b) \in ((\mathbf{R} \cup \mathbf{R}^{-1} \cup 1_S)^c)^n   \\
+            \Leftrightarrow& (a, x_1) \in \mathbf{S}^c, (x_1, x_2) \in \mathbf{S}^c, \cdots, (x_{n-1}, b) \in \mathbf{S}^c   \\
+            \Leftrightarrow& \exists p_i, q_i \in S^1, \exists (x_{il}, y_{il}) \in \mathbf{R}  \\
+            \rightarrow&  x_i = p_i x_{il} q_i; y_{i} = p_i y_{il} q_i \vee
+            x_i = p_i y_{il} q_i; y_{i} = p_i x_{il} q_i    \\
+            \Leftrightarrow& a = \prod_{0}^{n} p_i \cdot x_{nl} \cdot \prod_{n}^{0} q_i; b = \prod_{0}^{n} p_i \cdot x_{nl} \cdot \prod_{n}^{0} q_i \\
+            \Leftrightarrow& x \text{ is connected to }y \text{ by the elementary } \mathbf{R} \text{-transitions.}
+        \end{align*}
+    \end{proof}
+\end{Prop}
+
+\begin{Def}[$\mathbf{E}^{\flat}$]
+    $\mathbf{E}$ is an arbitrary equivalence on a semigroup $S$.
+    \[
+    \mathbf{E}^{\flat}=
+    \{
+        (a,b) \in S \times S: (\forall x, y \in S^1)(xay,xby) \in \mathbf{E}
+    \}
+\]
+\end{Def}
+
+\begin{Prop}\label{Prop:1.5.10}
+    Let $\mathbf{E}$ be an equivalence on a semigroup $S$. Then $\mathbf{E}^\flat$ is the \emph{lagrest congruence} on $S$ contained in $\mathbf{E}$.
+    \begin{proof}.
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\mathbf{E}^{\flat}$ is an equivalence.   \\
+                $\Leftarrow$ & 
+                $\begin{cases}
+                    1_S \subseteq \mathbf{E}^{\flat}  \\
+                    \mathbf{E} = \mathbf{E}^{-1} \Rightarrow (\mathbf{E}^{\flat})^{-1} = \mathbf{E}^{\flat} & \text{by definition.} \\
+                    \textcolor{red}{\text{Transitive ?}} \\
+                \end{cases}$    \\  \\
+                & $\mathbf{E}^{\flat}$ is compatible.     \\
+                $\Leftarrow$ & $\forall (xay, xby) \in \mathbf{E}^{\flat}, \forall c \in S$ \\
+                $\Rightarrow $ & $(cxay, cxby) = ((cx)ay, (cx)by) \in \mathbf{E}^{\flat}$     \\
+                analogue$\Rightarrow $ & $(xayc, xbyc) \in \mathbf{E}^{\flat}$  \\
+                \\
+                & $\forall (a, b)\in \mathbf{E}^{\flat} \Rightarrow (a, b) = (1a1,1b1) \rightarrow (a, b) \in \mathbf{E}$  \\
+                $\Rightarrow $ & $\mathbf{E}^{\flat} \subseteq \mathbf{E}$ \\ \\
+                & $\mathbf{E}^{\flat}$ is largest.  \\
+                $\Leftarrow$ & $\forall$ congurence $\eta \subseteq \mathbf{E}$  \\
+                $\Rightarrow $ & $\forall (a, b) \in \eta$  \\
+                $\Rightarrow $ & $(\forall x,y \in S^1)(xay, xby) \in \eta$ \\
+                $\Rightarrow $ & $(\forall x,y \in S^1)(xay, xby) \in \mathbf{E}$   \\
+                $\Rightarrow $ & $\eta \subseteq \mathbf{E}$
+            \end{tabular}
+        \end{center}
+    \end{proof}
+\end{Prop}
+
+\begin{Rmk}
+    $\mathbf{R}^{\sharp}$ is defined for an arbitrary relation $\mathbf{R}$, the congruence $\mathbf{E}^{\flat}$ is defined only for an equivalence $\mathbf{E}$.
+
+    $\mathbf{R}^{\sharp}$ is minimum congruence containing $\mathbf{R}$; $\mathbf{E}^{\flat}$ is maximum congruence contained by $\mathbf{E}$
+\end{Rmk}
+
+\begin{Def}[Syntactic Congruence]
+    $\forall A \subseteq S, \exists \text{ equivalence } \pi_A$ whose classes are $A, S\backslash A$, The congruence \emph{Syntactic Congruence} of $A$ defined by:
+    \[\pi_A^{\flat} = \{(u,v)\in S \times S : (\forall x,y\in S^1)[xuy \in A \Leftrightarrow xvy \in A]\}\]
+
+    This definition is important in the theorem of automata and languages.
+\end{Def}
+
+\begin{Sym}.
+    \begin{center}
+        \begin{tabular}{c c}
+            $\mathcal{E}(S)$ & := $\{\rho \in \mathcal{B}(S) : \rho \text{ is a equivalence}\}$    \\
+            $\mathcal{C}(S)$ & := $\{\rho \in \mathcal{B}(S) : \rho \text{ is a congruence}\}$    \\ 
+        \end{tabular}
+    \end{center}
+    Both of them are partially ordered by inclusion $\subseteq$, moreover, both are \emph{lattice}.
+
+    \begin{center}
+        \begin{tabular}{c c}
+            & $\forall \rho, \sigma \in \mathcal{E}(S) $    \\
+            $\Rightarrow $ & $\rho \cap \sigma \in \mathcal{E}(S)$  is their greatest lower bound.    \\
+            $\Rightarrow $ & $(\rho \cup \sigma)^e \in \mathcal{E}(S)$ is their least upper bound.        \\ 
+            & $\forall \rho, \sigma \in \mathcal{C}(S) $    \\
+            $\Rightarrow $ & $\rho \cap \sigma \in \mathcal{C}(S) $ is their greatest lower bound.      \\
+            $\Rightarrow $ & $(\rho \cup \sigma)^{\sharp} \in \mathcal{C}(S)$ is their least upper bound. \\
+        \end{tabular}
+    \end{center}
+
+    \begin{proof}
+        \begin{align*}
+            & \rho, \sigma \in \mathcal{E}(S)   \\
+            & 1_S \subseteq \rho \wedge 1_S \subseteq \sigma \Rightarrow 1_S    \subseteq \rho \cap \sigma \\
+            & \rho^{-1}=\rho \wedge \sigma^{-1} = \sigma \Rightarrow \rho \cap \sigma = (\rho \cap \sigma)^{-1} \\
+            & (x,y),(y,z) \in \rho \cap \sigma \Rightarrow (x,z) \in \rho \cap \sigma \\
+            \Rightarrow& \rho \cap \sigma \in \mathcal{E}(S)    \\
+            & \forall \gamma \subseteq \rho \wedge \gamma \subseteq \sigma \wedge \gamma \in \mathcal{E}(S) \\
+            \Rightarrow& \rho \subseteq \rho \cap \sigma \in \mathcal{E}(S) \\
+            \Rightarrow& \rho \cap \sigma \text{ is their greatest lower bound.}    \\
+            & \\
+            & \text{others are easy.}
+        \end{align*}
+    \end{proof}
+
+    \begin{align*}
+        & \forall \rho, \sigma \in \mathcal{C}(S)   \\
+        \ref{Lem:1.5.6} \Rightarrow& (\rho \cup \sigma)^c = \rho^c \cup \sigma^c = \rho \cup \sigma      \\
+        \ref{Prop:1.5.8} \Rightarrow& (\rho \cup \sigma)^{\sharp} = (\rho \cup \sigma)^e
+    \end{align*}
+
+    So $\rho \vee \sigma$ is an unambiguous definition of the join of $\rho$ and $\sigma$ either in $\mathcal{E}(S)$ or in $\mathcal{C}(S)$.
+
+    The set $\{\rho, \sigma\}$ could be replaced by arbitrary family of equivalences or congurences. So $\mathcal{E}(S), \mathcal{C}(S)$ are \emph{complete lattice}. Both lattices have maximum element $S \times S$ and minimum element $1_S$
+\end{Sym}
+
+\begin{Prop}\label{Prop:1.5.11}
+    Let $\rho, \sigma$ be equivalences on a set $S$ [congruences on a semigroup $S$]. Then $(a, b)\in \rho \bigvee \sigma \Leftrightarrow \exists n\in \mathbb{N}, \exists x_1, x_2, \cdots, x_{2n-1} \in S$ such that:
+    \[
+        (a, x_1)\in \rho, (x_1, x_2)\in \sigma, (x_2, x_3)\in \rho, (x_3, x_4)\in \sigma, \cdots, (x_{2n-1}, b) \in \sigma
+    \]
+    \textbf{Remark:}
+    This Prop is a specialization of Prop\ref{Prop:1.4.10} and \ref{Prop:1.5.9} to the case where the relation $\mathbf{R}$ is the union of two equivalences or congruences is worth stating separately.
+
+    \begin{proof}
+        The result says effectively that
+        \[
+            \rho \bigvee \sigma = (\rho \cup \sigma)^e = (\rho \circ \sigma)^{\infty}
+        \]
+        Define: $\mathbf{R} = (\rho \cup \sigma)\cup (\rho \cup \sigma)^{-1}\cup 1_S = \rho \cup \sigma$.
+        this Prop could convert to:
+        \[\rho \bigvee \sigma = \mathbf{R}^{\infty}\]
+        \begin{center}
+            \begin{tabular}{c c}
+                & $(\rho \subseteq \rho \cup \sigma) \wedge (\sigma \subseteq \rho \cup \sigma)$  \\
+                $\Rightarrow$ & $\rho \circ \sigma \subseteq (\rho \cup \sigma)^2$  \\
+                $\Rightarrow$ & $\forall n \in \mathbb{N}^+, (\rho \circ \sigma)^n \subseteq (\rho \cup \sigma)^{2n}$   \\
+                $\Rightarrow$ & $(\rho \circ \sigma)^{\infty} \subseteq (\rho \cup \sigma)^{\infty} = \rho \bigvee \sigma$  \\
+                & Conversely    \\
+                & $1_S \subseteq \rho \wedge 1_S \subseteq \sigma$  \\
+                $\Rightarrow$ & $(\rho \subseteq \rho \circ \sigma) \wedge (\sigma \subseteq \rho \circ \sigma)$    \\
+                $\Rightarrow$ & $\rho \cup \sigma \subseteq \rho \circ \sigma$ \\
+                $\Rightarrow$ & $\rho \bigvee \sigma = (\rho \cup \sigma)^{\infty} \subseteq (\rho \circ \sigma)^{\infty}$  \\
+                & Totally   \\
+                $\Rightarrow$ & $\rho \bigvee \sigma = (\rho \circ \sigma)^{\infty}$
+            \end{tabular}
+        \end{center}
+    \end{proof}
+\end{Prop}
+
+\begin{Coly}\label{Coly:1.5.12}
+    Let $\rho, \sigma$ be equivalence on a set $S$ [congruence on a semigroup $S$] such that $\rho \circ \sigma = \sigma \circ \rho$, Then $\rho \vee \sigma =  \rho \circ \sigma$.
+    
+    \begin{center}
+        \begin{tabular}{c c}
+            & $\rho, \sigma$ are equivalences on set $S$ \\
+            & $(\rho \circ \sigma = \sigma \circ \rho)$ \\
+            $\Rightarrow $ & $\rho \bigvee \sigma = \rho \circ \sigma$  \\
+            & $\rho, \sigma$ are congruences on semigroup $S$ \\
+            & $(\rho \circ \sigma = \sigma \circ \rho)$ \\
+            $\Rightarrow $ & $\rho \bigvee \sigma = \rho \circ \sigma$  \\
+        \end{tabular}
+    \end{center}
+
+    \begin{proof}.
+        \begin{center}
+            \begin{tabular}{c c}
+                & $\rho \circ \sigma = \sigma \circ \rho$   \\
+                & $(\rho \circ \sigma)^2$    \\
+                $=$ & $\rho \circ (\sigma \circ \rho) \circ \sigma$ \\
+                $=$ & $\rho \circ (\rho \circ \sigma) \circ \sigma$ \\
+                $=$ & $(\rho \circ \rho) \circ (\sigma \circ \sigma)$   \\
+                $=$ & $\rho \circ \sigma$   \\
+                $\Rightarrow$ & $\forall n\in \mathbb{N}^{+}(\rho \circ \sigma)^n = \rho \circ \sigma$    \\
+                $\Rightarrow$ & $(\rho \circ \sigma)^{\infty} = \rho \circ \sigma$  \\
+                $\ref{Prop:1.5.11}$ & $\rho \bigvee \sigma = (\rho \circ \sigma)^{\infty}$   \\
+                $=$ & $\rho \circ \sigma$   \\
+            \end{tabular}
+        \end{center}
+    \end{proof}
+\end{Coly}
+
+
+
+\subsection[6]{Free Semigroups and Monoids; Presentations}
+\subsection[7]{Ideals and Rees Congruences}
+\subsection[8]{Lattices of Equivalences and Congruences}
 \subsection[9]{Exercises}
 1. An element $e$ is a semigroup $S$ is called a \emph{left identity} if $\forall x \in S\rightarrow ex = x$. Analogue is for \emph{right identity}.
 An element $z$ of $S$ is called a \emph{left zero} if $\forall x \in S, zx=z$. Analogue is for \emph{right zero}.

@@ -1,13 +1,19 @@
-\documentclass[UTF8]{article}
+\documentclass{article}
 
+
+\usepackage[a4paper,width=7in,height=10in]{geometry}
 \usepackage{color}
 \usepackage{amsmath}
 \usepackage{amsthm}
 \usepackage{amssymb}
 \usepackage{tikz}
 \usepackage{tikz-cd}
-
-
+\usepackage{hyperref}
+\hypersetup{hypertex=true,
+            colorlinks=true,
+            linkcolor=blue,
+            anchorcolor=blue,
+            citecolor=blue}
 
 \author{Hyapp}
 \date{2022-5-27}
@@ -23,7 +29,12 @@
 \newtheorem{Sym}{Symbol}[subsection]
 \newtheorem*{Prof}{Proof}
 
+\newcommand{\Image}{\ensuremath{\mathrm{Image}}}    %% 值域
+\newcommand{\Dom}{\ensuremath{\mathrm{Dom}}}        %% 定义域
+\newcommand{\cate}[1]{\ensuremath{\mathsf{#1}}}	% Font series for categories
+
 \begin{document}
+
 
     \maketitle
 
